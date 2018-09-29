@@ -75,13 +75,3 @@
       webOS.platformBack();
   }*/
 
-  window.addEventListener('popstate', function (event) {
-    var data = event.state;
-    if (data) {
-        // do page move or anything else
-        console.log("vuelve");
-      } else {
-        webOS.platformBack();
-      }
-      
-    }, false);

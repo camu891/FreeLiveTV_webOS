@@ -17,7 +17,7 @@
  
  function addChannelInfo(){
   $(".channel-info").append("<h2>"+title+"</h2><p>"+description+"</p>");
-  $(".container").click(function() {
+  $(".above").click(function() {
     var header =  $('.channel-header');
     if (header.is(':hidden')) {
       header.slideDown('slow').delay(5000).slideUp('slow');

@@ -216,6 +216,7 @@ a.program-link span {
 	padding: 10px;
 	color: white;
 	display: none;
+	z-index: 2;
 }
 
 .channel-header .container {
@@ -247,6 +248,14 @@ a.program-link span {
 .ytplayer {
 	pointer-events: none;
 	position: absolute;
+}
+
+/* fix for yt ifram click */
+a.above {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
 }
 
 video::-webkit-media-controls {
