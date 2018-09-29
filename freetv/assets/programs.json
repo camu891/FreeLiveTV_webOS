@@ -1,0 +1,238 @@
+{
+    "programs":[
+        {
+            "id":1,
+            "type": "native",
+            "link": "http://g4.proy-slo.transport.edge-access.net/b09/ngrp:el12_live01-100083_all/chunklist_b1596000.m3u8?sense=true",
+            "name": "El 12 TV",
+            "logo": "./assets/img/12tv.png",
+            "description":"Esto es una descripcion",
+            "category":"news"
+        },
+        {
+            "id":2,
+            "type": "youtube",
+            "link": "https://www.youtube.com/embed/9h6Vz6ylIdE?rel=0&autoplay=1&showinfo=0&controls=0",
+            "name": "El Trece TV",
+            "logo": "./assets/img/eltrece.png",
+            "description":"Esto es una descripcion",
+            "category":"news"
+        },
+        {
+            "id":3,
+            "type": "native",
+            "link": "https://evento6hls-lh.akamaihd.net/i/evento6hls_1@48399/index_2_av-b.m3u8",
+            "name": "Telefe",
+            "logo": "./assets/img/telefe.png",
+            "description":"Esto es una descripcion",
+            "category":"news"
+        },
+          {
+            "id":3,
+            "type": "youtube",
+            "link": "https://www.youtube.com/embed/8QAPP_CtV8Q?rel=0&autoplay=1&showinfo=0&controls=0",
+            "name": "Telefe Noticias",
+            "logo": "./assets/img/telefe_noticias.png",
+            "description":"Esto es una descripcion",
+            "category":"news"
+        },
+        {
+            "id":4,
+            "type": "youtube",
+            "link": "https://www.youtube.com/embed/eFLScr5atpQ?rel=0&autoplay=1&showinfo=0&controls=0",
+            "name": "Teleocho",
+            "logo": "./assets/img/teleocho.png",
+            "description":"Esto es una descripcion",
+            "category":"news"
+        },
+        {
+            "id":4,
+            "type": "native",
+            "link": "https://g3.mc-slo.transport.edge-access.net/b17/ngrp:c7cam2-20034_all/c7cam2-20034_1080p.m3u8",
+            "name": "TV Pública",
+            "logo": "./assets/img/tvpublica.png",
+            "description":"Esto es una descripcion",
+            "category":"news"
+        },
+        {
+            "id":5,
+            "type": "native",
+            "link": "https://wowzaprod169-i.akamaihd.net/hls/live/630337/59e4c1ec/59e4c1ec_1_1500000/chunklist.m3u8",
+            "name": "Canal 10",
+            "logo": "./assets/img/canal10.png",
+            "description":"Esto es una descripcion",
+            "category":"news"
+        },
+        {
+            "id":5,
+            "type": "native",
+            "link": "http://dwgoed11hdvfh.cloudfront.net/c9/smil:live.smil/chunklist_b1328000.m3u8",
+            "name": "El nueve",
+            "logo": "./assets/img/canal9.png",
+            "description":"Esto es una descripcion",
+            "category":"news"
+        },
+         {
+            "id":5,
+            "type": "youtube",
+            "link": "https://www.youtube.com/embed/-1xif50QMr4?rel=0&autoplay=1&showinfo=0&controls=0",
+            "name": "TN Noticias",
+            "logo": "./assets/img/tn.png",
+            "description":"Esto es una descripcion",
+            "category":"news"
+        },
+        {
+            "id":5,
+            "type": "youtube",
+            "link": "https://www.youtube.com/embed/MNODeTv9VbE?rel=0&autoplay=1&showinfo=0&controls=0",
+            "name": "Cronica TV",
+            "logo": "./assets/img/cronica.png",
+            "description":"Esto es una descripcion",
+            "category":"news"
+        },
+        {
+            "id":5,
+            "type": "native",
+            "link": "http://live-edge01.telecentro.net.ar/live/smil:c26.smil/chunklist_w1015357033_b1264000_sleng.m3u8",
+            "name": "Canal 26",
+            "logo": "./assets/img/canal26.png",
+            "description":"Esto es una descripcion",
+            "category":"news"
+        },
+        {
+            "id":5,
+            "type": "youtube",
+            "link": "https://www.youtube.com/embed/vMF1HIHKzfg?rel=0&autoplay=1&showinfo=0&controls=0",
+            "name": "C5N",
+            "logo": "./assets/img/c5n.png",
+            "description":"Esto es una descripcion",
+            "category":"news"
+        },
+        {
+            "id":5,
+            "type": "native",
+            "link": "http://coninfo.net:1935/13maxhd/live_720p/chunklist_w1693758974.m3u8",
+            "name": "13 Max Noticias",
+            "logo": "./assets/img/13maxtv.png",
+            "description":"Esto es una descripcion",
+            "category":"news"
+        },
+        {
+            "id":3,
+            "type": "native",
+            "link": "https://latam5-lh.akamaihd.net/i/TSP_ARG@198922/index_720_av-b.m3u8?sd=6&set-akamai-hls-revision=4&set-segment-duration=quality&rebase=on&id=AgAY6CxxyCohNU7yrlv6FkSdmIZ4SF%2fqGflToEkBenVsCfj8cMWNG14GN50Q0VbKSuxuBnKWJ8B4yg%3d%3d&hdntl=exp=1538278350~acl=%2f*~data=hdntl~hmac=6f51c6f5a147657f463eeed53cbe1cb20956a3d7d5e84607976465e96e129f83",
+            "name": "TNT SPORT",
+            "logo": "./assets/img/tntsports.png",
+            "description":"Esto es una descripcion",
+            "category":"sports"
+        }, 
+        {
+            "id":5,
+            "type": "native",
+            "link": "https://secure-playlist.livestream.com/streams/27014129_8167338_lsif8b1ptxd9l7c3gfv_1/media/27014129_8167338_lsif8b1ptxd9l7c3gfv_1@1756000p.m3u8?dw=80&token=1538363992_d9accc2a25bc56339fd80cab62c7de4ff6d4a800&ts=1538190000",
+            "name": "Tyc Sport",
+            "logo": "./assets/img/tyc_sport.png",
+            "description":"Esto es una descripcion",
+            "category":"sports"
+        },
+        {
+            "id":1,
+            "type": "native",
+            "link": "https://fslahds-lh.akamaihd.net/i/FS1CS_1@77550/index_1_av-p.m3u8?sd=6&set-segment-duration=quality&rebase=on&hdntl=exp=1538278499~acl=%2fi%2f*~data=hdntl~hmac=9fb6004bf33838165820b8f5d9ae4c1c93ddd549ab421fabefd724697f50534c",
+            "name": "Fox Sport",
+            "logo": "./assets/img/foxsport.png",
+            "description":"Esto es una descripcion",
+            "category":"sports"
+        },
+        {
+            "id":1,
+            "type": "native",
+            "link": "https://fslahds-lh.akamaihd.net/i/FS2SUR_1@77551/index_1_av-p.m3u8?sd=6&set-segment-duration=quality&rebase=on&hdntl=exp=1538278623~acl=%2fi%2f*~data=hdntl~hmac=acb619aaad75d9a13b7e4a85e36b93b2cbb7ab1db838fc4eda51c8114a9ccf79",
+            "name": "Fox Sport 2",
+            "logo": "./assets/img/foxsport2.png",
+            "description":"Esto es una descripcion",
+            "category":"sports"
+        },
+        {
+            "id":1,
+            "type": "native",
+            "link": "https://fslahds-lh.akamaihd.net/i/FS3CONOSUR_1@519265/index_6_av-p.m3u8?sd=6&set-segment-duration=quality&rebase=on&hdntl=exp=1538278930~acl=%2fi%2f*~data=hdntl~hmac=bd452edacb33c69c6249643d574be75dc1b3af22ef1c110830a5bbcfa9d99235",
+            "name": "Fox Sport 3",
+            "logo": "./assets/img/foxsport3.png",
+            "description":"Esto es una descripcion",
+            "category":"sports"
+        },
+        {
+            "id":2,
+            "type": "native",
+            "link": "https://contar-live.secure.footprint.net/hls-live/ionmicroremux-Deportv/_definst_/live.m3u8",
+            "name": "Deportv",
+            "logo": "./assets/img/dxtv.png",
+            "description":"Esto es una descripcion",
+            "category":"sports"
+        },
+        {
+            "id":3,
+            "type": "native",
+            "link": "http://linearhlsls2-i.akamaihd.net/hls/live/463004/n53/4500.m3u8",
+            "name": "ESPN",
+            "logo": "./assets/img/espn.png",
+            "description":"Esto es una descripcion",
+            "category":"sports"
+        },
+        {
+            "id":3,
+            "type": "native",
+            "link": "http://linearhlsls2-i.akamaihd.net/hls/live/463004/n17/4500.m3u8",
+            "name": "ESPN 2",
+            "logo": "./assets/img/espn2.png",
+            "description":"Esto es una descripcion",
+            "category":"sports"
+        },
+        {
+            "id":3,
+            "type": "native",
+            "link": "http://linearhlsls2-i.akamaihd.net/hls/live/463004/n417/4500.m3u8",
+            "name": "ESPN 3",
+            "logo": "./assets/img/espn3.png",
+            "description":"Esto es una descripcion",
+            "category":"sports"
+        },
+        {
+            "id":3,
+            "type": "native",
+            "link": "https://s10.limpi.tv/live/40710.m3u8",
+            "name": "DIRECT TV",
+            "logo": "./assets/img/directv.png",
+            "description":"Esto es una descripcion",
+            "category":"sports"
+        },
+        {
+            "id":3,
+            "type": "native",
+            "link": "https://contar-live.secure.footprint.net/hls-live/ionmicroremux-Pakapaka/_definst_/live/stream2.m3u8",
+            "name": "PAKAPAKA",
+            "logo": "./assets/img/pakapaka.png",
+            "description":"Esto es una descripcion",
+            "category":"kids"
+        },
+        {
+            "id":3,
+            "type": "native",
+            "link": "http://live-edge01.telecentro.net.ar/live/tlx.smil/chunklist_w1930992855_b1828000_sleng.m3u8",
+            "name": "TLX HD",
+            "logo": "./assets/img/tlx.png",
+            "description":"Esto es una descripcion",
+            "category":"other" 
+        },
+        {
+            "id":3,
+            "type": "native",
+            "link": "http://latino-webtv.com:2082/livexd3/70_.m3u8",
+            "name": "Win Sports",
+            "logo": "./assets/img/winsports.png",
+            "description":"Esto es una descripcion",
+            "category":"sports"
+        }
+    ]
+}

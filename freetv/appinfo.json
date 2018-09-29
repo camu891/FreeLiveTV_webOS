@@ -1,0 +1,13 @@
+{
+    "vendor": "Matias Camusso",
+    "largeIcon": "largeIcon.png",
+    "iconColor": "white",
+    "icon": "icon.png",
+    "main": "index.html",
+    "id": "com.matic.freetv",
+    "title": "Free Live TV",
+    "type": "web",
+    "version": "1.0.0",
+    "bgColor": "#202020",
+    "splashBackground": "FreeLiveTv_Splash.png"
+}
