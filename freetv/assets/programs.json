@@ -129,13 +129,22 @@
         {
             "id":5,
             "type": "native",
-            "link": "https://secure-playlist.livestream.com/streams/27014129_8167338_lsif8b1ptxd9l7c3gfv_1/media/27014129_8167338_lsif8b1ptxd9l7c3gfv_1@1756000p.m3u8?dw=80&token=1538363992_d9accc2a25bc56339fd80cab62c7de4ff6d4a800&ts=1538190000",
+            "link": "https://s10.limpi.tv/live/40715.m3u8?token=8A_uddI0I2YKdW3U0bwchA&expires=1538269761&ip=24.232.44.113",
             "name": "Tyc Sport",
             "logo": "./assets/img/tyc_sport.png",
             "description":"Esto es una descripcion",
             "category":"sports"
         },
         {
+            "id":1,
+            "type": "native",
+            "link": "https://video-weaver.sao01.hls.ttvnw.net/v1/playlist/CrkER-cCpgvWJDeOncDruEaVznkom3tzjJYdJiqAsc29vV91Dd8L0GKP7TqVCzvMtbLxNVYPq2jzzuMiQ6ggc_Cp3pegEyPmO9clyHwMJNQhzeTBQhyhj0NoWCVhJOtPUxGfE-HBUBYdrbcotnawdqicvdeo2Qn6243H3WOQnD5bOj4BTGAbqKQ0ff3GchRdp_IvyCtBhnHsezQOA-oDZYbCdBY_w59agZkz3_ncOfhgHh0DU-cOMcbbl7zs48_Zdv6RC1s149Jxn2iYozsENvcipDMLNtjGsirQrv8Y0Rjnq0i_UCHlbwMg4V7wY2AUyQWZXekTQ7xhwBP21a0-DMZSbtmg3iUSex_SZRhKHHz5RYfuc5FAo4r5RgLmbQmDC8xHX-n-bg6HqXo2GrC0mrupOn2WehMumRGRv1Po3xVKl-GNHVgRbEPDj4u42PSwDF3mKR4H_WtXK7g_0VWHES5IOB_7Erwvq0a4ONxj4gErzgRhtnGQTc9z1-SjPvbsnDBMmMhzkT6_Y_ERE2FlVUXJb-TZQT5uZioK-ldzBbiQRoFDyZP9m5ULZILlb4kkWxFXnet34VZat9wHZtqk2h9mRvwxzGm9GiHAMt-ivA-KL2Um957AwOcZANxNfVd0FAVeaTx4AXOnnCkToMnxkbO-ltP14tadXqEK1ADw-l09yBceSYSgZWfPnBI38lKz0DaNAdATvGd781RUsn0YcZTqy4E8ayP62G0aNXcgjqln7KCN3wrLkRE2nKMSEONlRYzjThlG4JWN1bbIz0YaDL31czcIlzDZt_cZLg.m3u8",
+            "name": "Fox Sport Premium",
+            "logo": "./assets/img/foxsport.png",
+            "description":"Esto es una descripcion",
+            "category":"sports"
+        },
+          {
             "id":1,
             "type": "native",
             "link": "https://fslahds-lh.akamaihd.net/i/FS1CS_1@77550/index_1_av-p.m3u8?sd=6&set-segment-duration=quality&rebase=on&hdntl=exp=1538278499~acl=%2fi%2f*~data=hdntl~hmac=9fb6004bf33838165820b8f5d9ae4c1c93ddd549ab421fabefd724697f50534c",
@@ -147,7 +156,7 @@
         {
             "id":1,
             "type": "native",
-            "link": "https://fslahds-lh.akamaihd.net/i/FS2SUR_1@77551/index_1_av-p.m3u8?sd=6&set-segment-duration=quality&rebase=on&hdntl=exp=1538278623~acl=%2fi%2f*~data=hdntl~hmac=acb619aaad75d9a13b7e4a85e36b93b2cbb7ab1db838fc4eda51c8114a9ccf79",
+            "link": "https://fslahds-lh.akamaihd.net/i/FS2SUR_1@77551/index_3_av-p.m3u8?sd=6&set-segment-duration=quality&rebase=on&hdntl=exp=1538335116~acl=%2fi%2f*~data=hdntl~hmac=4a183f4602dab5b24378c373ae4ff1b6cec94c1351d1045282f6a027b40b18bb",
             "name": "Fox Sport 2",
             "logo": "./assets/img/foxsport2.png",
             "description":"Esto es una descripcion",
@@ -233,6 +242,24 @@
             "logo": "./assets/img/winsports.png",
             "description":"Esto es una descripcion",
             "category":"sports"
+        },
+         {
+            "id":3,
+            "type": "native",
+            "link": "http://aleman.mine.nu:8000/live/oscar1/oscar1/1384.m3u8",
+            "name": "Cinemax",
+            "logo": "./assets/img/cinemax.png",
+            "description":"Esto es una descripcion",
+            "category":"kids"
+        }
+        {
+            "id":3,
+            "type": "native",
+            "link": "http://aleman.mine.nu:8000/live/oscar1/oscar1/826.m3u8",
+            "name": "CartoonNetwork",
+            "logo": "./assets/img/carton_network.png",
+            "description":"Esto es una descripcion",
+            "category":"kids"
         }
     ]
 }
