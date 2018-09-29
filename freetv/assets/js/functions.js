@@ -11,7 +11,7 @@
  //onmouseover='mouseOver(this);' onmouseout='mouseOut(this);'
 
  var totalPragrams=0;
- $.getJSON("assets/programs.json", function(json) {
+ $.getJSON("https://camu891.github.io/FreeLiveTV_webOS/freetv/assets/programs.json", function(json) {
  	$.each(json.programs, function(i) {
  		
  		var link = "src="+json.programs[i].link + "&";
