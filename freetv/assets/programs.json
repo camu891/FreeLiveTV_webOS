@@ -256,8 +256,8 @@
             "id":3,
             "type": "native",
             "link": "http://aleman.mine.nu:8000/live/oscar1/oscar1/826.m3u8",
-            "name": "CartoonNetwork",
-            "logo": "./assets/img/carton_network.png",
+            "name": "Cartoon Network",
+            "logo": "./assets/img/cartoon_network.png",
             "description":"No hay descripción",
             "category":"kids"
         }
