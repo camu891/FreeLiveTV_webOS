@@ -3,8 +3,8 @@
         {
             "id":1,
             "type": "native",
-            "link": "http://g4.proy-slo.transport.edge-access.net/b09/ngrp:el12_live01-100083_all/chunklist_b1596000.m3u8?sense=true",
-            "name": "El 12 TV",
+            "link": "https://g1.proy-slo.transport.edge-access.net/b12/ngrp:el12_live01-100083_all/el12_live01-100083_720p.m3u8",
+            "name": "El doce",
             "logo": "./assets/img/12tv.png",
             "description":"No hay descripción",
             "category":"news"
