@@ -140,7 +140,7 @@
             "type": "native",
             "link": "https://video-weaver.sao01.hls.ttvnw.net/v1/playlist/CrkER-cCpgvWJDeOncDruEaVznkom3tzjJYdJiqAsc29vV91Dd8L0GKP7TqVCzvMtbLxNVYPq2jzzuMiQ6ggc_Cp3pegEyPmO9clyHwMJNQhzeTBQhyhj0NoWCVhJOtPUxGfE-HBUBYdrbcotnawdqicvdeo2Qn6243H3WOQnD5bOj4BTGAbqKQ0ff3GchRdp_IvyCtBhnHsezQOA-oDZYbCdBY_w59agZkz3_ncOfhgHh0DU-cOMcbbl7zs48_Zdv6RC1s149Jxn2iYozsENvcipDMLNtjGsirQrv8Y0Rjnq0i_UCHlbwMg4V7wY2AUyQWZXekTQ7xhwBP21a0-DMZSbtmg3iUSex_SZRhKHHz5RYfuc5FAo4r5RgLmbQmDC8xHX-n-bg6HqXo2GrC0mrupOn2WehMumRGRv1Po3xVKl-GNHVgRbEPDj4u42PSwDF3mKR4H_WtXK7g_0VWHES5IOB_7Erwvq0a4ONxj4gErzgRhtnGQTc9z1-SjPvbsnDBMmMhzkT6_Y_ERE2FlVUXJb-TZQT5uZioK-ldzBbiQRoFDyZP9m5ULZILlb4kkWxFXnet34VZat9wHZtqk2h9mRvwxzGm9GiHAMt-ivA-KL2Um957AwOcZANxNfVd0FAVeaTx4AXOnnCkToMnxkbO-ltP14tadXqEK1ADw-l09yBceSYSgZWfPnBI38lKz0DaNAdATvGd781RUsn0YcZTqy4E8ayP62G0aNXcgjqln7KCN3wrLkRE2nKMSEONlRYzjThlG4JWN1bbIz0YaDL31czcIlzDZt_cZLg.m3u8",
             "name": "Fox Sport Premium",
-            "logo": "./assets/img/foxsport.png",
+            "logo": "./assets/img/foxsport_premium.png",
             "description":"No hay descripción",
             "category":"sports"
         },

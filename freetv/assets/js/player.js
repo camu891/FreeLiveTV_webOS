@@ -15,7 +15,6 @@
    addChannelInfo();
  }
  
-
  function addChannelInfo(){
   $(".channel-info").append("<h2>"+title+"</h2><p>"+description+"</p>");
   $(".container").click(function() {
