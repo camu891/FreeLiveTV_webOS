@@ -245,6 +245,11 @@ a.program-link span {
 	height: 70px;
 }
 
+.back:hover {
+	background: red;
+	transform: scale(1.2);
+}
+
 .ytplayer {
 	pointer-events: none;
 	position: absolute;

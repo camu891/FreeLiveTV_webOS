@@ -70,7 +70,7 @@ function createIframeYoutube(container){
 
 function createNativeVideo(container){
   var video = document.createElement('video');
-  video.poster = "assets/loading/loader.png";
+  video.poster = "assets/loading/loader.gif";
   video.autoplay = true;
   video.setAttribute('controls', '');
   container.appendChild(video);
