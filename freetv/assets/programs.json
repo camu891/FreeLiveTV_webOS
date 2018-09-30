@@ -129,7 +129,7 @@
         {
             "id":3,
             "type": "native",
-            "link": "https://latam5-lh.akamaihd.net/i/TSP_ARG@198922/index_720_av-b.m3u8?sd=6&set-akamai-hls-revision=4&set-segment-duration=quality&rebase=on&id=AgAY6CxxyCohNU7yrlv6FkSdmIZ4SF%2fqGflToEkBenVsCfj8cMWNG14GN50Q0VbKSuxuBnKWJ8B4yg%3d%3d&hdntl=exp=1538278350~acl=%2f*~data=hdntl~hmac=6f51c6f5a147657f463eeed53cbe1cb20956a3d7d5e84607976465e96e129f83",
+            "link": "https://latam5-lh.akamaihd.net/i/TSP_ARG@198922/index_720_av-b.m3u8?sd=6&set-akamai-hls-revision=4&set-segment-duration=quality&rebase=on&id=AgAY6CxxyCohNRMgsVteQuOXcFGZScfaEK4Xe%2fR9T5AATLAYeeHaiNFo6STFTrnnHUatfRcIQ0A+KA%3d%3d&hdntl=exp=1538421139~acl=%2f*~data=hdntl~hmac=192c5ad58517280b8388b7284d0b700fd55ef581ca24870960614c9128bc13d0",
             "name": "TNT SPORT",
             "logo": "./assets/img/tntsports.png",
             "description":"No hay descripción",
@@ -138,7 +138,7 @@
         {
             "id":5,
             "type": "native",
-            "link": "https://s10.limpi.tv/live/40715.m3u8?token=8A_uddI0I2YKdW3U0bwchA&expires=1538269761&ip=24.232.44.113",
+            "link": "http://sv1.futbollibre.net/m3u8/tyc2.m3u8",
             "name": "Tyc Sport",
             "logo": "./assets/img/tyc_sport.png",
             "description":"No hay descripción",
@@ -270,6 +270,25 @@
             "logo": "./assets/img/cartoon_network.png",
             "description":"No hay descripción",
             "category":"kids"
+        },
+        {
+            "id":3,
+            "type": "native",
+            "link": "https://colivechannelshls.clarovideo.com/Content/hls_fk/Live/Channel(TNT_HD)/index.m3u8",
+            "name": "TNT",
+            "logo": "./assets/img/tnt.png",
+            "description":"No hay descripción",
+            "category":"Cine"
+        },
+         {
+            "id":3,
+            "type": "native",
+            "link": "https://colivechannelshls.clarovideo.com/Content/hls_fk/Live/Channel(FOX_HD)/Stream(05)/index.m3u8",
+            "name": "FOX",
+            "logo": "./assets/img/fox.png",
+            "description":"No hay descripción",
+            "category":"Cine"
         }
+        
     ]
 }
