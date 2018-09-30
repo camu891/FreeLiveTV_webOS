@@ -36,11 +36,6 @@ function goBack() {
   window.history.back();
 }
 
-function resizeIframe(obj) {
-  obj.style.height = 0;
-  obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-}
-
 function addSourceToVideo(element, src, type) {
  var source = document.createElement('source');
  source.src = src;
@@ -64,16 +59,22 @@ function createIframeYoutube(container){
       $('iframe').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
     });
   });
-
-
 }
 
 function createNativeVideo(container){
+
+  var loader = $(".content-loader");
+  loader.show();
+
   var video = document.createElement('video');
-  video.poster = "assets/loading/loader.gif";
+  video.poster = "assets/loading/poster.jpg";
   video.autoplay = true;
-  video.setAttribute('controls', '');
+  video.oncanplay = function(){
+    loader.hide();
+  }
+
   container.appendChild(video);
+
   addSourceToVideo(video, src, 'application/x-mpegURL');
 }
 
@@ -88,12 +89,6 @@ window.addEventListener('DOMContentLoaded', function() {
 
 }, true);
 
- //for controls hidden
- //For Firefox we have to handle it in JavaScript 
- var vids = $("video"); 
- $.each(vids, function(){
-   this.controls = false; 
- }); 
 
 
 

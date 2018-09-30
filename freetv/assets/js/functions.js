@@ -11,22 +11,29 @@
  //onmouseover='mouseOver(this);' onmouseout='mouseOut(this);'
 
  var totalPragrams=0;
- $.getJSON("https://camu891.github.io/FreeLiveTV_webOS/freetv/assets/programs.json", function(json) {
- 	$.each(json.programs, function(i) {
- 		
- 		var link = "src="+json.programs[i].link + "&";
- 		var typeVideo = "type="+json.programs[i].type+"&";
- 		var title = "title="+json.programs[i].name+"&";
- 		var description = "description="+json.programs[i].description+"&";
- 		var params="?"+ link + typeVideo + title + description;
- 		$(".programs-container")
- 		.append("<div tabindex='"+(i+1)+"' class='col-md-4 content-box'><a id='link' class='program-link' name='"
- 			+json.programs[i].name+"' href='player.html"+params+"'><img class='programs-logo' src='"
- 			+json.programs[i].logo+"'><span>"+json.programs[i].name+"</span></a></div>");
- 		totalPragrams++;
+ $(document).ready(function(){
+ 	var loader = $(".content-loader");
+ 	loader.show();
+ 	$.ajax({
+ 		url: "https://camu891.github.io/FreeLiveTV_webOS/freetv/assets/programs.json",
+ 		dataType: "json"
+ 	}).done(function(json) {
+ 		loader.hide();
+ 		$.each(json.programs, function(i) {
+ 			var link = "src="+json.programs[i].link + "&";
+ 			var typeVideo = "type="+json.programs[i].type+"&";
+ 			var title = "title="+json.programs[i].name+"&";
+ 			var description = "description="+json.programs[i].description+"&";
+ 			var params="?"+ link + typeVideo + title + description;
+ 			$(".programs-container")
+ 			.append("<div tabindex='"+(i+1)+"' class='col-md-4 content-box'><a id='link' class='program-link' name='"
+ 				+json.programs[i].name+"' href='player.html"+params+"'><img class='programs-logo' src='"
+ 				+json.programs[i].logo+"'><span>"+json.programs[i].name+"</span></a></div>");
+ 			totalPragrams++;
+ 		});
  	});
- });
 
+ });
 
  var tabindex=0;
  document.addEventListener("keydown", function(inEvent){
@@ -35,26 +42,40 @@
  	switch(inEvent.keyCode){
 	case 37://left
 	tabindex--;
+	$('.programs-container > .content-box:focus').prevAll('.content-box').not(".hide").first().focus();
 	break;
 	case 38://top
 	tabindex = (tabindex >= itemsPerRow) ? tabindex-itemsPerRow : tabindex;
+	$('.programs-container > .content-box:focus').prevAll('.content-box[tabindex=' + tabindex + ']').not(".hide").first().focus();
 	break;
 	case 39://right
-	tabindex++;
+	if(tabindex==0){
+		tabindex=1;
+		$('.content-box').not(".hide").first().focus();
+	}else{
+		tabindex++;
+		$('.programs-container > .content-box:focus').nextAll('.content-box').not(".hide").first().focus();
+	}
 	break;
 	case 40://down
 	if(tabindex==0){
 		tabindex=1;
+		$('.content-box').not(".hide").first().focus();
 	}else{
 		tabindex = (tabindex <= (totalPragrams-itemsPerRow)) ? tabindex+itemsPerRow : tabindex;
+		$('.programs-container > .content-box:focus').nextAll('.content-box[tabindex=' + tabindex + ']').not(".hide").first().focus();
 	}
 	break;
-	case 13:
-	//enter
-	window.location = $('[tabindex=' + tabindex + ']>a').attr('href');
+	case 13://enter
+	window.location = $('.programs-container > .content-box:focus > a').attr('href');
 	break;
-	default:  break
+	default:  break;
 }
-$('[tabindex=' + tabindex + ']').focus();
 });
+
+ $(document).ready(function(){
+ 	$("#search").on("click",function(){
+ 		tabindex=0;
+ 	});
+ });
 

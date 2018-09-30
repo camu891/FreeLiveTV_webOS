@@ -7,7 +7,7 @@
             "name": "El doce",
             "logo": "./assets/img/12tv.png",
             "description":"No hay descripción",
-            "category":"news"
+            "category":"Noticias"
         },
         {
             "id":2,
@@ -16,7 +16,7 @@
             "name": "El Trece TV",
             "logo": "./assets/img/eltrece.png",
             "description":"No hay descripción",
-            "category":"news"
+            "category":"Noticias"
         },
         {
             "id":3,
@@ -25,7 +25,7 @@
             "name": "Telefe",
             "logo": "./assets/img/telefe.png",
             "description":"No hay descripción",
-            "category":"news"
+            "category":"Noticias"
         },
         {
             "id":3,
@@ -34,7 +34,7 @@
             "name": "Telefe Noticias",
             "logo": "./assets/img/telefe_noticias.png",
             "description":"No hay descripción",
-            "category":"news"
+            "category":"Noticias"
         },
         {
             "id":4,
@@ -43,7 +43,7 @@
             "name": "Teleocho",
             "logo": "./assets/img/teleocho.png",
             "description":"No hay descripción",
-            "category":"news"
+            "category":"Noticias"
         },
         {
             "id":4,
@@ -52,7 +52,7 @@
             "name": "TV Pública",
             "logo": "./assets/img/tvpublica.png",
             "description":"No hay descripción",
-            "category":"news"
+            "category":"Noticias"
         },
         {
             "id":5,
@@ -61,7 +61,7 @@
             "name": "Canal 10",
             "logo": "./assets/img/canal10.png",
             "description":"No hay descripción",
-            "category":"news"
+            "category":"Noticias"
         },
         {
             "id":5,
@@ -70,7 +70,7 @@
             "name": "El nueve",
             "logo": "./assets/img/canal9.png",
             "description":"No hay descripción",
-            "category":"news"
+            "category":"Noticias"
         },
         {
             "id":5,
@@ -79,7 +79,7 @@
             "name": "TN Noticias",
             "logo": "./assets/img/tn.png",
             "description":"No hay descripción",
-            "category":"news"
+            "category":"Noticias"
         },
         {
             "id":5,
@@ -88,7 +88,7 @@
             "name": "Cronica TV",
             "logo": "./assets/img/cronica.png",
             "description":"No hay descripción",
-            "category":"news"
+            "category":"Noticias"
         },
         {
             "id":5,
@@ -97,7 +97,7 @@
             "name": "Canal 26",
             "logo": "./assets/img/canal26.png",
             "description":"No hay descripción",
-            "category":"news"
+            "category":"Noticias"
         },
         {
             "id":5,
@@ -106,7 +106,7 @@
             "name": "C5N",
             "logo": "./assets/img/c5n.png",
             "description":"No hay descripción",
-            "category":"news"
+            "category":"Noticias"
         },
         {
             "id":5,
@@ -115,7 +115,7 @@
             "name": "13 Max Noticias",
             "logo": "./assets/img/13maxtv.png",
             "description":"No hay descripción",
-            "category":"news"
+            "category":"Noticias"
         },
         {
             "id":3,
@@ -124,7 +124,7 @@
             "name": "TNT SPORT",
             "logo": "./assets/img/tntsports.png",
             "description":"No hay descripción",
-            "category":"sports"
+            "category":"Deportes"
         }, 
         {
             "id":5,
@@ -133,7 +133,7 @@
             "name": "Tyc Sport",
             "logo": "./assets/img/tyc_sport.png",
             "description":"No hay descripción",
-            "category":"sports"
+            "category":"Deportes"
         },
         {
             "id":1,
@@ -142,7 +142,7 @@
             "name": "Fox Sport Premium",
             "logo": "./assets/img/foxsport_premium.png",
             "description":"No hay descripción",
-            "category":"sports"
+            "category":"Deportes"
         },
         {
             "id":1,
@@ -151,7 +151,7 @@
             "name": "Fox Sport",
             "logo": "./assets/img/foxsport.png",
             "description":"No hay descripción",
-            "category":"sports"
+            "category":"Deportes"
         },
         {
             "id":1,
@@ -160,7 +160,7 @@
             "name": "Fox Sport 2",
             "logo": "./assets/img/foxsport2.png",
             "description":"No hay descripción",
-            "category":"sports"
+            "category":"Deportes"
         },
         {
             "id":1,
@@ -169,7 +169,7 @@
             "name": "Fox Sport 3",
             "logo": "./assets/img/foxsport3.png",
             "description":"No hay descripción",
-            "category":"sports"
+            "category":"Deportes"
         },
         {
             "id":2,
@@ -178,7 +178,7 @@
             "name": "Deportv",
             "logo": "./assets/img/dxtv.png",
             "description":"No hay descripción",
-            "category":"sports"
+            "category":"Deportes"
         },
         {
             "id":3,
@@ -187,7 +187,7 @@
             "name": "ESPN",
             "logo": "./assets/img/espn.png",
             "description":"No hay descripción",
-            "category":"sports"
+            "category":"Deportes"
         },
         {
             "id":3,
@@ -196,7 +196,7 @@
             "name": "ESPN 2",
             "logo": "./assets/img/espn2.png",
             "description":"No hay descripción",
-            "category":"sports"
+            "category":"Deportes"
         },
         {
             "id":3,
@@ -205,7 +205,7 @@
             "name": "ESPN 3",
             "logo": "./assets/img/espn3.png",
             "description":"No hay descripción",
-            "category":"sports"
+            "category":"Deportes"
         },
         {
             "id":3,
@@ -214,7 +214,7 @@
             "name": "DIRECT TV",
             "logo": "./assets/img/directv.png",
             "description":"No hay descripción",
-            "category":"sports"
+            "category":"Deportes"
         },
         {
             "id":3,
@@ -241,7 +241,7 @@
             "name": "Win Sports",
             "logo": "./assets/img/winsports.png",
             "description":"No hay descripción",
-            "category":"sports"
+            "category":"Deportes"
         },
         {
             "id":3,
@@ -250,7 +250,7 @@
             "name": "Cinemax",
             "logo": "./assets/img/cinemax.png",
             "description":"No hay descripción",
-            "category":"kids"
+            "category":"Cine"
         },
         {
             "id":3,
