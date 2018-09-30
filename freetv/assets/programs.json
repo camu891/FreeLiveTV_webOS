@@ -220,7 +220,7 @@
         {
             "id":3,
             "type": "native",
-            "link": "https://s10.limpi.tv/live/40710.m3u8",
+            "link": "https://s10.limpi.tv/live/40710.m3u8?token=LfiWkTX36QrfGan6t0hOxw&expires=1538358299&ip=24.232.44.113",
             "name": "DIRECT TV",
             "logo": "./assets/img/directv.png",
             "description":"No hay descripción",
@@ -274,21 +274,29 @@
         {
             "id":3,
             "type": "native",
-            "link": "https://colivechannelshls.clarovideo.com/Content/hls_fk/Live/Channel(TNT_HD)/index.m3u8",
+            "link": "https://s10.limpi.tv/live/40815.m3u8?token=Wd1gXKiSzHjrskAGM-3y6Q&expires=1538358549&ip=24.232.44.113",
             "name": "TNT",
             "logo": "./assets/img/tnt.png",
             "description":"No hay descripción",
             "category":"Cine"
         },
-         {
+        {
             "id":3,
             "type": "native",
-            "link": "https://colivechannelshls.clarovideo.com/Content/hls_fk/Live/Channel(FOX_HD)/Stream(05)/index.m3u8",
+            "link": "https://s10.limpi.tv/live/40845.m3u8?token=gqkNWk_ZbC9BUbxeTOH1BQ&expires=1538358653&ip=24.232.44.113",
             "name": "FOX",
             "logo": "./assets/img/fox.png",
             "description":"No hay descripción",
             "category":"Cine"
+        },
+        {
+            "id":3,
+            "type": "native",
+            "link": " https://s10.limpi.tv/live/40824.m3u8?token=7Ks-ZWsWEkXxo-9714xfxA&expires=1538358377&ip=24.232.44.113",
+            "name": "Space",
+            "logo": "./assets/img/space.png",
+            "description":"No hay descripción",
+            "category":"Cine"
         }
-        
     ]
 }
