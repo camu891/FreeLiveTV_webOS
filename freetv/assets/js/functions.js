@@ -1,15 +1,5 @@
  var $ = jQuery.noConflict();
 
- /*var info = $("div.info");
- function mouseOver(elem) {
- 	info.fadeIn(100);
- }
-
- function mouseOut(elem) {
- 	info.fadeOut(100);
- }*/
- //onmouseover='mouseOver(this);' onmouseout='mouseOut(this);'
-
  var totalPragrams=0;
  $(document).ready(function(){
  	var loader = $(".content-loader");
@@ -25,8 +15,9 @@
  			var title = "title="+json.programs[i].name+"&";
  			var description = "description="+json.programs[i].description+"&";
  			var params="?"+ link + typeVideo + title + description;
+
  			$(".programs-container")
- 			.append("<div tabindex='"+(i+1)+"' class='col-md-4 content-box'><a id='link' class='program-link' name='"
+ 			.append("<div onmouseover=\"mouseOver(this,'"+json.programs[i].type+"','"+json.programs[i].link+"');\" onmouseout='mouseOut(this);' tabindex='"+(i+1)+"' class='col-md-4 content-box'><a id='link' class='program-link' name='"
  				+json.programs[i].name+"' href='player.html"+params+"'><img class='programs-logo' src='"
  				+json.programs[i].logo+"'><span>"+json.programs[i].name+"</span></a></div>");
  			totalPragrams++;
@@ -78,4 +69,49 @@
  		tabindex=0;
  	});
  });
+
+ function mouseOut(elem) {
+ 	$(".preview").empty();
+ 	$(".preview").hide();
+ }
+
+ function mouseOver(elem,typeVideo,link) {
+ 	var container = $(".preview");
+ 	container.empty()
+ 	container.fadeIn();
+ 	if(typeVideo==="native"){
+ 		createNativeVideo(container,link);
+ 	}else if(typeVideo==="youtube"){
+ 		createIframeYoutube(container,link);
+ 	}
+ }
+
+ function addSourceToVideo(element, src, type) {
+ 	var source = document.createElement('source');
+ 	source.src = src;
+ 	source.type = type;
+ 	element.appendChild(source);
+ }
+
+ function createIframeYoutube(container,src){
+ 	var iframe = document.createElement('iframe');
+ 	iframe.src = src;
+ 	iframe.setAttribute('class','ytplayer');
+ 	iframe.setAttribute('frameborder', '0');
+ 	iframe.setAttribute('allow' ,'autoplay; encrypted-media');
+ 	iframe.setAttribute('allowFullScreen', '');
+ 	iframe.width = "200px";
+ 	iframe.height = "113px";
+ 	container.append(iframe);
+ }
+
+ function createNativeVideo(container,src){
+ 	var video = document.createElement('video');
+ 	video.poster = "./assets/loading/loader-xs.gif";
+ 	video.autoplay = true;
+ 	container.append(video);
+ 	addSourceToVideo(video, src, 'application/x-mpegURL');
+ }
+
+
 

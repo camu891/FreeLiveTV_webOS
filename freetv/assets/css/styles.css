@@ -39,6 +39,9 @@ footer span {
 	margin: 0;
 	z-index: 1;
 	padding: 5px 16px;
+	-webkit-box-shadow: 0px 9px 24px -1px rgba(0,0,0,0.75); 
+	-moz-box-shadow: 0px 9px 24px -1px rgba(0,0,0,0.75);
+	box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.75); 
 }
 
 .header span {
@@ -51,6 +54,11 @@ footer span {
 	font-size: 2em;
 	margin-left: 10px;
 	text-transform: uppercase;
+}
+
+.icon-app{
+	height: auto;
+	margin-left: 20px;
 }
 
 .content-loader {
@@ -79,7 +87,7 @@ footer span {
 	100% { transform: rotate(360deg); }
 }
 .programs-container {
-	top:100px;
+	top:105px;
 	position: relative;
 }
 
@@ -301,6 +309,25 @@ video::-webkit-media-controls-timeline {}
 
 video::-webkit-media-controls-current-time-display {}
 
+.preview {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	z-index: 3;
+	height: auto;
+	-webkit-box-shadow: -4px 2px 29px 13px rgba(0,0,0,0.54);
+	-moz-box-shadow: -4px 2px 29px 13px rgba(0,0,0,0.54);
+	box-shadow: -4px 2px 29px 13px rgba(0,0,0,0.54);
+	border: 2px solid white;
+	background: #202020;
+} 
 
+.preview .ytplayer {
+	position: relative;
+}
+
+.preview video {
+	width: 200px;
+}
 
 
