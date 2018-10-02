@@ -76,13 +76,15 @@
  }
 
  function mouseOver(elem,typeVideo,link) {
- 	var container = $(".preview");
- 	container.empty()
- 	container.fadeIn();
- 	if(typeVideo==="native"){
- 		createNativeVideo(container,link);
- 	}else if(typeVideo==="youtube"){
- 		createIframeYoutube(container,link);
+ 	if (getSettings("isPreviewEnable")=="true") {
+ 		var container = $(".preview");
+ 		container.empty()
+ 		container.fadeIn();
+ 		if(typeVideo==="native"){
+ 			createNativeVideo(container,link);
+ 		}else if(typeVideo==="youtube"){
+ 			createIframeYoutube(container,link);
+ 		}
  	}
  }
 
@@ -112,6 +114,41 @@
  	container.append(video);
  	addSourceToVideo(video, src, 'application/x-mpegURL');
  }
+
+
+
+ $(document).ready(function(){
+
+ 	$("#setting-preview").prop('checked', getSettings("isPreviewEnable"));
+ 	$("#setting-preview").click(function(){
+ 		var isPreviewEnable = false;
+ 		if ($(this).is(':checked')) {
+ 			isPreviewEnable = true;
+ 		}else{
+ 			isPreviewEnable = false;
+ 		}
+ 		saveSettings("isPreviewEnable",isPreviewEnable);
+ 	});
+
+ });
+
+ function getSettings(name){
+ 	if (typeof(Storage) !== "undefined") {
+ 		return localStorage.getItem(name);
+ 	} else {
+ 		return null;
+ 	}
+ }
+
+ function saveSettings(name,value){
+ 	if (typeof(Storage) !== "undefined") {
+ 		localStorage.setItem(name, value);
+ 	} else {
+ 		console.log("Sorry, your browser does not support Web Storage...");
+ 	}
+ }
+
+ 
 
 
 
