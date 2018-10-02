@@ -21,7 +21,7 @@
         {
             "id":3,
             "type": "native",
-            "link": "https://evento6hls-lh.akamaihd.net/i/evento6hls_1@48399/index_2_av-b.m3u8",
+            "link": "https://evento6hls-lh.akamaihd.net/i/evento6hls_1@48399/index_2_av-p.m3u8",
             "name": "Telefe",
             "logo": "./assets/img/telefe.png",
             "description":"No hay descripción",
