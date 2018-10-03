@@ -1,5 +1,5 @@
 html {
-  min-height: 100%;
+	min-height: 100%;
 }
 
 body { 
@@ -248,23 +248,27 @@ a.program-link span {
 
 .row {
 	text-align: center;
-    padding-top: 100px;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom: 50px;
-    overflow-y: scroll;
+	padding-top: 100px;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 50px;
+	overflow-y: scroll;
 }
 
 .card {
 	width: 10%;
-	height: 210px;
 	padding: 10px;
 	float:left;
 	background: white;
 	margin: 10px;
 	border-radius: 4px;
+}
+
+.card .inner
+{
+	max-width: 200px;
 }
 
 .info {
@@ -497,7 +501,7 @@ input:checked + .slider:before {
 }
 
 ::-webkit-scrollbar { 
-    display: none; 
+	display: none; 
 }
 
 
