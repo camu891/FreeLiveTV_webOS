@@ -248,13 +248,27 @@ a.program-link span {
 
 .row {
 	text-align: center;
-	padding-top: 100px;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	margin-right: 10px;
-	margin-left: 10px;
+	margin-right: auto;
+	margin-left: auto;
 	margin-bottom: 50px;
 	overflow-y: scroll;
+	padding: 0;
+	margin: 0;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.row:after{
+	content: "";
+	flex: auto;
 }
 
 .card {
@@ -266,10 +280,16 @@ a.program-link span {
 	border-radius: 4px;
 }
 
-.card .inner
-{
+.card .inner{
 	max-width: 200px;
 }
+
+.parent-program{
+	padding: 5px 10px;
+	margin-top: 90px;
+	margin-bottom: 50px;
+}
+
 
 .info {
 	background: red;
@@ -419,6 +439,7 @@ video::-webkit-media-controls-timeline {}
 video::-webkit-media-controls-current-time-display {}
 
 .preview {
+	display: none;
 	position: fixed;
 	right: 10px;
 	bottom: 10px;
