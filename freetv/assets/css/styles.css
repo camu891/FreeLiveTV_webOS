@@ -8,6 +8,7 @@ body {
 	background-color: #202020;
 	overflow-y: scroll;
 	overflow-x: hidden;
+	margin: 0;
 	/*min-height: 100vh;*/
 }
 
@@ -239,27 +240,21 @@ a.program-link span {
 .programs-logo {
 	width: 100%;
 	height: 170px;
-
 	-webkit-animation-duration: 2s;
 	animation-duration: 2s;
-	-webkit-animation-name: myMove;
-	animation-name: myMove;
-
 	text-align: center;
 }
 
-@-webkit-keyframes myMove { /* styles */ }
-@keyframes myMove { /* styles */ }
 
 .row {
-	padding-top: 100px;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	margin-right: 0;
-	margin-left: 35px;
-	height: 950px;
-	min-height: 90%;
-	overflow-y: scroll
+	text-align: center;
+    padding-top: 100px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    overflow-y: scroll;
 }
 
 .col-md-4 {
