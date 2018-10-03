@@ -239,7 +239,7 @@ a.program-link span {
 
 .programs-logo {
 	width: 100%;
-	height: 170px;
+	height: auto;
 	-webkit-animation-duration: 2s;
 	animation-duration: 2s;
 	text-align: center;
@@ -257,7 +257,7 @@ a.program-link span {
     overflow-y: scroll;
 }
 
-.col-md-4 {
+.card {
 	width: 10%;
 	height: 210px;
 	padding: 10px;

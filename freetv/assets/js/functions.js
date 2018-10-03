@@ -17,9 +17,9 @@
  			var params="?"+ link + typeVideo + title + description;
 
  			$(".programs-container")
- 			.append("<div onmouseover=\"mouseOver(this,'"+json.programs[i].type+"','"+json.programs[i].link+"');\" onmouseout='mouseOut(this);' tabindex='"+(i+1)+"' class='col-md-4 content-box'><a id='link' class='program-link' name='"
- 				+json.programs[i].name+"' href='player.html"+params+"'><img class='programs-logo' src='"
- 				+json.programs[i].logo+"'><span>"+json.programs[i].name+"</span></a></div>");
+ 			.append("<div><div onmouseover=\"mouseOver(this,'"+json.programs[i].type+"','"+json.programs[i].link+"');\" onmouseout='mouseOut(this);' tabindex='"+(i+1)+"' class='card content-box'><a id='link' class='program-link' name='"
+ 				+json.programs[i].name+"' href='player.html"+params+"'><div><img class='programs-logo' src='"
+ 				+json.programs[i].logo+"'><span>"+json.programs[i].name+"</span></div></a></div></div>");
  			totalPragrams++;
  		});
  	});
