@@ -266,13 +266,8 @@ a.program-link span {
 	justify-content: space-between;
 }
 
-.row:after{
-	content: "";
-	flex: auto;
-}
-
 .card {
-	width: 10%;
+	width: auto;
 	padding: 10px;
 	float:left;
 	background: white;
