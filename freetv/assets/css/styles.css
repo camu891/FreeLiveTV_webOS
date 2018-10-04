@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('./font/Roboto-Regular.ttf') @ttf;
+}
+
 html {
 	min-height: 100%;
 }
@@ -8,6 +13,7 @@ body {
 	background-color: #202020;
 	overflow: hidden;
 	margin: 0;
+	font-family: 'Roboto',arial,sans-serif;
 }
 
 h1 {
