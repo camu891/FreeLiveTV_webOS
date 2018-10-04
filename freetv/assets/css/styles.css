@@ -262,7 +262,7 @@ a.program-link span {
 	display: flex;
 	align-items: center;
 	flex-flow: row wrap;
-	justify-content: center;
+	justify-content: flex-start;
 }
 
 .card {
@@ -275,7 +275,7 @@ a.program-link span {
 }
 
 .card .inner{
-	max-width: 120px;
+	max-width: 150px;
 }
 
 .parent-program{
