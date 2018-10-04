@@ -175,7 +175,7 @@
         {
             "id":1,
             "type": "native",
-            "link": "https://fslahds-lh.akamaihd.net/i/FS3CONOSUR_1@519265/index_6_av-p.m3u8?sd=6&set-segment-duration=quality&rebase=on&hdntl=exp=1538278930~acl=%2fi%2f*~data=hdntl~hmac=bd452edacb33c69c6249643d574be75dc1b3af22ef1c110830a5bbcfa9d99235",
+            "link": "https://fslahds-lh.akamaihd.net/i/FS3CN_1@77555/index_1_av-b.m3u8?sd=6&set-segment-duration=quality&rebase=on&hdntl=exp=1538776298~acl=%2fi%2f*~data=hdntl~hmac=f2b04c009b0bdeeb94f5829dcbb7dcd085de673a6c9ca7251c2bc11980d16698",
             "name": "Fox Sport 3",
             "logo": "./assets/img/foxsport3.png",
             "description":"No hay descripción",
@@ -194,7 +194,7 @@
             "id":3,
             "type": "native",
             "link": "http://linearhlsls2-i.akamaihd.net/hls/live/463004/n53/4500.m3u8",
-            "name": "ESPN",
+            "name": "ESPN HD",
             "logo": "./assets/img/espn.png",
             "description":"No hay descripción",
             "category":"Deportes"
@@ -211,9 +211,18 @@
         {
             "id":3,
             "type": "native",
-            "link": "http://linearhlsls2-i.akamaihd.net/hls/live/463004/n417/4500.m3u8",
+            "link": "https://s10.limpi.tv/live/40723.m3u8?token=26Pv4EExbDojd4jBHjA9aw&expires2=U2FsdGVkX18xqmHVCfD1jgTRLH2Wc3I4OV9Ytf65cfc%3D&expires=1538711711&ip=24.232.44.113",
             "name": "ESPN 3",
             "logo": "./assets/img/espn3.png",
+            "description":"No hay descripción",
+            "category":"Deportes"
+        },
+         {
+            "id":3,
+            "type": "native",
+            "link": "https://s10.limpi.tv/live/40710.m3u8?token=YP3OheM9i1GCsyMO7BqBGg&expires2=U2FsdGVkX18dljdFWBxTW1RMo723g1KLxKqVgzhqRHg%3D&expires=1538711794&ip=24.232.44.113",
+            "name": "ESPN +",
+            "logo": "./assets/img/espn.png",
             "description":"No hay descripción",
             "category":"Deportes"
         },
@@ -297,6 +306,17 @@
             "logo": "./assets/img/space.png",
             "description":"No hay descripción",
             "category":"Cine"
+        },
+        {
+            "id":3,
+            "type": "youtube",
+            "link": "https://player.limpi.tv/embed/U2FsdGVkX19SkvlI42fCSGg4db%2BxTp2%2Fcyo7rrvyYEg%3D/41565",
+            "name": "PRUEBA LIMPI TV",
+            "logo": "./assets/img/nada.png",
+            "description":"No hay descripción",
+            "category":"Cine"
         }
+
+        
     ]
 }
