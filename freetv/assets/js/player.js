@@ -82,7 +82,7 @@ window.addEventListener('DOMContentLoaded', function() {
    createNativeVideo(container);
  }else if(typeVideo==="youtube" || typeVideo==="iframe"){
   createIframe(container);
-  clearPlayer();
+  //clearPlayer();
 }
 
 
@@ -91,7 +91,9 @@ window.addEventListener('DOMContentLoaded', function() {
 
 //remove ads and logs in iframe
 function clearPlayer(){
-
+  var iframelimp= $("iframe").contents().find("iframe").contents();
+  iframelimp.find("#windowads").remove();
+  iframelimp.find(".logo").remove();
 }
 
 

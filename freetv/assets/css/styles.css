@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Roboto';
-  src: url('./font/Roboto-Regular.ttf') @ttf;
+	font-family: 'Roboto';
+	src: url('./font/Roboto-Regular.ttf') @ttf;
 }
 
 html {
@@ -269,12 +269,12 @@ a.program-link span {
 
 
 .row {
-    flex-wrap: wrap;
-    margin-right: auto;
-    margin-top: 100px;
-    margin-left: 50px;
-    margin-bottom: 50px;
-    display: inline-block;
+	flex-wrap: wrap;
+	margin-right: auto;
+	margin-top: 100px;
+	margin-left: 50px;
+	margin-bottom: 50px;
+	display: inline-block;
 }
 
 .card {
@@ -463,6 +463,7 @@ video::-webkit-media-controls-current-time-display {}
 	box-shadow: -4px 2px 29px 13px rgba(0,0,0,0.54);
 	border: 2px solid white;
 	background: #202020;
+	animation: fadeIn 2s;
 } 
 
 .preview .ytplayer {
