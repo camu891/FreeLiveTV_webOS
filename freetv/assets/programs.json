@@ -128,8 +128,8 @@
         }, 
         {
             "id":3,
-            "type": "native",
-            "link": "https://latam5-lh.akamaihd.net/i/TSP_ARG@198922/index_720_av-b.m3u8?sd=6&set-akamai-hls-revision=4&set-segment-duration=quality&rebase=on&id=AgAY6CxxyCohRvXTsluNgKYtH%2f4bJqYpbKejUVLOghu2EBq4li6kBhhA8NrmUJXXyPurqVqIA7d78Q%3d%3d&hdntl=exp=1538532725~acl=%2f*~data=hdntl~hmac=1b16ec2657b9c5ed632b2abd438ad2d1fa40968597c4a72cbb3602b22f3a7817",
+            "type": "iframe",
+            "link": "http://player.latino-webtv.com/channels/tntsports.html",
             "name": "TNT SPORT",
             "logo": "./assets/img/tntsports.png",
             "description":"No hay descripción",
@@ -157,7 +157,7 @@
         {
             "id":1,
             "type": "native",
-            "link": "https://fslahds-lh.akamaihd.net/i/FS1CS_1@77550/index_1_av-p.m3u8?sd=6&set-segment-duration=quality&rebase=on&hdntl=exp=1538278499~acl=%2fi%2f*~data=hdntl~hmac=9fb6004bf33838165820b8f5d9ae4c1c93ddd549ab421fabefd724697f50534c",
+            "link": "https://playback.akamaized.net/streams/23200525_8387437_lsi1zg2dlbh9zlry97o_1/media/23200525_8387437_lsi1zg2dlbh9zlry97o_1@2756000pb.m3u8?dw=80&ts=1538697600&hdnts=exp=1538872158~acl=/streams/23200525_8387437_lsi1zg2dlbh9zlry97o_1/media*~hmac=f35232bcc114e4e964b51c1ff2ae39303a28b49137c57d85680b403d87318cf2",
             "name": "Fox Sport",
             "logo": "./assets/img/foxsport.png",
             "description":"No hay descripción",
@@ -192,8 +192,8 @@
         },
         {
             "id":3,
-            "type": "native",
-            "link": "http://linearhlsls2-i.akamaihd.net/hls/live/463004/n53/4500.m3u8",
+            "type": "iframe",
+            "link": "http://player.latino-webtv.com/channels/espn.html",
             "name": "ESPN HD",
             "logo": "./assets/img/espn.png",
             "description":"No hay descripción",
@@ -217,7 +217,7 @@
             "description":"No hay descripción",
             "category":"Deportes"
         },
-         {
+        {
             "id":3,
             "type": "native",
             "link": "https://s10.limpi.tv/live/40710.m3u8?token=YP3OheM9i1GCsyMO7BqBGg&expires2=U2FsdGVkX18dljdFWBxTW1RMo723g1KLxKqVgzhqRHg%3D&expires=1538711794&ip=24.232.44.113",
@@ -283,15 +283,6 @@
         {
             "id":3,
             "type": "native",
-            "link": "https://s10.limpi.tv/live/40815.m3u8",
-            "name": "TNT",
-            "logo": "./assets/img/tnt.png",
-            "description":"No hay descripción",
-            "category":"Cine"
-        },
-        {
-            "id":3,
-            "type": "native",
             "link": "https://s10.limpi.tv/live/40845.m3u8?token=673s2-PeWTMdySls7F4kNA&expires=1538466949&ip=24.232.44.113",
             "name": "FOX",
             "logo": "./assets/img/fox.png",
@@ -309,14 +300,59 @@
         },
         {
             "id":3,
-            "type": "youtube",
+            "type": "iframe",
             "link": "http://player.latino-webtv.com/channels/cinecanal.html",
-            "name": "PRUEBA LIMPI TV",
-            "logo": "./assets/img/nada.png",
+            "name": "Cinecanal",
+            "logo": "./assets/img/cinecanal.png",
+            "description":"No hay descripción",
+            "category":"Cine"
+        },
+        {
+            "id":3,
+            "type": "iframe",
+            "link": "http://player.latino-webtv.com/channels/tnt.html",
+            "name": "TNT",
+            "logo": "./assets/img/tnt.png",
+            "description":"No hay descripción",
+            "category":"Cine"
+        },
+        {
+            "id":3,
+            "type": "iframe",
+            "link": "http://player.latino-webtv.com/channels/fox.html",
+            "name": "FOX Movies",
+            "logo": "./assets/img/fox_movies.png",
+            "description":"No hay descripción",
+            "category":"Cine"
+        },
+        {
+            "id":3,
+            "type": "iframe",
+            "link": "http://player.latino-webtv.com/channels/disneyxd.html",
+            "name": "Disney XD",
+            "logo": "./assets/img/disneyxd.png",
+            "description":"No hay descripción",
+            "category":"Kids"
+        },
+        {
+            "id":3,
+            "type": "iframe",
+            "link": "http://player.latino-webtv.com/channels/disneychannel.html",
+            "name": "Disney Channel",
+            "logo": "./assets/img/disney_channel.png",
+            "description":"No hay descripción",
+            "category":"Kids"
+        },
+        {
+            "id":3,
+            "type": "iframe",
+            "link": "http://player.latino-webtv.com/channels/hbo.html",
+            "name": "HBO",
+            "logo": "./assets/img/hbo.png",
             "description":"No hay descripción",
             "category":"Cine"
         }
 
-        
+       
     ]
 }

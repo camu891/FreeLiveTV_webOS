@@ -82,8 +82,8 @@
  		container.fadeIn();
  		if(typeVideo==="native"){
  			createNativeVideo(container,link);
- 		}else if(typeVideo==="youtube"){
- 			createIframeYoutube(container,link);
+ 		}else if(typeVideo==="youtube" || typeVideo==="iframe"){
+ 			createIframe(container,link);
  		}
  	}
  }
@@ -95,7 +95,7 @@
  	element.appendChild(source);
  }
 
- function createIframeYoutube(container,src){
+ function createIframe(container,src){
  	var iframe = document.createElement('iframe');
  	iframe.src = src;
  	iframe.setAttribute('class','ytplayer');

@@ -43,7 +43,7 @@ function addSourceToVideo(element, src, type) {
  element.appendChild(source);
 }
 
-function createIframeYoutube(container){
+function createIframe(container){
   var iframe = document.createElement('iframe');
   iframe.src = src;
   iframe.setAttribute('class','ytplayer');
@@ -61,20 +61,17 @@ function createIframeYoutube(container){
   });
 }
 
-function createNativeVideo(container){
 
+function createNativeVideo(container){
   var loader = $(".content-loader");
   loader.show();
-
   var video = document.createElement('video');
   video.poster = "assets/loading/poster.jpg";
   video.autoplay = true;
   video.oncanplay = function(){
     loader.hide();
   }
-
   container.appendChild(video);
-
   addSourceToVideo(video, src, 'application/x-mpegURL');
 }
 
@@ -83,11 +80,19 @@ window.addEventListener('DOMContentLoaded', function() {
  var container = document.getElementById("container");
  if(typeVideo==="native"){
    createNativeVideo(container);
- }else if(typeVideo==="youtube"){
-  createIframeYoutube(container);
+ }else if(typeVideo==="youtube" || typeVideo==="iframe"){
+  createIframe(container);
+  clearPlayer();
 }
 
+
 }, true);
+
+
+//remove ads and logs in iframe
+function clearPlayer(){
+
+}
 
 
 
