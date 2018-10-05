@@ -309,8 +309,9 @@
         },
         {
             "id":3,
-            "type": "iframe",
-            "link": "http://player.latino-webtv.com/channels/tnt.html",
+            "type": "native",
+            "link": "http://live.lcdn.claro.net.co/tnt.m3u8",
+            "link2": "http://player.latino-webtv.com/channels/tnt.html",
             "name": "TNT",
             "logo": "./assets/img/tnt.png",
             "description":"No hay descripción",
@@ -351,7 +352,17 @@
             "logo": "./assets/img/hbo.png",
             "description":"No hay descripción",
             "category":"Cine"
+        },
+        {
+            "id":3,
+            "type": "native",
+            "link": "http://live.lcdn.claro.net.co/FOX_SERIES.m3u8",
+            "name": "Fox Series",
+            "logo": "./assets/img/fox_movies.png",
+            "description":"No hay descripción",
+            "category":"Cine"
         }
+        
 
        
     ]
