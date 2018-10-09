@@ -192,9 +192,9 @@
         },
         {
             "id":3,
-            "type": "iframe",
-            "link": "http://player.latino-webtv.com/channels/espn.html",
-            "name": "ESPN HD",
+            "type": "native",
+            "link": "http://sv1.futbollibre.net/canales/espn.m3u8",
+            "name": "ESPN",
             "logo": "./assets/img/espn.png",
             "description":"No hay descripción",
             "category":"Deportes"
