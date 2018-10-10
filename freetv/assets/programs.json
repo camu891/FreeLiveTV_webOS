@@ -347,7 +347,7 @@
         {
             "id":3,
             "type": "iframe",
-            "link": "http://player.latino-webtv.com/channels/hbo.html",
+            "link": "http://www.fulltvhd.fi/peliculas/hbo.php",
             "name": "HBO",
             "logo": "./assets/img/hbo.png",
             "description":"No hay descripción",
