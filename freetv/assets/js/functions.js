@@ -2,6 +2,24 @@
 
  var totalPragrams=0;
  $(document).ready(function(){
+
+ 	var request = webOS.service.request("luna://com.palm.connectionmanager", {
+ 		method: "getStatus",
+ 		onSuccess: function (inResponse) {
+ 			console.log("Result: " + JSON.stringify(inResponse));
+ 		},
+ 		onFailure: function (inError) {
+ 			console.log("Failed to get network state");
+ 			console.log("[" + inError.errorCode + "]: " + inError.errorText);
+        // To-Do something
+        return;
+    }
+	});
+
+ 	ajax_load_programs();
+ });
+
+ function ajax_load_programs(){
  	var loader = $(".content-loader");
  	loader.show();
  	$.ajax({
@@ -16,21 +34,16 @@
  			var description = "description="+json.programs[i].description+"&";
  			var params="?"+ link + typeVideo + title + description;
 
- 			add_program_to_category(json.programs[i],params,i);
-
- 			/*$(".programs-container")
- 			.append("<div onmouseover=\"mouseOver(this,'"+json.programs[i].type+"','"+json.programs[i].link+"');\" onmouseout='mouseOut(this);' tabindex='"+(i+1)+"' class='card content-box'><a id='link' class='program-link' name='"
- 				+json.programs[i].name+"' href='player.html"+params+"'><div class='inner'><img class='programs-logo' src='"
- 				+json.programs[i].logo+"'><span>"+json.programs[i].name+"</span></div></a></div>");*/
-
-
+ 			addProgramToCategory(json.programs[i],params,i);
  			totalPragrams++;
  		});
+ 	}).fail(function() {
+ 		loader.hide();
+ 		console.log("Fail request programs");
  	});
+ }
 
- });
-
- function add_program_to_category(program,params,index){
+ function addProgramToCategory(program,params,index){
 
  	var category = "#" + program.category;
  	if($(category).length == 0) {
@@ -42,11 +55,11 @@
  	$(category + "  div.programs-container").append(get_program_data(program,params,tabindex));
  }
 
-function get_program_data(program,params,tabindex){
-return "<div onmouseover=\"mouseOver(this,'"+program.type+"','"+program.link+"');\" onmouseout='mouseOut(this);' tabindex='"+(tabindex)+"' class='card content-box'><a id='link' class='program-link' name='"
+ function get_program_data(program,params,tabindex){
+ 	return "<div onmouseover=\"mouseOver(this,'"+program.type+"','"+program.link+"');\" onmouseout='mouseOut(this);' tabindex='"+(tabindex)+"' class='card content-box'><a id='link' class='program-link' name='"
  	+program.name+"' href='player.html"+params+"'><div class='inner'><img class='programs-logo' src='"
  	+program.logo+"'><span>"+program.name+"</span></div></a></div>";
-}
+ }
 
 
  var tabindex=0;
