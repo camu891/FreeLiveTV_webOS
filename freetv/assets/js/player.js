@@ -13,28 +13,24 @@
 
   function load(){
    addChannelInfo();
+   initGoBack();
  }
  
  function addChannelInfo(){
   $(".channel-info").append("<h2>"+title+"</h2><p>"+description+"</p>");
   $(".above").click(function() {
     var header =  $('.channel-header');
-    if (header.is(':hidden')) {
-      header.slideDown('slow').delay(5000).slideUp('slow');
-    }else{
-      header.slideUp('slow');
-    }
+    header.slideToggle();
   }); 
+}
 
-  $(".back").click(function() {
-   goBack();
+function initGoBack(){
+ $(".back").on("click",function(e) {
+   e.preventDefault();
+   window.history.back();
  }); 
-
 }
 
-function goBack() {
-  window.history.back();
-}
 
 function addSourceToVideo(element, src, type) {
  var source = document.createElement('source');

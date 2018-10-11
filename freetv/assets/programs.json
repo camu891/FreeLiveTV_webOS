@@ -242,7 +242,7 @@
             "name": "Cartoon Network",
             "logo": "./assets/img/cartoon_network.png",
             "description":"No hay descripción",
-            "category":"kids"
+            "category":"Infantil"
         },
         {
             "id":3,
@@ -414,7 +414,7 @@
             "name": "PAKAPAKA",
             "logo": "./assets/img/pakapaka.png",
             "description":"No hay descripción",
-            "category":"kids"
+            "category":"Infantil"
         },  
         {
             "id":3,
@@ -423,7 +423,7 @@
             "name": "Disney XD",
             "logo": "./assets/img/disneyxd.png",
             "description":"No hay descripción",
-            "category":"Kids"
+            "category":"Infantil"
         },
         {
             "id":3,
@@ -432,7 +432,7 @@
             "name": "Disney Channel",
             "logo": "./assets/img/disney_channel.png",
             "description":"No hay descripción",
-            "category":"Kids"
+            "category":"Infantil"
         },
         {
             "id":3,

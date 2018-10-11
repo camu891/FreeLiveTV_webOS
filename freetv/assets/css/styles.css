@@ -3,6 +3,12 @@
 	src: url('./font/Roboto-Regular.ttf') @ttf;
 }
 
+@font-face {
+	font-family: 'Roboto-light';
+	src: url('./font/Roboto-Light.ttf') @ttf;
+}
+
+
 html {
 	min-height: 100%;
 }
@@ -63,10 +69,6 @@ footer span {
 	display: block;
 	vertical-align: middle;
 	text-align: left;
-	font-weight: bold;
-	font-family: monospace;
-	color:red;
-	font-size: 2em;
 	margin-left: 10px;
 	text-transform: uppercase;
 }
@@ -170,6 +172,25 @@ nav ul li span.title {
 	margin-left: 20px;
 }
 
+.datetime {
+	position: initial;
+	margin: auto;
+	font-family: 'Roboto-light' !important;
+	color: #202020;
+}
+
+.datetime span.clock {
+	text-align: center;
+	font-size: 2em;
+	margin: 0;
+}
+
+.datetime span.date {
+	text-align: center;
+	font-size: 1em;
+	margin: 0;
+}
+
 .content-loader {
 	display: none;
 	position: fixed;
@@ -177,7 +198,7 @@ nav ul li span.title {
 	top: 45%;
 	width: 100%;
 	height: 100%;
-	z-index: 9999;
+	z-index: 0;
 }
 
 .loader {
@@ -237,7 +258,7 @@ a.program-link {
 	text-align: center;
 }
 
-a.program-link span {
+a.program-link span.channel-title {
 	margin-top: 5px;
 	display: block;
 	text-transform: uppercase;
@@ -383,7 +404,7 @@ span.category-title {
 }
 
 .search-container {
-	width: 250px;
+	width: 10%;
 	right: 0;
 	text-align: right;
 	top: 22px;
@@ -393,7 +414,7 @@ span.category-title {
 }
 
 .search-container input[type=search] { 	
-	width: 250px;
+	width: 100%;
 	height: 50px;
 	right: 0;
 	background: #202020;
@@ -401,7 +422,7 @@ span.category-title {
 	font-size: 12pt;
 	float: left;
 	color: #63717f;
-	padding-left: 45px;
+	padding-left: 15%;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
 	border-radius: 30px 0 0 30px;         /* Irrelevant, I guess */
@@ -460,7 +481,7 @@ span.category-title {
 }
 
 /* fix for yt ifram click */
-a.above {
+.above {
 	width: 100%;
 	height: 100%;
 	position: absolute;

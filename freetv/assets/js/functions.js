@@ -3,6 +3,8 @@
  var totalPragrams=0;
  $(document).ready(function(){
 
+ 	getdate();
+
  	var request = webOS.service.request("luna://com.palm.connectionmanager", {
  		method: "getStatus",
  		onSuccess: function (inResponse) {
@@ -58,7 +60,7 @@
  function get_program_data(program,params,tabindex){
  	return "<div onmouseover=\"mouseOver(this,'"+program.type+"','"+program.link+"');\" onmouseout='mouseOut(this);' tabindex='"+(tabindex)+"' class='card content-box'><a id='link' class='program-link' name='"
  	+program.name+"' href='player.html"+params+"'><div class='inner'><img class='programs-logo' src='"
- 	+program.logo+"'><span>"+program.name+"</span></div></a></div>";
+ 	+program.logo+"'><span class='channel-title'>"+program.name+"</span></div></a></div>";
  }
 
 
