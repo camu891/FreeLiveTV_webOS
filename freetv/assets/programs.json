@@ -28,15 +28,6 @@
             "category":"Noticias"
         },
         {
-            "id":3,
-            "type": "youtube",
-            "link": "https://www.youtube.com/embed/8QAPP_CtV8Q?rel=0&autoplay=1&showinfo=0&controls=0",
-            "name": "Telefe Noticias",
-            "logo": "./assets/img/telefe_noticias.png",
-            "description":"No hay descripción",
-            "category":"Noticias"
-        },
-        {
             "id":4,
             "type": "youtube",
             "link": "https://www.youtube.com/embed/eFLScr5atpQ?rel=0&autoplay=1&showinfo=0&controls=0",
@@ -352,18 +343,106 @@
             "logo": "./assets/img/hbo.png",
             "description":"No hay descripción",
             "category":"Cine"
+        },       
+        {
+            "id":3,
+            "type": "native",
+            "link": "http://kissfm-cires21-video.secure.footprint.net/hittv/bitrate_3.m3u8",
+            "name": "Hit TV",
+            "logo": "./assets/img/hit_tv.png",
+            "description":"No hay descripción",
+            "category":"Música"
+        },       
+        {
+            "id":3,
+            "type": "native",
+            "link": "http://fms.105.net:1935/live/virgin2%20/chunklist_w1063887220.m3u8",
+            "name": "Virgin Radio",
+            "logo": "./assets/img/virgin.png",
+            "description":"No hay descripción",
+            "category":"Música"
+        },       
+        {
+            "id":3,
+            "type": "native",
+            "link": "http://online.radiodifusion.net:1935/livetv/latinoSD.stream/chunklist_w430979689.m3u8",
+            "name": "Top Latino Radio",
+            "logo": "./assets/img/top_latino.png",
+            "description":"No hay descripción",
+            "category":"Música"
+        },       
+        {
+            "id":3,
+            "type": "native",
+            "link": "http://stmv4.questreaming.com/questreaming/questreaming/playlist.m3u8",
+            "name": "Soy Rock",
+            "logo": "./assets/img/soy_rock.png",
+            "description":"No hay descripción",
+            "category":"Música"
         },
         {
             "id":3,
             "type": "native",
-            "link": "http://live.lcdn.claro.net.co/FOX_SERIES.m3u8",
-            "name": "Fox Series",
-            "logo": "./assets/img/fox_movies.png",
+            "link": "http://wowza.telpin.com.ar:1935/live-powerTV/power.stream/chunklist_w1680853093.m3u8",
+            "name": "Power HD",
+            "logo": "./assets/img/powerhd.png",
             "description":"No hay descripción",
-            "category":"Cine"
+            "category":"Música"
+        },
+        {
+            "id":3,
+            "type": "native",
+            "link": "http://edge.music-choice-play-chaina1.top.comcast.net/PlayMetadataInserter/play/chunklist.m3u8",
+            "name": "Music Choice",
+            "logo": "./assets/img/music_choice.png",
+            "description":"No hay descripción",
+            "category":"Música"
+        },
+        {
+            "id":3,
+            "type": "native",
+            "link": "http://tv.portalfoxmix.club:1935/portalfoxmix/portalfoxmix/chunklist_w1495139298.m3u8",
+            "name": "Fox Mix",
+            "logo": "./assets/img/no_image.png",
+            "description":"No hay descripción",
+            "category":"Música"
+        },
+        {
+            "id":3,
+            "type": "native",
+            "link": "http://ooyalahd2-f.akamaihd.net/i/globalradio02_delivery@156522/index_1500_av-p.m3u8?sd=10&rebase=on",
+            "name": "Heart TV",
+            "logo": "./assets/img/heart_tv.png",
+            "description":"No hay descripción",
+            "category":"Música"
+        },
+        {
+            "id":3,
+            "type": "native",
+            "link": "https://vcnindiewave.teleosmedia.com/stream/indiewave/indiewave/seglist_720p.m3u8",
+            "name": "Indie Wave",
+            "logo": "./assets/img/indie_wave.png",
+            "description":"No hay descripción",
+            "category":"Música"
+        },
+        {
+            "id":3,
+            "type": "native",
+            "link": "https://5b464b69d264e.streamlock.net/live/smil:MelodyChannel.smil/chunklist_w685725914_b1048000_slES.m3u8",
+            "name": "Melody Channel TV",
+            "logo": "./assets/img/melody_channel.png",
+            "description":"No hay descripción",
+            "category":"Música"
+        },
+        {
+            "id":3,
+            "type": "native",
+            "link": "http://68.235.35.243:1935/lamegamundial/lamegamundial2/chunklist_w1203533629.m3u8",
+            "name": "La Mega Mundial",
+            "logo": "./assets/img/lamega.png",
+            "description":"No hay descripción",
+            "category":"Música"
         }
-        
 
-       
     ]
 }
