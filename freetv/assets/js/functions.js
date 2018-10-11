@@ -48,7 +48,7 @@
  	var category = "#" + program.category;
  	if($(category).length == 0) {
  		tabindex=0;
- 		$("#container").append("<div class='category' id='"+program.category+"'><span class='category-title'>"+program.category+"</span><div class='programs-container row' id='list'></div></div>");
+ 		$("#container_programs").append("<div class='category' id='"+program.category+"'><span class='category-title'>"+program.category+"</span><div class='programs-container row' id='list'></div></div>");
  	}else{
  		tabindex++; 		
  	}

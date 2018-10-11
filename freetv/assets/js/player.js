@@ -77,7 +77,7 @@ function createNativeVideo(container){
 
 window.addEventListener('DOMContentLoaded', function() {
 
- var container = document.getElementById("container");
+ var container = document.getElementById("container_player");
  if(typeVideo==="native"){
    createNativeVideo(container);
  }else if(typeVideo==="youtube" || typeVideo==="iframe"){

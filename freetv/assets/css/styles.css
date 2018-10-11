@@ -196,7 +196,7 @@ nav ul li span.title {
 	100% { transform: rotate(360deg); }
 }
 
-#container{
+#container_programs{
 	overflow: hidden;
 	overflow-y: scroll;
 	max-height: 1024px; /*usar mediaquery*/
@@ -306,6 +306,7 @@ span.category-title {
 	text-align: center;
 	margin-left: 10px;
 	margin-bottom: 10px;
+	animation: slideInFromLeft 1s;
 }
 
 .card {
@@ -316,7 +317,6 @@ span.category-title {
 	margin: 10px;
 	border-radius: 4px;
 	animation: fadeIn 2s;
-
 }
 
 .card .inner{
@@ -361,17 +361,17 @@ span.category-title {
 	min-height: 100%;
 }
 
-.container {
+.player .container {
 	margin: auto;
 	width: 100%;
 }
 
 
-.container video {
+.player .container video {
 	width: 100%;
 }
 
-.container iframe {
+.player .container iframe {
 	height: 1000px;
 	padding: 0;
 	left: 0;
