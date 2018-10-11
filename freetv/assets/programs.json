@@ -293,24 +293,6 @@
         {
             "id":3,
             "type": "iframe",
-            "link": "http://player.latino-webtv.com/channels/disneyxd.html",
-            "name": "Disney XD",
-            "logo": "./assets/img/disneyxd.png",
-            "description":"No hay descripción",
-            "category":"Kids"
-        },
-        {
-            "id":3,
-            "type": "iframe",
-            "link": "http://player.latino-webtv.com/channels/disneychannel.html",
-            "name": "Disney Channel",
-            "logo": "./assets/img/disney_channel.png",
-            "description":"No hay descripción",
-            "category":"Kids"
-        },
-        {
-            "id":3,
-            "type": "iframe",
             "link": "http://www.fulltvhd.fi/peliculas/hbo.php",
             "name": "HBO",
             "logo": "./assets/img/hbo.png",
@@ -433,7 +415,25 @@
             "logo": "./assets/img/pakapaka.png",
             "description":"No hay descripción",
             "category":"kids"
-        }, 
+        },  
+        {
+            "id":3,
+            "type": "iframe",
+            "link": "http://player.latino-webtv.com/channels/disneyxd.html",
+            "name": "Disney XD",
+            "logo": "./assets/img/disneyxd.png",
+            "description":"No hay descripción",
+            "category":"Kids"
+        },
+        {
+            "id":3,
+            "type": "iframe",
+            "link": "http://player.latino-webtv.com/channels/disneychannel.html",
+            "name": "Disney Channel",
+            "logo": "./assets/img/disney_channel.png",
+            "description":"No hay descripción",
+            "category":"Kids"
+        },
         {
             "id":3,
             "type": "native",

@@ -59,8 +59,8 @@ return "<div onmouseover=\"mouseOver(this,'"+program.type+"','"+program.link+"')
 	$('.programs-container > .content-box:focus').prevAll('.content-box').not(".hide").first().focus();
 	break;
 	case 38://top
-	tabindex = (tabindex >= itemsPerRow) ? tabindex-itemsPerRow : tabindex;
-	$('.programs-container > .content-box:focus').prevAll('.content-box[tabindex=' + tabindex + ']').not(".hide").first().focus();
+	//tabindex = (tabindex >= itemsPerRow) ? tabindex-itemsPerRow : tabindex;
+	//$('.programs-container > .content-box:focus').prevAll('.content-box[tabindex=' + tabindex + ']').not(".hide").first().focus();
 	break;
 	case 39://right
 	if(tabindex==0){
@@ -72,13 +72,13 @@ return "<div onmouseover=\"mouseOver(this,'"+program.type+"','"+program.link+"')
 	}
 	break;
 	case 40://down
-	if(tabindex==0){
+	/*if(tabindex==0){
 		tabindex=1;
 		$('.content-box').not(".hide").first().focus();
 	}else{
 		tabindex = (tabindex <= (totalPragrams-itemsPerRow)) ? tabindex+itemsPerRow : tabindex;
 		$('.programs-container > .content-box:focus').nextAll('.content-box[tabindex=' + tabindex + ']').not(".hide").first().focus();
-	}
+	}*/
 	break;
 	case 13://enter
 	window.location = $('.programs-container > .content-box:focus > a').attr('href');
