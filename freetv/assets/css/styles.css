@@ -12,6 +12,7 @@ body {
 	height: 100%;
 	background-color: #202020;
 	overflow: hidden;
+	overflow-y: scroll;
 	margin: 0;
 	font-family: 'Roboto',arial,sans-serif;
 }
@@ -195,9 +196,15 @@ nav ul li span.title {
 	100% { transform: rotate(360deg); }
 }
 
+#container{
+	overflow: hidden;
+	overflow-y: scroll;
+	max-height: 1024px; /*usar mediaquery*/
+}
+
 .programs-container {
 	overflow:auto;
-	position:absolute; 
+	position:relative; 
 	top: 0; 
 	left:0; 
 	right:0; 
@@ -271,10 +278,33 @@ a.program-link span {
 .row {
 	flex-wrap: wrap;
 	margin-right: auto;
-	margin-top: 100px;
 	margin-left: 50px;
-	margin-bottom: 50px;
 	display: inline-block;
+	width: 100%
+}
+
+.category {
+	margin: 10px 0;
+	display: block;
+}
+
+.category:first-child {
+	margin-top: 100px;
+}
+
+.category:last-child{
+	margin-bottom: 50px;
+}
+
+span.category-title {
+	text-transform: uppercase;
+	display: block;
+	color: darkgray;
+	border-bottom: 2px solid #2d2d2d;
+	padding: 10px;
+	width: max-content;
+	margin-left: 10px;
+	margin-bottom: 10px;
 }
 
 .card {

@@ -16,15 +16,38 @@
  			var description = "description="+json.programs[i].description+"&";
  			var params="?"+ link + typeVideo + title + description;
 
- 			$(".programs-container")
+ 			add_program_to_category(json.programs[i],params,i);
+
+ 			/*$(".programs-container")
  			.append("<div onmouseover=\"mouseOver(this,'"+json.programs[i].type+"','"+json.programs[i].link+"');\" onmouseout='mouseOut(this);' tabindex='"+(i+1)+"' class='card content-box'><a id='link' class='program-link' name='"
  				+json.programs[i].name+"' href='player.html"+params+"'><div class='inner'><img class='programs-logo' src='"
- 				+json.programs[i].logo+"'><span>"+json.programs[i].name+"</span></div></a></div>");
+ 				+json.programs[i].logo+"'><span>"+json.programs[i].name+"</span></div></a></div>");*/
+
+
  			totalPragrams++;
  		});
  	});
 
  });
+
+ function add_program_to_category(program,params,index){
+
+ 	var category = "#" + program.category;
+ 	if($(category).length == 0) {
+ 		tabindex=0;
+ 		$("#container").append("<div class='category' id='"+program.category+"'><span class='category-title'>"+program.category+"</span><div class='programs-container row' id='list'></div></div>");
+ 	}else{
+ 		tabindex++; 		
+ 	}
+ 	$(category + "  div.programs-container").append(get_program_data(program,params,tabindex));
+ }
+
+function get_program_data(program,params,tabindex){
+return "<div onmouseover=\"mouseOver(this,'"+program.type+"','"+program.link+"');\" onmouseout='mouseOut(this);' tabindex='"+(tabindex)+"' class='card content-box'><a id='link' class='program-link' name='"
+ 	+program.name+"' href='player.html"+params+"'><div class='inner'><img class='programs-logo' src='"
+ 	+program.logo+"'><span>"+program.name+"</span></div></a></div>";
+}
+
 
  var tabindex=0;
  document.addEventListener("keydown", function(inEvent){
@@ -148,7 +171,7 @@
  	}
  }
 
- 
+
 
 
 
