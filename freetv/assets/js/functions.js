@@ -16,7 +16,7 @@
         // To-Do something
         return;
     }
-	});
+});
 
  	ajax_load_programs();
  });
@@ -25,7 +25,7 @@
  	var loader = $(".content-loader");
  	loader.show();
  	$.ajax({
- 		url: "https://camu891.github.io/FreeLiveTV_webOS/freetv/assets/programs.json",
+ 		url: appConfig.URL_PROGRAMS_PROD,
  		dataType: "json"
  	}).done(function(json) {
  		loader.hide();
@@ -43,32 +43,29 @@
  		loader.hide();
  		console.log("Fail request programs");
  	});
- }
+}
 
- function addProgramToCategory(program,params,index){
+function addProgramToCategory(program,params,index){
 
- 	var category = "#" + program.category;
- 	if($(category).length == 0) {
- 		tabindex=0;
- 		$("#container_programs").append("<div class='category' id='"+program.category+"'><span class='category-title'>"+program.category+"</span><div class='programs-container row' id='list'></div></div>");
- 	}else{
- 		tabindex++; 		
- 	}
- 	$(category + "  div.programs-container").append(get_program_data(program,params,tabindex));
- }
+	var category = "#" + program.category;
+	if($(category).length == 0) {
+		$("#container_programs").append("<div class='category' id='"+program.category+"'><span class='category-title'>"+program.category+"</span><div class='programs-container row' id='list'></div></div>");
+	}
+	$(category + "  div.programs-container").append(get_program_data(program,params,index));
+}
 
- function get_program_data(program,params,tabindex){
- 	return "<div onmouseover=\"mouseOver(this,'"+program.type+"','"+program.link+"');\" onmouseout='mouseOut(this);' tabindex='"+(tabindex)+"' class='card content-box'><a id='link' class='program-link' name='"
- 	+program.name+"' href='player.html"+params+"'><div class='inner'><img class='programs-logo' src='"
- 	+program.logo+"'><span class='channel-title'>"+program.name+"</span></div></a></div>";
- }
+function get_program_data(program,params,index){
+	return "<div onmouseover=\"mouseOver(this,'"+program.type+"','"+program.link+"');\" onmouseout='mouseOut(this);' tabindex='"+(index+1)+"' class='card content-box'><a id='link' class='program-link' name='"
+	+program.name+"' href='player.html"+params+"'><div class='inner'><img class='programs-logo' src='"
+	+program.logo+"'><span class='channel-title'>"+program.name+"</span></div></a></div>";
+}
 
 
- var tabindex=0;
- document.addEventListener("keydown", function(inEvent){
- 	console.log("button key: "+inEvent.keyCode);
- 	var itemsPerRow = 8;
- 	switch(inEvent.keyCode){
+var tabindex=0;
+document.addEventListener("keydown", function(inEvent){
+	console.log("button key: "+inEvent.keyCode);
+	var itemsPerRow = 8;
+	switch(inEvent.keyCode){
 	case 37://left
 	tabindex--;
 	$('.programs-container > .content-box:focus').prevAll('.content-box').not(".hide").first().focus();
@@ -102,89 +99,89 @@
 }
 });
 
- $(document).ready(function(){
- 	$("#search").on("click",function(){
- 		tabindex=0;
- 	});
- });
+$(document).ready(function(){
+	$("#search").on("click",function(){
+		tabindex=0;
+	});
+});
 
- function mouseOut(elem) {
- 	$(".preview").empty();
- 	$(".preview").hide();
- }
+function mouseOut(elem) {
+	$(".preview").empty();
+	$(".preview").hide();
+}
 
- function mouseOver(elem,typeVideo,link) {
- 	if (getSettings("isPreviewEnable")=="true") {
- 		var container = $(".preview");
- 		container.empty()
- 		container.fadeIn();
- 		if(typeVideo==="native"){
- 			createNativeVideo(container,link);
- 		}else if(typeVideo==="youtube" || typeVideo==="iframe"){
- 			createIframe(container,link);
- 		}
- 	}
- }
+function mouseOver(elem,typeVideo,link) {
+	if (getSettings("isPreviewEnable")=="true") {
+		var container = $(".preview");
+		container.empty()
+		container.fadeIn();
+		if(typeVideo==="native"){
+			createNativeVideo(container,link);
+		}else if(typeVideo==="youtube" || typeVideo==="iframe"){
+			createIframe(container,link);
+		}
+	}
+}
 
- function addSourceToVideo(element, src, type) {
- 	var source = document.createElement('source');
- 	source.src = src;
- 	source.type = type;
- 	element.appendChild(source);
- }
+function addSourceToVideo(element, src, type) {
+	var source = document.createElement('source');
+	source.src = src;
+	source.type = type;
+	element.appendChild(source);
+}
 
- function createIframe(container,src){
- 	var iframe = document.createElement('iframe');
- 	iframe.src = src;
- 	iframe.setAttribute('class','ytplayer');
- 	iframe.setAttribute('frameborder', '0');
- 	iframe.setAttribute('allow' ,'autoplay; encrypted-media');
- 	iframe.setAttribute('allowFullScreen', '');
- 	iframe.width = "200px";
- 	iframe.height = "113px";
- 	container.append(iframe);
- }
+function createIframe(container,src){
+	var iframe = document.createElement('iframe');
+	iframe.src = src;
+	iframe.setAttribute('class','ytplayer');
+	iframe.setAttribute('frameborder', '0');
+	iframe.setAttribute('allow' ,'autoplay; encrypted-media');
+	iframe.setAttribute('allowFullScreen', '');
+	iframe.width = "200px";
+	iframe.height = "113px";
+	container.append(iframe);
+}
 
- function createNativeVideo(container,src){
- 	var video = document.createElement('video');
- 	video.poster = "./assets/loading/loader-xs.gif";
- 	video.autoplay = true;
- 	container.append(video);
- 	addSourceToVideo(video, src, 'application/x-mpegURL');
- }
+function createNativeVideo(container,src){
+	var video = document.createElement('video');
+	video.poster = "./assets/loading/loader-xs.gif";
+	video.autoplay = true;
+	container.append(video);
+	addSourceToVideo(video, src, 'application/x-mpegURL');
+}
 
 
 
- $(document).ready(function(){
+$(document).ready(function(){
 
- 	$("#setting-preview").prop('checked', getSettings("isPreviewEnable"));
- 	$("#setting-preview").click(function(){
- 		var isPreviewEnable = false;
- 		if ($(this).is(':checked')) {
- 			isPreviewEnable = true;
- 		}else{
- 			isPreviewEnable = false;
- 		}
- 		saveSettings("isPreviewEnable",isPreviewEnable);
- 	});
+	$("#setting-preview").prop('checked', getSettings("isPreviewEnable"));
+	$("#setting-preview").click(function(){
+		var isPreviewEnable = false;
+		if ($(this).is(':checked')) {
+			isPreviewEnable = true;
+		}else{
+			isPreviewEnable = false;
+		}
+		saveSettings("isPreviewEnable",isPreviewEnable);
+	});
 
- });
+});
 
- function getSettings(name){
- 	if (typeof(Storage) !== "undefined") {
- 		return localStorage.getItem(name);
- 	} else {
- 		return null;
- 	}
- }
+function getSettings(name){
+	if (typeof(Storage) !== "undefined") {
+		return localStorage.getItem(name);
+	} else {
+		return null;
+	}
+}
 
- function saveSettings(name,value){
- 	if (typeof(Storage) !== "undefined") {
- 		localStorage.setItem(name, value);
- 	} else {
- 		console.log("Sorry, your browser does not support Web Storage...");
- 	}
- }
+function saveSettings(name,value){
+	if (typeof(Storage) !== "undefined") {
+		localStorage.setItem(name, value);
+	} else {
+		console.log("Sorry, your browser does not support Web Storage...");
+	}
+}
 
 
 
