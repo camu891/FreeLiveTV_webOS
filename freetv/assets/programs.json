@@ -118,6 +118,41 @@
             "category":"Deportes"
         },
         {
+            "id":2,
+            "type": "native",
+            "link": "https://contar-live.secure.footprint.net/hls-live/ionmicroremux-Deportv/_definst_/live.m3u8",
+            "name": "Deportv",
+            "logo": "./assets/img/dxtv.png",
+            "description":"No hay descripción",
+            "category":"Deportes"
+        },
+        {
+            "id":3,
+            "type": "native",
+            "link": "http://sv1.futbollibre.net/canales/espn.m3u8",
+            "name": "ESPN",
+            "logo": "./assets/img/espn.png",
+            "description":"No hay descripción",
+            "category":"Deportes"
+        },
+        {
+            "id":3,
+            "type": "native",
+            "link": "http://sv1.futbollibre.net/canales/espn2.m3u8",
+            "name": "ESPN 2",
+            "logo": "./assets/img/espn2.png",
+            "description":"No hay descripción",
+            "category":"Deportes"
+        },
+        {
+            "id":3,
+            "type": "native",
+            "link": "http://sv1.futbollibre.net/canales/espn3.m3u8",
+            "name": "ESPN 3",
+            "logo": "./assets/img/espn3.png",
+            "description":"No hay descripción",
+            "category":"Deportes"
+        },{
             "id":1,
             "type": "native",
             "link": "http://163.172.13.162/hls/foxp.m3u8",
@@ -151,51 +186,6 @@
             "link": "https://fslahds-lh.akamaihd.net/i/FS3CN_1@77555/index_1_av-b.m3u8?sd=6&set-segment-duration=quality&rebase=on&hdntl=exp=1538776298~acl=%2fi%2f*~data=hdntl~hmac=f2b04c009b0bdeeb94f5829dcbb7dcd085de673a6c9ca7251c2bc11980d16698",
             "name": "Fox Sport 3",
             "logo": "./assets/img/foxsport3.png",
-            "description":"No hay descripción",
-            "category":"Deportes"
-        },
-        {
-            "id":2,
-            "type": "native",
-            "link": "https://contar-live.secure.footprint.net/hls-live/ionmicroremux-Deportv/_definst_/live.m3u8",
-            "name": "Deportv",
-            "logo": "./assets/img/dxtv.png",
-            "description":"No hay descripción",
-            "category":"Deportes"
-        },
-        {
-            "id":3,
-            "type": "native",
-            "link": "http://sv1.futbollibre.net/canales/espn.m3u8",
-            "name": "ESPN",
-            "logo": "./assets/img/espn.png",
-            "description":"No hay descripción",
-            "category":"Deportes"
-        },
-        {
-            "id":3,
-            "type": "native",
-            "link": "http://linearhlsls2-i.akamaihd.net/hls/live/463004/n17/4500.m3u8",
-            "name": "ESPN 2",
-            "logo": "./assets/img/espn2.png",
-            "description":"No hay descripción",
-            "category":"Deportes"
-        },
-        {
-            "id":3,
-            "type": "native",
-            "link": "https://s10.limpi.tv/live/40723.m3u8?token=26Pv4EExbDojd4jBHjA9aw&expires2=U2FsdGVkX18xqmHVCfD1jgTRLH2Wc3I4OV9Ytf65cfc%3D&expires=1538711711&ip=24.232.44.113",
-            "name": "ESPN 3",
-            "logo": "./assets/img/espn3.png",
-            "description":"No hay descripción",
-            "category":"Deportes"
-        },
-        {
-            "id":3,
-            "type": "native",
-            "link": "https://s10.limpi.tv/live/40710.m3u8?token=YP3OheM9i1GCsyMO7BqBGg&expires2=U2FsdGVkX18dljdFWBxTW1RMo723g1KLxKqVgzhqRHg%3D&expires=1538711794&ip=24.232.44.113",
-            "name": "ESPN +",
-            "logo": "./assets/img/espn.png",
             "description":"No hay descripción",
             "category":"Deportes"
         },
