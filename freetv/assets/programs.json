@@ -155,8 +155,8 @@
         },{
             "id":1,
             "type": "native",
-            "link": "http://163.172.13.162/hls/foxp.m3u8",
-            "link2": "https://video-weaver.sao01.hls.ttvnw.net/v1/playlist/CrkER-cCpgvWJDeOncDruEaVznkom3tzjJYdJiqAsc29vV91Dd8L0GKP7TqVCzvMtbLxNVYPq2jzzuMiQ6ggc_Cp3pegEyPmO9clyHwMJNQhzeTBQhyhj0NoWCVhJOtPUxGfE-HBUBYdrbcotnawdqicvdeo2Qn6243H3WOQnD5bOj4BTGAbqKQ0ff3GchRdp_IvyCtBhnHsezQOA-oDZYbCdBY_w59agZkz3_ncOfhgHh0DU-cOMcbbl7zs48_Zdv6RC1s149Jxn2iYozsENvcipDMLNtjGsirQrv8Y0Rjnq0i_UCHlbwMg4V7wY2AUyQWZXekTQ7xhwBP21a0-DMZSbtmg3iUSex_SZRhKHHz5RYfuc5FAo4r5RgLmbQmDC8xHX-n-bg6HqXo2GrC0mrupOn2WehMumRGRv1Po3xVKl-GNHVgRbEPDj4u42PSwDF3mKR4H_WtXK7g_0VWHES5IOB_7Erwvq0a4ONxj4gErzgRhtnGQTc9z1-SjPvbsnDBMmMhzkT6_Y_ERE2FlVUXJb-TZQT5uZioK-ldzBbiQRoFDyZP9m5ULZILlb4kkWxFXnet34VZat9wHZtqk2h9mRvwxzGm9GiHAMt-ivA-KL2Um957AwOcZANxNfVd0FAVeaTx4AXOnnCkToMnxkbO-ltP14tadXqEK1ADw-l09yBceSYSgZWfPnBI38lKz0DaNAdATvGd781RUsn0YcZTqy4E8ayP62G0aNXcgjqln7KCN3wrLkRE2nKMSEONlRYzjThlG4JWN1bbIz0YaDL31czcIlzDZt_cZLg.m3u8",
+            "link": "https://live-edge.pxstream.tv/loadbalance/47367239418924558333/playlist.m3u8?md5=sWpDHSQ9jrcRXg7rVfJMkw&expires=1539500156",
+            "link2": "http://163.172.13.162/hls/foxp.m3u8",
             "name": "Fox Sport Premium",
             "logo": "./assets/img/foxsport_premium.png",
             "description":"No hay descripción",
@@ -174,7 +174,7 @@
         {
             "id":1,
             "type": "native",
-            "link": "https://fslahds-lh.akamaihd.net/i/FS2SUR_1@77551/index_3_av-p.m3u8?sd=6&set-segment-duration=quality&rebase=on&hdntl=exp=1538335116~acl=%2fi%2f*~data=hdntl~hmac=4a183f4602dab5b24378c373ae4ff1b6cec94c1351d1045282f6a027b40b18bb",
+            "link": "https://fslahds-lh.akamaihd.net/i/FS2SUR_1@77551/index_1_av-p.m3u8?sd=6&set-segment-duration=quality&rebase=on&hdntl=exp=1539543478~acl=%2fi%2f*~data=hdntl~hmac=8dd9a7adaa5e7a63b35d3f5b7ef31f536d7d335f444e52ba2027556110d69049",
             "name": "Fox Sport 2",
             "logo": "./assets/img/foxsport2.png",
             "description":"No hay descripción",
@@ -183,7 +183,7 @@
         {
             "id":1,
             "type": "native",
-            "link": "https://fslahds-lh.akamaihd.net/i/FS3CN_1@77555/index_1_av-b.m3u8?sd=6&set-segment-duration=quality&rebase=on&hdntl=exp=1538776298~acl=%2fi%2f*~data=hdntl~hmac=f2b04c009b0bdeeb94f5829dcbb7dcd085de673a6c9ca7251c2bc11980d16698",
+            "link": "http://tv-porinternethd.com/m3u/foxsports3.m3u8?dw=80&ts=1538262000&hdnts=exp=1538435021~acl=/streams/23200525_8387414_lsihpvexojiwutleh6v_1/media*~hmac=80276cde7956873a980f76ab0a4e0f0bc8e53496d0d56ed41769c4c7c59c1b17",
             "name": "Fox Sport 3",
             "logo": "./assets/img/foxsport3.png",
             "description":"No hay descripción",
@@ -228,7 +228,7 @@
         {
             "id":3,
             "type": "native",
-            "link": "http://aleman.mine.nu:8000/live/oscar1/oscar1/826.m3u8",
+            "link": "http://n-3-21.dcs.redcdn.pl/hls/o2/redefine/nlive/CN_HD_1/11395/0/tv-ss/live.isml/playlist.m3u8?stream=0&bandwidth=1",
             "name": "Cartoon Network",
             "logo": "./assets/img/cartoon_network.png",
             "description":"No hay descripción",
@@ -288,7 +288,16 @@
             "logo": "./assets/img/hbo.png",
             "description":"No hay descripción",
             "category":"Cine"
-        },       
+        },
+         {
+            "id":3,
+            "type": "native",
+            "link": "http://streaming.wirenetserver.com.ar:1935/canal4/live_1/livestream.m3u8 ",
+            "name": "HBO Family",
+            "logo": "./assets/img/hbo.png",
+            "description":"No hay descripción",
+            "category":"Cine"
+        },             
         {
             "id":3,
             "type": "native",
@@ -417,12 +426,21 @@
         },
         {
             "id":3,
-            "type": "iframe",
-            "link": "http://player.latino-webtv.com/channels/disneychannel.html",
+            "type": "native",
+            "link": "http://n-3-1.dcs.redcdn.pl/hls/o2/redefine/nlive/disney_channel_hd_1/10903/0/tv-ss/live.isml/playlist.m3u8?stream=0&bandwidth=1",
             "name": "Disney Channel",
             "logo": "./assets/img/disney_channel.png",
             "description":"No hay descripción",
             "category":"Infantil"
+        },
+         {
+            "id":3,
+            "type": "native",
+            "link": "http://iphone-streaming.ustream.tv/uhls/12762028/streams/live/iphone/playlist.m3u8",
+            "name": "Animal Planet",
+            "logo": "./assets/img/no_image.png",
+            "description":"No hay descripción",
+            "category":"Entretenimiento" 
         },
         {
             "id":3,
