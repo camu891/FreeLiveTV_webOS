@@ -165,7 +165,7 @@
         {
             "id":1,
             "type": "native",
-            "link": "https://playback.akamaized.net/streams/23200525_8387437_lsi1zg2dlbh9zlry97o_1/media/23200525_8387437_lsi1zg2dlbh9zlry97o_1@2756000pb.m3u8?dw=80&ts=1538697600&hdnts=exp=1538872158~acl=/streams/23200525_8387437_lsi1zg2dlbh9zlry97o_1/media*~hmac=f35232bcc114e4e964b51c1ff2ae39303a28b49137c57d85680b403d87318cf2",
+            "link": "https://fslahds-lh.akamaihd.net/i/FS1CS_1@77550/index_1_av-p.m3u8?sd=6&set-segment-duration=quality&rebase=on&hdntl=exp=1539543060~acl=%2fi%2f*~data=hdntl~hmac=592ab38307a9685cde90f5a52079fb61d1b5f6e382df15ee30ed967297c9d0d1",
             "name": "Fox Sport",
             "logo": "./assets/img/foxsport.png",
             "description":"No hay descripción",
