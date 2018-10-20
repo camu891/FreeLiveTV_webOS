@@ -181,14 +181,16 @@ nav ul li span.title {
 
 .datetime span.clock {
 	text-align: center;
-	font-size: 2em;
+	font-size: 1.9em;
 	margin: 0;
+	font-weight: bold;
 }
 
 .datetime span.date {
 	text-align: center;
 	font-size: 1em;
 	margin: 0;
+	color: darkgrey;
 }
 
 .content-loader {
@@ -590,5 +592,14 @@ input:checked + .slider:before {
 ::-webkit-scrollbar { 
 	display: none; 
 }
+
+
+/*** For external iframe - Limpi.TV ***/
+
+div#windowads,.logo {
+	display: none;
+}
+
+
 
 

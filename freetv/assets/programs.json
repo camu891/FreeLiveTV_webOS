@@ -174,7 +174,8 @@
         {
             "id":1,
             "type": "native",
-            "link": "https://fslahds-lh.akamaihd.net/i/FS2SUR_1@77551/index_1_av-p.m3u8?sd=6&set-segment-duration=quality&rebase=on&hdntl=exp=1539543478~acl=%2fi%2f*~data=hdntl~hmac=8dd9a7adaa5e7a63b35d3f5b7ef31f536d7d335f444e52ba2027556110d69049",
+            "link:":"https://fslahds-lh.akamaihd.net/i/FS2SUR_1@77551/index_3_av-p.m3u8?sd=6&set-segment-duration=quality&rebase=on&hdntl=exp=1540081284~acl=%2fi%2f*~data=hdntl~hmac=9eee284034478fd1591befce53e6107bb944b1440132890c95fbbe0517ef6c40",
+            "link2": "https://fslahds-lh.akamaihd.net/i/FS2SUR_1@77551/index_1_av-p.m3u8?sd=6&set-segment-duration=quality&rebase=on&hdntl=exp=1539543478~acl=%2fi%2f*~data=hdntl~hmac=8dd9a7adaa5e7a63b35d3f5b7ef31f536d7d335f444e52ba2027556110d69049",
             "name": "Fox Sport 2",
             "logo": "./assets/img/foxsport2.png",
             "description":"No hay descripción",
@@ -289,7 +290,7 @@
             "description":"No hay descripción",
             "category":"Cine"
         },
-         {
+        {
             "id":3,
             "type": "native",
             "link": "http://streaming.wirenetserver.com.ar:1935/canal4/live_1/livestream.m3u8 ",
@@ -433,7 +434,7 @@
             "description":"No hay descripción",
             "category":"Infantil"
         },
-         {
+        {
             "id":3,
             "type": "native",
             "link": "http://iphone-streaming.ustream.tv/uhls/12762028/streams/live/iphone/playlist.m3u8",

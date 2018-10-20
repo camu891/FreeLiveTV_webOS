@@ -90,6 +90,10 @@ function clearPlayer(){
   var iframelimp= $("iframe").contents().find("iframe").contents();
   iframelimp.find("#windowads").remove();
   iframelimp.find(".logo").remove();
+
+
+  $("#ventana-flotante").remove();
+
 }
 
 
