@@ -174,7 +174,7 @@
         {
             "id":1,
             "type": "native",
-            "link": "https://fslahds-lh.akamaihd.net/i/FS2SUR_1@77551/index_1_av-p.m3u8?sd=6&set-segment-duration=quality&rebase=on&hdntl=exp=1540081825~acl=%2fi%2f*~data=hdntl~hmac=5484b2780ebe405fe96208237e25509e8691434de4e2b5e973894d168cb18960",
+            "link": "https://fslahds-lh.akamaihd.net/i/FS2SUR_1@77551/index_1_av-p.m3u8?sd=6&set-segment-duration=quality&rebase=on&hdntl=exp=1540082665~acl=%2fi%2f*~data=hdntl~hmac=bd990da6d4886d25f34e620ea107be7e922bf6587a51407b73a9720ca93f025e",
             "name": "Fox Sport 2",
             "logo": "./assets/img/foxsport2.png",
             "description":"No hay descripción",
