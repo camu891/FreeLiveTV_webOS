@@ -14,7 +14,7 @@ $( document ).ready(function() {
 		})
 
 		//oculta sidebar 
-		$('.programs-container').click(function(){
+		$('#container_programs').click(function(){
 			closeSidebar();
 		});
 		

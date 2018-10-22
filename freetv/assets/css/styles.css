@@ -3,12 +3,6 @@
 	src: url('./font/Roboto-Regular.ttf') @ttf;
 }
 
-@font-face {
-	font-family: 'Roboto-light';
-	src: url('./font/Roboto-Light.ttf') @ttf;
-}
-
-
 html {
 	min-height: 100%;
 }
@@ -175,7 +169,6 @@ nav ul li span.title {
 .datetime {
 	position: initial;
 	margin: auto;
-	font-family: 'Roboto-light' !important;
 	color: #202020;
 }
 
@@ -405,7 +398,27 @@ span.category-title {
 	border: 0;
 }
 
+.search-icon {
+	width: 30px;
+    height: 30px;
+    text-align: center;
+    top: 22px;
+    position: absolute;
+    padding: 10px;
+    vertical-align: middle;
+    right: 10px;
+}
+
+.search-icon img {
+	width: auto;
+    height: auto;
+    margin: auto;
+    max-width: 100%;
+    display: block;
+}
+
 .search-container {
+	display: none;
 	width: 10%;
 	right: 0;
 	text-align: right;
@@ -518,6 +531,7 @@ video::-webkit-media-controls-current-time-display {}
 	border: 2px solid white;
 	background: #202020;
 	animation: fadeIn .8s;
+	border-radius: 4px;
 } 
 
 .preview .ytplayer {

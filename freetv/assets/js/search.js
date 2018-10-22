@@ -32,4 +32,15 @@ function load(){
     }
 
   }
+
+//remove enter action on input search
+$('input:not(textarea)').keydown(function(event){
+    var kc = event.witch || event.keyCode;
+    if(kc == 13){
+    event.preventDefault();
+        return false;
+    }
+});
+
+
 }
