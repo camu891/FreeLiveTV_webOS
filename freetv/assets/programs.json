@@ -192,7 +192,7 @@
         {
             "id":3,
             "type": "native",
-            "link": "https://playback.akamaized.net/streams/23200525_8387418_lsigt4tu7v8s1qy0xa9_1/media/23200525_8387418_lsigt4tu7v8s1qy0xa9_1@5256000pb.m3u8?dw=80&ts=1538330400&hdnts=exp=1538504400~acl=/streams/23200525_8387418_lsigt4tu7v8s1qy0xa9_1/media*~hmac=1caea9847b55cb0e31287a485145a9545ed1f3b04157791907df3875c699ffa1",
+            "link": "https://playback.akamaized.net/streams/23200525_8416321_lsijjfabpp0zzzj7jj2_1/media/23200525_8416321_lsijjfabpp0zzzj7jj2_1@5256000pb.m3u8?dw=80&ts=1540339200&hdnts=exp=1540513810~acl=/streams/23200525_8416321_lsijjfabpp0zzzj7jj2_1/media*~hmac=f65113453e8d3e79fe0f316cb1daf01356a683b8caffdfaca8cdf4fae0d71142",
             "name": "SAF",
             "logo": "./assets/img/saf.png",
             "description":"No hay descripción",
