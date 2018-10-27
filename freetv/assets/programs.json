@@ -21,7 +21,7 @@
         {
             "id":3,
             "type": "native",
-            "link": "https://evento6hls-lh.akamaihd.net/i/evento6hls_1@48399/index_1_av-p.m3u8?sd=10&rebase=on&hdntl=exp=1538532195~acl=%2fi%2fevento6hls_1%4048399%2f*~data=hdntl~hmac=ac41f52087f6e51717e91a2cb04d65fb64b5f163c6cada59e65a7d88268f3245",
+            "link": "https://evento6hls-lh.akamaihd.net/i/evento6hls_1@48399/index_1_av-p.m3u8",
             "name": "Telefe",
             "logo": "./assets/img/telefe.png",
             "description":"No hay descripción",
@@ -128,8 +128,9 @@
         },
         {
             "id":3,
-            "type": "native",
-            "link": "http://sv1.futbollibre.net/canales/espn.m3u8",
+            "type": "iframe",
+            "link": "http://futbollibre.online/espn-1/embed2.html",
+            "link2": "http://sv1.futbollibre.net/canales/espn.m3u8",
             "name": "ESPN",
             "logo": "./assets/img/espn.png",
             "description":"No hay descripción",
@@ -137,8 +138,9 @@
         },
         {
             "id":3,
-            "type": "native",
-            "link": "http://sv1.futbollibre.net/canales/espn2.m3u8",
+            "type": "iframe",
+            "link": "http://futbollibre.online/espn-2/embed.html",
+            "link2": "http://sv1.futbollibre.net/canales/espn2.m3u8",
             "name": "ESPN 2",
             "logo": "./assets/img/espn2.png",
             "description":"No hay descripción",
@@ -200,8 +202,8 @@
         }, 
         {
             "id":3,
-            "type": "iframe",
-            "link": "http://player.latino-webtv.com/channels/tntsports.html",
+            "type": "native",
+            "link": "https://latam5-lh.akamaihd.net/i/TSP_ARG@198922/index_1080_av-b.m3u8?id=AgAY6CxxtR6DBjvP1FvmqHzD52mPA48PNrlg9B9hxPJ83wURpmGEgwXrszb6NyuFqi+rk437CFn4fw%3d%3d&hdntl=exp=1540759739~acl=%2f*~data=hdntl~hmac=014352b6745a5d3c88c058d929820e11ed759a5246802afd52631dec2788c186",
             "name": "TNT SPORT",
             "logo": "./assets/img/tntsports.png",
             "description":"No hay descripción",
