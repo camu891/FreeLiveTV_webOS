@@ -128,8 +128,9 @@
         },
         {
             "id":3,
-            "type": "native",
-            "link": "http://sv1.futbollibre.net/canales/espn.m3u8",
+            "type": "iframe",
+            "link": "http://futbollibre.online/espn-1/embed2.html",
+            "link2": "http://sv1.futbollibre.net/canales/espn.m3u8",
             "name": "ESPN",
             "logo": "./assets/img/espn.png",
             "description":"No hay descripción",
@@ -137,8 +138,9 @@
         },
         {
             "id":3,
-            "type": "native",
-            "link": "http://sv1.futbollibre.net/canales/espn2.m3u8",
+            "type": "iframe",
+            "link": "http://futbollibre.online/espn-2/embed.html",
+            "link2": "http://sv1.futbollibre.net/canales/espn2.m3u8",
             "name": "ESPN 2",
             "logo": "./assets/img/espn2.png",
             "description":"No hay descripción",

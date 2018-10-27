@@ -31,7 +31,6 @@ function initGoBack(){
  }); 
 }
 
-
 function addSourceToVideo(element, src, type) {
  var source = document.createElement('source');
  source.src = src;
@@ -78,9 +77,23 @@ window.addEventListener('DOMContentLoaded', function() {
    createNativeVideo(container);
  }else if(typeVideo==="youtube" || typeVideo==="iframe"){
   createIframe(container);
-  //clearPlayer();
 }
 
+if (typeVideo==="iframe"){
+//clearPlayer();
+$(".above").remove();
+
+$(document).mousemove(function(e){
+  var vertical = e.pageY;
+  var header =  $('.channel-header');
+  if(vertical <= 100 ) {   
+    header.fadeIn();
+  } else {
+    header.fadeOut();
+  }
+}); 
+
+}
 
 }, true);
 
@@ -90,10 +103,7 @@ function clearPlayer(){
   var iframelimp= $("iframe").contents().find("iframe").contents();
   iframelimp.find("#windowads").remove();
   iframelimp.find(".logo").remove();
-
-
   $("#ventana-flotante").remove();
-
 }
 
 
