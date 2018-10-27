@@ -46,9 +46,11 @@ function ajax_load_programs(){
 			var description = "description="+json.programs[i].description+"&";
 			var params="?"+ link + typeVideo + title + description;
 			
-			addProgramToCategory(json.programs[i],params,i);
+			addProgramToCategory(json.programs[i],params);
 			totalPragrams++;
 		});
+
+		set_tabindex();
 	}).fail(function() {
 		loader.hide();
 		error.show();
@@ -56,26 +58,32 @@ function ajax_load_programs(){
 	});
 }
 
-function addProgramToCategory(program,params,index){
+function addProgramToCategory(program,params){
 	var category = "#" + program.category + "  div.programs-container";
 	if($(category).length == 0) {
 		$("#container_programs").append("<div class='category' id='"+program.category+"'><span class='category-title'>"
 		+program.category+"</span><div class='programs-container row' id='list'></div></div>");
 	}
-	$(category).append(get_program_data(program,params,index));
+	$(category).append(get_program_data(program,params));
 }
 
-function get_program_data(program,params,index){
-	return "<div onmouseover=\"mouseOver(this,'"+program.type+"','"+program.link+"');\" onmouseout='mouseOut(this);' tabindex='"+(index+1)+
-	"' class='card content-box'><a id='link' class='program-link' name='"
+function get_program_data(program,params){
+	return "<div onmouseover=\"mouseOver(this,'"+program.type+"','"+program.link+"');\" onmouseout='mouseOut(this);'"
+	+" class='card content-box'><a id='link' class='program-link' name='"
 	+program.name+"' href='player.html"+params+"'><div class='inner'><img class='programs-logo' src='"
 	+program.logo+"'><span class='channel-title'>"+program.name+"</span></div></a></div>";
 }
 
-function get_tabindex_by_last_element(elem){
-	var tbi = $(elem +" .card").last().attr("tabindex");
-	console.log(tbi);
-	return tbi == undefined ? 0 : parseInt(tbi);
+function set_tabindex(){
+	var list = document.querySelectorAll("#list");
+    var ti=1;
+    for (var j = 0; j < list.length; j++) {
+      var divs = list[j].getElementsByClassName("card");
+      for (var i = 0; i < divs.length; i++) {
+		divs[i].tabIndex = ti;
+		ti++;
+	  }
+	}
 }
 
 var tabindex=0;
@@ -88,7 +96,7 @@ document.addEventListener("keydown", function(inEvent){
 		break;
 		case 37://left
 		tabindex > 0 ? tabindex-- : tabindex;
-		//$('[tabindex=' + tabindex + ']').not(".hide").focus();
+		$('[tabindex=' + tabindex + ']').not(".hide").focus();
 		//$('.card:focus').prev(".card").not(".hide").focus();
 		break;
 		case 39://right
@@ -97,7 +105,7 @@ document.addEventListener("keydown", function(inEvent){
 			$('[tabindex=' + tabindex + ']').not(".hide").focus();
 		}else{
 			tabindex < totalPragrams ? tabindex++ : tabindex;
-			//$('[tabindex=' + tabindex + ']').not(".hide").focus();
+			$('[tabindex=' + tabindex + ']').not(".hide").focus();
 		}
 		break;
 		case 38://top
