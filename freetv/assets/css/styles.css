@@ -165,9 +165,9 @@ nav ul li span.title {
 }
 
 .datetime {
-    margin: auto;
-    width: 100%;
-    color: #202020;
+	margin: auto;
+	width: 100%;
+	color: #202020;
 }
 
 .datetime span.clock {
@@ -243,8 +243,8 @@ nav ul li span.title {
 	font-weight: bold;
 	padding: 5px;
 	font-size: 1.5em;
-    padding: 9px;
-    text-transform: uppercase;
+	padding: 9px;
+	text-transform: uppercase;
 }
 
 .content-error-request span.reload:hover{
@@ -530,8 +530,11 @@ span.category-title {
 }
 
 .ytplayer {
-	pointer-events: none;
 	position: absolute;
+}
+
+.yt-disable {
+	pointer-events: none;
 }
 
 /* fix for yt ifram click */
