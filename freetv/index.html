@@ -13,11 +13,11 @@
 		<script src="assets/js/search.js"></script>
 		<script src="assets/js/sidebar.js"></script>
 		
-
-
+		
+		
 	</head>
 	<body onload="load()">
-
+		
 		<!-- Sidebar -->
 		<nav>	
 			<ul>
@@ -27,7 +27,7 @@
 						<span class="slider round"></span>
 					</label>
 				</li>
-
+				
 			</ul>
 		</nav>
 		
@@ -46,22 +46,26 @@
 				<input type="search" id="search" name="search" placeholder="Buscar..">
 			</div>
 		</header>
-
+		
 		<div class="content-loader">
 			<div class="loader"></div>
 		</div>
-
-		<div id="container_programs">
-			
+		
+		<div class="content-error-request">
+			<div>
+				<span class="sad">&#9785; ups!</span>
+				<br><span>Ocurrió algún error.</span>
+			</div>
+			<div class="content-reload"><span class="reload">Volver a intentar</span></div>
 		</div>
 		
-
+		<div id="container_programs">
+		</div>
 		<div id="log"> </div>
-
 		<div class="preview"></div>	
-
 		<footer>
 			<span>Matias Camusso | v1.0.0</span>
 		</footer>
 	</body>
 	</html>
+	

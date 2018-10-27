@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'Roboto';
-	src: url('./font/Roboto-Regular.ttf') @ttf;
+	src: url('./../font/Roboto-Regular.ttf');
 }
 
 html {
@@ -19,7 +19,6 @@ body {
 
 h1 {
 	display: block;
-	vertical-align: middle;
 	text-align:center;
 	color: #FFFFFF;
 }
@@ -61,7 +60,6 @@ footer span {
 
 .header span {
 	display: block;
-	vertical-align: middle;
 	text-align: left;
 	margin-left: 10px;
 	text-transform: uppercase;
@@ -167,9 +165,9 @@ nav ul li span.title {
 }
 
 .datetime {
-	position: initial;
-	margin: auto;
-	color: #202020;
+    margin: auto;
+    width: 100%;
+    color: #202020;
 }
 
 .datetime span.clock {
@@ -186,7 +184,7 @@ nav ul li span.title {
 	color: darkgrey;
 }
 
-.content-loader {
+.content-loader, .content-error-request {
 	display: none;
 	position: fixed;
 	left: 0px;
@@ -195,6 +193,7 @@ nav ul li span.title {
 	height: 100%;
 	z-index: 0;
 }
+
 
 .loader {
 	margin: auto;
@@ -210,6 +209,45 @@ nav ul li span.title {
 @keyframes spin {
 	0% { transform: rotate(0deg); }
 	100% { transform: rotate(360deg); }
+}
+
+.content-error-request {
+	top: 35%;
+}
+
+.content-error-request div {
+	color: white;
+	display: block;
+	width: 100%;
+	text-align: center;   
+	
+}
+.content-error-request div span{
+	font-size: 1.6em;
+	line-height: 1.3em;
+}
+
+.content-error-request div span.sad {
+	font-size: 5em;
+}
+
+.content-error-request .content-reload {
+	margin-top: 50px;
+}
+
+.content-error-request span.reload {
+	background: white;
+	border-radius: 4px;
+	color: red;
+	font-weight: bold;
+	padding: 5px;
+	font-size: 1.5em;
+    padding: 9px;
+    text-transform: uppercase;
+}
+
+.content-error-request span.reload:hover{
+	cursor: pointer;
 }
 
 #container_programs{
@@ -237,14 +275,9 @@ nav ul li span.title {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 8.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.content-box:focus, 
-.content-box:active {
+.card.content-box:focus, 
+.card.content-box:active {
 	background: red;
-}
-.content-box a span:focus,
-.content-box a span:active {
-	background: white;
-	color: red;
 }
 
 a.program-link {
@@ -261,7 +294,8 @@ a.program-link span.channel-title {
 	background: red;
 	padding: 5px;
 	border-radius: 2px;
-
+	font-size: 1em;
+	color:white;
 	white-space: nowrap; 
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -273,6 +307,7 @@ a.program-link span.channel-title {
 	-webkit-animation-duration: 2s;
 	animation-duration: 2s;
 	text-align: center;
+	border-radius: 4px;
 }
 
 
@@ -333,6 +368,7 @@ span.category-title {
 	margin: 10px;
 	border-radius: 4px;
 	animation: fadeIn 2s;
+	outline: none;
 }
 
 .card .inner{
@@ -369,7 +405,7 @@ span.category-title {
 }
 
 .player-container iframe {
-
+	
 	display: block;
 	width: 100%;
 	height: 100%;
@@ -400,21 +436,21 @@ span.category-title {
 
 .search-icon {
 	width: 30px;
-    height: 30px;
-    text-align: center;
-    top: 22px;
-    position: absolute;
-    padding: 10px;
-    vertical-align: middle;
-    right: 10px;
+	height: 30px;
+	text-align: center;
+	top: 22px;
+	position: absolute;
+	padding: 10px;
+	vertical-align: middle;
+	right: 10px;
 }
 
 .search-icon img {
 	width: auto;
-    height: auto;
-    margin: auto;
-    max-width: 100%;
-    display: block;
+	height: auto;
+	margin: auto;
+	max-width: 100%;
+	display: block;
 }
 
 .search-container {
@@ -441,6 +477,8 @@ span.category-title {
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
 	border-radius: 30px 0 0 30px;         /* Irrelevant, I guess */
+	animation: fadeIn 2s;
+	outline: none;
 }
 
 .channel-header {

@@ -1,192 +1,206 @@
  var $ = jQuery.noConflict();
-
+ 
  var totalPragrams=0;
  $(document).ready(function(){
+	
+	getdate();
+	
+	ajax_load_programs();
+	
+	$('.icon-app').on("click",function(){
+		ajax_load_programs();
+	});
 
- 	getdate();
-
- 	ajax_load_programs();
-
- 	$('.icon-app').on("click",function(){
- 		ajax_load_programs();
- 	});
-
- 	$('.search-icon').on("click",function(){
- 		$(this).fadeOut();
- 		$(".search-container").show();
- 		$("#search").focus();
- 	});
-
- 	$('#container_programs').click(function(){
- 		$(".search-container").hide();
- 		$(".search-icon").fadeIn();
- 	});
-
-
- });
-
- function ajax_load_programs(){
- 	$('#container_programs').empty();
- 	var loader = $(".content-loader");
- 	loader.show();
- 	$.ajax({
- 		url: appConfig.URL_PROGRAMS_PROD,
- 		dataType: "json"
- 	}).done(function(json) {
- 		loader.hide();
- 		$.each(json.programs, function(i) {
- 			var link = "src="+json.programs[i].link + "&";
- 			var typeVideo = "type="+json.programs[i].type+"&";
- 			var title = "title="+json.programs[i].name+"&";
- 			var description = "description="+json.programs[i].description+"&";
- 			var params="?"+ link + typeVideo + title + description;
-
- 			addProgramToCategory(json.programs[i],params,i);
- 			totalPragrams++;
- 		});
- 	}).fail(function() {
- 		loader.hide();
- 		console.log("Fail request programs");
- 	});
- }
-
- function addProgramToCategory(program,params,index){
-
- 	var category = "#" + program.category;
- 	if($(category).length == 0) {
- 		$("#container_programs").append("<div class='category' id='"+program.category+"'><span class='category-title'>"+program.category+"</span><div class='programs-container row' id='list'></div></div>");
- 	}
- 	$(category + "  div.programs-container").append(get_program_data(program,params,index));
- }
-
- function get_program_data(program,params,index){
- 	return "<div onmouseover=\"mouseOver(this,'"+program.type+"','"+program.link+"');\" onmouseout='mouseOut(this);' tabindex='"+(index+1)+"' class='card content-box'><a id='link' class='program-link' name='"
- 	+program.name+"' href='player.html"+params+"'><div class='inner'><img class='programs-logo' src='"
- 	+program.logo+"'><span class='channel-title'>"+program.name+"</span></div></a></div>";
- }
-
-
- var tabindex=0;
- document.addEventListener("keydown", function(inEvent){
- 	console.log("button key: "+inEvent.keyCode);
- 	var itemsPerRow = 8;
- 	switch(inEvent.keyCode){
-	case 37://left
-	tabindex--;
-	$('.programs-container > .content-box:focus').prevAll('.content-box').not(".hide").first().focus();
-	break;
-	case 38://top
-	//tabindex = (tabindex >= itemsPerRow) ? tabindex-itemsPerRow : tabindex;
-	//$('.programs-container > .content-box:focus').prevAll('.content-box[tabindex=' + tabindex + ']').not(".hide").first().focus();
-	break;
-	case 39://right
-	if(tabindex==0){
-		tabindex=1;
-		$('.content-box').not(".hide").first().focus();
-	}else{
-		tabindex++;
-		$('.programs-container > .content-box:focus').nextAll('.content-box').not(".hide").first().focus();
-	}
-	break;
-	case 40://down
-	/*if(tabindex==0){
-		tabindex=1;
-		$('.content-box').not(".hide").first().focus();
-	}else{
-		tabindex = (tabindex <= (totalPragrams-itemsPerRow)) ? tabindex+itemsPerRow : tabindex;
-		$('.programs-container > .content-box:focus').nextAll('.content-box[tabindex=' + tabindex + ']').not(".hide").first().focus();
-	}*/
-	break;
-	case 13://enter
-	window.location = $('.programs-container > .content-box:focus > a').attr('href');
-	break;
-	default:  break;
-}
+	$('.reload').on("click",function(){
+		ajax_load_programs();
+	});
+	
+	$('.search-icon').on("click",function(){
+		$(this).fadeOut();
+		$(".search-container").show();
+		$("#search").focus();
+	});
+	
+	$('#container_programs').click(function(){
+		$(".search-container").hide();
+		$(".search-icon").fadeIn();
+	});
+	
 });
 
- $(document).ready(function(){
- 	$("#search").on("click",function(){
- 		tabindex=0;
- 	});
- });
+function ajax_load_programs(){
+	$('#container_programs').empty();
+	var loader = $(".content-loader");
+	var error = $(".content-error-request");
+	error.hide();
+	loader.show();
+	$.ajax({
+		url: appConfig.URL_PROGRAMS_PROD,
+		dataType: "json"
+	}).done(function(json) {
+		loader.hide();
+		$.each(json.programs, function(i) {
+			var link = "src="+json.programs[i].link + "&";
+			var typeVideo = "type="+json.programs[i].type+"&";
+			var title = "title="+json.programs[i].name+"&";
+			var description = "description="+json.programs[i].description+"&";
+			var params="?"+ link + typeVideo + title + description;
+			
+			addProgramToCategory(json.programs[i],params,i);
+			totalPragrams++;
+		});
+	}).fail(function() {
+		loader.hide();
+		error.show();
+		console.log("Fail request programs");
+	});
+}
 
- function mouseOut(elem) {
- 	$(".preview").empty();
- 	$(".preview").hide();
- }
+function addProgramToCategory(program,params,index){
+	var category = "#" + program.category + "  div.programs-container";
+	if($(category).length == 0) {
+		$("#container_programs").append("<div class='category' id='"+program.category+"'><span class='category-title'>"
+		+program.category+"</span><div class='programs-container row' id='list'></div></div>");
+	}
+	$(category).append(get_program_data(program,params,index));
+}
 
- function mouseOver(elem,typeVideo,link) {
- 	if (getSettings("isPreviewEnable")=="true") {
- 		var container = $(".preview");
- 		container.empty()
- 		container.fadeIn();
- 		if(typeVideo==="native"){
- 			createNativeVideo(container,link);
- 		}else if(typeVideo==="youtube" || typeVideo==="iframe"){
- 			createIframe(container,link);
- 		}
- 	}
- }
+function get_program_data(program,params,index){
+	return "<div onmouseover=\"mouseOver(this,'"+program.type+"','"+program.link+"');\" onmouseout='mouseOut(this);' tabindex='"+(index+1)+
+	"' class='card content-box'><a id='link' class='program-link' name='"
+	+program.name+"' href='player.html"+params+"'><div class='inner'><img class='programs-logo' src='"
+	+program.logo+"'><span class='channel-title'>"+program.name+"</span></div></a></div>";
+}
 
- function addSourceToVideo(element, src, type) {
- 	var source = document.createElement('source');
- 	source.src = src;
- 	source.type = type;
- 	element.appendChild(source);
- }
+function get_tabindex_by_last_element(elem){
+	var tbi = $(elem +" .card").last().attr("tabindex");
+	console.log(tbi);
+	return tbi == undefined ? 0 : parseInt(tbi);
+}
 
- function createIframe(container,src){
- 	var iframe = document.createElement('iframe');
- 	iframe.src = src;
- 	iframe.setAttribute('class','ytplayer');
- 	iframe.setAttribute('frameborder', '0');
- 	iframe.setAttribute('allow' ,'autoplay; encrypted-media');
- 	iframe.setAttribute('allowFullScreen', '');
- 	iframe.width = "200px";
- 	iframe.height = "113px";
- 	container.append(iframe);
- }
+var tabindex=0;
+document.addEventListener("keydown", function(inEvent){
+	console.log("button key: "+inEvent.keyCode);
+	var itemsPerRow = 8;
+	switch(inEvent.keyCode){
+		case 13://enter
+		window.location = $('.programs-container > .content-box:focus > a').attr('href');
+		break;
+		case 37://left
+		tabindex > 0 ? tabindex-- : tabindex;
+		//$('[tabindex=' + tabindex + ']').not(".hide").focus();
+		//$('.card:focus').prev(".card").not(".hide").focus();
+		break;
+		case 39://right
+		if(tabindex==0){
+			tabindex=1;
+			$('[tabindex=' + tabindex + ']').not(".hide").focus();
+		}else{
+			tabindex < totalPragrams ? tabindex++ : tabindex;
+			//$('[tabindex=' + tabindex + ']').not(".hide").focus();
+		}
+		break;
+		case 38://top
+		//tabindex = (tabindex >= itemsPerRow) ? tabindex-itemsPerRow : tabindex;
+		//$('.programs-container > .content-box:focus').prevAll('.content-box[tabindex=' + tabindex + ']').not(".hide").first().focus();
+		break;
+		case 40://down
+		/*if(tabindex==0){
+			tabindex=1;
+			$('.content-box').not(".hide").first().focus();
+		}else{
+			tabindex = (tabindex <= (totalPragrams-itemsPerRow)) ? tabindex+itemsPerRow : tabindex;
+			$('.programs-container > .content-box:focus').nextAll('.content-box[tabindex=' + tabindex + ']').not(".hide").first().focus();
+		}*/
+		break;
+		default:  break;
+	}
+	console.log(tabindex);
+});
 
- function createNativeVideo(container,src){
- 	var video = document.createElement('video');
- 	video.poster = "./assets/loading/loader-xs.gif";
- 	video.autoplay = true;
- 	container.append(video);
- 	addSourceToVideo(video, src, 'application/x-mpegURL');
- }
+$(document).ready(function(){
+	$("#search").on("click",function(){
+		tabindex=0;
+	});
+});
+
+function mouseOut(elem) {
+	$(".preview").empty();
+	$(".preview").hide();
+}
+
+function mouseOver(elem,typeVideo,link) {
+	if (getSettings("isPreviewEnable")=="true") {
+		var container = $(".preview");
+		//container.empty()
+		container.show();
+		if(typeVideo==="native"){
+			createNativeVideo(container,link);
+		}else if(typeVideo==="youtube" || typeVideo==="iframe"){
+			createIframe(container,link);
+		}
+	}
+}
+
+function addSourceToVideo(element, src, type) {
+	var source = document.createElement('source');
+	source.src = src;
+	source.type = type;
+	element.appendChild(source);
+}
+
+function createIframe(container,src){
+	var iframe = document.createElement('iframe');
+	iframe.src = src;
+	iframe.setAttribute('class','ytplayer');
+	iframe.setAttribute('frameborder', '0');
+	iframe.setAttribute('allow' ,'autoplay; encrypted-media');
+	iframe.setAttribute('allowFullScreen', '');
+	iframe.width = "200px";
+	iframe.height = "113px";
+	container.append(iframe);
+}
+
+function createNativeVideo(container,src){
+	var video = document.createElement('video');
+	video.poster = "./assets/loading/loader-xs.gif";
+	video.autoplay = true;
+	container.append(video);
+	addSourceToVideo(video, src, 'application/x-mpegURL');
+}
 
 
 
- $(document).ready(function(){
+$(document).ready(function(){
+	
+	$("#setting-preview").prop('checked', getSettings("isPreviewEnable"));
+	$("#setting-preview").click(function(){
+		var isPreviewEnable = false;
+		if ($(this).is(':checked')) {
+			isPreviewEnable = true;
+		}else{
+			isPreviewEnable = false;
+		}
+		saveSettings("isPreviewEnable",isPreviewEnable);
+	});
+	
+});
 
- 	$("#setting-preview").prop('checked', getSettings("isPreviewEnable"));
- 	$("#setting-preview").click(function(){
- 		var isPreviewEnable = false;
- 		if ($(this).is(':checked')) {
- 			isPreviewEnable = true;
- 		}else{
- 			isPreviewEnable = false;
- 		}
- 		saveSettings("isPreviewEnable",isPreviewEnable);
- 	});
+function getSettings(name){
+	if (typeof(Storage) !== "undefined") {
+		return localStorage.getItem(name);
+	} else {
+		return null;
+	}
+}
 
- });
-
- function getSettings(name){
- 	if (typeof(Storage) !== "undefined") {
- 		return localStorage.getItem(name);
- 	} else {
- 		return null;
- 	}
- }
-
- function saveSettings(name,value){
- 	if (typeof(Storage) !== "undefined") {
- 		localStorage.setItem(name, value);
- 	} else {
- 		console.log("Sorry, your browser does not support Web Storage...");
- 	}
- }
+function saveSettings(name,value){
+	if (typeof(Storage) !== "undefined") {
+		localStorage.setItem(name, value);
+	} else {
+		console.log("Sorry, your browser does not support Web Storage...");
+	}
+}
 
 
 

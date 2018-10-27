@@ -7,14 +7,11 @@ function load(){
     var filter = e.target.value.toUpperCase();
 
     var list = document.querySelectorAll("#list");
-
+    var tabIndex=1;
     for (var j = 0; j < list.length; j++) {
-
-      var divs = list[j].getElementsByTagName("div");
-      var tabIndex=1;
+      var divs = list[j].getElementsByClassName("card");
       for (var i = 0; i < divs.length; i++) {
         var a = divs[i].getElementsByTagName("span")[0];
-
         if (a) {
           if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
             divs[i].style.display = "";
@@ -24,7 +21,7 @@ function load(){
           } else {
             divs[i].style.display = "none";
             divs[i].classList.add("hide");
-            divs[i].tabIndex = 0;
+            divs[i].tabIndex = -1;
           }
         }
       }
