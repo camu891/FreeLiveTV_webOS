@@ -154,8 +154,8 @@
             "category":"Deportes"
         },{
             "id":1,
-            "type": "native",
-            "link": "https://live-edge.pxstream.tv/loadbalance/47367239418924558333/playlist.m3u8?md5=sWpDHSQ9jrcRXg7rVfJMkw&expires=1539500156",
+            "type": "iframe",
+            "link": "http://futbollibre.online/fox-sports-premium/embed66.html?ewqe",
             "name": "Fox Sport Premium",
             "logo": "./assets/img/foxsport_premium.png",
             "description":"No hay descripción",
