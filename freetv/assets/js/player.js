@@ -49,7 +49,7 @@
       iframe.setAttribute('class','ytplayer');
       iframe.setAttribute('style','margin-top:5px;');
     }
-    
+    iframe.setAttribute('id','iframe');
     iframe.setAttribute('frameborder', '0');
     iframe.setAttribute('allow' ,'autoplay; encrypted-media');
     iframe.setAttribute('allowFullScreen', '');
@@ -87,11 +87,18 @@
     }else if (typeVideo==="iframe"){
       createIframe(container,false);
       $(".above").remove();
-    
+     // autoplayHandler();
     }
     showHeaderOnMouseMove();
   }, true);
   
+  function autoplayHandler(){
+    var e = new $.Event("click");
+    e.pageX = 500;
+    e.pageY = 500;
+    $("#iframe").trigger(e);
+  }
+
   function hideHeader(){
     var header = $('.channel-header');
     if($(header).is(":visible") && !isHover)  

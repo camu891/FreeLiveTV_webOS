@@ -401,10 +401,10 @@
         },
         {
             "id":3,
-            "type": "native",
-            "link": "https://s10.limpi.tv/live/40710.m3u8?token=LfiWkTX36QrfGan6t0hOxw&expires=1538358299&ip=24.232.44.113",
-            "name": "DIRECT TV",
-            "logo": "./assets/img/directv.png",
+            "type": "iframe",
+            "link": "http://futbollibre.online/directv-sports/embed.html",
+            "name": "DIRECT SPORTS",
+            "logo": "./assets/img/directv_sports.png",
             "description":"No hay descripción",
             "category":"Deportes"
         },

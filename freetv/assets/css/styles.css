@@ -406,12 +406,12 @@ span.category-title {
 }
 
 .player-container iframe {
-	
 	display: block;
 	width: 100%;
 	height: 100%;
 	border: none;
 	min-height: 100%;
+	margin: auto;
 }
 
 .player .container {
@@ -431,7 +431,6 @@ span.category-title {
 	margin: auto;
 	display: block;
 	right: 0;
-	margin-left: -5px;
 	border: 0;
 }
 
