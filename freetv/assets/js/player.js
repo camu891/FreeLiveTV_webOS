@@ -1,4 +1,9 @@
   var $ = jQuery.noConflict();
+  window.name="myMainWindow";
+  if (window.name!='myMainWindow') {
+    window.open(location.href,"myMainWindow")
+    window.close();
+  }
   
   var queryString = decodeURIComponent(window.location.search); //parsing
   queryString = queryString.substring(1);
@@ -63,7 +68,6 @@
     });
   }
   
-  
   function createNativeVideo(container){
     var loader = $(".content-loader");
     loader.show();
@@ -87,26 +91,30 @@
     }else if (typeVideo==="iframe"){
       createIframe(container,false);
       $(".above").remove();
-      
-      $(document).mousemove(function(e){
-        var vertical = e.pageY;
-        console.log("vertical: "+vertical);
-        var header =  $('.channel-header');
-        var height =  header.height();
-        console.log(height);
-        
-        if(vertical <= height) {   
-          header.fadeIn();
-        } else {
-          header.fadeOut();
-        }
-      }); 
-    }
     
+    }
+    showHeaderOnMouseMove();
   }, true);
   
-  
-  
+  function hideHeader(){
+    console.log("timeout");
+    var header = $('.channel-header');
+    if($(header).is(":visible"))  
+    $(header).fadeOut();
+  }
+
+  function showHeaderOnMouseMove(){
+    $(document).mousemove(function(e){
+      var header = $('.channel-header');
+      var vertical = e.pageY;
+      if( vertical <= header.height()) {   
+        header.fadeIn();
+      } else {
+        header.fadeOut();
+      }
+    }); 
+    setInterval(hideHeader, 10000);
+  }
   
   //remove ads and logs in iframe
   function clearPlayer(){
