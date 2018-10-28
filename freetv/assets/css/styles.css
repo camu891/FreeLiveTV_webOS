@@ -499,23 +499,35 @@ span.category-title {
 
 .channel-header .container {
 	display: flex;
+	min-height: 200px;
+    align-items: center;
 }
 
 .channel-info h2 {
-	padding: 2px 5px;
 	font-size: 3em;
-	margin-left: 50px;
+	margin: 10px 50px;
 }
 
 .channel-info p {
-	margin-left: 50px;
-	font-size: 1.8em;
-	padding: 2px 5px;
+	margin: 15px 50px;
+	font-size: 1em;
 }
 
+.max-lines {
+	display: block; /* or inline-block */
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+	overflow: hidden;
+	max-height: 5em;
+    line-height: 1.2em;
+  }
+
 .back {
-	display: flex;
 	align-items: center;
+    display: flex;
+    vertical-align: middle;
+    width: 135px;
+    min-height: 200px;
 }
 
 .back img {

@@ -176,7 +176,7 @@
         },
         {
             "id":1,
-            "type": "iframe",
+            "type": "native",
             "link": "https://fslahds-lh.akamaihd.net/i/FS2SUR_1@77551/index_1_av-p.m3u8?sd=6&set-segment-duration=quality&rebase=on&hdntl=exp=1540752766~acl=%2fi%2fFS2SUR_1%4077551%2f*~data=hdntl~hmac=99131d45fdfd08d7652778dcfb359179739aec0c405b8b90424bb215218187a6",
             "name": "Fox Sport 2",
             "logo": "./assets/img/foxsport2.png",

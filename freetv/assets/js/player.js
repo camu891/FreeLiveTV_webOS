@@ -22,7 +22,7 @@
   }
   
   function addChannelInfo(){
-    $(".channel-info").append("<h2>"+title+"</h2><p>"+description+"</p>");
+    $(".channel-info").append("<h2>"+title+"</h2><p class='max-lines'>"+description+"</p>");
   }
   
   function initGoBack(){
@@ -115,7 +115,7 @@
         header.fadeOut();
       }
     }); 
-    setInterval(hideHeader, 15000);
+    setInterval(hideHeader, 10000);
   }
   
   //remove ads and logs in iframe
