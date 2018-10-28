@@ -19,6 +19,7 @@
   function load(){
     addChannelInfo();
     initGoBack();
+    loadPlayer();
   }
   
   function addChannelInfo(){
@@ -77,8 +78,7 @@
     addSourceToVideo(video, src, 'application/x-mpegURL');
   }
   
-  window.addEventListener('DOMContentLoaded', function() {
-    
+  function loadPlayer(){
     var container = document.getElementById("container_player");
     if(typeVideo==="native"){
       createNativeVideo(container);
@@ -90,8 +90,8 @@
      // autoplayHandler();
     }
     showHeaderOnMouseMove();
-  }, true);
-  
+  }
+
   function autoplayHandler(){
     var e = new $.Event("click");
     e.pageX = 500;
