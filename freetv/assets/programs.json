@@ -15,7 +15,7 @@
             "link": "https://www.youtube.com/embed/9h6Vz6ylIdE?rel=0&autoplay=1&showinfo=0&controls=0",
             "name": "El Trece TV",
             "logo": "./assets/img/eltrece.png",
-            "description":"No hay descripción",
+            "description":"Canal 13 es una cadena de televisión argentina que transmite desde la Ciudad de Buenos Aires.",
             "category":"Noticias"
         },
         {
@@ -24,7 +24,7 @@
             "link": "http://televisionlibre.net/canal/telefe-en-vivo/embed2.html",
             "name": "Telefe",
             "logo": "./assets/img/telefe.png",
-            "description":"No hay descripción",
+            "description":"Telefe es el canal de TV líder en la producción y comercialización de contenidos y servicios audiovisuales de Argentina.",
             "category":"Noticias"
         },
         {
@@ -43,7 +43,7 @@
             "link2": "https://g3.mc-slo.transport.edge-access.net/b17/ngrp:c7cam2-20034_all/c7cam2-20034_1080p.m3u8",
             "name": "TV Pública",
             "logo": "./assets/img/tvpublica.png",
-            "description":"No hay descripción",
+            "description":"La Televisión Pública Argentina es la cadena de mayor cobertura televisiva en el territorio argentino a través de repetidoras ubicadas en el interior del país.",
             "category":"Noticias"
         },
         {
@@ -70,7 +70,7 @@
             "link": "https://www.youtube.com/embed/-1xif50QMr4?rel=0&autoplay=1&showinfo=0&controls=0",
             "name": "TN Noticias",
             "logo": "./assets/img/tn.png",
-            "description":"No hay descripción",
+            "description":"TN es la referencia obligada de la actualidad nacional e internacional. Todo el año durante todo el día, los periodistas de TN siguen paso a paso las noticias, mostrando las imágenes más impactantes desde el lugar donde está la información.",
             "category":"Noticias"
         },
         {
@@ -88,7 +88,7 @@
             "link": "http://live-edge01.telecentro.net.ar/live/smil:c26.smil/chunklist_w1015357033_b1264000_sleng.m3u8",
             "name": "Canal 26",
             "logo": "./assets/img/canal26.png",
-            "description":"No hay descripción",
+            "description":"Canal 26 Noticias es un canal de televisión abierta argentino, que basa su programación en noticieros y programas de actualidad.",
             "category":"Noticias"
         },
         {
@@ -113,9 +113,9 @@
             "id":5,
             "type": "native",
             "link": "http://sv1.futbollibre.net/m3u8/tyc2.m3u8",
-            "name": "Tyc Sport",
+            "name": "Tyc Sports",
             "logo": "./assets/img/tyc_sport.png",
-            "description":"No hay descripción",
+            "description":"TyC Sports en vivo es un canal de televisión por suscripción deportivo argentino, el cual brinda la emisión de eventos deportivos destacados a nivel nacional e internacional.",
             "category":"Deportes"
         },
         {
@@ -124,7 +124,7 @@
             "link": "https://contar-live.secure.footprint.net/hls-live/ionmicroremux-Deportv/_definst_/live.m3u8",
             "name": "Deportv",
             "logo": "./assets/img/dxtv.png",
-            "description":"No hay descripción",
+            "description":"DeporTV en VIVO es un canal de televisión público argentino especializado en programación deportiva.",
             "category":"Deportes"
         },
         {
@@ -134,7 +134,7 @@
             "link2": "http://sv1.futbollibre.net/canales/espn.m3u8",
             "name": "ESPN",
             "logo": "./assets/img/espn.png",
-            "description":"No hay descripción",
+            "description":"ESPN Latinoamérica es el canal de televisión especializado en deportes que transmite por cable o satélite para este lado del Continente, pero con diferentes señales según los países o zona en los que uno se encuentre.",
             "category":"Deportes"
         },
         {
@@ -144,7 +144,7 @@
             "link2": "http://sv1.futbollibre.net/canales/espn2.m3u8",
             "name": "ESPN 2",
             "logo": "./assets/img/espn2.png",
-            "description":"No hay descripción",
+            "description":"ESPN 2 En vivo es un canal de deportes que regularmente transmite partidos de fútbol correspondientes a la Bundesliga y de la Liga de Holanda. Además se transmiten los Juegos Extremos de Invierno.",
             "category":"Deportes"
         },
         {
@@ -154,7 +154,7 @@
             "link2": "http://sv1.futbollibre.net/canales/espn3.m3u8",
             "name": "ESPN 3",
             "logo": "./assets/img/espn3.png",
-            "description":"No hay descripción",
+            "description":"La programación de ESPN 3 está dedicada a los deportes de acción, es decir los deportes extremos tanto de verano como de invierno, así como los de aventura, surf y running.",
             "category":"Deportes"
         },{
             "id":1,
@@ -162,23 +162,23 @@
             "link": "http://futbollibre.online/fox-sports-premium/embed66.html?ewqe",
             "name": "Fox Sport Premium",
             "logo": "./assets/img/foxsport_premium.png",
-            "description":"No hay descripción",
+            "description":"FOX Sports Premium es un canal argentino que ofrece acceso instantáneo a los mejores partidos de futbol de la Superliga Argentina. Es un canal de televisión de paga argentino dedicado a la emisión del fútbol de dicho país, junto con TNT Sports tras la alianza de Turner y Fox por los derechos de televisión del fútbol argentino, el cual reemplaza el programa público Fútbol Para Todos.",
             "category":"Deportes"
         },
         {
             "id":1,
             "type": "native",
             "link": "https://fslahds-lh.akamaihd.net/i/FS1CS_1@77550/index_1_av-p.m3u8?sd=6&set-segment-duration=quality&rebase=on&hdntl=exp=1539543060~acl=%2fi%2f*~data=hdntl~hmac=592ab38307a9685cde90f5a52079fb61d1b5f6e382df15ee30ed967297c9d0d1",
-            "name": "Fox Sport",
+            "name": "Fox Sports",
             "logo": "./assets/img/foxsport.png",
-            "description":"No hay descripción",
+            "description":"Fox Sports es un canal de televisión por suscripción especializado en deportes que emite las 24 horas del día para Latinoamérica. Transmite en vivo la Copa Libertadores, Copa Sudamericana, UEFA Champions League, UEFA Europa League, Serie A de Italia, Bundesliga de Alemania, Copa Mundial de Clubes, NFL, MLB, entre otros.",
             "category":"Deportes"
         },
         {
             "id":1,
             "type": "native",
             "link": "https://fslahds-lh.akamaihd.net/i/FS2SUR_1@77551/index_1_av-p.m3u8?sd=6&set-segment-duration=quality&rebase=on&hdntl=exp=1540752766~acl=%2fi%2fFS2SUR_1%4077551%2f*~data=hdntl~hmac=99131d45fdfd08d7652778dcfb359179739aec0c405b8b90424bb215218187a6",
-            "name": "Fox Sport 2",
+            "name": "Fox Sports 2",
             "logo": "./assets/img/foxsport2.png",
             "description":"Fox Sports 2 es un canal de cable y satelite totalmente deportivo, es la segunda señal de Fox Sports, antes llamado Fox Sports + a partir del 5 de Noviembre del 2012 se le cambio de nombre para llamarse Fox Sports 2 esta cadena transmite eventos deportivos locales e internacionales más destacados como la Copa Libertadores, UEFA Champions League, Copa Sudamericana, UEFA Europa League, la WWE entre otros.",
             "category":"Deportes"
@@ -187,9 +187,9 @@
             "id":1,
             "type": "iframe",
             "link": "http://futbollibre.online/fox-sports-3/embed3.html",
-            "name": "Fox Sport 3",
+            "name": "Fox Sports 3",
             "logo": "./assets/img/foxsport3.png",
-            "description":"No hay descripción",
+            "description":"Fox Sports 3 es un canal deportivo de televisión de pago operado por Fox International Channels y que inició transmisiones el 5 de noviembre de 2012 para América Latina (excepto Brasil). Fox Sports 3 reemplazó al canal Speed en su versión para Latinoamérica",
             "category":"Deportes"
         },
         {
@@ -207,7 +207,7 @@
             "link": "http://futbollibre.online/tnt-sports/embed.html",
             "name": "TNT SPORT",
             "logo": "./assets/img/tntsports.png",
-            "description":"No hay descripción",
+            "description":"TNT Sports en vivo, es un canal de televisión por suscripción argentino, dedicado a la emisión del deporte de ese país, junto con Fox Sports Premium, que comenzó a emitirse el viernes 25 de agosto de 2017 desde las 18h, tras la alianza de Turner y Fox por los derechos de televisión de la Primera División Argentina (Superliga) de fútbol argentino, siendo reemplazo del programa gubernamental Fútbol Para Todos.",
             "category":"Deportes"
         }, 
         {
@@ -216,7 +216,7 @@
             "link": "http://futbollibre.online/directv-sports/embed.html",
             "name": "DIRECT SPORTS",
             "logo": "./assets/img/directv_sports.png",
-            "description":"DirecTV Sports en vivo es un canal de televisión por suscripción deportivo exclusivo de DirecTV",
+            "description":"DirecTV Sports en vivo es un canal de televisión por suscripción deportivo exclusivo de DirecTV.",
             "category":"Deportes"
         },
         {
@@ -446,10 +446,10 @@
         },
         {
             "id":3,
-            "type": "native",
-            "link": "http://iphone-streaming.ustream.tv/uhls/12762028/streams/live/iphone/playlist.m3u8",
+            "type": "iframe",
+            "link": "http://televisionlibre.net/canal/animal-planet-en-vivo/embed.html",
             "name": "Animal Planet",
-            "logo": "./assets/img/no_image.png",
+            "logo": "./assets/img/animal_planet.png",
             "description":"No hay descripción",
             "category":"Entretenimiento" 
         },
