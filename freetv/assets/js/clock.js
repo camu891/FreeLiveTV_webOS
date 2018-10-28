@@ -7,7 +7,7 @@ function getdate(){
   var h = today.getHours();
   var m = today.getMinutes();
   var s = today.getSeconds();
-  var day = today.getDay();
+  var day = today.getDate();
   var month = today.getMonth();
   var thisMonth = months[month];
   var year = today.getFullYear();
