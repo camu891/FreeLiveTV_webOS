@@ -23,10 +23,6 @@
   
   function addChannelInfo(){
     $(".channel-info").append("<h2>"+title+"</h2><p>"+description+"</p>");
-    $(".above").click(function() {
-      var header =  $('.channel-header');
-      header.slideToggle();
-    }); 
   }
   
   function initGoBack(){
@@ -97,20 +93,22 @@
   }, true);
   
   function hideHeader(){
-    console.log("timeout");
     var header = $('.channel-header');
-    if($(header).is(":visible"))  
+    if($(header).is(":visible") && !isHover)  
     $(header).fadeOut();
   }
 
+  var isHover = false;
   function showHeaderOnMouseMove(){
     $(document).mousemove(function(e){
       var header = $('.channel-header');
       var vertical = e.pageY;
       if( vertical <= header.height()) {   
         header.fadeIn();
+        isHover = true;
       } else {
         header.fadeOut();
+        isHover = false;
       }
     }); 
     setInterval(hideHeader, 10000);
