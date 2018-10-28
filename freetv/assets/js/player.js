@@ -101,24 +101,21 @@
 
   function hideHeader(){
     var header = $('.channel-header');
-    if($(header).is(":visible") && !isHover)  
+    if($(header).is(":visible"))  
     $(header).fadeOut();
   }
 
-  var isHover = false;
   function showHeaderOnMouseMove(){
     $(document).mousemove(function(e){
       var header = $('.channel-header');
       var vertical = e.pageY;
       if( vertical <= header.height()) {   
         header.fadeIn();
-        isHover = true;
       } else {
         header.fadeOut();
-        isHover = false;
       }
     }); 
-    setInterval(hideHeader, 10000);
+    setInterval(hideHeader, 15000);
   }
   
   //remove ads and logs in iframe

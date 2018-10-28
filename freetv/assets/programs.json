@@ -180,7 +180,7 @@
             "link": "https://fslahds-lh.akamaihd.net/i/FS2SUR_1@77551/index_1_av-p.m3u8?sd=6&set-segment-duration=quality&rebase=on&hdntl=exp=1540752766~acl=%2fi%2fFS2SUR_1%4077551%2f*~data=hdntl~hmac=99131d45fdfd08d7652778dcfb359179739aec0c405b8b90424bb215218187a6",
             "name": "Fox Sport 2",
             "logo": "./assets/img/foxsport2.png",
-            "description":"No hay descripción",
+            "description":"Fox Sports 2 es un canal de cable y satelite totalmente deportivo, es la segunda señal de Fox Sports, antes llamado Fox Sports + a partir del 5 de Noviembre del 2012 se le cambio de nombre para llamarse Fox Sports 2 esta cadena transmite eventos deportivos locales e internacionales más destacados como la Copa Libertadores, UEFA Champions League, Copa Sudamericana, UEFA Europa League, la WWE entre otros.",
             "category":"Deportes"
         },
         {
@@ -405,7 +405,7 @@
             "link": "http://futbollibre.online/directv-sports/embed.html",
             "name": "DIRECT SPORTS",
             "logo": "./assets/img/directv_sports.png",
-            "description":"No hay descripción",
+            "description":"DirecTV Sports en vivo es un canal de televisión por suscripción deportivo exclusivo de DirecTV",
             "category":"Deportes"
         },
         {
