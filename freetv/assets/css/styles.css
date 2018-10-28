@@ -490,7 +490,6 @@ span.category-title {
 	overflow: hidden;
 	height: auto;
 	background: rgba(0, 0, 0, 0.5);
-	background: rgba(0, 0, 0, 0.5);
 	padding: 10px;
 	color: white;
 	display: none;
@@ -498,18 +497,18 @@ span.category-title {
 }
 
 .channel-header .container {
-	display: flex;
+	display: inline-flex;
 	min-height: 200px;
     align-items: center;
 }
 
 .channel-info h2 {
 	font-size: 3em;
-	margin: 10px 50px;
+	margin: 10px 35px;
 }
 
 .channel-info p {
-	margin: 15px 50px;
+	margin: 15px 35px;
 	font-size: 1em;
 }
 
@@ -524,9 +523,10 @@ span.category-title {
 
 .back {
 	align-items: center;
-    display: flex;
+    display: inline-flex;
     vertical-align: middle;
-    width: 135px;
+	width: auto;
+	min-width: 80px;
     min-height: 200px;
 }
 

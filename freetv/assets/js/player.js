@@ -115,7 +115,7 @@
         header.fadeOut();
       }
     }); 
-    setInterval(hideHeader, 10000);
+   setInterval(hideHeader, 10000);
   }
   
   //remove ads and logs in iframe
