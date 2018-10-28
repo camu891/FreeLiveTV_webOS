@@ -185,8 +185,8 @@
         },
         {
             "id":1,
-            "type": "native",
-            "link": "http://tv-porinternethd.com/m3u/foxsports3.m3u8?dw=80&ts=1538262000&hdnts=exp=1538435021~acl=/streams/23200525_8387414_lsihpvexojiwutleh6v_1/media*~hmac=80276cde7956873a980f76ab0a4e0f0bc8e53496d0d56ed41769c4c7c59c1b17",
+            "type": "iframe",
+            "link": "http://futbollibre.online/fox-sports-3/embed3.html",
             "name": "Fox Sport 3",
             "logo": "./assets/img/foxsport3.png",
             "description":"No hay descripción",
@@ -207,6 +207,24 @@
             "link": "http://futbollibre.online/tnt-sports/embed.html",
             "name": "TNT SPORT",
             "logo": "./assets/img/tntsports.png",
+            "description":"No hay descripción",
+            "category":"Deportes"
+        }, 
+        {
+            "id":3,
+            "type": "iframe",
+            "link": "http://futbollibre.online/directv-sports/embed.html",
+            "name": "DIRECT SPORTS",
+            "logo": "./assets/img/directv_sports.png",
+            "description":"DirecTV Sports en vivo es un canal de televisión por suscripción deportivo exclusivo de DirecTV",
+            "category":"Deportes"
+        },
+        {
+            "id":3,
+            "type": "iframe",
+            "link": "http://bankai.stream/rnaw4.php",
+            "name": "BEIN Sports",
+            "logo": "./assets/img/bein_sports.png",
             "description":"No hay descripción",
             "category":"Deportes"
         }, 
@@ -398,15 +416,6 @@
             "logo": "./assets/img/lamega.png",
             "description":"No hay descripción",
             "category":"Música"
-        },
-        {
-            "id":3,
-            "type": "iframe",
-            "link": "http://futbollibre.online/directv-sports/embed.html",
-            "name": "DIRECT SPORTS",
-            "logo": "./assets/img/directv_sports.png",
-            "description":"DirecTV Sports en vivo es un canal de televisión por suscripción deportivo exclusivo de DirecTV",
-            "category":"Deportes"
         },
         {
             "id":3,
