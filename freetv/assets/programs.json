@@ -470,16 +470,7 @@
             "logo": "https://3.bp.blogspot.com/-mDTX1G7lAqI/WXj7MIc6YCI/AAAAAAAAmkI/X19Zna-beBoRrXIF0fKR-wKxjoubDHPPgCLcBGAs/s250-c/The-Equalizer-2_Teaser_Poster_JPosters.jpg",
             "description":"No hay descripción",
             "category":"Peliculas" 
-        },
-        {
-            "id":3,
-            "type": "mp4",
-            "link": "https://storage.googleapis.com/pp-to-stream.appspot.com/17519.mp4",
-            "name": "La Monja",
-            "logo": "https://4.bp.blogspot.com/-2mCa1S2eARg/WyAWdcbz5OI/AAAAAAAApb0/GvCkRyIO8e44jH7qwryt7KMt6WVtikElQCLcBGAs/s250-c/La_Monja_Teaser_Poster_JPosterS.jpg",
-            "description":"No hay descripción",
-            "category":"Peliculas" 
-        }  
+        }
 
     ]
 }
