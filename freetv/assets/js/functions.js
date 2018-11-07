@@ -142,7 +142,7 @@ function mouseOver(elem,typeVideo,link) {
 		var container = $(".preview");
 		//container.empty()
 		container.show();
-		if(typeVideo==="native"){
+		if(typeVideo==="hls"){
 			createNativeVideo(container,link);
 		}else if(typeVideo==="youtube" || typeVideo==="iframe"){
 			createIframe(container,link);

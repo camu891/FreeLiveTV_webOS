@@ -2,7 +2,7 @@
     "programs":[
         {
             "id":1,
-            "type": "native",
+            "type": "hls",
             "link": "https://g1.proy-slo.transport.edge-access.net/b12/ngrp:el12_live01-100083_all/el12_live01-100083_720p.m3u8",
             "name": "El doce",
             "logo": "./assets/img/12tv.png",
@@ -38,7 +38,7 @@
         },
         {
             "id":4,
-            "type": "native",
+            "type": "hls",
             "link": "https://chunks01.tvpublica.com.ar/video/BJQRNMF6b_1080/index.m3u8",
             "link2": "https://g3.mc-slo.transport.edge-access.net/b17/ngrp:c7cam2-20034_all/c7cam2-20034_1080p.m3u8",
             "name": "TV Pública",
@@ -48,7 +48,7 @@
         },
         {
             "id":5,
-            "type": "native",
+            "type": "hls",
             "link": "https://wowzaprod169-i.akamaihd.net/hls/live/630337/59e4c1ec/59e4c1ec_1_1500000/chunklist.m3u8",
             "name": "Canal 10",
             "logo": "./assets/img/canal10.png",
@@ -57,7 +57,7 @@
         },
         {
             "id":5,
-            "type": "native",
+            "type": "hls",
             "link": "http://dwgoed11hdvfh.cloudfront.net/c9/smil:live.smil/chunklist_b1328000.m3u8",
             "name": "El nueve",
             "logo": "./assets/img/canal9.png",
@@ -84,7 +84,7 @@
         },
         {
             "id":5,
-            "type": "native",
+            "type": "hls",
             "link": "http://live-edge01.telecentro.net.ar/live/smil:c26.smil/chunklist_w1015357033_b1264000_sleng.m3u8",
             "name": "Canal 26",
             "logo": "./assets/img/canal26.png",
@@ -102,7 +102,7 @@
         },
         {
             "id":5,
-            "type": "native",
+            "type": "hls",
             "link": "http://coninfo.net:1935/13maxhd/live_720p/chunklist_w1693758974.m3u8",
             "name": "13 Max Noticias",
             "logo": "./assets/img/13maxtv.png",
@@ -111,7 +111,7 @@
         },
         {
             "id":5,
-            "type": "native",
+            "type": "hls",
             "link": "http://sv1.futbollibre.net/m3u8/tyc2.m3u8",
             "name": "Tyc Sports",
             "logo": "./assets/img/tyc_sport.png",
@@ -167,7 +167,7 @@
         },
         {
             "id":1,
-            "type": "native",
+            "type": "hls",
             "link": "https://fslahds-lh.akamaihd.net/i/FS2SUR_1@77551/index_1_av-p.m3u8?sd=6&set-segment-duration=quality&rebase=on&hdntl=exp=1540752766~acl=%2fi%2fFS2SUR_1%4077551%2f*~data=hdntl~hmac=99131d45fdfd08d7652778dcfb359179739aec0c405b8b90424bb215218187a6",
             "name": "Fox Sports 2",
             "logo": "./assets/img/foxsport2.png",
@@ -194,7 +194,7 @@
         }, 
         {
             "id":2,
-            "type": "native",
+            "type": "hls",
             "link": "https://contar-live.secure.footprint.net/hls-live/ionmicroremux-Deportv/_definst_/live.m3u8",
             "name": "Deportv",
             "logo": "./assets/img/dxtv.png",
@@ -230,7 +230,7 @@
         }, 
         {
             "id":3,
-            "type": "native",
+            "type": "hls",
             "link": "http://latino-webtv.com:2082/livexd3/70_.m3u8",
             "name": "Win Sports",
             "logo": "./assets/img/winsports.png",
@@ -239,7 +239,7 @@
         },
         {
             "id":3,
-            "type": "native",
+            "type": "hls",
             "link": "http://aleman.mine.nu:8000/live/oscar1/oscar1/1384.m3u8",
             "name": "Cinemax",
             "logo": "./assets/img/cinemax.png",
@@ -248,7 +248,7 @@
         },
         {
             "id":3,
-            "type": "native",
+            "type": "hls",
             "link": "http://n-3-21.dcs.redcdn.pl/hls/o2/redefine/nlive/CN_HD_1/11395/0/tv-ss/live.isml/playlist.m3u8?stream=0&bandwidth=1",
             "name": "Cartoon Network",
             "logo": "./assets/img/cartoon_network.png",
@@ -284,7 +284,7 @@
         },
         {
             "id":3,
-            "type": "native",
+            "type": "hls",
             "link": "http://live.lcdn.claro.net.co/tnt.m3u8",
             "name": "TNT",
             "logo": "./assets/img/tnt.png",
@@ -311,7 +311,7 @@
         },
         {
             "id":3,
-            "type": "native",
+            "type": "hls",
             "link": "http://streaming.wirenetserver.com.ar:1935/canal4/live_1/livestream.m3u8 ",
             "name": "HBO Family",
             "logo": "./assets/img/hbo.png",
@@ -320,7 +320,7 @@
         },             
         {
             "id":3,
-            "type": "native",
+            "type": "hls",
             "link": "http://kissfm-cires21-video.secure.footprint.net/hittv/bitrate_3.m3u8",
             "name": "Hit TV",
             "logo": "./assets/img/hit_tv.png",
@@ -329,7 +329,7 @@
         },       
         {
             "id":3,
-            "type": "native",
+            "type": "hls",
             "link": "http://fms.105.net:1935/live/virgin2%20/chunklist_w1063887220.m3u8",
             "name": "Virgin Radio",
             "logo": "./assets/img/virgin.png",
@@ -338,7 +338,7 @@
         },       
         {
             "id":3,
-            "type": "native",
+            "type": "hls",
             "link": "http://online.radiodifusion.net:1935/livetv/latinoSD.stream/chunklist_w430979689.m3u8",
             "name": "Top Latino Radio",
             "logo": "./assets/img/top_latino.png",
@@ -347,7 +347,7 @@
         },       
         {
             "id":3,
-            "type": "native",
+            "type": "hls",
             "link": "http://stmv4.questreaming.com/questreaming/questreaming/playlist.m3u8",
             "name": "Soy Rock",
             "logo": "./assets/img/soy_rock.png",
@@ -356,7 +356,7 @@
         },
         {
             "id":3,
-            "type": "native",
+            "type": "hls",
             "link": "http://wowza.telpin.com.ar:1935/live-powerTV/power.stream/chunklist_w1680853093.m3u8",
             "name": "Power HD",
             "logo": "./assets/img/powerhd.png",
@@ -365,7 +365,7 @@
         },
         {
             "id":3,
-            "type": "native",
+            "type": "hls",
             "link": "http://edge.music-choice-play-chaina1.top.comcast.net/PlayMetadataInserter/play/chunklist.m3u8",
             "name": "Music Choice",
             "logo": "./assets/img/music_choice.png",
@@ -374,7 +374,7 @@
         },
         {
             "id":3,
-            "type": "native",
+            "type": "hls",
             "link": "http://tv.portalfoxmix.club:1935/portalfoxmix/portalfoxmix/chunklist_w1495139298.m3u8",
             "name": "Fox Mix",
             "logo": "./assets/img/no_image.png",
@@ -383,7 +383,7 @@
         },
         {
             "id":3,
-            "type": "native",
+            "type": "hls",
             "link": "http://ooyalahd2-f.akamaihd.net/i/globalradio02_delivery@156522/index_1500_av-p.m3u8?sd=10&rebase=on",
             "name": "Heart TV",
             "logo": "./assets/img/heart_tv.png",
@@ -392,7 +392,7 @@
         },
         {
             "id":3,
-            "type": "native",
+            "type": "hls",
             "link": "https://vcnindiewave.teleosmedia.com/stream/indiewave/indiewave/seglist_720p.m3u8",
             "name": "Indie Wave",
             "logo": "./assets/img/indie_wave.png",
@@ -401,7 +401,7 @@
         },
         {
             "id":3,
-            "type": "native",
+            "type": "hls",
             "link": "https://5b464b69d264e.streamlock.net/live/smil:MelodyChannel.smil/chunklist_w685725914_b1048000_slES.m3u8",
             "name": "Melody Channel TV",
             "logo": "./assets/img/melody_channel.png",
@@ -410,7 +410,7 @@
         },
         {
             "id":3,
-            "type": "native",
+            "type": "hls",
             "link": "http://68.235.35.243:1935/lamegamundial/lamegamundial2/chunklist_w1203533629.m3u8",
             "name": "La Mega Mundial",
             "logo": "./assets/img/lamega.png",
@@ -419,7 +419,7 @@
         },
         {
             "id":3,
-            "type": "native",
+            "type": "hls",
             "link": "https://contar-live.secure.footprint.net/hls-live/ionmicroremux-Pakapaka/_definst_/live/stream2.m3u8",
             "name": "PAKAPAKA",
             "logo": "./assets/img/pakapaka.png",
@@ -437,7 +437,7 @@
         },
         {
             "id":3,
-            "type": "native",
+            "type": "hls",
             "link": "http://n-3-1.dcs.redcdn.pl/hls/o2/redefine/nlive/disney_channel_hd_1/10903/0/tv-ss/live.isml/playlist.m3u8?stream=0&bandwidth=1",
             "name": "Disney Channel",
             "logo": "./assets/img/disney_channel.png",
@@ -455,7 +455,7 @@
         },
         {
             "id":3,
-            "type": "native",
+            "type": "hls",
             "link": "http://live-edge01.telecentro.net.ar/live/tlx.smil/chunklist_w1930992855_b1828000_sleng.m3u8",
             "name": "TLX HD",
             "logo": "./assets/img/tlx.png",
@@ -464,7 +464,7 @@
         },
         {
             "id":3,
-            "type": "native",
+            "type": "mp4",
             "link": "https://storage.googleapis.com/pp-to-stream.appspot.com/17526.mp4",
             "name": "EL justiciero 2",
             "logo": "https://3.bp.blogspot.com/-mDTX1G7lAqI/WXj7MIc6YCI/AAAAAAAAmkI/X19Zna-beBoRrXIF0fKR-wKxjoubDHPPgCLcBGAs/s250-c/The-Equalizer-2_Teaser_Poster_JPosters.jpg",
@@ -473,16 +473,13 @@
         },
         {
             "id":3,
-            "type": "native",
+            "type": "mp4",
             "link": "https://storage.googleapis.com/pp-to-stream.appspot.com/17519.mp4",
             "name": "La Monja",
             "logo": "https://4.bp.blogspot.com/-2mCa1S2eARg/WyAWdcbz5OI/AAAAAAAApb0/GvCkRyIO8e44jH7qwryt7KMt6WVtikElQCLcBGAs/s250-c/La_Monja_Teaser_Poster_JPosterS.jpg",
             "description":"No hay descripción",
             "category":"Peliculas" 
-        }
-
-
-        
+        }  
 
     ]
 }
