@@ -252,9 +252,10 @@ nav ul li span.title {
 }
 
 #container_programs{
-	overflow: hidden;
-	overflow-y: scroll;
-	max-height: 1024px; /*usar mediaquery*/
+	overflow-x: hidden;
+	overflow-y: auto;
+	/*max-height: 1024px; /*usar mediaquery*/
+	height: 100%;
 }
 
 .programs-container {
@@ -435,18 +436,17 @@ span.category-title {
 }
 
 .search-icon {
-	width: 30px;
+	width: 100px;
 	height: 30px;
 	text-align: center;
-	top: 22px;
-	position: absolute;
+	margin: auto;
 	padding: 10px;
 	vertical-align: middle;
 	right: 10px;
 }
 
 .search-icon img {
-	width: auto;
+	width: 35px;
 	height: auto;
 	margin: auto;
 	max-width: 100%;
