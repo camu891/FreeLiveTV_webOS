@@ -71,17 +71,22 @@
     loader.show();
     var video = document.createElement('video');
     video.poster = "assets/loading/poster.jpg";
-    video.autoplay = true;
+
+    if(typeVideo==='mp4'){
+      type = 'video/mp4';
+      video.autoplay = true;
+      video.controls = true;
+      $(".above").remove();
+      video.setAttribute('class','mp4');
+    }else{
+      type = 'application/x-mpegURL';
+      video.autoplay = true;
+      video.setAttribute('class','hls');
+    }
     video.oncanplay = function(){
       loader.hide();
     }
     container.appendChild(video);
-    
-    if(typeVideo=='mp4'){
-      type = 'video/mp4';
-    }else{
-      type = 'application/x-mpegURL';
-    }
     
     addSourceToVideo(video, src, type );
   }

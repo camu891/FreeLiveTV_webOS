@@ -548,6 +548,12 @@ span.category-title {
 	pointer-events: none;
 }
 
+video.mp4 {
+position: fixed; right: 0; bottom: 0;
+min-width: 100%; min-height: 100%;
+width: auto; height: auto; z-index: -100;
+}
+
 /* fix for yt ifram click */
 .above {
 	width: 100%;
@@ -556,20 +562,21 @@ span.category-title {
 	z-index: 1;
 }
 
-video::-webkit-media-controls {
+
+/*video.hls::-webkit-media-controls {
 	display: none;
-}
+}*/
 
 /* Could Use thise as well for Individual Controls */
-video::-webkit-media-controls-play-button {}
+video.hls::-webkit-media-controls-play-button {}
 
-video::-webkit-media-controls-volume-slider {}
+video.hls::-webkit-media-controls-volume-slider {}
 
-video::-webkit-media-controls-mute-button {}
+video.hls::-webkit-media-controls-mute-button {}
 
-video::-webkit-media-controls-timeline {}
+video.hls::-webkit-media-controls-timeline {}
 
-video::-webkit-media-controls-current-time-display {}
+video.hls::-webkit-media-controls-current-time-display {}
 
 .preview {
 	display: none;
