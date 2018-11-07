@@ -16,14 +16,16 @@
 	});
 	
 	$('.search-icon').on("click",function(){
-		$(this).fadeOut();
+		//$(this).fadeOut();
+		$(this).css('visibility', 'hiden');
 		$(".search-container").show();
 		$("#search").focus();
 	});
 	
 	$('#container_programs').click(function(){
 		$(".search-container").hide();
-		$(".search-icon").fadeIn();
+		//$(".search-icon").fadeIn();
+		$(".search-icon").css('visibility', 'visible');
 	});
 	
 });
