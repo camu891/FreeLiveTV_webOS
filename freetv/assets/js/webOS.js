@@ -57,21 +57,5 @@
    	//document.getElementById('log').innerHTML += ++line + ": " + msg + "<br>";
    }
 
-  //backbutton
-
-  /*window.addEventListener("keydown", function(inEvent){   
-    if(window.event) {
-      keycode = inEvent.keyCode;
-    }
-    if (keycode==461) {doBack();}
-  });
-
-
-  function doBack() {
-    // Do something for Back button();
-
-    // If you need to open Home UI
-    if (someCondition == true)
-      webOS.platformBack();
-  }*/
+   
 

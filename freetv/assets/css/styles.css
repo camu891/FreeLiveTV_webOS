@@ -12,7 +12,6 @@ body {
 	height: 100%;
 	background-color: #202020;
 	overflow: hidden;
-	overflow-y: scroll;
 	margin: 0;
 	font-family: 'Roboto',arial,sans-serif;
 }
@@ -69,12 +68,13 @@ footer span {
 	display: flex;
 	vertical-align: middle;
 	align-items: center;
+	width: 60px;
+	text-align: center;
 }
 
 .nav-button {
 	border: none;
 }
-
 
 #menu_on{
 	display: inline-block;
@@ -110,7 +110,7 @@ nav{
 	left:-300px;
 	width: 300px;
 	z-index: 1;
-	padding: 90px 30px 10px 0px;
+	padding: 80px 0 0 0;
 	background: #202020fa;
 	opacity: 0;
 	transition: all 0.75s ease;
@@ -124,18 +124,47 @@ nav{
 nav ul {
 	list-style: none;
 	color: white;
+	padding: 10px;
 }
 
 nav ul li {
-	padding: 10px 0 20px 0;
 	margin-bottom: 10px;
 	border-bottom: 1px solid #2f2f2f;
+}
+
+nav ul.ulpreview li {
+	padding: 20px 0;
+	border-bottom: 2px solid red;
 }
 
 nav ul li span.title {
 	vertical-align: middle;
 }
 
+nav ul.nav-tabs {
+	color: white;
+	padding: 0 20px;
+}
+
+nav ul.nav-tabs li {
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 9px 5px;
+}
+
+nav ul.nav-tabs li:hover{
+	background: red;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+nav ul.nav-tabs li a,
+nav ul.nav-tabs li a:visited,
+nav ul.nav-tabs li a:active {
+	color:white;
+	display: block;
+	width: 100%;
+}
 
 .visible_menu .navigation span:nth-child(1){
 	transform: rotate(45deg) translate(-2px,1px); 
@@ -158,10 +187,9 @@ nav ul li span.title {
 	transform: translateX(260px);
 }
 
-
 .icon-app{
 	height: auto;
-	margin-left: 20px;
+	margin-left: 5px;
 }
 
 .datetime {
@@ -254,8 +282,8 @@ nav ul li span.title {
 #container_programs{
 	overflow-x: hidden;
 	overflow-y: auto;
-	/*max-height: 1024px; /*usar mediaquery*/
-	height: 100%;
+	height: calc(100vh - 10px);
+	min-height: 100%;
 }
 
 .programs-container {
@@ -337,7 +365,7 @@ a.program-link span.channel-title {
 }
 
 .category {
-	margin: 10px 0;
+	margin: 20px 0;
 	display: block;
 }
 
@@ -502,7 +530,7 @@ span.category-title {
 .channel-header .container {
 	display: inline-flex;
 	min-height: 200px;
-    align-items: center;
+	align-items: center;
 }
 
 .channel-info h2 {
@@ -521,16 +549,16 @@ span.category-title {
 	word-wrap: break-word;
 	overflow: hidden;
 	max-height: 5em;
-    line-height: 1.2em;
-  }
+	line-height: 1.2em;
+}
 
 .back {
 	align-items: center;
-    display: inline-flex;
-    vertical-align: middle;
+	display: inline-flex;
+	vertical-align: middle;
 	width: auto;
 	min-width: 80px;
-    min-height: 200px;
+	min-height: 200px;
 }
 
 .back img {
@@ -552,9 +580,9 @@ span.category-title {
 }
 
 video.mp4 {
-position: fixed; right: 0; bottom: 0;
-min-width: 100%; min-height: 100%;
-width: auto; height: auto; z-index: -100;
+	position: fixed; right: 0; bottom: 0;
+	min-width: 100%; min-height: 100%;
+	width: auto; height: auto; z-index: -100;
 }
 
 /* fix for yt ifram click */

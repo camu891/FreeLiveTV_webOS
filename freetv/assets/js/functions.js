@@ -10,25 +10,31 @@
 	$('.icon-app').on("click",function(){
 		ajax_load_programs();
 	});
-
+	
 	$('.reload').on("click",function(){
 		ajax_load_programs();
 	});
 	
 	$('.search-icon').on("click",function(){
-		//$(this).fadeOut();
-		$(this).css('visibility', 'hiden');
-		$(".search-container").show();
-		$("#search").focus();
+		showSearchInput(this);
 	});
 	
 	$('#container_programs').click(function(){
-		$(".search-container").hide();
-		//$(".search-icon").fadeIn();
-		$(".search-icon").css('visibility', 'visible');
+		hideSearchInput();
 	});
 	
 });
+
+function showSearchInput(elem){
+	$(this).css('visibility', 'hiden');
+	$(".search-container").show();
+	$("#search").focus();
+}
+
+function hideSearchInput(){
+	$(".search-container").hide();
+	$(".search-icon").css('visibility', 'visible');
+}
 
 function ajax_load_programs(){
 	$('#container_programs').empty();
@@ -41,6 +47,7 @@ function ajax_load_programs(){
 		dataType: "json"
 	}).done(function(json) {
 		loader.hide();
+		$("ul.nav-tabs").empty();
 		$.each(json.programs, function(i) {
 			var link = "src="+json.programs[i].link + "&";
 			var typeVideo = "type="+json.programs[i].type+"&";
@@ -51,7 +58,7 @@ function ajax_load_programs(){
 			addProgramToCategory(json.programs[i],params);
 			totalPragrams++;
 		});
-
+		initNavTabs();
 		set_tabindex();
 	}).fail(function() {
 		loader.hide();
@@ -65,8 +72,29 @@ function addProgramToCategory(program,params){
 	if($(category).length == 0) {
 		$("#container_programs").append("<div class='category' id='"+program.category+"'><span class='category-title'>"
 		+program.category+"</span><div class='programs-container row' id='list'></div></div>");
+		addCategoryTab(program.category);
 	}
 	$(category).append(get_program_data(program,params));
+}
+
+function addCategoryTab(category){
+	$("ul.nav-tabs").append("<li id='tab_"+category+"'>"+category+"</li>");
+}
+function initNavTabs(){
+	$("ul.nav-tabs li").on("click",function(e){
+		e.preventDefault();
+		goToByScroll(this.id);
+		return false;
+	});
+}
+
+function goToByScroll(id) {
+	id = id.replace("tab_", "");
+	//$("body ,#container_programs").stop().animate({ scrollTop: $('#'+id).offset().top  }, 'slow');
+	//$('#'+id)[0].scrollIntoView({ behavior: 'smooth', block: 'center' });	
+
+	$('#'+id)[0].scrollIntoView(false);
+	closeSidebar();
 }
 
 function get_program_data(program,params){
@@ -78,13 +106,13 @@ function get_program_data(program,params){
 
 function set_tabindex(){
 	var list = document.querySelectorAll("#list");
-    var ti=1;
-    for (var j = 0; j < list.length; j++) {
-      var divs = list[j].getElementsByClassName("card");
-      for (var i = 0; i < divs.length; i++) {
-		divs[i].tabIndex = ti;
-		ti++;
-	  }
+	var ti=1;
+	for (var j = 0; j < list.length; j++) {
+		var divs = list[j].getElementsByClassName("card");
+		for (var i = 0; i < divs.length; i++) {
+			divs[i].tabIndex = ti;
+			ti++;
+		}
 	}
 }
 
@@ -122,6 +150,16 @@ document.addEventListener("keydown", function(inEvent){
 			tabindex = (tabindex <= (totalPragrams-itemsPerRow)) ? tabindex+itemsPerRow : tabindex;
 			$('.programs-container > .content-box:focus').nextAll('.content-box[tabindex=' + tabindex + ']').not(".hide").first().focus();
 		}*/
+		break;
+		case 403://red
+		$('body').toggleClass('visible_menu');
+		break;
+		case 404://green
+		break;
+		case 405://yelow
+		break;
+		case 406://blue
+		showSearchInput($(".search-icon"));
 		break;
 		default:  break;
 	}
