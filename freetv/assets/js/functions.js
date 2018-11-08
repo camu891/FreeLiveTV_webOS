@@ -90,10 +90,8 @@ function initNavTabs(){
 
 function goToByScroll(id) {
 	id = id.replace("tab_", "");
-	//$("body ,#container_programs").stop().animate({ scrollTop: $('#'+id).offset().top  }, 'slow');
+	$('html,#container_programs').animate({scrollTop: $('#'+id).offset().top -100 }, 'slow');
 	//$('#'+id)[0].scrollIntoView({ behavior: 'smooth', block: 'center' });	
-
-	$('#'+id)[0].scrollIntoView(false);
 	closeSidebar();
 }
 
