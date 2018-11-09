@@ -11,8 +11,7 @@ body {
 	width: 100%;
 	height: 100%;
 	background-color: #202020;
-	overflow: auto;
-	/*overflow: hidden;*/
+	overflow: hidden;
 	margin: 0;
 	font-family: 'Roboto',arial,sans-serif;
 }
@@ -51,17 +50,34 @@ footer span {
 	right: 0;
 	position: fixed;
 	margin: 0;
-	z-index: 1;
-	padding: 5px 16px;
-	-webkit-box-shadow: 0px 9px 24px -1px rgba(0,0,0,0.75); 
-	-moz-box-shadow: 0px 9px 24px -1px rgba(0,0,0,0.75);
-	box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.75); 
+	z-index: 2;
+	padding: 0 5px;
+	-webkit-box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.75); 
+	-moz-box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.75);
+	box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.75); 
 }
 
 .header span {
 	display: block;
 	text-align: left;
 	text-transform: uppercase;
+}
+
+.subheader {
+	padding: 10px 0;
+    left: 0;
+    top: 80px;
+    right: 0;
+    position: fixed;
+    margin: 0;
+    z-index: 1;
+    background: #202020;
+    width: 100%;
+    height: auto;
+	text-align: center;
+	-webkit-box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.75); 
+	-moz-box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.75);
+	box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.75); 
 }
 
 .navigation {
@@ -142,21 +158,29 @@ nav ul li span.title {
 	vertical-align: middle;
 }
 
-nav ul.nav-tabs {
-	color: white;
-	padding: 0 20px;
+.subheader ul.nav-tabs {
+	display: inline-flex;
+    list-style: none;
+    margin: auto;
 }
 
-nav ul.nav-tabs li {
-	text-transform: uppercase;
+.subheader ul.nav-tabs li {
+	padding: 5px 10px;
+    color: white;
+    text-transform: uppercase;
 	font-weight: bold;
-	padding: 9px 5px;
+	border-right: 2px solid white;
 }
 
-nav ul.nav-tabs li:hover{
-	background: red;
-	border-radius: 4px;
+.subheader ul.nav-tabs li:last-child {
+	border-right: none;
+}
+
+.subheader ul.nav-tabs li:hover {
+	background: white;
+	color: red;
 	cursor: pointer;
+	border-radius: 1px;
 }
 
 nav ul.nav-tabs li a,
@@ -281,10 +305,10 @@ nav ul.nav-tabs li a:active {
 }
 
 #container_programs{
-	/*overflow-x: hidden;
+	overflow-x: hidden;
 	overflow-y: auto;
 	height: calc(100vh - 10px);
-	min-height: 100%;*/
+	min-height: 100%;
 }
 
 .programs-container {
@@ -371,7 +395,7 @@ a.program-link span.channel-title {
 }
 
 .category:first-child {
-	margin-top: 100px;
+	margin-top: 140px;
 }
 
 .category:last-child{

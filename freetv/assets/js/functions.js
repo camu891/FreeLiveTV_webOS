@@ -90,8 +90,13 @@ function initNavTabs(){
 
 function goToByScroll(id) {
 	id = id.replace("tab_", "");
-	$('html,#container_programs').animate({scrollTop: $('#'+id).offset().top -100 }, 'slow');
+	console.log($('#'+id).offset().top);
+	var el = document.getElementById("container_programs"); // Or whatever method to get the element, again
+	el.scrollTo(0, 0);
+	$('#container_programs').animate({scrollTop: $('#'+id).offset().top }, 'slow');
+	//$('html,#container_programs').animate({scrollTop: $('#'+id).offset().top - 130 }, 'slow');
 	//$('#'+id)[0].scrollIntoView({ behavior: 'smooth', block: 'center' });	
+	//$('#'+id)[0].scrollIntoView(false);
 	closeSidebar();
 }
 
@@ -247,8 +252,3 @@ function saveSettings(name,value){
 		console.log("Sorry, your browser does not support Web Storage...");
 	}
 }
-
-
-
-
-
