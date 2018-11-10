@@ -92,9 +92,6 @@ function goToByScroll(id) {
 	id = id.replace("tab_", "");
 	$('#container_programs').animate({scrollTop: 0 }, 0);
 	$('#container_programs').animate({scrollTop: $('#'+id).offset().top - 130 }, 0);
-
-	//$('#'+id)[0].scrollIntoView({ behavior: 'smooth', block: 'center' });	
-	//$('#'+id)[0].scrollIntoView(false);
 	closeSidebar();
 }
 

@@ -172,7 +172,7 @@ nav ul li span.title {
     color: white;
     text-transform: uppercase;
 	font-weight: bold;
-	border-right: 2px solid white;
+	border-right: 2px solid #505050;
 }
 
 .subheader ul.nav-tabs li:last-child {
