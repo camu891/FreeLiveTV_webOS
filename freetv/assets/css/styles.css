@@ -64,9 +64,11 @@ footer span {
 }
 
 .subheader {
+	overflow: hidden;
+	overflow-x: auto; 
 	padding: 10px 0;
     left: 0;
-    top: 80px;
+    top: 70px;
     right: 0;
     position: fixed;
     margin: 0;
@@ -127,7 +129,7 @@ nav{
 	left:-300px;
 	width: 300px;
 	z-index: 1;
-	padding: 80px 0 0 0;
+	padding: 100px 0 0 0;
 	background: #202020fa;
 	opacity: 0;
 	transition: all 0.75s ease;
@@ -161,7 +163,8 @@ nav ul li span.title {
 .subheader ul.nav-tabs {
 	display: inline-flex;
     list-style: none;
-    margin: auto;
+	margin: auto;
+	padding: 0;
 }
 
 .subheader ul.nav-tabs li {
@@ -213,7 +216,8 @@ nav ul.nav-tabs li a:active {
 }
 
 .icon-app{
-	height: auto;
+	width: 70px;
+	height: 70px;
 	margin-left: 5px;
 }
 
@@ -225,14 +229,14 @@ nav ul.nav-tabs li a:active {
 
 .datetime span.clock {
 	text-align: center;
-	font-size: 1.9em;
+	font-size: 1.6em;
 	margin: 0;
 	font-weight: bold;
 }
 
 .datetime span.date {
 	text-align: center;
-	font-size: 1em;
+	font-size: 0.9em;
 	margin: 0;
 	color: darkgrey;
 	line-height: 1.5em;
@@ -395,11 +399,11 @@ a.program-link span.channel-title {
 }
 
 .category:first-child {
-	margin-top: 140px;
+	margin-top: 130px;
 }
 
-.category:last-child{
-	margin-bottom: 50px;
+.category:last-child {
+	margin-bottom: 130px;
 }
 
 span.category-title {
@@ -500,7 +504,7 @@ span.category-title {
 }
 
 .search-icon img {
-	width: 35px;
+	width: 30px;
 	height: auto;
 	margin: auto;
 	max-width: 100%;
@@ -514,7 +518,7 @@ span.category-title {
 	width: 10%;
 	right: 0;
 	text-align: right;
-	top: 22px;
+	top: 12px;
 	position: absolute;
 	vertical-align: middle;
 	white-space: nowrap;
