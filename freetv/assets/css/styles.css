@@ -430,6 +430,20 @@ span.category-title {
 	outline: none;
 }
 
+.last-view .card{
+	width: 36%;
+}
+
+.last-view span.lv-title {
+	color: white;
+    display: block;
+    margin: 10px;
+}
+
+.last-view .card .channel-title{
+	font-size: 10px;
+}
+
 .card .inner{
 	max-width: 100%;
 	display: block;

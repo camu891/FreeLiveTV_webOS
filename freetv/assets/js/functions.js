@@ -1,7 +1,12 @@
  var $ = jQuery.noConflict();
- 
- var totalPragrams=0;
- $(document).ready(function(){
+ var settings = {
+	PREVIEW: "isPreviewEnable",
+	LAST_VIEW: "lastView"
+}
+var programs = null;
+
+var totalPragrams=0;
+$(document).ready(function(){
 	
 	getdate();
 	
@@ -49,21 +54,57 @@ function ajax_load_programs(){
 		loader.hide();
 		$("ul.nav-tabs").empty();
 		$.each(json.programs, function(i) {
-			var link = "src="+json.programs[i].link + "&";
-			var typeVideo = "type="+json.programs[i].type+"&";
-			var title = "title="+json.programs[i].name+"&";
-			var description = "description="+json.programs[i].description+"&";
-			var params="?"+ link + typeVideo + title + description;
-			
-			addProgramToCategory(json.programs[i],params);
+			addProgramToCategory(json.programs[i],get_params(json.programs[i]));
 			totalPragrams++;
 		});
 		initNavTabs();
 		set_tabindex();
+		initLastView(json);
 	}).fail(function() {
 		loader.hide();
 		error.show();
 		console.log("Fail request programs");
+	});
+}
+
+function get_params(program){
+	var link = "src="+program.link + "&";
+	var typeVideo = "type="+program.type+"&";
+	var title = "title="+program.name+"&";
+	var description = "description="+program.description+"&";
+	var params="?"+ link + typeVideo + title + description;
+	return params;
+}
+
+function initLastView(json){
+	//two last view
+	$(".card").click(function(){
+		var array = [];
+		var currentValues = JSON.parse(getSettings(settings.LAST_VIEW));
+		if(getSettings(settings.LAST_VIEW)===null){
+			array[0] = $(this).attr("id");
+		}else{
+			if($(this).attr("id") !== currentValues[0] && $(this).attr("id") !== currentValues[1]){
+				array[0] = $(this).attr("id");
+				array[1] = currentValues[0];
+			}else{
+				array = currentValues;
+			}
+		}
+		var values = JSON.stringify(array);
+		saveSettings(settings.LAST_VIEW,values);
+	});
+	addLastView(json);
+}
+
+function addLastView(json) {
+	$.each(json.programs, function(i) {
+		var program=json.programs[i];
+		if(getSettings(settings.LAST_VIEW)!=null &&
+		(program.id==JSON.parse(getSettings(settings.LAST_VIEW))[0] || program.id==JSON.parse(getSettings(settings.LAST_VIEW))[1]) ){		
+			var data = get_program_data(program,get_params(program))
+			$(data).appendTo( ".last-view")
+		}
 	});
 }
 
@@ -96,7 +137,7 @@ function goToByScroll(id) {
 }
 
 function get_program_data(program,params){
-	return "<div onmouseover=\"mouseOver(this,'"+program.type+"','"+program.link+"');\" onmouseout='mouseOut(this);'"
+	return "<div id='"+program.id+"' onmouseover=\"mouseOver(this,'"+program.type+"','"+program.link+"');\" onmouseout='mouseOut(this);'"
 	+" class='card content-box'><a id='link' class='program-link' name='"
 	+program.name+"' href='player.html"+params+"'><div class='inner'><img class='programs-logo' src='"
 	+program.logo+"'><span class='channel-title'>"+program.name+"</span></div></a></div>";
@@ -161,7 +202,6 @@ document.addEventListener("keydown", function(inEvent){
 		break;
 		default:  break;
 	}
-	console.log(tabindex);
 });
 
 $(document).ready(function(){
@@ -176,7 +216,7 @@ function mouseOut(elem) {
 }
 
 function mouseOver(elem,typeVideo,link) {
-	if (getSettings("isPreviewEnable")=="true") {
+	if (getSettings(settings.PREVIEW)=="true") {
 		var container = $(".preview");
 		//container.empty()
 		container.show();
@@ -217,7 +257,7 @@ function createNativeVideo(container,src){
 
 $(document).ready(function(){
 	
-	$("#setting-preview").prop('checked', getSettings("isPreviewEnable"));
+	$("#setting-preview").prop('checked', getSettings(settings.PREVIEW));
 	$("#setting-preview").click(function(){
 		var isPreviewEnable = false;
 		if ($(this).is(':checked')) {
@@ -225,7 +265,7 @@ $(document).ready(function(){
 		}else{
 			isPreviewEnable = false;
 		}
-		saveSettings("isPreviewEnable",isPreviewEnable);
+		saveSettings(settings.PREVIEW,isPreviewEnable);
 	});
 	
 });
