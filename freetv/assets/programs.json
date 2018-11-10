@@ -37,7 +37,7 @@
             "category":"Noticias"
         },
         {
-            "id":4,
+            "id":5,
             "type": "hls",
             "link": "https://chunks01.tvpublica.com.ar/video/BJQRNMF6b_1080/index.m3u8",
             "link2": "https://g3.mc-slo.transport.edge-access.net/b17/ngrp:c7cam2-20034_all/c7cam2-20034_1080p.m3u8",
@@ -47,7 +47,7 @@
             "category":"Noticias"
         },
         {
-            "id":5,
+            "id":6,
             "type": "hls",
             "link": "https://wowzaprod169-i.akamaihd.net/hls/live/630337/59e4c1ec/59e4c1ec_1_1500000/chunklist.m3u8",
             "name": "Canal 10",
@@ -56,7 +56,7 @@
             "category":"Noticias"
         },
         {
-            "id":5,
+            "id":7,
             "type": "hls",
             "link": "http://dwgoed11hdvfh.cloudfront.net/c9/smil:live.smil/chunklist_b1328000.m3u8",
             "name": "El nueve",
@@ -65,7 +65,7 @@
             "category":"Noticias"
         },
         {
-            "id":5,
+            "id":8,
             "type": "youtube",
             "link": "https://www.youtube.com/embed/-1xif50QMr4?rel=0&autoplay=1&showinfo=0&controls=0",
             "name": "TN Noticias",
@@ -74,7 +74,7 @@
             "category":"Noticias"
         },
         {
-            "id":5,
+            "id":9,
             "type": "youtube",
             "link": "https://www.youtube.com/embed/MNODeTv9VbE?rel=0&autoplay=1&showinfo=0&controls=0",
             "name": "Cronica TV",
@@ -83,7 +83,7 @@
             "category":"Noticias"
         },
         {
-            "id":5,
+            "id":10,
             "type": "hls",
             "link": "http://live-edge01.telecentro.net.ar/live/smil:c26.smil/chunklist_w1015357033_b1264000_sleng.m3u8",
             "name": "Canal 26",
@@ -92,7 +92,7 @@
             "category":"Noticias"
         },
         {
-            "id":5,
+            "id":11,
             "type": "youtube",
             "link": "https://www.youtube.com/embed/vMF1HIHKzfg?rel=0&autoplay=1&showinfo=0&controls=0",
             "name": "C5N",
@@ -101,7 +101,7 @@
             "category":"Noticias"
         },
         {
-            "id":5,
+            "id":12,
             "type": "hls",
             "link": "http://coninfo.net:1935/13maxhd/live_720p/chunklist_w1693758974.m3u8",
             "name": "13 Max Noticias",
@@ -110,7 +110,7 @@
             "category":"Noticias"
         },
         {
-            "id":5,
+            "id":13,
             "type": "hls",
             "link": "http://sv1.futbollibre.net/m3u8/tyc2.m3u8",
             "name": "Tyc Sports",
@@ -119,7 +119,7 @@
             "category":"Deportes"
         },
         {
-            "id":3,
+            "id":14,
             "type": "iframe",
             "link": "http://futbollibre.online/espn-1/embed2.html",
             "link2": "http://sv1.futbollibre.net/canales/espn.m3u8",
@@ -129,7 +129,7 @@
             "category":"Deportes"
         },
         {
-            "id":3,
+            "id":15,
             "type": "iframe",
             "link": "http://futbollibre.online/espn-2/embed.html",
             "link2": "http://sv1.futbollibre.net/canales/espn2.m3u8",
@@ -139,7 +139,7 @@
             "category":"Deportes"
         },
         {
-            "id":3,
+            "id":16,
             "type": "iframe",
             "link": "http://futbollibre.online/espn-3/embed2.html",
             "link2": "http://sv1.futbollibre.net/canales/espn3.m3u8",
@@ -148,7 +148,7 @@
             "description":"La programación de ESPN 3 está dedicada a los deportes de acción, es decir los deportes extremos tanto de verano como de invierno, así como los de aventura, surf y running.",
             "category":"Deportes"
         },{
-            "id":1,
+            "id":17,
             "type": "iframe",
             "link": "http://futbollibre.online/fox-sports-premium/embed66.html?ewqe",
             "name": "Fox Sport Premium",
@@ -157,7 +157,7 @@
             "category":"Deportes"
         },
         {
-            "id":1,
+            "id":18,
             "type": "iframe",
             "link": "http://sv1.futbollibre.net/embed/fs1embed.html",
             "name": "Fox Sports",
@@ -166,7 +166,7 @@
             "category":"Deportes"
         },
         {
-            "id":1,
+            "id":19,
             "type": "hls",
             "link": "https://fslahds-lh.akamaihd.net/i/FS2SUR_1@77551/index_1_av-p.m3u8?sd=6&set-segment-duration=quality&rebase=on&hdntl=exp=1540752766~acl=%2fi%2fFS2SUR_1%4077551%2f*~data=hdntl~hmac=99131d45fdfd08d7652778dcfb359179739aec0c405b8b90424bb215218187a6",
             "name": "Fox Sports 2",
@@ -175,7 +175,7 @@
             "category":"Deportes"
         },
         {
-            "id":1,
+            "id":20,
             "type": "iframe",
             "link": "http://futbollibre.online/fox-sports-3/embed3.html",
             "name": "Fox Sports 3",
@@ -184,7 +184,7 @@
             "category":"Deportes"
         },
         {
-            "id":3,
+            "id":21,
             "type": "iframe",
             "link": "http://futbollibre.online/superliga2.html",
             "name": "SAF",
@@ -193,7 +193,7 @@
             "category":"Deportes"
         }, 
         {
-            "id":2,
+            "id":22,
             "type": "hls",
             "link": "https://contar-live.secure.footprint.net/hls-live/ionmicroremux-Deportv/_definst_/live.m3u8",
             "name": "Deportv",
@@ -202,7 +202,7 @@
             "category":"Deportes"
         },
         {
-            "id":3,
+            "id":23,
             "type": "iframe",
             "link": "http://futbollibre.online/tnt-sports/embed.html",
             "name": "TNT SPORT",
@@ -211,7 +211,7 @@
             "category":"Deportes"
         }, 
         {
-            "id":3,
+            "id":24,
             "type": "iframe",
             "link": "http://futbollibre.online/directv-sports/embed.html",
             "name": "DIRECT SPORTS",
@@ -220,7 +220,7 @@
             "category":"Deportes"
         },
         {
-            "id":3,
+            "id":25,
             "type": "iframe",
             "link": "http://bankai.stream/rnaw4.php",
             "name": "BEIN Sports",
@@ -229,7 +229,7 @@
             "category":"Deportes"
         }, 
         {
-            "id":3,
+            "id":26,
             "type": "hls",
             "link": "http://latino-webtv.com:2082/livexd3/70_.m3u8",
             "name": "Win Sports",
@@ -238,7 +238,7 @@
             "category":"Deportes"
         },
         {
-            "id":3,
+            "id":27,
             "type": "hls",
             "link": "http://aleman.mine.nu:8000/live/oscar1/oscar1/1384.m3u8",
             "name": "Cinemax",
@@ -247,7 +247,7 @@
             "category":"Cine"
         },
         {
-            "id":3,
+            "id":28,
             "type": "hls",
             "link": "http://n-3-21.dcs.redcdn.pl/hls/o2/redefine/nlive/CN_HD_1/11395/0/tv-ss/live.isml/playlist.m3u8?stream=0&bandwidth=1",
             "name": "Cartoon Network",
@@ -256,7 +256,7 @@
             "category":"Infantil"
         },
         {
-            "id":3,
+            "id":29,
             "type": "iframe",
             "link": "http://televisionlibre.net/canal/fox-en-vivo/embed.html",
             "name": "FOX",
@@ -265,7 +265,7 @@
             "category":"Cine"
         },
         {
-            "id":3,
+            "id":30,
             "type": "iframe",
             "link": "http://televisionlibre.net/canal/space-en-vivo/embed.html",
             "name": "Space",
@@ -274,7 +274,7 @@
             "category":"Cine"
         },
         {
-            "id":3,
+            "id":31,
             "type": "iframe",
             "link": "http://player.latino-webtv.com/channels/cinecanal.html",
             "name": "Cinecanal",
@@ -283,7 +283,7 @@
             "category":"Cine"
         },
         {
-            "id":3,
+            "id":32,
             "type": "hls",
             "link": "http://live.lcdn.claro.net.co/tnt.m3u8",
             "name": "TNT",
@@ -292,7 +292,7 @@
             "category":"Cine"
         },
         {
-            "id":3,
+            "id":33,
             "type": "iframe",
             "link": "http://televisionlibre.net/canal/fox-en-vivo/embed.html",
             "name": "FOX Movies",
@@ -301,7 +301,7 @@
             "category":"Cine"
         },
         {
-            "id":3,
+            "id":34,
             "type": "iframe",
             "link": "http://www.fulltvhd.fi/peliculas/hbo.php",
             "name": "HBO",
@@ -310,7 +310,7 @@
             "category":"Cine"
         },
         {
-            "id":3,
+            "id":35,
             "type": "hls",
             "link": "http://streaming.wirenetserver.com.ar:1935/canal4/live_1/livestream.m3u8 ",
             "name": "HBO Family",
@@ -319,7 +319,7 @@
             "category":"Cine"
         },             
         {
-            "id":3,
+            "id":36,
             "type": "hls",
             "link": "http://kissfm-cires21-video.secure.footprint.net/hittv/bitrate_3.m3u8",
             "name": "Hit TV",
@@ -328,7 +328,7 @@
             "category":"Música"
         },       
         {
-            "id":3,
+            "id":37,
             "type": "hls",
             "link": "http://fms.105.net:1935/live/virgin2%20/chunklist_w1063887220.m3u8",
             "name": "Virgin Radio",
@@ -337,7 +337,7 @@
             "category":"Música"
         },       
         {
-            "id":3,
+            "id":38,
             "type": "hls",
             "link": "http://online.radiodifusion.net:1935/livetv/latinoSD.stream/chunklist_w430979689.m3u8",
             "name": "Top Latino Radio",
@@ -346,7 +346,7 @@
             "category":"Música"
         },       
         {
-            "id":3,
+            "id":39,
             "type": "hls",
             "link": "http://stmv4.questreaming.com/questreaming/questreaming/playlist.m3u8",
             "name": "Soy Rock",
@@ -355,7 +355,7 @@
             "category":"Música"
         },
         {
-            "id":3,
+            "id":40,
             "type": "hls",
             "link": "http://wowza.telpin.com.ar:1935/live-powerTV/power.stream/chunklist_w1680853093.m3u8",
             "name": "Power HD",
@@ -364,7 +364,7 @@
             "category":"Música"
         },
         {
-            "id":3,
+            "id":41,
             "type": "hls",
             "link": "http://edge.music-choice-play-chaina1.top.comcast.net/PlayMetadataInserter/play/chunklist.m3u8",
             "name": "Music Choice",
@@ -373,7 +373,7 @@
             "category":"Música"
         },
         {
-            "id":3,
+            "id":42,
             "type": "hls",
             "link": "http://tv.portalfoxmix.club:1935/portalfoxmix/portalfoxmix/chunklist_w1495139298.m3u8",
             "name": "Fox Mix",
@@ -382,7 +382,7 @@
             "category":"Música"
         },
         {
-            "id":3,
+            "id":43,
             "type": "hls",
             "link": "http://ooyalahd2-f.akamaihd.net/i/globalradio02_delivery@156522/index_1500_av-p.m3u8?sd=10&rebase=on",
             "name": "Heart TV",
@@ -391,7 +391,7 @@
             "category":"Música"
         },
         {
-            "id":3,
+            "id":44,
             "type": "hls",
             "link": "https://vcnindiewave.teleosmedia.com/stream/indiewave/indiewave/seglist_720p.m3u8",
             "name": "Indie Wave",
@@ -400,7 +400,7 @@
             "category":"Música"
         },
         {
-            "id":3,
+            "id":45,
             "type": "hls",
             "link": "https://5b464b69d264e.streamlock.net/live/smil:MelodyChannel.smil/chunklist_w685725914_b1048000_slES.m3u8",
             "name": "Melody Channel TV",
@@ -409,7 +409,7 @@
             "category":"Música"
         },
         {
-            "id":3,
+            "id":46,
             "type": "hls",
             "link": "http://68.235.35.243:1935/lamegamundial/lamegamundial2/chunklist_w1203533629.m3u8",
             "name": "La Mega Mundial",
@@ -418,7 +418,7 @@
             "category":"Música"
         },
         {
-            "id":3,
+            "id":47,
             "type": "hls",
             "link": "https://contar-live.secure.footprint.net/hls-live/ionmicroremux-Pakapaka/_definst_/live/stream2.m3u8",
             "name": "PAKAPAKA",
@@ -427,7 +427,7 @@
             "category":"Infantil"
         },  
         {
-            "id":3,
+            "id":48,
             "type": "iframe",
             "link": "http://player.latino-webtv.com/channels/disneyxd.html",
             "name": "Disney XD",
@@ -436,7 +436,7 @@
             "category":"Infantil"
         },
         {
-            "id":3,
+            "id":49,
             "type": "hls",
             "link": "http://n-3-1.dcs.redcdn.pl/hls/o2/redefine/nlive/disney_channel_hd_1/10903/0/tv-ss/live.isml/playlist.m3u8?stream=0&bandwidth=1",
             "name": "Disney Channel",
@@ -445,7 +445,7 @@
             "category":"Infantil"
         },
         {
-            "id":3,
+            "id":50,
             "type": "iframe",
             "link": "http://televisionlibre.net/canal/animal-planet-en-vivo/embed.html",
             "name": "Animal Planet",
@@ -454,7 +454,7 @@
             "category":"Entretenimiento" 
         },
         {
-            "id":3,
+            "id":51,
             "type": "hls",
             "link": "http://live-edge01.telecentro.net.ar/live/tlx.smil/chunklist_w1930992855_b1828000_sleng.m3u8",
             "name": "TLX HD",
@@ -463,7 +463,7 @@
             "category":"other" 
         },
         {
-            "id":3,
+            "id":52,
             "type": "mp4",
             "link": "https://storage.googleapis.com/pp-to-stream.appspot.com/17526.mp4",
             "name": "EL justiciero 2",
