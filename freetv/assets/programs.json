@@ -158,8 +158,9 @@
         },
         {
             "id":18,
-            "type": "iframe",
-            "link": "http://sv1.futbollibre.net/embed/fs1embed.html",
+            "type": "native",
+            "link":"http://sv1.futbollibre.net/libertadores.m3u8?uuu",
+            "link2": "http://sv1.futbollibre.net/embed/fs1embed.html",
             "name": "Fox Sports",
             "logo": "./assets/img/foxsport.png",
             "description":"Fox Sports es un canal de televisión por suscripción especializado en deportes que emite las 24 horas del día para Latinoamérica. Transmite en vivo la Copa Libertadores, Copa Sudamericana, UEFA Champions League, UEFA Europa League, Serie A de Italia, Bundesliga de Alemania, Copa Mundial de Clubes, NFL, MLB, entre otros.",
