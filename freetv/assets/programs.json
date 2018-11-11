@@ -158,7 +158,7 @@
         },
         {
             "id":18,
-            "type": "native",
+            "type": "hls",
             "link":"http://sv1.futbollibre.net/libertadores.m3u8?uuu",
             "link2": "http://sv1.futbollibre.net/embed/fs1embed.html",
             "name": "Fox Sports",
