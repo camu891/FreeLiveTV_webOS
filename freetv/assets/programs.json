@@ -242,8 +242,8 @@
         },
         {
             "id":27,
-            "type": "hls",
-            "link": "http://aleman.mine.nu:8000/live/oscar1/oscar1/1384.m3u8",
+            "type": "iframe",
+            "link": "http://player.latino-webtv.com/channels/cinemax.html",
             "name": "Cinemax",
             "logo": "./assets/img/cinemax.png",
             "description":"No hay descripción",
@@ -270,7 +270,7 @@
         {
             "id":30,
             "type": "iframe",
-            "link": "http://televisionlibre.net/canal/space-en-vivo/embed.html",
+            "link": "http://player.latino-webtv.com/channels/space.html",
             "name": "Space",
             "logo": "./assets/img/space.png",
             "description":"No hay descripción",
@@ -287,8 +287,8 @@
         },
         {
             "id":32,
-            "type": "hls",
-            "link": "http://live.lcdn.claro.net.co/tnt.m3u8",
+            "type": "iframe",
+            "link": "http://player.latino-webtv.com/channels/tnt.html",
             "name": "TNT",
             "logo": "./assets/img/tnt.png",
             "description":"No hay descripción",
@@ -309,6 +309,15 @@
             "link": "http://www.fulltvhd.fi/peliculas/hbo.php",
             "name": "HBO",
             "logo": "./assets/img/hbo.png",
+            "description":"No hay descripción",
+            "category":"Cine"
+        },
+        {
+            "id":344,
+            "type": "iframe",
+            "link": "http://www.sintelevisor.com/tv/universal.html",
+            "name": "Universal",
+            "logo": "./assets/img/universal.png",
             "description":"No hay descripción",
             "category":"Cine"
         },
@@ -461,12 +470,21 @@
             "type": "iframe",
             "link": "http://player.latino-webtv.com/channels/discovery.html",
             "name": "Discovery Channel",
-            "logo": "http://images.mi.tv/channels/26431e28-bd69-4174-9abc-d509ddb267e8_m.jpg",
+            "logo": "./assets/img/discovery.png",
             "description":"No hay descripción",
             "category":"Entretenimiento" 
         },
         {
             "id":52,
+            "type": "iframe",
+            "link": "http://player.latino-webtv.com/channels/history.html",
+            "name": "History Channel",
+            "logo": "./assets/img/history.png",
+            "description":"No hay descripción",
+            "category":"Entretenimiento" 
+        },
+        {
+            "id":53,
             "type": "hls",
             "link": "http://live-edge01.telecentro.net.ar/live/tlx.smil/chunklist_w1930992855_b1828000_sleng.m3u8",
             "name": "TLX HD",
@@ -475,7 +493,16 @@
             "category":"other" 
         },
         {
-            "id":53,
+            "id":54,
+            "type": "iframe",
+            "link": "http://player.latino-webtv.com/channels/warner.html",
+            "name": "Warner",
+            "logo": "./assets/img/warner.png",
+            "description":"No hay descripción",
+            "category":"Cine" 
+        },
+        {
+            "id":55,
             "type": "mp4",
             "link": "https://storage.googleapis.com/pp-to-stream.appspot.com/17526.mp4",
             "name": "EL justiciero 2",
