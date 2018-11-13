@@ -147,10 +147,11 @@
             "logo": "./assets/img/espn3.png",
             "description":"La programación de ESPN 3 está dedicada a los deportes de acción, es decir los deportes extremos tanto de verano como de invierno, así como los de aventura, surf y running.",
             "category":"Deportes"
-        },{
+        },
+        {
             "id":17,
             "type": "iframe",
-            "link": "http://futbollibre.online/fox-sports-premium/embed66.html?ewqe",
+            "link": "http://futbollibre.online/fox-sports-premium/embed66.html",
             "name": "Fox Sport Premium",
             "logo": "./assets/img/foxsport_premium.png",
             "description":"FOX Sports Premium es un canal argentino que ofrece acceso instantáneo a los mejores partidos de futbol de la Superliga Argentina. Es un canal de televisión de paga argentino dedicado a la emisión del fútbol de dicho país, junto con TNT Sports tras la alianza de Turner y Fox por los derechos de televisión del fútbol argentino, el cual reemplaza el programa público Fútbol Para Todos.",
@@ -158,9 +159,9 @@
         },
         {
             "id":18,
-            "type": "hls",
-            "link":"http://sv1.futbollibre.net/libertadores.m3u8?uuu",
-            "link2": "http://sv1.futbollibre.net/embed/fs1embed.html",
+            "type": "iframe",
+            "link": "http://futbollibre.online/fox-sports-1/embed.html",
+            "link2":"http://sv1.futbollibre.net/libertadores.m3u8",
             "name": "Fox Sports",
             "logo": "./assets/img/foxsport.png",
             "description":"Fox Sports es un canal de televisión por suscripción especializado en deportes que emite las 24 horas del día para Latinoamérica. Transmite en vivo la Copa Libertadores, Copa Sudamericana, UEFA Champions League, UEFA Europa League, Serie A de Italia, Bundesliga de Alemania, Copa Mundial de Clubes, NFL, MLB, entre otros.",
@@ -168,8 +169,8 @@
         },
         {
             "id":19,
-            "type": "hls",
-            "link": "https://fslahds-lh.akamaihd.net/i/FS2SUR_1@77551/index_1_av-p.m3u8?sd=6&set-segment-duration=quality&rebase=on&hdntl=exp=1540752766~acl=%2fi%2fFS2SUR_1%4077551%2f*~data=hdntl~hmac=99131d45fdfd08d7652778dcfb359179739aec0c405b8b90424bb215218187a6",
+            "type": "iframe",
+            "link": "http://futbollibre.online/fox-sports-2/embed.html",
             "name": "Fox Sports 2",
             "logo": "./assets/img/foxsport2.png",
             "description":"Fox Sports 2 es un canal de cable y satelite totalmente deportivo, es la segunda señal de Fox Sports, antes llamado Fox Sports + a partir del 5 de Noviembre del 2012 se le cambio de nombre para llamarse Fox Sports 2 esta cadena transmite eventos deportivos locales e internacionales más destacados como la Copa Libertadores, UEFA Champions League, Copa Sudamericana, UEFA Europa League, la WWE entre otros.",
@@ -186,8 +187,9 @@
         },
         {
             "id":21,
-            "type": "iframe",
-            "link": "http://futbollibre.online/superliga2.html",
+            "type": "hls",
+            "link": "http://sv1.futbollibre.net/superliga2.m3u8",
+            "link2": "http://futbollibre.online/superliga2.html",
             "name": "SAF",
             "logo": "./assets/img/saf.png",
             "description":"No hay descripción",
@@ -235,7 +237,7 @@
             "link": "http://latino-webtv.com:2082/livexd3/70_.m3u8",
             "name": "Win Sports",
             "logo": "./assets/img/winsports.png",
-            "description":"No hay descripción",
+            "description":"Win Sports, canal de suscripción deportivo colombiano.",
             "category":"Deportes"
         },
         {
@@ -472,6 +474,6 @@
             "description":"No hay descripción",
             "category":"Peliculas" 
         }
-
+        
     ]
 }
