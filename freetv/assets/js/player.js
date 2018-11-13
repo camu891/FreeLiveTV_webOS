@@ -54,6 +54,8 @@
     iframe.setAttribute('frameborder', '0');
     iframe.setAttribute('allow' ,'autoplay; encrypted-media');
     iframe.setAttribute('allowFullScreen', '');
+    iframe.setAttribute('sandbox', 'allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation');
+
     container.appendChild(iframe);
     
     $(document).ready(function(){
