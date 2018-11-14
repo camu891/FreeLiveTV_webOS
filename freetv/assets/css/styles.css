@@ -707,7 +707,7 @@ video.hls::-webkit-media-controls-current-time-display {}
 	display: none;
 	position: fixed;
 	right: 10px;
-	bottom: 10px;
+	bottom: 45px;
 	z-index: 3;
 	height: auto;
 	-webkit-box-shadow: -4px 2px 29px 13px rgba(0,0,0,0.54);
