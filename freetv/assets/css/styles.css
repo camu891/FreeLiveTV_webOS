@@ -24,6 +24,10 @@ h1 {
 
 a {text-decoration: none;}
 
+ul {
+	list-style: none;
+}
+
 header {
 	display: flex;
 }
@@ -38,8 +42,43 @@ footer {
 	color: gray;
 }
 
-footer span {
+footer span.about {
 	margin-left: 5px
+}
+
+.btn-control {
+	display: inline;
+}
+
+.btn-control ul {
+	margin: 0;
+	display: inline-flex;
+	float: right;
+    margin-right: 20px;
+}
+
+.btn-control .btn {
+	border-radius: 4px;
+    width: 25px;
+    height: 13px;
+    display: inline-block;
+    margin: 0 10px
+}
+
+.btn-control-red {
+	background: #a31818;
+}
+
+.btn-control-green {
+	background: #1dab04;
+}
+
+.btn-control-yelow {
+	background: #e3be0c;
+}
+
+.btn-control-blue {
+	background: #1111b4;
 }
 
 .header {
@@ -64,6 +103,7 @@ footer span {
 }
 
 .subheader {
+	display: none;
 	overflow: hidden;
 	overflow-x: auto; 
 	padding: 10px 0;
@@ -77,6 +117,7 @@ footer span {
     width: 100%;
     height: auto;
 	text-align: center;
+	border-bottom: 2px solid red;
 	-webkit-box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.75); 
 	-moz-box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.75);
 	box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.75); 
@@ -351,6 +392,7 @@ a.program-link span.channel-title {
 	text-transform: uppercase;
 	font-weight: bold;
 	background: red;
+	width: 150px;
 	padding: 5px;
 	border-radius: 2px;
 	font-size: 1em;
@@ -361,12 +403,15 @@ a.program-link span.channel-title {
 }
 
 .programs-logo {
-	width: 100%;
-	height: auto;
+	width: 150px;
+	height: 150px;
+	/*width: 100%;
+	height: auto;*/
 	-webkit-animation-duration: 2s;
 	animation-duration: 2s;
 	text-align: center;
 	border-radius: 4px;
+	background: white;
 }
 
 
@@ -386,11 +431,11 @@ a.program-link span.channel-title {
 
 
 .row {
-	flex-wrap: wrap;
-	margin-right: auto;
-	margin-left: 30px;
-	display: inline-block;
-	width: 100%
+	/*flex-wrap: wrap; */
+    /* margin-right: auto; */
+    margin: 0 10px;
+    /* display: inline-block; */
+    /* width: 100%*/
 }
 
 .category {
@@ -420,8 +465,8 @@ span.category-title {
 }
 
 .card {
-	width: 10%;
-	padding: 10px;
+	/*width: 10%;*/
+	padding: 5px;
 	float:left;
 	background: white;
 	margin: 10px;
@@ -430,18 +475,24 @@ span.category-title {
 	outline: none;
 }
 
-.last-view .card{
-	width: 36%;
+.last-view .card {
+	width: 39%;
+}
+
+.last-view .card .programs-logo {
+	width: 100%;
+	height: auto;
 }
 
 .last-view span.lv-title {
 	color: white;
     display: block;
-    margin: 10px;
+	margin: 10px;
 }
 
-.last-view .card .channel-title{
+.last-view .card .channel-title {
 	font-size: 10px;
+	width: auto;
 }
 
 .card .inner{

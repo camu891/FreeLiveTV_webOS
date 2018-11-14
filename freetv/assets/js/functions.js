@@ -120,6 +120,9 @@ function addProgramToCategory(program,params){
 
 function addCategoryTab(category){
 	$("ul.nav-tabs").append("<li id='tab_"+category+"'>"+category+"</li>");
+	$("ul.nav-tabs").ready(function(){
+		$(".subheader").fadeIn();
+	});
 }
 function initNavTabs(){
 	$("ul.nav-tabs li").on("click",function(e){
@@ -194,8 +197,10 @@ document.addEventListener("keydown", function(inEvent){
 		$('body').toggleClass('visible_menu');
 		break;
 		case 404://green
+		ajax_load_programs();
 		break;
 		case 405://yelow
+		sendAppToBackground();
 		break;
 		case 406://blue
 		showSearchInput($(".search-icon"));
