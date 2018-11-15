@@ -1,10 +1,10 @@
 
-   const APPLICATION_MANAGER_SERVICE = 'luna://com.webos.applicationManager';
-   const TV_APP_ID = 'com.matic.freetv';
+   var APPLICATION_MANAGER_SERVICE = "luna://com.webos.applicationManager";
+   var TV_APP_ID = "com.matic.freetv";
 
 
   //sample code for calling LS2 API
-  var lunaReq= webOS.service.request("luna://com.palm.systemservice",
+  var lunaReq = webOS.service.request("luna://com.palm.systemservice",
   {
     method:"clock/getTime",
     parameters:{},
@@ -63,16 +63,19 @@
 
 
 function sendAppToBackground() {
-  webOS.service.request(APPLICATION_MANAGER_SERVICE, {
+  webOS.service.request(APPLICATION_MANAGER_SERVICE, 
+    {
     method: 'launch',
-    parameters: { id: TV_APP_ID },
-    onSuccess(response) {
+    parameters: { 
+      id: TV_APP_ID 
+    },
+    onSuccess: function(response) {
       if (response.returnValue === false) {
-        logger.error(`Error sending Application to background and bringing TV Application with id ${TV_APP_ID} to the foreground.`);
+        logger.error("Error sending Application to background and bringing TV Application with id "+ TV_APP_ID +" to the foreground.");
         forciblyExitApp();
       }
     },
-    onFailure(error) {
+    onFailure: function(error) {
       logger.error(error);
       forciblyExitApp();
     },
@@ -82,6 +85,3 @@ function sendAppToBackground() {
 function forciblyExitApp() {
   window.close();
 }
-
-   
-

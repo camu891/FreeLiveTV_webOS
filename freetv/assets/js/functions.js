@@ -4,8 +4,25 @@
 	LAST_VIEW: "lastView"
 }
 var programs = null;
-
 var totalPragrams=0;
+var tabindex=0;
+
+function getSettings(name){
+	if (typeof(Storage) !== "undefined") {
+		return localStorage.getItem(name);
+	} else {
+		return null;
+	}
+}
+
+function saveSettings(name,value){
+	if (typeof(Storage) !== "undefined") {
+		localStorage.setItem(name, value);
+	} else {
+		console.log("Sorry, your browser does not support Web Storage...");
+	}
+}
+
 $(document).ready(function(){
 	
 	getdate();
@@ -22,6 +39,10 @@ $(document).ready(function(){
 	
 	$('.search-icon').on("click",function(){
 		showSearchInput(this);
+	});
+
+	$("#search").on("click",function(){
+		tabindex=0;
 	});
 	
 	$('#container_programs').click(function(){
@@ -98,12 +119,13 @@ function initLastView(json){
 }
 
 function addLastView(json) {
+	$(".last-view .lv-container").empty();
 	$.each(json.programs, function(i) {
 		var program=json.programs[i];
 		if(getSettings(settings.LAST_VIEW)!=null &&
 		(program.id==JSON.parse(getSettings(settings.LAST_VIEW))[0] || program.id==JSON.parse(getSettings(settings.LAST_VIEW))[1]) ){		
 			var data = get_program_data(program,get_params(program))
-			$(data).appendTo( ".last-view")
+			$(data).appendTo(".last-view .lv-container")
 		}
 	});
 }
@@ -134,8 +156,7 @@ function initNavTabs(){
 
 function goToByScroll(id) {
 	id = id.replace("tab_", "");
-	$('#container_programs').animate({scrollTop: 0 }, 0);
-	$('#container_programs').animate({scrollTop: $('#'+id).offset().top - 130 }, 0);
+	$('#container_programs').animate({scrollTop: 0 }, 0).animate({scrollTop: $('#'+id).offset().top - 130 }, 0);
 	closeSidebar();
 }
 
@@ -158,7 +179,7 @@ function set_tabindex(){
 	}
 }
 
-var tabindex=0;
+
 document.addEventListener("keydown", function(inEvent){
 	console.log("button key: "+inEvent.keyCode);
 	var itemsPerRow = 8;
@@ -200,30 +221,36 @@ document.addEventListener("keydown", function(inEvent){
 		ajax_load_programs();
 		break;
 		case 405://yelow
-		sendAppToBackground();
+
+		$(".alert-dialog").fadeIn();
+
+
+
+		
+
+
 		break;
 		case 406://blue
-		showSearchInput($(".search-icon"));
+		if($(".search-container").is(":visible")){
+			hideSearchInput()
+		}else{
+			showSearchInput($(".search-icon"));
+		}
 		break;
 		default:  break;
 	}
 });
 
-$(document).ready(function(){
-	$("#search").on("click",function(){
-		tabindex=0;
-	});
-});
+
+
 
 function mouseOut(elem) {
-	$(".preview").empty();
-	$(".preview").hide();
+	$(".preview").empty().hide();
 }
 
 function mouseOver(elem,typeVideo,link) {
 	if (getSettings(settings.PREVIEW)=="true") {
 		var container = $(".preview");
-		//container.empty()
 		container.show();
 		if(typeVideo==="hls"){
 			createNativeVideo(container,link);
@@ -275,18 +302,16 @@ $(document).ready(function(){
 	
 });
 
-function getSettings(name){
-	if (typeof(Storage) !== "undefined") {
-		return localStorage.getItem(name);
-	} else {
-		return null;
-	}
-}
 
-function saveSettings(name,value){
-	if (typeof(Storage) !== "undefined") {
-		localStorage.setItem(name, value);
-	} else {
-		console.log("Sorry, your browser does not support Web Storage...");
-	}
-}
+$(document).ready(function(){
+
+	$("#alert-ok").click(function(){
+		window.close();
+	});
+	$("#alert-cancel").click(function(){
+		$(".alert-dialog").fadeOut();
+	});
+	
+});
+
+
