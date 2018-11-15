@@ -17,6 +17,7 @@
   console.log(typeVideo);
   
   function load(){
+    getdate();
     addChannelInfo();
     initGoBack();
     loadPlayer();

@@ -283,6 +283,19 @@ nav ul.nav-tabs li a:active {
 	line-height: 1.5em;
 }
 
+.channel-header .datetime {
+    position: absolute;
+	display: block;
+	color: white;
+}
+
+.channel-header .datetime .date,
+.channel-header .datetime .clock {
+	display: block;
+	text-align: right;
+    margin-right: 50px;
+}
+
 .content-loader, .content-error-request {
 	display: none;
 	position: fixed;
@@ -292,7 +305,6 @@ nav ul.nav-tabs li a:active {
 	height: 100%;
 	z-index: 0;
 }
-
 
 .loader {
 	margin: auto;
