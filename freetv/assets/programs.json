@@ -112,7 +112,8 @@
         {
             "id":13,
             "type": "hls",
-            "link": "http://sv1.futbollibre.net/m3u8/tyc2.m3u8",
+            "link": "http://62.210.116.123/hls/tyc.m3u8",
+            "link2": "http://sv1.futbollibre.net/m3u8/tyc2.m3u8",
             "name": "Tyc Sports",
             "logo": "./assets/img/tyc_sport.png",
             "description":"TyC Sports en vivo es un canal de televisión por suscripción deportivo argentino, el cual brinda la emisión de eventos deportivos destacados a nivel nacional e internacional.",
