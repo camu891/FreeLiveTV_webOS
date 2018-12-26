@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="assets/css/login-style.css">
+    <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDMXt111zjEObH7mxzk6L-on8DnFTB2eBI",
+            authDomain: "free-live-tv-905b4.firebaseapp.com",
+            databaseURL: "https://free-live-tv-905b4.firebaseio.com",
+            projectId: "free-live-tv-905b4",
+            storageBucket: "free-live-tv-905b4.appspot.com",
+            messagingSenderId: "16270322104"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="assets/js/login.js"></script>
+</head>
+<body>
+    <div class="logo">
+        <img src="./largeIcon.png">
+    </div>
+    <div class="content">
+        <div class="input-group">
+            <div class="input-group-icon">@</div>
+            <div class="input-group-area"><input id="email" type="email" placeholder="Email Address"></div>
+        </div>
+        
+        <div class="input-group">
+            <div class="input-group-icon">***</div>
+            <div class="input-group-area"><input id="password" type="password" placeholder="Password"></div>
+        </div>
+        
+        <div>
+            <button class="btn" id="login" onclick="login()">Login</button>
+            <button class="btn" id="guest" onclick="guest()">Guest</button>
+        </div>
+    </div>
+    <div class="messages">
+        <span id="message"></span>
+    </div>
+</body>
+</html>

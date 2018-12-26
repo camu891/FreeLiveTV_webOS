@@ -284,7 +284,7 @@ nav ul.nav-tabs li a:active {
 }
 
 .channel-header .datetime {
-    position: absolute;
+	position: absolute;
 	display: block;
 	color: white;
 }
@@ -293,7 +293,7 @@ nav ul.nav-tabs li a:active {
 .channel-header .datetime .clock {
 	display: block;
 	text-align: right;
-    margin-right: 50px;
+	margin-right: 50px;
 }
 
 .content-loader, .content-error-request {
@@ -855,3 +855,28 @@ video.hls::-webkit-media-controls-mute-button {}
 video.hls::-webkit-media-controls-timeline {}
 
 video.hls::-webkit-media-controls-current-time-display {}
+
+.logout {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	padding: 10px 20px;
+	width: 100%;
+	border-top: 2px solid #181818;
+	color: white;
+}
+
+.logout:hover {
+	background: white;
+	color: red;
+	cursor: pointer;
+}
+
+.logout img {
+	width: 20px;
+	margin: 0 10px;
+	vertical-align: middle;
+}
+.logout-title {
+	font-size: 0.8em;
+}

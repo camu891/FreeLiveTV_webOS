@@ -1,0 +1,83 @@
+/*QuickReset*/
+*{margin:0;box-sizing:border-box;}
+html,body{height:100%;font:14px/1.4 sans-serif;background: #202020;}
+input, textarea{font:14px/1.4 sans-serif;}
+
+.logo img {
+    margin: auto;
+    display: block;
+    height: 120px;
+}
+
+.content {
+    width: 400px;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid #252525;
+    border-radius: 2px;
+}
+
+.shadow {
+    -webkit-box-shadow: 0 8px 5px -5px rgb(0, 0, 0);
+    -moz-box-shadow: 0 8px 5px -5px rgb(0, 0, 0);
+    box-shadow: 0 8px 5px -5px rgb(0, 0, 0);
+}
+
+.input-group {
+    display: flex;
+    border-collapse: collapse;
+    width:100%;
+}
+.input-group > div{
+    display: flex;
+    border: 1px solid #ddd;
+    vertical-align: middle;  /* needed for Safari */
+    align-items: center;
+}
+.input-group-icon{
+    background:#eee;
+    color: #777;
+    padding: 0 12px;
+    width: 40px;
+    border-radius: 2px 0 0 2px;
+}
+.input-group-area{
+    width:100%;
+    border-radius: 0 2px 2px 0;
+}
+.input-group input{
+    border: 0;
+    display: block;
+    width: 100%;
+    padding: 8px;
+}
+
+.btn {
+    width: 100%;
+    font-size: 12pt;
+    padding: 10px;
+    color: white;
+    background: red;
+    border: none;
+    border-radius: 2px;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    -webkit-box-shadow: 0 8px 5px -5px rgb(0, 0, 0);
+    -moz-box-shadow: 0 8px 5px -5px rgb(0, 0, 0);
+    box-shadow: 0 8px 5px -5px rgb(0, 0, 0);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#guest {
+    background: lightgrey;
+    color: red;
+}
+
+input:focus,
+.btn:focus {
+    outline: none !important;
+}
