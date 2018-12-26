@@ -14,106 +14,131 @@
 		<script src="assets/js/login.js"></script>
 		<script src="assets/js/search.js"></script>
 		<script src="assets/js/sidebar.js"></script>
-	
+		
 		
 	</head>
 	<body onload="load()">
-
-
+		
 		<!-- login -->
-		<iframe id="iframe-login" src="./login.html" width="100%" frameBorder="0"></iframe>
+		<div id="main-login">
+			<div class="logo-login">
+				<img src="./largeIcon.png">
+			</div>
+			<div class="content-login">
+				<div class="input-group">
+					<div class="input-group-icon">@</div>
+					<div class="input-group-area"><input id="email" type="email" placeholder="Email Address"></div>
+				</div>
+				
+				<div class="input-group">
+					<div class="input-group-icon">***</div>
+					<div class="input-group-area"><input id="password" type="password" placeholder="Password"></div>
+				</div>
+				
+				<div>
+					<button class="btn-login" id="login" onclick="login()">Login</button>
+					<button class="btn-login" id="guest" onclick="guest()">Guest</button>
+				</div>
+			</div>
+			<div class="content-loader">
+				<div class="loader"></div>
+			</div>
+			<div class="messages">
+				<span id="message"></span>
+			</div>
+		</div>
 		
 		<!--main content-->
 		<div id="main-content">
-
-		<!-- Sidebar -->
-		<nav>	
-			<ul class="ulpreview">
-				<li>
-					<span class="title">Preview </span>
-					<label class="switch">
-						<input type="checkbox" id="setting-preview" checked>
-						<span class="slider round"></span>
-					</label>
-				</li>
-			</ul>
 			
-			<div class="last-view">
-				<span class="lv-title">Vistos recientemente</span>
-				<div class="lv-container"></div>
-			</div>
-
-			<div class="logout">
-				<img src="./assets/icon/sign-out.png">
-				<span class="logout-title">Cerrar Sesión</span>
-			</div>
-			
-		</nav>
-		
-		<header class="header">
-			<div class="navigation">
-				<a href="#" id="menu_on">
-					<span></span>
-					<span></span>
-					<span></span>
-				</a>
-			</div>
-			<img class="icon-app" src="icon.png">
-			<div class="datetime"><span class="date"></span><span class="clock"></span></div>
-			<div class="search-icon"><img src="./assets/icon/search.png"><div></div></div>
-			<div class="search-container">
-				<input type="search" id="search" name="search" placeholder="Buscar..">
-			</div>
-		</header>
-		<div id="subheader" class="subheader">
-			<ul class="nav-tabs"></ul>
-		</div>
-		<div class="content-loader">
-			<div class="loader"></div>
-		</div>
-		
-		<div class="content-error-request">
-			<div>
-				<span class="sad">ups!</span>
-				<br><span>Ocurrió algún error.</span>
-			</div>
-			<div class="content-reload"><span class="reload">Volver a intentar</span></div>
-		</div>
-		
-		<div id="container_programs">
-		</div>
-		<div id="log"> </div>
-		<div class="preview"></div>	
-		<footer>
-			<span class="about">Matias Camusso | v1.0.0</span>
-			<div class="btn-control">
-				<ul>
-					<li><span class="btn btn-control-red"></span><span>Menu</span></li>
-					<li><span class="btn btn-control-green"></span><span>Reload</span></li>
-					<li><span class="btn btn-control-yelow"></span><span>Exit</span></li>
-					<li><span class="btn btn-control-blue"></span><span>Search</span></li>
+			<!-- Sidebar -->
+			<nav>	
+				<ul class="ulpreview">
+					<li>
+						<span class="title">Preview </span>
+						<label class="switch">
+							<input type="checkbox" id="setting-preview" checked>
+							<span class="slider round"></span>
+						</label>
+					</li>
 				</ul>
+				
+				<div class="last-view">
+					<span class="lv-title">Vistos recientemente</span>
+					<div class="lv-container"></div>
+				</div>
+				
+				<div class="logout">
+					<img src="./assets/icon/sign-out.png">
+					<span class="logout-title">Logout</span>
+				</div>
+				
+			</nav>
+			
+			<header class="header">
+				<div class="navigation">
+					<a href="#" id="menu_on">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+				</div>
+				<img class="icon-app" src="icon.png">
+				<div class="datetime"><span class="date"></span><span class="clock"></span></div>
+				<div class="search-icon"><img src="./assets/icon/search.png"><div></div></div>
+				<div class="search-container">
+					<input type="search" id="search" name="search" placeholder="Buscar..">
+				</div>
+			</header>
+			<div id="subheader" class="subheader">
+				<ul class="nav-tabs"></ul>
 			</div>
-		</footer>
-		
-		
-		
-		<!-- Alert dialog-->
-		<div class="alert-dialog">
-			<div class="alert-body">
+			<div class="content-loader">
+				<div class="loader"></div>
+			</div>
+			
+			<div class="content-error-request">
+				<div>
+					<span class="sad">ups!</span>
+					<br><span>Ocurrió algún error.</span>
+				</div>
+				<div class="content-reload"><span class="reload">Volver a intentar</span></div>
+			</div>
+			
+			<div id="container_programs">
+			</div>
+			<div id="log"> </div>
+			<div class="preview"></div>	
+			<footer>
+				<span class="about">Matias Camusso | v1.0.0</span>
+				<div class="btn-control">
+					<ul>
+						<li><span class="btn btn-control-red"></span><span>Menu</span></li>
+						<li><span class="btn btn-control-green"></span><span>Reload</span></li>
+						<li><span class="btn btn-control-yelow"></span><span>Exit</span></li>
+						<li><span class="btn btn-control-blue"></span><span>Search</span></li>
+					</ul>
+				</div>
+			</footer>
+			
+			
+			
+			<!-- Alert dialog-->
+			<div class="alert-dialog">
+				<div class="alert-body">
 					<span class="alert-title">Salir</span>
 					
 					<p class='alert-message'>¿Está seguro de que quiere salir?</p>
-			</div>
-			<div class="alert-footer">
+				</div>
+				<div class="alert-footer">
 					<input type='button' class='btn-alert alert-cancel' id="alert-cancel" value='CANCELAR'>
 					<input type='button' class='btn-alert alert-ok' id="alert-ok" value='OK'>
+				</div>
+				
 			</div>
-	
 		</div>
+		
 	</div>
-
-</div>
 	
 </body>
 </html>

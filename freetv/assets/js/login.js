@@ -1,3 +1,4 @@
+
 // Initialize Firebase
 var config = {
     apiKey: "AIzaSyDMXt111zjEObH7mxzk6L-on8DnFTB2eBI",
@@ -7,15 +8,15 @@ var config = {
     storageBucket: "free-live-tv-905b4.appspot.com",
     messagingSenderId: "16270322104"
 };
+var USER_GUEST = {
+    email: "guest@guest.com",
+    password: "userguest"
+}
 firebase.initializeApp(config);
 
-var contentLogin = document.getElementsByClassName("content-login")
-
-
 firebase.auth().onAuthStateChanged(function(user) {
- $(".content-login").hide();
+    var isLogged = false;
     if (user) {
-        
         var user = firebase.auth().currentUser;
         var name, email, photoUrl, uid, emailVerified;
         
@@ -27,16 +28,36 @@ firebase.auth().onAuthStateChanged(function(user) {
             uid = user.uid;  // The user's ID, unique to the Firebase project. Do NOT use
             // this value to authenticate with your backend server, if
             // you have one. Use User.getToken() instead.
-            $("#iframe-login").hide();
-            $("#main-content").show();
+            isLogged = true;
+            if(email==USER_GUEST.email){
+                showAds();
+            }
         }
-        
-        
     } else {
-        $(".content-login").show();
         // No user is signed in.
+        isLogged = false;
+
     }
+    $(".content-loader").hide();
+    toggleLogin(isLogged,user)
 });
+
+function showAds(){
+
+}
+
+function toggleLogin(isLogged){
+    var mainLogin = $("#main-login");
+    var mainContent = $("#main-content");
+    if(isLogged){
+        mainLogin.hide();
+        mainContent.show();
+    }else {
+        mainLogin.show();
+        mainContent.hide();
+    }
+}
+
 
 function login() {
     var userEmail = document.getElementById('email').value;
@@ -45,11 +66,13 @@ function login() {
 }
 
 function signWithFirebase(email,password){
+    $(".content-loader").show();
     firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
         var errorMessage = error.message;
         alert('Error: '+ errorMessage);
+        $(".content-loader").hide();
     });
 }
 
@@ -59,13 +82,12 @@ function createUser(email,password){
         var errorCode = error.code;
         var errorMessage = error.message;
         alert('Error: '+ errorMessage);
+        $(".content-loader").hide();
     });
 }
 
 function guest(){
-    var userEmail = 'guest@guest.com';
-    var userPassword = 'userguest';
-    signWithFirebase(userEmail,userPassword)
+    signWithFirebase(USER_GUEST.email,USER_GUEST.password)
 }
 
 function logout() {
