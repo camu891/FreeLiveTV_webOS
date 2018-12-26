@@ -7,6 +7,7 @@ var programs = null;
 var totalPragrams=0;
 var tabindex=0;
 
+
 function getSettings(name){
 	if (typeof(Storage) !== "undefined") {
 		return localStorage.getItem(name);
@@ -25,6 +26,9 @@ function saveSettings(name,value){
 
 $(document).ready(function(){
 	
+	$("#main-content").hide();
+	$(".logout").on("click",logout);
+
 	getdate();
 	
 	ajax_load_programs();
@@ -40,7 +44,7 @@ $(document).ready(function(){
 	$('.search-icon').on("click",function(){
 		showSearchInput(this);
 	});
-
+	
 	$("#search").on("click",function(){
 		tabindex=0;
 	});
@@ -221,14 +225,14 @@ document.addEventListener("keydown", function(inEvent){
 		ajax_load_programs();
 		break;
 		case 405://yelow
-
-		$(".alert-dialog").fadeIn();
-
-
-
 		
-
-
+		$(".alert-dialog").fadeIn();
+		
+		
+		
+		
+		
+		
 		break;
 		case 406://blue
 		if($(".search-container").is(":visible")){
@@ -304,7 +308,7 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-
+	
 	$("#alert-ok").click(function(){
 		window.close();
 	});

@@ -9,7 +9,7 @@ input, textarea{font:14px/1.4 sans-serif;}
     height: 120px;
 }
 
-.content {
+.content-login {
     width: 400px;
     margin: auto;
     padding: 10px;
@@ -52,7 +52,7 @@ input, textarea{font:14px/1.4 sans-serif;}
     padding: 8px;
 }
 
-.btn {
+.btn-login {
     width: 100%;
     font-size: 12pt;
     padding: 10px;
@@ -64,7 +64,7 @@ input, textarea{font:14px/1.4 sans-serif;}
     text-transform: uppercase;
 }
 
-.btn:hover {
+.btn-login:hover {
     -webkit-box-shadow: 0 8px 5px -5px rgb(0, 0, 0);
     -moz-box-shadow: 0 8px 5px -5px rgb(0, 0, 0);
     box-shadow: 0 8px 5px -5px rgb(0, 0, 0);
@@ -78,6 +78,6 @@ input, textarea{font:14px/1.4 sans-serif;}
 }
 
 input:focus,
-.btn:focus {
+.btn-login:focus {
     outline: none !important;
 }

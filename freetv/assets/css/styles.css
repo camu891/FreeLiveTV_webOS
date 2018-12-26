@@ -856,6 +856,13 @@ video.hls::-webkit-media-controls-timeline {}
 
 video.hls::-webkit-media-controls-current-time-display {}
 
+
+/* Login */
+
+#iframe-login {
+	height: -webkit-fill-available;
+}
+
 .logout {
 	display: block;
 	position: absolute;

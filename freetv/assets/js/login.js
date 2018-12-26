@@ -1,4 +1,19 @@
+// Initialize Firebase
+var config = {
+    apiKey: "AIzaSyDMXt111zjEObH7mxzk6L-on8DnFTB2eBI",
+    authDomain: "free-live-tv-905b4.firebaseapp.com",
+    databaseURL: "https://free-live-tv-905b4.firebaseio.com",
+    projectId: "free-live-tv-905b4",
+    storageBucket: "free-live-tv-905b4.appspot.com",
+    messagingSenderId: "16270322104"
+};
+firebase.initializeApp(config);
+
+var contentLogin = document.getElementsByClassName("content-login")
+
+
 firebase.auth().onAuthStateChanged(function(user) {
+ $(".content-login").hide();
     if (user) {
         
         var user = firebase.auth().currentUser;
@@ -12,11 +27,13 @@ firebase.auth().onAuthStateChanged(function(user) {
             uid = user.uid;  // The user's ID, unique to the Firebase project. Do NOT use
             // this value to authenticate with your backend server, if
             // you have one. Use User.getToken() instead.
-            window.location.href = "./index.html";
+            $("#iframe-login").hide();
+            $("#main-content").show();
         }
         
         
     } else {
+        $(".content-login").show();
         // No user is signed in.
     }
 });
@@ -33,7 +50,7 @@ function signWithFirebase(email,password){
         var errorCode = error.code;
         var errorMessage = error.message;
         alert('Error: '+ errorMessage);
-      });
+    });
 }
 
 function createUser(email,password){
@@ -46,15 +63,20 @@ function createUser(email,password){
 }
 
 function guest(){
-    var userEmail = 'guest';
+    var userEmail = 'guest@guest.com';
     var userPassword = 'userguest';
     signWithFirebase(userEmail,userPassword)
 }
 
 function logout() {
+    console.log("logout")
     firebase.auth().signOut().then(function() {
         // Sign-out successful.
+        $("#iframe-login").show();
+        $("#main-content").hide();
     }).catch(function(error) {
         // An error happened.
+        alert("Error: "+ error)
     });
 }
+
