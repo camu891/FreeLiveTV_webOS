@@ -510,6 +510,15 @@
             "logo": "https://3.bp.blogspot.com/-mDTX1G7lAqI/WXj7MIc6YCI/AAAAAAAAmkI/X19Zna-beBoRrXIF0fKR-wKxjoubDHPPgCLcBGAs/s250-c/The-Equalizer-2_Teaser_Poster_JPosters.jpg",
             "description":"No hay descripción",
             "category":"Peliculas" 
-        }  
+        },
+        {
+            "id":56,
+            "type": "mp4",
+            "link": "http://127.0.0.1:22437/0",
+            "name": "Venom",
+            "logo": "http://image.tmdb.org/t/p/w500/bURIWlkMbzT8RdpemzCmQECo2Uh.jpg",
+            "description":"No hay descripción",
+            "category":"Peliculas" 
+        }   
     ]
 }
