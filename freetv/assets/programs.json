@@ -518,7 +518,12 @@
             "name": "Venom",
             "logo": "http://image.tmdb.org/t/p/w500/bURIWlkMbzT8RdpemzCmQECo2Uh.jpg",
             "description":"No hay descripción",
-            "category":"Peliculas" 
-        }   
+            "category":"Peliculas",
+            "subtitle": {
+                "label":"Español",
+                "srclang": "es",
+                "src": ""
+            }
+        }
     ]
 }
