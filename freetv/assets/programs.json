@@ -514,7 +514,7 @@
         {
             "id":56,
             "type": "mp4",
-            "src": "http://127.0.0.1:22437/0",
+            "src": "http://127.0.0.1:14457/0",
             "name": "Venom",
             "logo": "http://image.tmdb.org/t/p/w500/bURIWlkMbzT8RdpemzCmQECo2Uh.jpg",
             "description":"No hay descripción",
@@ -522,7 +522,7 @@
             "subtitle": {
                 "label":"Español",
                 "srclang": "es",
-                "src": ""
+                "src": "http://dl.opensubtitles.org/en/download/src-api/vrf-19ac0c56/sid-wU4ie3Jg9kHq5HqYTtd-eeAhzs4/filead/1956132378"
             }
         }
     ]
