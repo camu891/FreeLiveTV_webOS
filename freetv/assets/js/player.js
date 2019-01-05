@@ -7,24 +7,18 @@
   
   var queryString = decodeURIComponent(window.location.search); //parsing
   queryString = queryString.substring(1);
-  
-  var src = queryString.substring(queryString.lastIndexOf("src=")+4,queryString.lastIndexOf("&type="));//from type if src contain &
-  var typeVideo = queryString.substring(queryString.lastIndexOf("&type=")+6,queryString.lastIndexOf("&title="));
-  var title = queryString.substring(queryString.lastIndexOf("&title=")+7,queryString.lastIndexOf("&description="));
-  var description = queryString.substring(queryString.lastIndexOf("&description=")+13,queryString.lastIndexOf("&"));
-  
-  console.log(src);
-  console.log(typeVideo);
+  console.log(queryString);
   
   function load(){
+    var program = JSON.parse(queryString);
     getdate();
-    addChannelInfo();
+    addChannelInfo(program);
     initGoBack();
-    loadPlayer();
+    loadPlayer(program);
   }
   
-  function addChannelInfo(){
-    $(".channel-info").append("<h2>"+title+"</h2><p class='max-lines'>"+description+"</p>");
+  function addChannelInfo(program){
+    $(".channel-info").append("<h2>"+program.name+"</h2><p class='max-lines'>"+program.description+"</p>");
   }
   
   function initGoBack(){
@@ -34,17 +28,26 @@
     }); 
   }
   
-  function addSourceToVideo(element, src, type) {
+  function addSourceToVideo(element, program, type) {
+    console.log(program)
     var source = document.createElement('source');
-    source.src = src;
+    source.src = program.src;
     source.type = type;
     element.appendChild(source);
+    if(program.type == "mp4" && program.subtitle){
+      var track = document.createElement('track');
+      track.label = program.subtitle.label;
+      track.kind = "subtitles";
+      track.srclang = program.subtitle.srclang;
+      track.src = program.subtitle.src;
+      element.appendChild(track);
+    }
   }
   
-  function createIframe(container,isYoutube){
+  function createIframe(program, container, isYoutube){
     showLoader();
     var iframe = document.createElement('iframe');
-    iframe.src = src;
+    iframe.src = program.src;
     
     if (isYoutube){
       iframe.setAttribute('class','ytplayer yt-disable');
@@ -77,13 +80,13 @@
     $(".content-loader").hide();
   }
   
-  function createNativeVideo(container, type){
+  function createNativeVideo(program, container, type){
     showLoader();
     var type='';
     var video = document.createElement('video');
     video.poster = "assets/loading/poster.jpg";
     
-    if(typeVideo==='mp4'){
+    if(program.type==='mp4'){
       type = 'video/mp4';
       video.autoplay = true;
       video.controls = true;
@@ -98,20 +101,23 @@
       hideLoader();
     }
     container.appendChild(video);
-    addSourceToVideo(video, src, type );
+    addSourceToVideo(video, program, type );
   }
   
-  function loadPlayer(){
+  function loadPlayer(program){
     var container = document.getElementById("container_player");
-    if(typeVideo==="hls" || typeVideo==="mp4" ){
-      createNativeVideo(container, typeVideo);
-    }else if(typeVideo==="youtube"){
-      createIframe(container,true);
-    }else if (typeVideo==="iframe"){
-      createIframe(container,false);
-      $(".above").remove();
-      // autoplayHandler();
+    if(program){
+      if(program.type==="hls" || program.type==="mp4" ){
+        createNativeVideo(program,container, program.type);
+      }else if(program.type==="youtube"){
+        createIframe(program, container, true);
+      }else if (program.type==="iframe"){
+        createIframe(program, container, false);
+        $(".above").remove();
+        // autoplayHandler();
+      }
     }
+    
     showHeaderOnMouseMove();
   }
   

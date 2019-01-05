@@ -28,7 +28,7 @@ $(document).ready(function(){
 	
 	$("#main-content").hide();
 	$(".logout").on("click",logout);
-
+	
 	getdate();
 	
 	ajax_load_programs();
@@ -79,7 +79,7 @@ function ajax_load_programs(){
 		loader.hide();
 		$("ul.nav-tabs").empty();
 		$.each(json.programs, function(i) {
-			addProgramToCategory(json.programs[i],get_params(json.programs[i]));
+			addProgramToCategory(json.programs[i]);
 			totalPragrams++;
 		});
 		initNavTabs();
@@ -90,15 +90,6 @@ function ajax_load_programs(){
 		error.show();
 		console.log("Fail request programs");
 	});
-}
-
-function get_params(program){
-	var link = "src="+program.link + "&";
-	var typeVideo = "type="+program.type+"&";
-	var title = "title="+program.name+"&";
-	var description = "description="+program.description+"&";
-	var params="?"+ link + typeVideo + title + description;
-	return params;
 }
 
 function initLastView(json){
@@ -128,20 +119,20 @@ function addLastView(json) {
 		var program=json.programs[i];
 		if(getSettings(settings.LAST_VIEW)!=null &&
 		(program.id==JSON.parse(getSettings(settings.LAST_VIEW))[0] || program.id==JSON.parse(getSettings(settings.LAST_VIEW))[1]) ){		
-			var data = get_program_data(program,get_params(program))
+			var data = get_program_data(program)
 			$(data).appendTo(".last-view .lv-container")
 		}
 	});
 }
 
-function addProgramToCategory(program,params){
+function addProgramToCategory(program){
 	var category = "#" + program.category + "  div.programs-container";
 	if($(category).length == 0) {
 		$("#container_programs").append("<div class='category' id='"+program.category+"'><span class='category-title'>"
 		+program.category+"</span><div class='programs-container row' id='list'></div></div>");
 		addCategoryTab(program.category);
 	}
-	$(category).append(get_program_data(program,params));
+	$(category).append(get_program_data(program));
 }
 
 function addCategoryTab(category){
@@ -164,10 +155,10 @@ function goToByScroll(id) {
 	closeSidebar();
 }
 
-function get_program_data(program,params){
-	return "<div id='"+program.id+"' onmouseover=\"mouseOver(this,'"+program.type+"','"+program.link+"');\" onmouseout='mouseOut(this);'"
+function get_program_data(program){
+	return "<div id='"+program.id+"' onmouseover=\"mouseOver(this,'"+program.type+"','"+program.src+"');\" onmouseout='mouseOut(this);'"
 	+" class='card content-box'><a id='link' class='program-link' name='"
-	+program.name+"' href='player.html"+params+"'><div class='inner'><img class='programs-logo' src='"
+	+program.name+"' href='player.html?"+JSON.stringify(program)+"'><div class='inner'><img class='programs-logo' src='"
 	+program.logo+"'><span class='channel-title'>"+program.name+"</span></div></a></div>";
 }
 
@@ -246,20 +237,18 @@ document.addEventListener("keydown", function(inEvent){
 });
 
 
-
-
 function mouseOut(elem) {
 	$(".preview").empty().hide();
 }
 
-function mouseOver(elem,typeVideo,link) {
-	if (getSettings(settings.PREVIEW)=="true") {
+function mouseOver(elem,typeVideo,src) {
+	if (getSettings(settings.PREVIEW) == "true") {
 		var container = $(".preview");
 		container.show();
 		if(typeVideo==="hls"){
-			createNativeVideo(container,link);
+			createNativeVideo(container,src);
 		}else if(typeVideo==="youtube" || typeVideo==="iframe"){
-			createIframe(container,link);
+			createIframe(container,src);
 		}
 	}
 }
