@@ -26,7 +26,7 @@ function saveSettings(name,value){
 
 $(document).ready(function(){
 	
-	$("#main-content").hide();
+	//$("#main-content").hide();
 	$(".logout").on("click",logout);
 	
 	getdate();
@@ -216,14 +216,7 @@ document.addEventListener("keydown", function(inEvent){
 		ajax_load_programs();
 		break;
 		case 405://yelow
-		
 		$(".alert-dialog").fadeIn();
-		
-		
-		
-		
-		
-		
 		break;
 		case 406://blue
 		if($(".search-container").is(":visible")){
@@ -297,14 +290,12 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-	
 	$("#alert-ok").click(function(){
 		window.close();
 	});
 	$("#alert-cancel").click(function(){
 		$(".alert-dialog").fadeOut();
 	});
-	
 });
 
 

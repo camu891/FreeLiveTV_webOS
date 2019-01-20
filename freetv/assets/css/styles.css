@@ -884,7 +884,8 @@ video.hls::-webkit-media-controls-current-time-display {}
 
 /* Login */
 
-#main-login {
+#main-login,
+#main-content {
 	display: none;
 }
 

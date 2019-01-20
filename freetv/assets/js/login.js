@@ -12,44 +12,59 @@ var USER_GUEST = {
     email: "guest@guest.com",
     password: "userguest"
 }
-firebase.initializeApp(config);
 
-firebase.auth().onAuthStateChanged(function(user) {
-    var isLogged = false;
-    if (user) {
-        var user = firebase.auth().currentUser;
-        var name, email, photoUrl, uid, emailVerified;
-        
-        if (user != null) {
-            name = user.displayName;
-            email = user.email;
-            photoUrl = user.photoURL;
-            emailVerified = user.emailVerified;
-            uid = user.uid;  // The user's ID, unique to the Firebase project. Do NOT use
-            // this value to authenticate with your backend server, if
-            // you have one. Use User.getToken() instead.
-            isLogged = true;
-            if(email==USER_GUEST.email){
-                showAds();
-            }
-        }
-    } else {
-        // No user is signed in.
-        isLogged = false;
-
+$(document).ready(function(){
+    try {
+        initFirebase();
+    } catch(error) {
+        console.log(error)
+        console.log("firebase undefined")
+        var mainContent = $("#main-content");
+        var mainLogin = $("#main-login");
+        mainLogin.hide();
+        mainContent.show();
     }
-    $(".content-loader").hide();
-    toggleLogin(isLogged,user)
 });
 
-function showAds(){
-
+function initFirebase(){
+    firebase.initializeApp(config);
+    firebase.auth().onAuthStateChanged(function(user) {
+        var isLogged = false;
+        if (user) {
+            var user = firebase.auth().currentUser;
+            var name, email, photoUrl, uid, emailVerified;
+            
+            if (user != null) {
+                name = user.displayName;
+                email = user.email;
+                photoUrl = user.photoURL;
+                emailVerified = user.emailVerified;
+                uid = user.uid;  // The user's ID, unique to the Firebase project. Do NOT use
+                // this value to authenticate with your backend server, if
+                // you have one. Use User.getToken() instead.
+                isLogged = true;
+                if(email==USER_GUEST.email){
+                    showAds();
+                }
+            }
+        } else {
+            // No user is signed in.
+            isLogged = false;
+        }
+        $(".content-loader").hide();
+        toggleLogin(isLogged,user)
+    });
+    
 }
 
-function toggleLogin(isLogged){
+function showAds(){
+    
+}
+
+function toggleLogin(isLogged,user){
     var mainLogin = $("#main-login");
     var mainContent = $("#main-content");
-    if(isLogged){
+    if(isLogged || (user && user.email==USER_GUEST.email)){
         mainLogin.hide();
         mainContent.show();
     }else {
@@ -94,7 +109,7 @@ function logout() {
     console.log("logout")
     firebase.auth().signOut().then(function() {
         // Sign-out successful.
-        $("#iframe-login").show();
+        $("#main-login").show();
         $("#main-content").hide();
     }).catch(function(error) {
         // An error happened.
