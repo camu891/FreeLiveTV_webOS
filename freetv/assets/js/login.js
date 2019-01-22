@@ -17,8 +17,6 @@ $(document).ready(function(){
     try {
         initFirebase();
     } catch(error) {
-        console.log(error)
-        console.log("firebase undefined")
         var mainContent = $("#main-content");
         var mainLogin = $("#main-login");
         mainLogin.hide();
@@ -27,13 +25,18 @@ $(document).ready(function(){
 });
 
 function initFirebase(){
+    var userLocalStorage = JSON.parse(getSettings(settings.USER));
     firebase.initializeApp(config);
     firebase.auth().onAuthStateChanged(function(user) {
         var isLogged = false;
-        if (user) {
+        if (userLocalStorage){
+            isLogged = true;
+            user = userLocalStorage;
+        } else if (user) {
             var user = firebase.auth().currentUser;
             var name, email, photoUrl, uid, emailVerified;
-            
+            //save user in localstorage
+            saveSettings(settings.USER, JSON.stringify(user));
             if (user != null) {
                 name = user.displayName;
                 email = user.email;
@@ -43,7 +46,7 @@ function initFirebase(){
                 // this value to authenticate with your backend server, if
                 // you have one. Use User.getToken() instead.
                 isLogged = true;
-                if(email==USER_GUEST.email){
+                if(email == USER_GUEST.email){
                     showAds();
                 }
             }
@@ -61,10 +64,10 @@ function showAds(){
     
 }
 
-function toggleLogin(isLogged,user){
+function toggleLogin(isLogged, user){
     var mainLogin = $("#main-login");
     var mainContent = $("#main-content");
-    if(isLogged || (user && user.email==USER_GUEST.email)){
+    if(isLogged || (user && user.email == USER_GUEST.email)){
         mainLogin.hide();
         mainContent.show();
     }else {
@@ -72,7 +75,6 @@ function toggleLogin(isLogged,user){
         mainContent.hide();
     }
 }
-
 
 function login() {
     var userEmail = document.getElementById('email').value;
@@ -106,9 +108,9 @@ function guest(){
 }
 
 function logout() {
-    console.log("logout")
     firebase.auth().signOut().then(function() {
         // Sign-out successful.
+        removeSettings(settings.USER);
         $("#main-login").show();
         $("#main-content").hide();
     }).catch(function(error) {
