@@ -112,8 +112,7 @@
         {
             "id":13,
             "type": "iframe",
-            "src": "//ok.ru/videoembed/1122031967896?nochat=1&autoplay=1",
-            "src2": "http://sv1.futbollibre.net/m3u8/tyc2.m3u8",
+            "src": "http://sv1.futbollibre.net/m3u8/tyc2.m3u8",
             "name": "Tyc Sports",
             "logo": "./assets/img/tyc_sport.png",
             "description":"TyC Sports en vivo es un canal de televisión por suscripción deportivo argentino, el cual brinda la emisión de eventos deportivos destacados a nivel nacional e internacional.",
@@ -163,8 +162,8 @@
         {
             "id":18,
             "type": "iframe",
-            "src": "http://futbollibre.online/fox-sports-1/embed.html",
-            "src2":"http://sv1.futbollibre.net/libertadores.m3u8",
+            "src2": "http://futbollibre.online/fox-sports-1/embed.html",
+            "src":"https://player.twitch.tv/?channel=yumii_cv",
             "name": "Fox Sports",
             "logo": "./assets/img/foxsport.png",
             "description":"Fox Sports es un canal de televisión por suscripción especializado en deportes que emite las 24 horas del día para Latinoamérica. Transmite en vivo la Copa Libertadores, Copa Sudamericana, UEFA Champions League, UEFA Europa League, Serie A de Italia, Bundesliga de Alemania, Copa Mundial de Clubes, NFL, MLB, entre otros.",
@@ -173,7 +172,8 @@
         {
             "id":19,
             "type": "iframe",
-            "src": "http://futbollibre.online/fox-sports-2/embed.html",
+            "src": "https://player.twitch.tv/?channel=nn_xc",
+            "src2": "http://futbollibre.online/fox-sports-2/embed.html",
             "name": "Fox Sports 2",
             "logo": "./assets/img/foxsport2.png",
             "description":"Fox Sports 2 es un canal de cable y satelite totalmente deportivo, es la segunda señal de Fox Sports, antes llamado Fox Sports + a partir del 5 de Noviembre del 2012 se le cambio de nombre para llamarse Fox Sports 2 esta cadena transmite eventos deportivos locales e internacionales más destacados como la Copa Libertadores, UEFA Champions League, Copa Sudamericana, UEFA Europa League, la WWE entre otros.",
