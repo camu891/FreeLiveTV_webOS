@@ -151,8 +151,8 @@
         },
         {
             "id":17,
-            "type": "iframe",
-            "src": "http://televisionlibre.net/pelea.html",
+            "type": "hls",
+            "src": "http://sv1.futbollibre.net/superliga.m3u8?",
             "src2": "http://futbollibre.online/fox-sports-premium/embed66.html",
             "name": "Fox Sport Premium",
             "logo": "./assets/img/foxsport_premium.png",
