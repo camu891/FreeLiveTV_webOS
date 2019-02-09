@@ -112,7 +112,7 @@
         {
             "id":13,
             "type": "iframe",
-            "src": "http://sv1.futbollibre.net/m3u8/tyc2.m3u8",
+            "src": "https://ok.ru/videoembed/1125311585944?nochat=1&autoplay=1",
             "name": "Tyc Sports",
             "logo": "./assets/img/tyc_sport.png",
             "description":"TyC Sports en vivo es un canal de televisión por suscripción deportivo argentino, el cual brinda la emisión de eventos deportivos destacados a nivel nacional e internacional.",
@@ -121,7 +121,8 @@
         {
             "id":14,
             "type": "iframe",
-            "src": "http://bankai.stream/rnaw1.php",
+            "src": "http://futbollibre.online/espn-1/embed2.html?autoplay=1",
+            "src1": "http://bankai.stream/rnaw1.php",
             "src2": "http://sv1.futbollibre.net/canales/espn.m3u8",
             "name": "ESPN",
             "logo": "./assets/img/espn.png",
@@ -141,9 +142,8 @@
         {
             "id":16,
             "type": "iframe",
-            "src": "https://tumarcador.xyz/ac3.php",
-            "src1": "http://futbollibre.online/espn-3/embed2.html",
-            "src2": "http://sv1.futbollibre.net/canales/espn3.m3u8",
+            "src": "http://futbollibre.online/espn-3/embed2.html",
+            "src1": "https://tumarcador.xyz/ac3.php",
             "name": "ESPN 3",
             "logo": "./assets/img/espn3.png",
             "description":"La programación de ESPN 3 está dedicada a los deportes de acción, es decir los deportes extremos tanto de verano como de invierno, así como los de aventura, surf y running.",
@@ -162,8 +162,8 @@
         {
             "id":18,
             "type": "iframe",
-            "src2": "http://futbollibre.online/fox-sports-1/embed.html",
-            "src":"https://player.twitch.tv/?channel=yumii_cv",
+            "src": "http://futbollibre.online/fox-sports-1/embed.html",
+            "src1":"https://player.twitch.tv/?channel=yumii_cv",
             "name": "Fox Sports",
             "logo": "./assets/img/foxsport.png",
             "description":"Fox Sports es un canal de televisión por suscripción especializado en deportes que emite las 24 horas del día para Latinoamérica. Transmite en vivo la Copa Libertadores, Copa Sudamericana, UEFA Champions League, UEFA Europa League, Serie A de Italia, Bundesliga de Alemania, Copa Mundial de Clubes, NFL, MLB, entre otros.",
@@ -172,8 +172,7 @@
         {
             "id":19,
             "type": "iframe",
-            "src": "https://player.twitch.tv/?channel=nn_xc",
-            "src2": "http://futbollibre.online/fox-sports-2/embed.html",
+            "src": "http://soloveo.com/foxsports2.php",
             "name": "Fox Sports 2",
             "logo": "./assets/img/foxsport2.png",
             "description":"Fox Sports 2 es un canal de cable y satelite totalmente deportivo, es la segunda señal de Fox Sports, antes llamado Fox Sports + a partir del 5 de Noviembre del 2012 se le cambio de nombre para llamarse Fox Sports 2 esta cadena transmite eventos deportivos locales e internacionales más destacados como la Copa Libertadores, UEFA Champions League, Copa Sudamericana, UEFA Europa League, la WWE entre otros.",
