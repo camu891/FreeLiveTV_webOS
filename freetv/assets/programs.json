@@ -112,7 +112,7 @@
         {
             "id":13,
             "type": "iframe",
-            "src": "https://ok.ru/videoembed/1125311585944?nochat=1&autoplay=1",
+            "src": "http://www.soloaovivo.fi/deportes/tyc.php",
             "name": "Tyc Sports",
             "logo": "./assets/img/tyc_sport.png",
             "description":"TyC Sports en vivo es un canal de televisión por suscripción deportivo argentino, el cual brinda la emisión de eventos deportivos destacados a nivel nacional e internacional.",
