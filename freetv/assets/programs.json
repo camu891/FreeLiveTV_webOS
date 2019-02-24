@@ -545,6 +545,25 @@
             "logo": "https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/0011/2473/brand.gif?itok=fhvLTnUc",
             "description":"No hay descripción",
             "category":"Deportes"
+        },
+        {
+            "id":59,
+            "type": "hls",
+            "src": "http://2sdfg.azureedge.net/live.m3u8",
+            "name": "Premier League",
+            "logo": "https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/0022/4126/brand.gif?itok=WII6ZdEh",
+            "description":"No hay descripción",
+            "category":"Deportes"
+        },
+        {
+            "id":60,
+            "type": "hls",
+            "src": "http://3sdfg.azureedge.net/live.m3u8",
+            "name": "TLN",
+            "logo": "https://media.licdn.com/dms/image/C4D0BAQEK3I683cp2Hg/company-logo_200_200/0?e=2159024400&v=beta&t=F_DIk8qTsVNhXFwHILS2OmcNFpsW4yPxJaLhPzhUfIA",
+            "description":"No hay descripción",
+            "category":"Deportes"
         }
+        
     ]
 }
