@@ -131,9 +131,9 @@
         },
         {
             "id":15,
-            "type": "iframe",
-            "src": "http://futbollibre.online/espn-2/embed.html",
-            "src2": "http://sv1.futbollibre.net/canales/espn2.m3u8",
+            "type": "hls",
+            "src": "https://sv8.apgstream.xyz/hls/espn2.m3u8",    
+            "src1": "http://futbollibre.online/espn-2/embed.html",
             "name": "ESPN 2",
             "logo": "./assets/img/espn2.png",
             "description":"ESPN 2 En vivo es un canal de deportes que regularmente transmite partidos de fútbol correspondientes a la Bundesliga y de la Liga de Holanda. Además se transmiten los Juegos Extremos de Invierno.",
@@ -162,8 +162,8 @@
         {
             "id":18,
             "type": "iframe",
-            "src1": "http://futbollibre.online/fox-sports-1/embed.html",
-            "src":"https://ok.ru/videoembed/1146590928536",
+            "src": "http://futbollibre.online/fox-sports-1/embed.html",
+            "src1":"https://ok.ru/videoembed/1146590928536",
             "name": "Fox Sports",
             "logo": "./assets/img/foxsport.png",
             "description":"Fox Sports es un canal de televisión por suscripción especializado en deportes que emite las 24 horas del día para Latinoamérica. Transmite en vivo la Copa Libertadores, Copa Sudamericana, UEFA Champions League, UEFA Europa League, Serie A de Italia, Bundesliga de Alemania, Copa Mundial de Clubes, NFL, MLB, entre otros.",
@@ -217,8 +217,9 @@
         }, 
         {
             "id":24,
-            "type": "iframe",
-            "src": "https://tumarcador.xyz/ac1.php",
+            "type": "hls",
+            "src": "https://bs.boomstream.com/lv/pmfTccNN-high/chunklist.m3u8?token=1jDDaqaK0ugBvScHQ6uK",
+            "src1": "https://tumarcador.xyz/ac1.php",
             "name": "DIRECT SPORTS",
             "logo": "./assets/img/directv_sports.png",
             "description":"DirecTV Sports en vivo es un canal de televisión por suscripción deportivo exclusivo de DirecTV.",
@@ -226,8 +227,9 @@
         },
         {
             "id":25,
-            "type": "iframe",
-            "src": "http://bankai.stream/rnaw4.php",
+            "type": "hls",
+            "src": "https://fdsfdsfds.azureedge.net/live/t1/chunks.m3u8",
+            "src1": "https://tumarcador.xyz/ac1.php",
             "name": "BEIN Sports",
             "logo": "./assets/img/bein_sports.png",
             "description":"No hay descripción",
@@ -532,6 +534,15 @@
             "src": "https://telerium.tv/embed/25279.html",
             "name": "NBA Allstar",
             "logo": "https://vignette.wikia.nocookie.net/logopedia/images/7/7a/2018_NBA_All-Star_Game_logo.png/revision/latest?cb=20170906012228",
+            "description":"No hay descripción",
+            "category":"Deportes"
+        },
+        {
+            "id":58,
+            "type": "hls",
+            "src": "http://1dfs.azureedge.net/hls/live.m3u8",
+            "name": "NBC Live",
+            "logo": "https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/0011/2473/brand.gif?itok=fhvLTnUc",
             "description":"No hay descripción",
             "category":"Deportes"
         }
