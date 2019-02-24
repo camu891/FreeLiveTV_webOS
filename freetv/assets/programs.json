@@ -112,7 +112,7 @@
         {
             "id":13,
             "type": "iframe",
-            "src": "http://www.soloaovivo.fi/deportes/tyc.php",
+            "src": "http://www.tvenvivox.info/2019/02/tychd.html",
             "name": "Tyc Sports",
             "logo": "./assets/img/tyc_sport.png",
             "description":"TyC Sports en vivo es un canal de televisión por suscripción deportivo argentino, el cual brinda la emisión de eventos deportivos destacados a nivel nacional e internacional.",
@@ -172,7 +172,7 @@
         {
             "id":19,
             "type": "iframe",
-            "src": "http://soloveo.com/foxsports2.php",
+            "src": "",
             "name": "Fox Sports 2",
             "logo": "./assets/img/foxsport2.png",
             "description":"Fox Sports 2 es un canal de cable y satelite totalmente deportivo, es la segunda señal de Fox Sports, antes llamado Fox Sports + a partir del 5 de Noviembre del 2012 se le cambio de nombre para llamarse Fox Sports 2 esta cadena transmite eventos deportivos locales e internacionales más destacados como la Copa Libertadores, UEFA Champions League, Copa Sudamericana, UEFA Europa League, la WWE entre otros.",
