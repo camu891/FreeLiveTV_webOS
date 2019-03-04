@@ -29,8 +29,8 @@
         },
         {
             "id":4,
-            "type": "youtube",
-            "src": "https://www.youtube.com/embed/eFLScr5atpQ?rel=0&autoplay=1&showinfo=0&controls=0",
+            "type": "hls",
+            "src": "https://tlfcapitalhls-lh.akamaihd.net/i/canal8cordoba_1@685726/index_1_av-p.m3u8",
             "name": "Teleocho",
             "logo": "./assets/img/teleocho.png",
             "description":"No hay descripción",
@@ -112,7 +112,7 @@
         {
             "id":13,
             "type": "iframe",
-            "src": "https://telerium.tv/embed/43723.html",
+            "src": "",
             "name": "Tyc Sports",
             "logo": "./assets/img/tyc_sport.png",
             "description":"TyC Sports en vivo es un canal de televisión por suscripción deportivo argentino, el cual brinda la emisión de eventos deportivos destacados a nivel nacional e internacional.",
@@ -154,7 +154,7 @@
             "type": "hls",
             "src": "http://sv1.futbollibre.net/superliga.m3u8?",
             "src2": "http://futbollibre.online/fox-sports-premium/embed66.html",
-            "name": "Fox Sport Premium",
+            "name": "Fox Sports Premium",
             "logo": "./assets/img/foxsport_premium.png",
             "description":"FOX Sports Premium es un canal argentino que ofrece acceso instantáneo a los mejores partidos de futbol de la Superliga Argentina. Es un canal de televisión de paga argentino dedicado a la emisión del fútbol de dicho país, junto con TNT Sports tras la alianza de Turner y Fox por los derechos de televisión del fútbol argentino, el cual reemplaza el programa público Fútbol Para Todos.",
             "category":"Deportes"
@@ -172,7 +172,7 @@
         {
             "id":19,
             "type": "iframe",
-            "src": "",
+            "src": "http://www.liketvw.com/embed/foxsports2",
             "name": "Fox Sports 2",
             "logo": "./assets/img/foxsport2.png",
             "description":"Fox Sports 2 es un canal de cable y satelite totalmente deportivo, es la segunda señal de Fox Sports, antes llamado Fox Sports + a partir del 5 de Noviembre del 2012 se le cambio de nombre para llamarse Fox Sports 2 esta cadena transmite eventos deportivos locales e internacionales más destacados como la Copa Libertadores, UEFA Champions League, Copa Sudamericana, UEFA Europa League, la WWE entre otros.",
@@ -191,7 +191,6 @@
             "id":21,
             "type": "hls",
             "src": "http://sv1.futbollibre.net/superliga2.m3u8",
-            "src2": "http://futbollibre.online/superliga2.html",
             "name": "SAF",
             "logo": "./assets/img/saf.png",
             "description":"No hay descripción",
@@ -293,7 +292,7 @@
         {
             "id":32,
             "type": "iframe",
-            "src": "http://player.latino-webtv.com/channels/tnt.html",
+            "src": "http://www.liketvw.com/embed/tnt",
             "name": "TNT",
             "logo": "./assets/img/tnt.png",
             "description":"No hay descripción",
