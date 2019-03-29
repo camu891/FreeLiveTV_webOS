@@ -299,7 +299,7 @@ nav ul.nav-tabs li a, nav ul.nav-tabs li a:visited, nav ul.nav-tabs li a:active 
 .content-loader, .content-error-request {
 	display: none;
 	position: fixed;
-	left: 0px;
+	left: 0;
 	top: 0;
 	width: 100%;
 	height: 100%;
@@ -308,6 +308,7 @@ nav ul.nav-tabs li a, nav ul.nav-tabs li a:visited, nav ul.nav-tabs li a:active 
 }
 
 .content-error-request {
+	background: transparent;
 	top: 45%;
 }
 
@@ -317,7 +318,6 @@ nav ul.nav-tabs li a, nav ul.nav-tabs li a:visited, nav ul.nav-tabs li a:active 
     left: 0;
     right: 0;
 	position: absolute;
-	
 	margin: auto;
 	border: 10px solid red;
 	border-radius: 50%;

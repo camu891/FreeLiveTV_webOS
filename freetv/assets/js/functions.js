@@ -5,16 +5,11 @@
 	USER: "user",
 }
 var programs = null;
-var totalPragrams=0;
-var tabindex=0;
-
+var totalPragrams = 0;
+var tabindex = 0;
 
 function getSettings(key){
-	if (typeof(Storage) !== "undefined") {
-		return localStorage.getItem(key);
-	} else {
-		return null;
-	}
+	return typeof(Storage) !== "undefined" ? localStorage.getItem(key) : null;
 }
 
 function saveSettings(key,value){
@@ -106,7 +101,7 @@ function initLastView(json){
 	$(".card").click(function(){
 		var array = [];
 		var currentValues = JSON.parse(getSettings(settings.LAST_VIEW));
-		if(getSettings(settings.LAST_VIEW)===null){
+		if(!getSettings(settings.LAST_VIEW)){
 			array[0] = $(this).attr("id");
 		}else{
 			if($(this).attr("id") !== currentValues[0] && $(this).attr("id") !== currentValues[1]){
@@ -190,33 +185,32 @@ function addLastView(json) {
 		}
 	}
 	
-	
 	document.addEventListener("keydown", function(inEvent){
 		console.log("button key: "+inEvent.keyCode);
 		var itemsPerRow = 8;
 		switch(inEvent.keyCode){
-			case 13://enter
+			case keyRemoteControl.ENTER:
 			window.location = $('.programs-container > .content-box:focus > a').attr('href');
 			break;
-			case 37://left
+			case keyRemoteControl.NAVIGATION.LEFT:
 			tabindex > 0 ? tabindex-- : tabindex;
 			$('[tabindex=' + tabindex + ']').not(".hide").focus();
 			//$('.card:focus').prev(".card").not(".hide").focus();
 			break;
-			case 39://right
-			if(tabindex==0){
-				tabindex=1;
+			case keyRemoteControl.NAVIGATION.RIGTH:
+			if(tabindex == 0){
+				tabindex = 1;
 				$('[tabindex=' + tabindex + ']').not(".hide").focus();
 			}else{
 				tabindex < totalPragrams ? tabindex++ : tabindex;
 				$('[tabindex=' + tabindex + ']').not(".hide").focus();
 			}
 			break;
-			case 38://top
+			case keyRemoteControl.NAVIGATION.TOP:
 			//tabindex = (tabindex >= itemsPerRow) ? tabindex-itemsPerRow : tabindex;
 			//$('.programs-container > .content-box:focus').prevAll('.content-box[tabindex=' + tabindex + ']').not(".hide").first().focus();
 			break;
-			case 40://down
+			case keyRemoteControl.NAVIGATION.DOWN:
 			/*if(tabindex==0){
 				tabindex=1;
 				$('.content-box').not(".hide").first().focus();
@@ -225,16 +219,16 @@ function addLastView(json) {
 				$('.programs-container > .content-box:focus').nextAll('.content-box[tabindex=' + tabindex + ']').not(".hide").first().focus();
 			}*/
 			break;
-			case 403://red
+			case keyRemoteControl.FAST_ACTIONS.RED:
 			$('body').toggleClass('visible_menu');
 			break;
-			case 404://green
+			case keyRemoteControl.FAST_ACTIONS.GREEN:
 			ajax_load_programs();
 			break;
-			case 405://yelow
+			case keyRemoteControl.FAST_ACTIONS.YELLOW:
 			$(".alert-dialog").fadeIn();
 			break;
-			case 406://blue
+			case keyRemoteControl.FAST_ACTIONS.BLUE:
 			if($(".search-container").is(":visible")){
 				hideSearchInput()
 			}else{
@@ -244,7 +238,6 @@ function addLastView(json) {
 			default:  break;
 		}
 	});
-	
 	
 	function mouseOut(elem) {
 		$(".preview").empty().hide();
@@ -290,18 +283,10 @@ function addLastView(json) {
 	}
 	
 	$(document).ready(function(){
-		
 		$("#setting-preview").prop('checked', getSettings(settings.PREVIEW));
-		$("#setting-preview").click(function(){
-			var isPreviewEnable = false;
-			if ($(this).is(':checked')) {
-				isPreviewEnable = true;
-			}else{
-				isPreviewEnable = false;
-			}
-			saveSettings(settings.PREVIEW,isPreviewEnable);
+		$("#setting-preview").click(function() {
+			saveSettings(settings.PREVIEW, $(this).is(':checked'));
 		});
-		
 	});
 	
 	
