@@ -7,7 +7,8 @@
             "name": "El doce",
             "logo": "./assets/img/12tv.png",
             "description":"No hay descripción",
-            "category":"Noticias"
+            "category":"Noticias",
+            "available": true
         },
         {
             "id":2,
@@ -16,7 +17,8 @@
             "name": "El Trece TV",
             "logo": "./assets/img/eltrece.png",
             "description":"Canal 13 es una cadena de televisión argentina que transmite desde la Ciudad de Buenos Aires.",
-            "category":"Noticias"
+            "category":"Noticias",
+            "available": true
         },
         {
             "id":3,
@@ -25,7 +27,8 @@
             "name": "Telefe",
             "logo": "./assets/img/telefe.png",
             "description":"Telefe es el canal de TV líder en la producción y comercialización de contenidos y servicios audiovisuales de Argentina.",
-            "category":"Noticias"
+            "category":"Noticias",
+            "available": true
         },
         {
             "id":4,
@@ -34,7 +37,8 @@
             "name": "Teleocho",
             "logo": "./assets/img/teleocho.png",
             "description":"No hay descripción",
-            "category":"Noticias"
+            "category":"Noticias",
+            "available": true
         },
         {
             "id":5,
@@ -44,7 +48,8 @@
             "name": "TV Pública",
             "logo": "./assets/img/tvpublica.png",
             "description":"La Televisión Pública Argentina es la cadena de mayor cobertura televisiva en el territorio argentino a través de repetidoras ubicadas en el interior del país.",
-            "category":"Noticias"
+            "category":"Noticias",
+            "available": true
         },
         {
             "id":6,
@@ -53,7 +58,8 @@
             "name": "Canal 10",
             "logo": "./assets/img/canal10.png",
             "description":"No hay descripción",
-            "category":"Noticias"
+            "category":"Noticias",
+            "available": true
         },
         {
             "id":7,
@@ -62,7 +68,8 @@
             "name": "El nueve",
             "logo": "./assets/img/canal9.png",
             "description":"No hay descripción",
-            "category":"Noticias"
+            "category":"Noticias",
+            "available": true
         },
         {
             "id":8,
@@ -71,7 +78,8 @@
             "name": "TN Noticias",
             "logo": "./assets/img/tn.png",
             "description":"TN es la referencia obligada de la actualidad nacional e internacional. Todo el año durante todo el día, los periodistas de TN siguen paso a paso las noticias, mostrando las imágenes más impactantes desde el lugar donde está la información.",
-            "category":"Noticias"
+            "category":"Noticias",
+            "available": true
         },
         {
             "id":9,
@@ -80,7 +88,8 @@
             "name": "Cronica TV",
             "logo": "./assets/img/cronica.png",
             "description":"No hay descripción",
-            "category":"Noticias"
+            "category":"Noticias",
+            "available": true
         },
         {
             "id":10,
@@ -89,7 +98,8 @@
             "name": "Canal 26",
             "logo": "./assets/img/canal26.png",
             "description":"Canal 26 Noticias es un canal de televisión abierta argentino, que basa su programación en noticieros y programas de actualidad.",
-            "category":"Noticias"
+            "category":"Noticias",
+            "available": true
         },
         {
             "id":11,
@@ -98,7 +108,8 @@
             "name": "C5N",
             "logo": "./assets/img/c5n.png",
             "description":"No hay descripción",
-            "category":"Noticias"
+            "category":"Noticias",
+            "available": true
         },
         {
             "id":12,
@@ -107,7 +118,8 @@
             "name": "13 Max Noticias",
             "logo": "./assets/img/13maxtv.png",
             "description":"No hay descripción",
-            "category":"Noticias"
+            "category":"Noticias",
+            "available": true
         },
         {
             "id":13,
@@ -117,7 +129,8 @@
             "name": "Tyc Sports",
             "logo": "./assets/img/tyc_sport.png",
             "description":"TyC Sports en vivo es un canal de televisión por suscripción deportivo argentino, el cual brinda la emisión de eventos deportivos destacados a nivel nacional e internacional.",
-            "category":"Deportes"
+            "category":"Deportes",
+            "available": true
         },
         {
             "id":14,
@@ -127,7 +140,8 @@
             "name": "ESPN",
             "logo": "./assets/img/espn.png",
             "description":"ESPN Latinoamérica es el canal de televisión especializado en deportes que transmite por cable o satélite para este lado del Continente, pero con diferentes señales según los países o zona en los que uno se encuentre.",
-            "category":"Deportes"
+            "category":"Deportes",
+            "available": true
         },
         {
             "id":15,
@@ -137,7 +151,8 @@
             "name": "ESPN 2",
             "logo": "./assets/img/espn2.png",
             "description":"ESPN 2 En vivo es un canal de deportes que regularmente transmite partidos de fútbol correspondientes a la Bundesliga y de la Liga de Holanda. Además se transmiten los Juegos Extremos de Invierno.",
-            "category":"Deportes"
+            "category":"Deportes",
+            "available": true
         },
         {
             "id":16,
@@ -147,7 +162,8 @@
             "name": "ESPN 3",
             "logo": "./assets/img/espn3.png",
             "description":"La programación de ESPN 3 está dedicada a los deportes de acción, es decir los deportes extremos tanto de verano como de invierno, así como los de aventura, surf y running.",
-            "category":"Deportes"
+            "category":"Deportes",
+            "available": true
         },
         {
             "id":17,
@@ -157,7 +173,8 @@
             "name": "Fox Sports Premium",
             "logo": "./assets/img/foxsport_premium.png",
             "description":"FOX Sports Premium es un canal argentino que ofrece acceso instantáneo a los mejores partidos de futbol de la Superliga Argentina. Es un canal de televisión de paga argentino dedicado a la emisión del fútbol de dicho país, junto con TNT Sports tras la alianza de Turner y Fox por los derechos de televisión del fútbol argentino, el cual reemplaza el programa público Fútbol Para Todos.",
-            "category":"Deportes"
+            "category":"Deportes",
+            "available": true
         },
         {
             "id":18,
@@ -167,7 +184,8 @@
             "name": "Fox Sports",
             "logo": "./assets/img/foxsport.png",
             "description":"Fox Sports es un canal de televisión por suscripción especializado en deportes que emite las 24 horas del día para Latinoamérica. Transmite en vivo la Copa Libertadores, Copa Sudamericana, UEFA Champions League, UEFA Europa League, Serie A de Italia, Bundesliga de Alemania, Copa Mundial de Clubes, NFL, MLB, entre otros.",
-            "category":"Deportes"
+            "category":"Deportes",
+            "available": true
         },
         {
             "id":19,
@@ -176,7 +194,8 @@
             "name": "Fox Sports 2",
             "logo": "./assets/img/foxsport2.png",
             "description":"Fox Sports 2 es un canal de cable y satelite totalmente deportivo, es la segunda señal de Fox Sports, antes llamado Fox Sports + a partir del 5 de Noviembre del 2012 se le cambio de nombre para llamarse Fox Sports 2 esta cadena transmite eventos deportivos locales e internacionales más destacados como la Copa Libertadores, UEFA Champions League, Copa Sudamericana, UEFA Europa League, la WWE entre otros.",
-            "category":"Deportes"
+            "category":"Deportes",
+            "available": true
         },
         {
             "id":20,
@@ -185,7 +204,8 @@
             "name": "Fox Sports 3",
             "logo": "./assets/img/foxsport3.png",
             "description":"Fox Sports 3 es un canal deportivo de televisión de pago operado por Fox International Channels y que inició transmisiones el 5 de noviembre de 2012 para América Latina (excepto Brasil). Fox Sports 3 reemplazó al canal Speed en su versión para Latinoamérica",
-            "category":"Deportes"
+            "category":"Deportes",
+            "available": true
         },
         {
             "id":21,
@@ -194,7 +214,8 @@
             "name": "SAF",
             "logo": "./assets/img/saf.png",
             "description":"No hay descripción",
-            "category":"Deportes"
+            "category":"Deportes",
+            "available": true
         }, 
         {
             "id":22,
@@ -203,7 +224,8 @@
             "name": "Deportv",
             "logo": "./assets/img/dxtv.png",
             "description":"DeporTV en VIVO es un canal de televisión público argentino especializado en programación deportiva.",
-            "category":"Deportes"
+            "category":"Deportes",
+            "available": true
         },
         {
             "id":23,
@@ -212,7 +234,8 @@
             "name": "TNT SPORT",
             "logo": "./assets/img/tntsports.png",
             "description":"TNT Sports en vivo, es un canal de televisión por suscripción argentino, dedicado a la emisión del deporte de ese país, junto con Fox Sports Premium, que comenzó a emitirse el viernes 25 de agosto de 2017 desde las 18h, tras la alianza de Turner y Fox por los derechos de televisión de la Primera División Argentina (Superliga) de fútbol argentino, siendo reemplazo del programa gubernamental Fútbol Para Todos.",
-            "category":"Deportes"
+            "category":"Deportes",
+            "available": true
         }, 
         {
             "id":24,
@@ -223,7 +246,8 @@
             "name": "DIRECT SPORTS",
             "logo": "./assets/img/directv_sports.png",
             "description":"DirecTV Sports en vivo es un canal de televisión por suscripción deportivo exclusivo de DirecTV.",
-            "category":"Deportes"
+            "category":"Deportes",
+            "available": true
         },
         {
             "id":25,
@@ -233,7 +257,8 @@
             "name": "BEIN Sports",
             "logo": "./assets/img/bein_sports.png",
             "description":"No hay descripción",
-            "category":"Deportes"
+            "category":"Deportes",
+            "available": true
         }, 
         {
             "id":26,
@@ -242,7 +267,8 @@
             "name": "Win Sports",
             "logo": "./assets/img/winsports.png",
             "description":"Win Sports, canal de suscripción deportivo colombiano.",
-            "category":"Deportes"
+            "category":"Deportes",
+            "available": true
         },
         {
             "id":27,
@@ -251,7 +277,8 @@
             "name": "Cinemax",
             "logo": "./assets/img/cinemax.png",
             "description":"No hay descripción",
-            "category":"Cine"
+            "category":"Cine",
+            "available": true
         },
         {
             "id":28,
@@ -260,7 +287,8 @@
             "name": "Cartoon Network",
             "logo": "./assets/img/cartoon_network.png",
             "description":"No hay descripción",
-            "category":"Infantil"
+            "category":"Infantil",
+            "available": true
         },
         {
             "id":29,
@@ -269,7 +297,8 @@
             "name": "FOX",
             "logo": "./assets/img/fox.png",
             "description":"No hay descripción",
-            "category":"Cine"
+            "category":"Cine",
+            "available": true
         },
         {
             "id":30,
@@ -278,7 +307,8 @@
             "name": "Space",
             "logo": "./assets/img/space.png",
             "description":"No hay descripción",
-            "category":"Cine"
+            "category":"Cine",
+            "available": true
         },
         {
             "id":31,
@@ -287,7 +317,8 @@
             "name": "Cinecanal",
             "logo": "./assets/img/cinecanal.png",
             "description":"No hay descripción",
-            "category":"Cine"
+            "category":"Cine",
+            "available": true
         },
         {
             "id":32,
@@ -296,7 +327,8 @@
             "name": "TNT",
             "logo": "./assets/img/tnt.png",
             "description":"No hay descripción",
-            "category":"Cine"
+            "category":"Cine",
+            "available": true
         },
         {
             "id":33,
@@ -305,7 +337,8 @@
             "name": "FOX Movies",
             "logo": "./assets/img/fox_movies.png",
             "description":"No hay descripción",
-            "category":"Cine"
+            "category":"Cine",
+            "available": true
         },
         {
             "id":34,
@@ -314,7 +347,8 @@
             "name": "HBO",
             "logo": "./assets/img/hbo.png",
             "description":"No hay descripción",
-            "category":"Cine"
+            "category":"Cine",
+            "available": true
         },
         {
             "id":344,
@@ -323,7 +357,8 @@
             "name": "Universal",
             "logo": "./assets/img/universal.png",
             "description":"No hay descripción",
-            "category":"Cine"
+            "category":"Cine",
+            "available": true
         },
         {
             "id":35,
@@ -332,7 +367,8 @@
             "name": "HBO Family",
             "logo": "./assets/img/hbo.png",
             "description":"No hay descripción",
-            "category":"Cine"
+            "category":"Cine",
+            "available": true
         },             
         {
             "id":36,
@@ -341,7 +377,8 @@
             "name": "Hit TV",
             "logo": "./assets/img/hit_tv.png",
             "description":"No hay descripción",
-            "category":"Música"
+            "category":"Música",
+            "available": true
         },       
         {
             "id":37,
@@ -350,7 +387,8 @@
             "name": "Virgin Radio",
             "logo": "./assets/img/virgin.png",
             "description":"No hay descripción",
-            "category":"Música"
+            "category":"Música",
+            "available": true
         },       
         {
             "id":38,
@@ -359,7 +397,8 @@
             "name": "Top Latino Radio",
             "logo": "./assets/img/top_latino.png",
             "description":"No hay descripción",
-            "category":"Música"
+            "category":"Música",
+            "available": true
         },       
         {
             "id":39,
@@ -368,7 +407,8 @@
             "name": "Soy Rock",
             "logo": "./assets/img/soy_rock.png",
             "description":"No hay descripción",
-            "category":"Música"
+            "category":"Música",
+            "available": true
         },
         {
             "id":40,
@@ -377,7 +417,8 @@
             "name": "Power HD",
             "logo": "./assets/img/powerhd.png",
             "description":"No hay descripción",
-            "category":"Música"
+            "category":"Música",
+            "available": true
         },
         {
             "id":41,
@@ -386,7 +427,8 @@
             "name": "Music Choice",
             "logo": "./assets/img/music_choice.png",
             "description":"No hay descripción",
-            "category":"Música"
+            "category":"Música",
+            "available": true
         },
         {
             "id":42,
@@ -395,7 +437,8 @@
             "name": "Fox Mix",
             "logo": "./assets/img/no_image.png",
             "description":"No hay descripción",
-            "category":"Música"
+            "category":"Música",
+            "available": true
         },
         {
             "id":43,
@@ -404,7 +447,8 @@
             "name": "Heart TV",
             "logo": "./assets/img/heart_tv.png",
             "description":"No hay descripción",
-            "category":"Música"
+            "category":"Música",
+            "available": true
         },
         {
             "id":44,
@@ -413,7 +457,8 @@
             "name": "Indie Wave",
             "logo": "./assets/img/indie_wave.png",
             "description":"No hay descripción",
-            "category":"Música"
+            "category":"Música",
+            "available": true
         },
         {
             "id":45,
@@ -422,7 +467,8 @@
             "name": "Melody Channel TV",
             "logo": "./assets/img/melody_channel.png",
             "description":"No hay descripción",
-            "category":"Música"
+            "category":"Música",
+            "available": true
         },
         {
             "id":46,
@@ -431,7 +477,8 @@
             "name": "La Mega Mundial",
             "logo": "./assets/img/lamega.png",
             "description":"No hay descripción",
-            "category":"Música"
+            "category":"Música",
+            "available": true
         },
         {
             "id":47,
@@ -440,7 +487,8 @@
             "name": "PAKAPAKA",
             "logo": "./assets/img/pakapaka.png",
             "description":"No hay descripción",
-            "category":"Infantil"
+            "category":"Infantil",
+            "available": true
         },  
         {
             "id":48,
@@ -449,7 +497,8 @@
             "name": "Disney XD",
             "logo": "./assets/img/disneyxd.png",
             "description":"No hay descripción",
-            "category":"Infantil"
+            "category":"Infantil",
+            "available": true
         },
         {
             "id":49,
@@ -458,7 +507,8 @@
             "name": "Disney Channel",
             "logo": "./assets/img/disney_channel.png",
             "description":"No hay descripción",
-            "category":"Infantil"
+            "category":"Infantil",
+            "available": true
         },
         {
             "id":50,
@@ -467,7 +517,8 @@
             "name": "Animal Planet",
             "logo": "./assets/img/animal_planet.png",
             "description":"No hay descripción",
-            "category":"Entretenimiento" 
+            "category":"Entretenimiento" ,
+            "available": true
         },
         {
             "id":51,
@@ -476,7 +527,8 @@
             "name": "Discovery Channel",
             "logo": "./assets/img/discovery.png",
             "description":"No hay descripción",
-            "category":"Entretenimiento" 
+            "category":"Entretenimiento",
+            "available": true
         },
         {
             "id":52,
@@ -485,7 +537,8 @@
             "name": "History Channel",
             "logo": "./assets/img/history.png",
             "description":"No hay descripción",
-            "category":"Entretenimiento" 
+            "category":"Entretenimiento",
+            "available": true
         },
         {
             "id":53,
@@ -494,7 +547,8 @@
             "name": "TLX HD",
             "logo": "./assets/img/tlx.png",
             "description":"No hay descripción",
-            "category":"other" 
+            "category":"other",
+            "available": true
         },
         {
             "id":54,
@@ -503,7 +557,8 @@
             "name": "Warner",
             "logo": "./assets/img/warner.png",
             "description":"No hay descripción",
-            "category":"Cine" 
+            "category":"Cine",
+            "available": true
         },
         {
             "id":55,
@@ -512,7 +567,8 @@
             "name": "EL justiciero 2",
             "logo": "https://3.bp.blogspot.com/-mDTX1G7lAqI/WXj7MIc6YCI/AAAAAAAAmkI/X19Zna-beBoRrXIF0fKR-wKxjoubDHPPgCLcBGAs/s250-c/The-Equalizer-2_Teaser_Poster_JPosters.jpg",
             "description":"No hay descripción",
-            "category":"Peliculas" 
+            "category":"Peliculas",
+            "available": true
         },
         {
             "id":56,
@@ -522,6 +578,7 @@
             "logo": "http://image.tmdb.org/t/p/w500/bURIWlkMbzT8RdpemzCmQECo2Uh.jpg",
             "description":"No hay descripción",
             "category":"Peliculas",
+            "available": true,
             "subtitle": {
                 "label":"Español",
                 "srclang": "es",
@@ -535,7 +592,8 @@
             "name": "NBA Allstar",
             "logo": "https://vignette.wikia.nocookie.net/logopedia/images/7/7a/2018_NBA_All-Star_Game_logo.png/revision/latest?cb=20170906012228",
             "description":"No hay descripción",
-            "category":"Deportes"
+            "category":"Deportes",
+            "available": true
         },
         {
             "id":58,
@@ -544,7 +602,8 @@
             "name": "NBC Live",
             "logo": "https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/0011/2473/brand.gif?itok=fhvLTnUc",
             "description":"No hay descripción",
-            "category":"Deportes"
+            "category":"Deportes",
+            "available": true
         },
         {
             "id":59,
@@ -553,7 +612,8 @@
             "name": "Premier League",
             "logo": "https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/0022/4126/brand.gif?itok=WII6ZdEh",
             "description": "No hay descripción",
-            "category": "Deportes"
+            "category": "Deportes",
+            "available": true
         },
         {
             "id":60,
@@ -562,7 +622,8 @@
             "name": "TLN",
             "logo": "https://media.licdn.com/dms/image/C4D0BAQEK3I683cp2Hg/company-logo_200_200/0?e=2159024400&v=beta&t=F_DIk8qTsVNhXFwHILS2OmcNFpsW4yPxJaLhPzhUfIA",
             "description": "No hay descripción",
-            "category": "Deportes"
+            "category": "Deportes",
+            "available": true
         },
         {
             "id":61,
@@ -571,7 +632,8 @@
             "name": "LN+",
             "logo": "http://marcelafittipaldi.com.ar/wp-content/uploads/2017/06/unnamed-3-2.jpg",
             "description": "No hay descripción",
-            "category": "Noticias"
+            "category": "Noticias",
+            "available": true
         }
     ]
 }
