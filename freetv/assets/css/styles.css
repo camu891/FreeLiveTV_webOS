@@ -200,6 +200,16 @@ nav ul.ulpreview li {
 	box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.75);
 }
 
+/* hide preview for now*/
+ul.ulpreview {
+	display: none
+}
+
+.last-view {
+	margin-top: 35px
+}
+/* hide for now */
+
 nav ul li span.title {
 	vertical-align: middle;
 }
@@ -459,6 +469,7 @@ a.program-link span.channel-title {
 
 .row {
 	margin: 0 10px;
+	overflow-y: hidden;
 }
 
 .category {

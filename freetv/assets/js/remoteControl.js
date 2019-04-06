@@ -1,5 +1,6 @@
 var keyRemoteControl = {
     ENTER: 13,
+    BACK: 1537,
     NAVIGATION: {
         LEFT: 37,
         RIGTH: 39,
