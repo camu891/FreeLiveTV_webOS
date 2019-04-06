@@ -124,8 +124,6 @@
             "type": "iframe",
             "src": "http://www.liketvw.com/embed/espn",
             "src1": "http://futbollibre.online/espn-1/embed2.html?autoplay=1",
-            "src2": "http://bankai.stream/rnaw1.php",
-            "src4": "http://sv1.futbollibre.net/canales/espn.m3u8",
             "name": "ESPN",
             "logo": "./assets/img/espn.png",
             "description":"ESPN Latinoamérica es el canal de televisión especializado en deportes que transmite por cable o satélite para este lado del Continente, pero con diferentes señales según los países o zona en los que uno se encuentre.",
