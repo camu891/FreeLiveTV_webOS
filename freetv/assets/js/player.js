@@ -22,12 +22,18 @@
   
   function initGoBack(){
     $(".back").on("click",function(e) {
-      $("#main-content").show()
-      $("#main-player").hide()
-      destroyPlayer();
-     /* e.preventDefault();
-      window.history.back();*/
+      back();
     }); 
+
+    window.addEventListener("popstate", function(inEvent) {
+      back();
+    });
+  }
+  
+  function back(){
+    $("#main-content").show()
+    $("#main-player").hide()
+    destroyPlayer();
   }
 
   function destroyPlayer() {

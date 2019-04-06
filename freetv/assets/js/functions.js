@@ -325,3 +325,4 @@ function showPlayer(playerVisible) {
 		$("#main-player").hide()
 	}	
 }
+
