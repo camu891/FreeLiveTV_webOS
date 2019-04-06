@@ -1,639 +1,618 @@
 {
-    "programs":[
-        {
-            "id":1,
-            "type": "hls",
-            "src": "https://g1.proy-slo.transport.edge-access.net/b12/ngrp:el12_live01-100083_all/el12_live01-100083_720p.m3u8",
-            "name": "El doce",
-            "logo": "./assets/img/12tv.png",
-            "description":"No hay descripción",
-            "category":"Noticias",
-            "available": true
-        },
-        {
-            "id":2,
-            "type": "youtube",
-            "src": "https://www.youtube.com/embed/9h6Vz6ylIdE?rel=0&autoplay=1&showinfo=0&controls=0",
-            "name": "El Trece TV",
-            "logo": "./assets/img/eltrece.png",
-            "description":"Canal 13 es una cadena de televisión argentina que transmite desde la Ciudad de Buenos Aires.",
-            "category":"Noticias",
-            "available": true
-        },
-        {
-            "id":3,
-            "type": "iframe",
-            "src": "http://televisionlibre.net/canal/telefe-en-vivo/embed2.html",
-            "name": "Telefe",
-            "logo": "./assets/img/telefe.png",
-            "description":"Telefe es el canal de TV líder en la producción y comercialización de contenidos y servicios audiovisuales de Argentina.",
-            "category":"Noticias",
-            "available": true
-        },
-        {
-            "id":4,
-            "type": "hls",
-            "src": "https://tlfcapitalhls-lh.akamaihd.net/i/canal8cordoba_1@685726/index_1_av-p.m3u8",
-            "name": "Teleocho",
-            "logo": "./assets/img/teleocho.png",
-            "description":"No hay descripción",
-            "category":"Noticias",
-            "available": true
-        },
-        {
-            "id":5,
-            "type": "hls",
-            "src": "https://chunks01.tvpublica.com.ar/video/BJQRNMF6b_1080/index.m3u8",
-            "src2": "https://g3.mc-slo.transport.edge-access.net/b17/ngrp:c7cam2-20034_all/c7cam2-20034_1080p.m3u8",
-            "name": "TV Pública",
-            "logo": "./assets/img/tvpublica.png",
-            "description":"La Televisión Pública Argentina es la cadena de mayor cobertura televisiva en el territorio argentino a través de repetidoras ubicadas en el interior del país.",
-            "category":"Noticias",
-            "available": true
-        },
-        {
-            "id":6,
-            "type": "hls",
-            "src": "https://wowzaprod169-i.akamaihd.net/hls/live/630337/59e4c1ec/59e4c1ec_1_1500000/chunklist.m3u8",
-            "name": "Canal 10",
-            "logo": "./assets/img/canal10.png",
-            "description":"No hay descripción",
-            "category":"Noticias",
-            "available": true
-        },
-        {
-            "id":7,
-            "type": "hls",
-            "src": "http://dwgoed11hdvfh.cloudfront.net/c9/smil:live.smil/chunklist_b1328000.m3u8",
-            "name": "El nueve",
-            "logo": "./assets/img/canal9.png",
-            "description":"No hay descripción",
-            "category":"Noticias",
-            "available": true
-        },
-        {
-            "id":8,
-            "type": "youtube",
-            "src": "https://www.youtube.com/embed/-1xif50QMr4?rel=0&autoplay=1&showinfo=0&controls=0",
-            "name": "TN Noticias",
-            "logo": "./assets/img/tn.png",
-            "description":"TN es la referencia obligada de la actualidad nacional e internacional. Todo el año durante todo el día, los periodistas de TN siguen paso a paso las noticias, mostrando las imágenes más impactantes desde el lugar donde está la información.",
-            "category":"Noticias",
-            "available": true
-        },
-        {
-            "id":9,
-            "type": "youtube",
-            "src": "https://www.youtube.com/embed/MNODeTv9VbE?rel=0&autoplay=1&showinfo=0&controls=0",
-            "name": "Cronica TV",
-            "logo": "./assets/img/cronica.png",
-            "description":"No hay descripción",
-            "category":"Noticias",
-            "available": true
-        },
-        {
-            "id":10,
-            "type": "hls",
-            "src": "http://live-edge01.telecentro.net.ar/live/smil:c26.smil/chunklist_w1015357033_b1264000_sleng.m3u8",
-            "name": "Canal 26",
-            "logo": "./assets/img/canal26.png",
-            "description":"Canal 26 Noticias es un canal de televisión abierta argentino, que basa su programación en noticieros y programas de actualidad.",
-            "category":"Noticias",
-            "available": true
-        },
-        {
-            "id":11,
-            "type": "youtube",
-            "src": "https://www.youtube.com/embed/vMF1HIHKzfg?rel=0&autoplay=1&showinfo=0&controls=0",
-            "name": "C5N",
-            "logo": "./assets/img/c5n.png",
-            "description":"No hay descripción",
-            "category":"Noticias",
-            "available": true
-        },
-        {
-            "id":12,
-            "type": "hls",
-            "src": "http://coninfo.net:1935/13maxhd/live_720p/chunklist_w1693758974.m3u8",
-            "name": "13 Max Noticias",
-            "logo": "./assets/img/13maxtv.png",
-            "description":"No hay descripción",
-            "category":"Noticias",
-            "available": true
-        },
-        {
-            "id":13,
-            "type": "hls",
-            "src": "https://livestreamapis.com/v3/accounts/27014129/events/8167338/master.m3u8?token=ee768f19dbf2e77540f2f8cd021c42ce&clientId=2576&timestamp=1554577320104",
-            "src1": "http://sv1.futbollibre.net/m3u8/tyc.m3u8?lnmma",
-            "name": "Tyc Sports",
-            "logo": "./assets/img/tyc_sport.png",
-            "description":"TyC Sports en vivo es un canal de televisión por suscripción deportivo argentino, el cual brinda la emisión de eventos deportivos destacados a nivel nacional e internacional.",
-            "category":"Deportes",
-            "available": true
-        },
-        {
-            "id":14,
-            "type": "iframe",
-            "src": "http://www.liketvw.com/embed/espn",
-            "src1": "http://futbollibre.online/espn-1/embed2.html?autoplay=1",
-            "name": "ESPN",
-            "logo": "./assets/img/espn.png",
-            "description":"ESPN Latinoamérica es el canal de televisión especializado en deportes que transmite por cable o satélite para este lado del Continente, pero con diferentes señales según los países o zona en los que uno se encuentre.",
-            "category":"Deportes",
-            "available": true
-        },
-        {
-            "id":15,
-            "type": "hls",
-            "src": "https://sv8.apgstream.xyz/hls/espn2.m3u8",    
-            "src1": "http://futbollibre.online/espn-2/embed.html",
-            "name": "ESPN 2",
-            "logo": "./assets/img/espn2.png",
-            "description":"ESPN 2 En vivo es un canal de deportes que regularmente transmite partidos de fútbol correspondientes a la Bundesliga y de la Liga de Holanda. Además se transmiten los Juegos Extremos de Invierno.",
-            "category":"Deportes",
-            "available": true
-        },
-        {
-            "id":16,
-            "type": "iframe",
-            "src": "http://futbollibre.online/espn-3/embed2.html",
-            "src1": "https://tumarcador.xyz/ac3.php",
-            "name": "ESPN 3",
-            "logo": "./assets/img/espn3.png",
-            "description":"La programación de ESPN 3 está dedicada a los deportes de acción, es decir los deportes extremos tanto de verano como de invierno, así como los de aventura, surf y running.",
-            "category":"Deportes",
-            "available": true
-        },
-        {
-            "id":17,
-            "type": "hls",
-            "src": "http://sv1.futbollibre.net/superliga.m3u8?",
-            "src2": "http://futbollibre.online/fox-sports-premium/embed66.html",
-            "name": "Fox Sports Premium",
-            "logo": "./assets/img/foxsport_premium.png",
-            "description":"FOX Sports Premium es un canal argentino que ofrece acceso instantáneo a los mejores partidos de futbol de la Superliga Argentina. Es un canal de televisión de paga argentino dedicado a la emisión del fútbol de dicho país, junto con TNT Sports tras la alianza de Turner y Fox por los derechos de televisión del fútbol argentino, el cual reemplaza el programa público Fútbol Para Todos.",
-            "category":"Deportes",
-            "available": true
-        },
-        {
-            "id":18,
-            "type": "iframe",
-            "src": "http://futbollibre.online/fox-sports-1/embed.html",
-            "src1":"https://ok.ru/videoembed/1146590928536",
-            "name": "Fox Sports",
-            "logo": "./assets/img/foxsport.png",
-            "description":"Fox Sports es un canal de televisión por suscripción especializado en deportes que emite las 24 horas del día para Latinoamérica. Transmite en vivo la Copa Libertadores, Copa Sudamericana, UEFA Champions League, UEFA Europa League, Serie A de Italia, Bundesliga de Alemania, Copa Mundial de Clubes, NFL, MLB, entre otros.",
-            "category":"Deportes",
-            "available": true
-        },
-        {
-            "id":19,
-            "type": "iframe",
-            "src": "http://www.liketvw.com/embed/foxsports2",
-            "name": "Fox Sports 2",
-            "logo": "./assets/img/foxsport2.png",
-            "description":"Fox Sports 2 es un canal de cable y satelite totalmente deportivo, es la segunda señal de Fox Sports, antes llamado Fox Sports + a partir del 5 de Noviembre del 2012 se le cambio de nombre para llamarse Fox Sports 2 esta cadena transmite eventos deportivos locales e internacionales más destacados como la Copa Libertadores, UEFA Champions League, Copa Sudamericana, UEFA Europa League, la WWE entre otros.",
-            "category":"Deportes",
-            "available": true
-        },
-        {
-            "id":20,
-            "type": "iframe",
-            "src": "http://futbollibre.online/fox-sports-3/embed3.html",
-            "name": "Fox Sports 3",
-            "logo": "./assets/img/foxsport3.png",
-            "description":"Fox Sports 3 es un canal deportivo de televisión de pago operado por Fox International Channels y que inició transmisiones el 5 de noviembre de 2012 para América Latina (excepto Brasil). Fox Sports 3 reemplazó al canal Speed en su versión para Latinoamérica",
-            "category":"Deportes",
-            "available": true
-        },
-        {
-            "id":21,
-            "type": "hls",
-            "src": "http://sv1.futbollibre.net/superliga2.m3u8",
-            "name": "SAF",
-            "logo": "./assets/img/saf.png",
-            "description":"No hay descripción",
-            "category":"Deportes",
-            "available": true
-        }, 
-        {
-            "id":22,
-            "type": "hls",
-            "src": "https://contar-live.secure.footprint.net/hls-live/ionmicroremux-Deportv/_definst_/live.m3u8",
-            "name": "Deportv",
-            "logo": "./assets/img/dxtv.png",
-            "description":"DeporTV en VIVO es un canal de televisión público argentino especializado en programación deportiva.",
-            "category":"Deportes",
-            "available": true
-        },
-        {
-            "id":23,
-            "type": "iframe",
-            "src": "http://futbollibre.online/tnt-sports/embed.html",
-            "name": "TNT SPORT",
-            "logo": "./assets/img/tntsports.png",
-            "description":"TNT Sports en vivo, es un canal de televisión por suscripción argentino, dedicado a la emisión del deporte de ese país, junto con Fox Sports Premium, que comenzó a emitirse el viernes 25 de agosto de 2017 desde las 18h, tras la alianza de Turner y Fox por los derechos de televisión de la Primera División Argentina (Superliga) de fútbol argentino, siendo reemplazo del programa gubernamental Fútbol Para Todos.",
-            "category":"Deportes",
-            "available": true
-        }, 
-        {
-            "id":24,
-            "type": "iframe",
-            "src": "http://www.liketvw.com/embed/directv",
-            "src1": "https://bs.boomstream.com/lv/pmfTccNN-high/chunklist.m3u8?token=1jDDaqaK0ugBvScHQ6uK",
-            "src2": "https://tumarcador.xyz/ac1.php",
-            "name": "DIRECT SPORTS",
-            "logo": "./assets/img/directv_sports.png",
-            "description":"DirecTV Sports en vivo es un canal de televisión por suscripción deportivo exclusivo de DirecTV.",
-            "category":"Deportes",
-            "available": true
-        },
-        {
-            "id":25,
-            "type": "hls",
-            "src": "https://fdsfdsfds.azureedge.net/live/t1/chunks.m3u8",
-            "src1": "https://tumarcador.xyz/ac1.php",
-            "name": "BEIN Sports",
-            "logo": "./assets/img/bein_sports.png",
-            "description":"No hay descripción",
-            "category":"Deportes",
-            "available": true
-        }, 
-        {
-            "id":26,
-            "type": "hls",
-            "src": "http://latino-webtv.com:2082/livexd3/70_.m3u8",
-            "name": "Win Sports",
-            "logo": "./assets/img/winsports.png",
-            "description":"Win Sports, canal de suscripción deportivo colombiano.",
-            "category":"Deportes",
-            "available": true
-        },
-        {
-            "id":27,
-            "type": "iframe",
-            "src": "http://player.latino-webtv.com/channels/cinemax.html",
-            "name": "Cinemax",
-            "logo": "./assets/img/cinemax.png",
-            "description":"No hay descripción",
-            "category":"Cine",
-            "available": true
-        },
-        {
-            "id":28,
-            "type": "hls",
-            "src": "http://n-3-21.dcs.redcdn.pl/hls/o2/redefine/nlive/CN_HD_1/11395/0/tv-ss/live.isml/playlist.m3u8?stream=0&bandwidth=1",
-            "name": "Cartoon Network",
-            "logo": "./assets/img/cartoon_network.png",
-            "description":"No hay descripción",
-            "category":"Infantil",
-            "available": true
-        },
-        {
-            "id":29,
-            "type": "iframe",
-            "src": "http://televisionlibre.net/canal/fox-en-vivo/embed.html",
-            "name": "FOX",
-            "logo": "./assets/img/fox.png",
-            "description":"No hay descripción",
-            "category":"Cine",
-            "available": true
-        },
-        {
-            "id":30,
-            "type": "iframe",
-            "src": "http://player.latino-webtv.com/channels/space.html",
-            "name": "Space",
-            "logo": "./assets/img/space.png",
-            "description":"No hay descripción",
-            "category":"Cine",
-            "available": true
-        },
-        {
-            "id":31,
-            "type": "iframe",
-            "src": "http://player.latino-webtv.com/channels/cinecanal.html",
-            "name": "Cinecanal",
-            "logo": "./assets/img/cinecanal.png",
-            "description":"No hay descripción",
-            "category":"Cine",
-            "available": true
-        },
-        {
-            "id":32,
-            "type": "iframe",
-            "src": "http://www.liketvw.com/embed/tnt",
-            "name": "TNT",
-            "logo": "./assets/img/tnt.png",
-            "description":"No hay descripción",
-            "category":"Cine",
-            "available": true
-        },
-        {
-            "id":33,
-            "type": "iframe",
-            "src": "http://televisionlibre.net/canal/fox-en-vivo/embed.html",
-            "name": "FOX Movies",
-            "logo": "./assets/img/fox_movies.png",
-            "description":"No hay descripción",
-            "category":"Cine",
-            "available": true
-        },
-        {
-            "id":34,
-            "type": "iframe",
-            "src": "http://www.fulltvhd.fi/peliculas/hbo.php",
-            "name": "HBO",
-            "logo": "./assets/img/hbo.png",
-            "description":"No hay descripción",
-            "category":"Cine",
-            "available": true
-        },
-        {
-            "id":344,
-            "type": "iframe",
-            "src": "http://www.sintelevisor.com/tv/universal.html",
-            "name": "Universal",
-            "logo": "./assets/img/universal.png",
-            "description":"No hay descripción",
-            "category":"Cine",
-            "available": true
-        },
-        {
-            "id":35,
-            "type": "hls",
-            "src": "http://streaming.wirenetserver.com.ar:1935/canal4/live_1/livestream.m3u8 ",
-            "name": "HBO Family",
-            "logo": "./assets/img/hbo.png",
-            "description":"No hay descripción",
-            "category":"Cine",
-            "available": true
-        },             
-        {
-            "id":36,
-            "type": "hls",
-            "src": "http://kissfm-cires21-video.secure.footprint.net/hittv/bitrate_3.m3u8",
-            "name": "Hit TV",
-            "logo": "./assets/img/hit_tv.png",
-            "description":"No hay descripción",
-            "category":"Música",
-            "available": true
-        },       
-        {
-            "id":37,
-            "type": "hls",
-            "src": "http://fms.105.net:1935/live/virgin2%20/chunklist_w1063887220.m3u8",
-            "name": "Virgin Radio",
-            "logo": "./assets/img/virgin.png",
-            "description":"No hay descripción",
-            "category":"Música",
-            "available": true
-        },       
-        {
-            "id":38,
-            "type": "hls",
-            "src": "http://online.radiodifusion.net:1935/livetv/latinoSD.stream/chunklist_w430979689.m3u8",
-            "name": "Top Latino Radio",
-            "logo": "./assets/img/top_latino.png",
-            "description":"No hay descripción",
-            "category":"Música",
-            "available": true
-        },       
-        {
-            "id":39,
-            "type": "hls",
-            "src": "http://stmv4.questreaming.com/questreaming/questreaming/playlist.m3u8",
-            "name": "Soy Rock",
-            "logo": "./assets/img/soy_rock.png",
-            "description":"No hay descripción",
-            "category":"Música",
-            "available": true
-        },
-        {
-            "id":40,
-            "type": "hls",
-            "src": "http://wowza.telpin.com.ar:1935/live-powerTV/power.stream/chunklist_w1680853093.m3u8",
-            "name": "Power HD",
-            "logo": "./assets/img/powerhd.png",
-            "description":"No hay descripción",
-            "category":"Música",
-            "available": true
-        },
-        {
-            "id":41,
-            "type": "hls",
-            "src": "http://edge.music-choice-play-chaina1.top.comcast.net/PlayMetadataInserter/play/chunklist.m3u8",
-            "name": "Music Choice",
-            "logo": "./assets/img/music_choice.png",
-            "description":"No hay descripción",
-            "category":"Música",
-            "available": true
-        },
-        {
-            "id":42,
-            "type": "hls",
-            "src": "http://tv.portalfoxmix.club:1935/portalfoxmix/portalfoxmix/chunklist_w1495139298.m3u8",
-            "name": "Fox Mix",
-            "logo": "./assets/img/no_image.png",
-            "description":"No hay descripción",
-            "category":"Música",
-            "available": true
-        },
-        {
-            "id":43,
-            "type": "hls",
-            "src": "http://ooyalahd2-f.akamaihd.net/i/globalradio02_delivery@156522/index_1500_av-p.m3u8?sd=10&rebase=on",
-            "name": "Heart TV",
-            "logo": "./assets/img/heart_tv.png",
-            "description":"No hay descripción",
-            "category":"Música",
-            "available": true
-        },
-        {
-            "id":44,
-            "type": "hls",
-            "src": "https://vcnindiewave.teleosmedia.com/stream/indiewave/indiewave/seglist_720p.m3u8",
-            "name": "Indie Wave",
-            "logo": "./assets/img/indie_wave.png",
-            "description":"No hay descripción",
-            "category":"Música",
-            "available": true
-        },
-        {
-            "id":45,
-            "type": "hls",
-            "src": "https://5b464b69d264e.streamlock.net/live/smil:MelodyChannel.smil/chunklist_w685725914_b1048000_slES.m3u8",
-            "name": "Melody Channel TV",
-            "logo": "./assets/img/melody_channel.png",
-            "description":"No hay descripción",
-            "category":"Música",
-            "available": true
-        },
-        {
-            "id":46,
-            "type": "hls",
-            "src": "http://68.235.35.243:1935/lamegamundial/lamegamundial2/chunklist_w1203533629.m3u8",
-            "name": "La Mega Mundial",
-            "logo": "./assets/img/lamega.png",
-            "description":"No hay descripción",
-            "category":"Música",
-            "available": true
-        },
-        {
-            "id":47,
-            "type": "hls",
-            "src": "https://contar-live.secure.footprint.net/hls-live/ionmicroremux-Pakapaka/_definst_/live/stream2.m3u8",
-            "name": "PAKAPAKA",
-            "logo": "./assets/img/pakapaka.png",
-            "description":"No hay descripción",
-            "category":"Infantil",
-            "available": true
-        },  
-        {
-            "id":48,
-            "type": "iframe",
-            "src": "http://player.latino-webtv.com/channels/disneyxd.html",
-            "name": "Disney XD",
-            "logo": "./assets/img/disneyxd.png",
-            "description":"No hay descripción",
-            "category":"Infantil",
-            "available": true
-        },
-        {
-            "id":49,
-            "type": "hls",
-            "src": "http://n-3-1.dcs.redcdn.pl/hls/o2/redefine/nlive/disney_channel_hd_1/10903/0/tv-ss/live.isml/playlist.m3u8?stream=0&bandwidth=1",
-            "name": "Disney Channel",
-            "logo": "./assets/img/disney_channel.png",
-            "description":"No hay descripción",
-            "category":"Infantil",
-            "available": true
-        },
-        {
-            "id":50,
-            "type": "iframe",
-            "src": "http://televisionlibre.net/canal/animal-planet-en-vivo/embed.html",
-            "name": "Animal Planet",
-            "logo": "./assets/img/animal_planet.png",
-            "description":"No hay descripción",
-            "category":"Entretenimiento" ,
-            "available": true
-        },
-        {
-            "id":51,
-            "type": "iframe",
-            "src": "http://player.latino-webtv.com/channels/discovery.html",
-            "name": "Discovery Channel",
-            "logo": "./assets/img/discovery.png",
-            "description":"No hay descripción",
-            "category":"Entretenimiento",
-            "available": true
-        },
-        {
-            "id":52,
-            "type": "iframe",
-            "src": "http://player.latino-webtv.com/channels/history.html",
-            "name": "History Channel",
-            "logo": "./assets/img/history.png",
-            "description":"No hay descripción",
-            "category":"Entretenimiento",
-            "available": true
-        },
-        {
-            "id":53,
-            "type": "hls",
-            "src": "http://live-edge01.telecentro.net.ar/live/tlx.smil/chunklist_w1930992855_b1828000_sleng.m3u8",
-            "name": "TLX HD",
-            "logo": "./assets/img/tlx.png",
-            "description":"No hay descripción",
-            "category":"other",
-            "available": true
-        },
-        {
-            "id":54,
-            "type": "iframe",
-            "src": "http://player.latino-webtv.com/channels/warner.html",
-            "name": "Warner",
-            "logo": "./assets/img/warner.png",
-            "description":"No hay descripción",
-            "category":"Cine",
-            "available": true
-        },
-        {
-            "id":55,
-            "type": "mp4",
-            "src": "https://storage.googleapis.com/pp-to-stream.appspot.com/17526.mp4",
-            "name": "EL justiciero 2",
-            "logo": "https://3.bp.blogspot.com/-mDTX1G7lAqI/WXj7MIc6YCI/AAAAAAAAmkI/X19Zna-beBoRrXIF0fKR-wKxjoubDHPPgCLcBGAs/s250-c/The-Equalizer-2_Teaser_Poster_JPosters.jpg",
-            "description":"No hay descripción",
-            "category":"Peliculas",
-            "available": true
-        },
-        {
-            "id":56,
-            "type": "mp4",
-            "src": "http://127.0.0.1:28258/0",
-            "name": "Venom",
-            "logo": "http://image.tmdb.org/t/p/w500/bURIWlkMbzT8RdpemzCmQECo2Uh.jpg",
-            "description":"No hay descripción",
-            "category":"Peliculas",
-            "available": true,
-            "subtitle": {
-                "label":"Español",
-                "srclang": "es",
-                "src": "https://www.opensubtitles.com/download/2495E47AE08F9B384AEFD032FDF3701D5CD46FE5B6E1DF00E9E646A58069819839167AF48EA43FB43514C27250565F818E0377C097C8DD59C639A20F053E3C48FB034DE1CE3B2189E6A449916C7FC5E13F6B65E22CEF03C1F703E08B22D17AC873F4CFBC9161283A6D5E2F42856473170088DD58C191EC5D163602983768FA1A4155E2FE9729D62E/subfile/Venom%20(2018).srt"
-            }
-        },
-        {
-            "id":57,
-            "type": "iframe",
-            "src": "https://telerium.tv/embed/25279.html",
-            "name": "NBA Allstar",
-            "logo": "https://vignette.wikia.nocookie.net/logopedia/images/7/7a/2018_NBA_All-Star_Game_logo.png/revision/latest?cb=20170906012228",
-            "description":"No hay descripción",
-            "category":"Deportes",
-            "available": true
-        },
-        {
-            "id":58,
-            "type": "hls",
-            "src": "http://1dfs.azureedge.net/hls/live.m3u8",
-            "name": "NBC Live",
-            "logo": "https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/0011/2473/brand.gif?itok=fhvLTnUc",
-            "description":"No hay descripción",
-            "category":"Deportes",
-            "available": true
-        },
-        {
-            "id":59,
-            "type": "hls",
-            "src": "http://2sdfg.azureedge.net/live.m3u8",
-            "name": "Premier League",
-            "logo": "https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/0022/4126/brand.gif?itok=WII6ZdEh",
-            "description": "No hay descripción",
-            "category": "Deportes",
-            "available": true
-        },
-        {
-            "id":60,
-            "type": "hls",
-            "src": "http://3sdfg.azureedge.net/live.m3u8",
-            "name": "TLN",
-            "logo": "https://media.licdn.com/dms/image/C4D0BAQEK3I683cp2Hg/company-logo_200_200/0?e=2159024400&v=beta&t=F_DIk8qTsVNhXFwHILS2OmcNFpsW4yPxJaLhPzhUfIA",
-            "description": "No hay descripción",
-            "category": "Deportes",
-            "available": true
-        },
-        {
-            "id":61,
-            "type": "youtube",
-            "src": "https://www.youtube.com/embed/Ti7BL_xlSJ4?rel=0&autoplay=1&showinfo=0&controls=0",
-            "name": "LN+",
-            "logo": "http://marcelafittipaldi.com.ar/wp-content/uploads/2017/06/unnamed-3-2.jpg",
-            "description": "No hay descripción",
-            "category": "Noticias",
-            "available": true
-        }
-    ]
+	"programs":[{
+		"Noticias": [
+			{
+				"id":1,
+				"type": "hls",
+				"src": "https://g1.proy-slo.transport.edge-access.net/b12/ngrp:el12_live01-100083_all/el12_live01-100083_720p.m3u8",
+				"name": "El doce",
+				"logo": "./assets/img/12tv.png",
+				"description":"No hay descripción",
+				"category":"Noticias",
+				"available": true
+			},
+			{
+				"id":2,
+				"type": "youtube",
+				"src": "https://www.youtube.com/embed/9h6Vz6ylIdE?rel=0&autoplay=1&showinfo=0&controls=0",
+				"name": "El Trece TV",
+				"logo": "./assets/img/eltrece.png",
+				"description":"Canal 13 es una cadena de televisión argentina que transmite desde la Ciudad de Buenos Aires.",
+				"category":"Noticias",
+				"available": true
+			},
+			{
+				"id":3,
+				"type": "iframe",
+				"src": "http://televisionlibre.net/canal/telefe-en-vivo/embed2.html",
+				"name": "Telefe",
+				"logo": "./assets/img/telefe.png",
+				"description":"Telefe es el canal de TV líder en la producción y comercialización de contenidos y servicios audiovisuales de Argentina.",
+				"category":"Noticias",
+				"available": true
+			},
+			{
+				"id":4,
+				"type": "hls",
+				"src": "https://tlfcapitalhls-lh.akamaihd.net/i/canal8cordoba_1@685726/index_1_av-p.m3u8",
+				"name": "Teleocho",
+				"logo": "./assets/img/teleocho.png",
+				"description":"No hay descripción",
+				"category":"Noticias",
+				"available": true
+			},
+			{
+				"id":5,
+				"type": "hls",
+				"src": "https://chunks01.tvpublica.com.ar/video/BJQRNMF6b_1080/index.m3u8",
+				"src2": "https://g3.mc-slo.transport.edge-access.net/b17/ngrp:c7cam2-20034_all/c7cam2-20034_1080p.m3u8",
+				"name": "TV Pública",
+				"logo": "./assets/img/tvpublica.png",
+				"description":"La Televisión Pública Argentina es la cadena de mayor cobertura televisiva en el territorio argentino a través de repetidoras ubicadas en el interior del país.",
+				"category":"Noticias",
+				"available": true
+			},
+			{
+				"id":6,
+				"type": "hls",
+				"src": "https://wowzaprod169-i.akamaihd.net/hls/live/630337/59e4c1ec/59e4c1ec_1_1500000/chunklist.m3u8",
+				"name": "Canal 10",
+				"logo": "./assets/img/canal10.png",
+				"description":"No hay descripción",
+				"category":"Noticias",
+				"available": true
+			},
+			{
+				"id":7,
+				"type": "hls",
+				"src": "http://dwgoed11hdvfh.cloudfront.net/c9/smil:live.smil/chunklist_b1328000.m3u8",
+				"name": "El nueve",
+				"logo": "./assets/img/canal9.png",
+				"description":"No hay descripción",
+				"category":"Noticias",
+				"available": true
+			},
+			{
+				"id":8,
+				"type": "youtube",
+				"src": "https://www.youtube.com/embed/-1xif50QMr4?rel=0&autoplay=1&showinfo=0&controls=0",
+				"name": "TN Noticias",
+				"logo": "./assets/img/tn.png",
+				"description":"TN es la referencia obligada de la actualidad nacional e internacional. Todo el año durante todo el día, los periodistas de TN siguen paso a paso las noticias, mostrando las imágenes más impactantes desde el lugar donde está la información.",
+				"category":"Noticias",
+				"available": true
+			},
+			{
+				"id":9,
+				"type": "youtube",
+				"src": "https://www.youtube.com/embed/MNODeTv9VbE?rel=0&autoplay=1&showinfo=0&controls=0",
+				"name": "Cronica TV",
+				"logo": "./assets/img/cronica.png",
+				"description":"No hay descripción",
+				"category":"Noticias",
+				"available": true
+			},
+			{
+				"id":10,
+				"type": "hls",
+				"src": "http://live-edge01.telecentro.net.ar/live/smil:c26.smil/chunklist_w1015357033_b1264000_sleng.m3u8",
+				"name": "Canal 26",
+				"logo": "./assets/img/canal26.png",
+				"description":"Canal 26 Noticias es un canal de televisión abierta argentino, que basa su programación en noticieros y programas de actualidad.",
+				"category":"Noticias",
+				"available": true
+			},
+			{
+				"id":11,
+				"type": "youtube",
+				"src": "https://www.youtube.com/embed/vMF1HIHKzfg?rel=0&autoplay=1&showinfo=0&controls=0",
+				"name": "C5N",
+				"logo": "./assets/img/c5n.png",
+				"description":"No hay descripción",
+				"category":"Noticias",
+				"available": true
+			},
+			{
+				"id":12,
+				"type": "hls",
+				"src": "http://coninfo.net:1935/13maxhd/live_720p/chunklist_w1693758974.m3u8",
+				"name": "13 Max Noticias",
+				"logo": "./assets/img/13maxtv.png",
+				"description":"No hay descripción",
+				"category":"Noticias",
+				"available": true
+			},
+			{
+				"id":13,
+				"type": "youtube",
+				"src": "https://www.youtube.com/embed/Ti7BL_xlSJ4?rel=0&autoplay=1&showinfo=0&controls=0",
+				"name": "LN+",
+				"logo": "http://marcelafittipaldi.com.ar/wp-content/uploads/2017/06/unnamed-3-2.jpg",
+				"description": "No hay descripción",
+				"category": "Noticias",
+				"available": true
+			}
+		]},
+{
+	"Deportes":[
+		{
+			"id":1,
+			"type": "hls",
+			"src": "https://livestreamapis.com/v3/accounts/27014129/events/8167338/master.m3u8?token=ee768f19dbf2e77540f2f8cd021c42ce&clientId=2576&timestamp=1554577320104",
+			"src1": "http://sv1.futbollibre.net/m3u8/tyc.m3u8?lnmma",
+			"name": "Tyc Sports",
+			"logo": "./assets/img/tyc_sport.png",
+			"description":"TyC Sports en vivo es un canal de televisión por suscripción deportivo argentino, el cual brinda la emisión de eventos deportivos destacados a nivel nacional e internacional.",
+			"category":"Deportes",
+			"available": true
+		},
+		{
+			"id":2,
+			"type": "iframe",
+			"src": "http://www.liketvw.com/embed/espn",
+			"src1": "http://futbollibre.online/espn-1/embed2.html?autoplay=1",
+			"name": "ESPN",
+			"logo": "./assets/img/espn.png",
+			"description":"ESPN Latinoamérica es el canal de televisión especializado en deportes que transmite por cable o satélite para este lado del Continente, pero con diferentes señales según los países o zona en los que uno se encuentre.",
+			"category":"Deportes",
+			"available": true
+		},
+		{
+			"id":3,
+			"type": "hls",
+			"src": "https://sv8.apgstream.xyz/hls/espn2.m3u8",    
+			"src1": "http://futbollibre.online/espn-2/embed.html",
+			"name": "ESPN 2",
+			"logo": "./assets/img/espn2.png",
+			"description":"ESPN 2 En vivo es un canal de deportes que regularmente transmite partidos de fútbol correspondientes a la Bundesliga y de la Liga de Holanda. Además se transmiten los Juegos Extremos de Invierno.",
+			"category":"Deportes",
+			"available": true
+		},
+		{
+			"id":4,
+			"type": "iframe",
+			"src": "http://futbollibre.online/espn-3/embed2.html",
+			"src1": "https://tumarcador.xyz/ac3.php",
+			"name": "ESPN 3",
+			"logo": "./assets/img/espn3.png",
+			"description":"La programación de ESPN 3 está dedicada a los deportes de acción, es decir los deportes extremos tanto de verano como de invierno, así como los de aventura, surf y running.",
+			"category":"Deportes",
+			"available": true
+		},
+		{
+			"id":5,
+			"type": "hls",
+			"src": "http://sv1.futbollibre.net/superliga.m3u8?",
+			"src2": "http://futbollibre.online/fox-sports-premium/embed66.html",
+			"name": "Fox Sports Premium",
+			"logo": "./assets/img/foxsport_premium.png",
+			"description":"FOX Sports Premium es un canal argentino que ofrece acceso instantáneo a los mejores partidos de futbol de la Superliga Argentina. Es un canal de televisión de paga argentino dedicado a la emisión del fútbol de dicho país, junto con TNT Sports tras la alianza de Turner y Fox por los derechos de televisión del fútbol argentino, el cual reemplaza el programa público Fútbol Para Todos.",
+			"category":"Deportes",
+			"available": true
+		},
+		{
+			"id":6,
+			"type": "iframe",
+			"src": "http://futbollibre.online/fox-sports-1/embed.html",
+			"src1":"https://ok.ru/videoembed/1146590928536",
+			"name": "Fox Sports",
+			"logo": "./assets/img/foxsport.png",
+			"description":"Fox Sports es un canal de televisión por suscripción especializado en deportes que emite las 24 horas del día para Latinoamérica. Transmite en vivo la Copa Libertadores, Copa Sudamericana, UEFA Champions League, UEFA Europa League, Serie A de Italia, Bundesliga de Alemania, Copa Mundial de Clubes, NFL, MLB, entre otros.",
+			"category":"Deportes",
+			"available": true
+		},
+		{
+			"id":7,
+			"type": "iframe",
+			"src": "http://www.liketvw.com/embed/foxsports2",
+			"name": "Fox Sports 2",
+			"logo": "./assets/img/foxsport2.png",
+			"description":"Fox Sports 2 es un canal de cable y satelite totalmente deportivo, es la segunda señal de Fox Sports, antes llamado Fox Sports + a partir del 5 de Noviembre del 2012 se le cambio de nombre para llamarse Fox Sports 2 esta cadena transmite eventos deportivos locales e internacionales más destacados como la Copa Libertadores, UEFA Champions League, Copa Sudamericana, UEFA Europa League, la WWE entre otros.",
+			"category":"Deportes",
+			"available": true
+		},
+		{
+			"id":8,
+			"type": "iframe",
+			"src": "http://futbollibre.online/fox-sports-3/embed3.html",
+			"name": "Fox Sports 3",
+			"logo": "./assets/img/foxsport3.png",
+			"description":"Fox Sports 3 es un canal deportivo de televisión de pago operado por Fox International Channels y que inició transmisiones el 5 de noviembre de 2012 para América Latina (excepto Brasil). Fox Sports 3 reemplazó al canal Speed en su versión para Latinoamérica",
+			"category":"Deportes",
+			"available": true
+		},
+		{
+			"id":9,
+			"type": "hls",
+			"src": "http://sv1.futbollibre.net/superliga2.m3u8",
+			"name": "SAF",
+			"logo": "./assets/img/saf.png",
+			"description":"No hay descripción",
+			"category":"Deportes",
+			"available": true
+		}, 
+		{
+			"id":10,
+			"type": "hls",
+			"src": "https://contar-live.secure.footprint.net/hls-live/ionmicroremux-Deportv/_definst_/live.m3u8",
+			"name": "Deportv",
+			"logo": "./assets/img/dxtv.png",
+			"description":"DeporTV en VIVO es un canal de televisión público argentino especializado en programación deportiva.",
+			"category":"Deportes",
+			"available": true
+		},
+		{
+			"id":11,
+			"type": "iframe",
+			"src": "http://futbollibre.online/tnt-sports/embed.html",
+			"name": "TNT SPORT",
+			"logo": "./assets/img/tntsports.png",
+			"description":"TNT Sports en vivo, es un canal de televisión por suscripción argentino, dedicado a la emisión del deporte de ese país, junto con Fox Sports Premium, que comenzó a emitirse el viernes 25 de agosto de 2017 desde las 18h, tras la alianza de Turner y Fox por los derechos de televisión de la Primera División Argentina (Superliga) de fútbol argentino, siendo reemplazo del programa gubernamental Fútbol Para Todos.",
+			"category":"Deportes",
+			"available": true
+		}, 
+		{
+			"id":12,
+			"type": "iframe",
+			"src": "http://www.liketvw.com/embed/directv",
+			"src1": "https://bs.boomstream.com/lv/pmfTccNN-high/chunklist.m3u8?token=1jDDaqaK0ugBvScHQ6uK",
+			"src2": "https://tumarcador.xyz/ac1.php",
+			"name": "DIRECT SPORTS",
+			"logo": "./assets/img/directv_sports.png",
+			"description":"DirecTV Sports en vivo es un canal de televisión por suscripción deportivo exclusivo de DirecTV.",
+			"category":"Deportes",
+			"available": true
+		},
+		{
+			"id":13,
+			"type": "hls",
+			"src": "https://fdsfdsfds.azureedge.net/live/t1/chunks.m3u8",
+			"src1": "https://tumarcador.xyz/ac1.php",
+			"name": "BEIN Sports",
+			"logo": "./assets/img/bein_sports.png",
+			"description":"No hay descripción",
+			"category":"Deportes",
+			"available": true
+		}, 
+		{
+			"id":14,
+			"type": "hls",
+			"src": "http://latino-webtv.com:2082/livexd3/70_.m3u8",
+			"name": "Win Sports",
+			"logo": "./assets/img/winsports.png",
+			"description":"Win Sports, canal de suscripción deportivo colombiano.",
+			"category":"Deportes",
+			"available": true
+		},
+		{
+			"id":15,
+			"type": "iframe",
+			"src": "https://telerium.tv/embed/25279.html",
+			"name": "NBA Allstar",
+			"logo": "https://vignette.wikia.nocookie.net/logopedia/images/7/7a/2018_NBA_All-Star_Game_logo.png/revision/latest?cb=20170906012228",
+			"description":"No hay descripción",
+			"category":"Deportes",
+			"available": true
+		},
+		{
+			"id":16,
+			"type": "hls",
+			"src": "http://1dfs.azureedge.net/hls/live.m3u8",
+			"name": "NBC Live",
+			"logo": "https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/0011/2473/brand.gif?itok=fhvLTnUc",
+			"description":"No hay descripción",
+			"category":"Deportes",
+			"available": true
+		},
+		{
+			"id":17,
+			"type": "hls",
+			"src": "http://2sdfg.azureedge.net/live.m3u8",
+			"name": "Premier League",
+			"logo": "https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/0022/4126/brand.gif?itok=WII6ZdEh",
+			"description": "No hay descripción",
+			"category": "Deportes",
+			"available": true
+		},
+		{
+			"id":18,
+			"type": "hls",
+			"src": "http://3sdfg.azureedge.net/live.m3u8",
+			"name": "TLN",
+			"logo": "https://media.licdn.com/dms/image/C4D0BAQEK3I683cp2Hg/company-logo_200_200/0?e=2159024400&v=beta&t=F_DIk8qTsVNhXFwHILS2OmcNFpsW4yPxJaLhPzhUfIA",
+			"description": "No hay descripción",
+			"category": "Deportes",
+			"available": true
+		}
+	]
+},
+{
+	"Cine": [
+		{
+			"id":1,
+			"type": "iframe",
+			"src": "http://player.latino-webtv.com/channels/cinemax.html",
+			"name": "Cinemax",
+			"logo": "./assets/img/cinemax.png",
+			"description":"No hay descripción",
+			"category":"Cine",
+			"available": true
+		},
+		{
+			"id":2,
+			"type": "iframe",
+			"src": "http://televisionlibre.net/canal/fox-en-vivo/embed.html",
+			"name": "FOX",
+			"logo": "./assets/img/fox.png",
+			"description":"No hay descripción",
+			"category":"Cine",
+			"available": true
+		},
+		{
+			"id":3,
+			"type": "iframe",
+			"src": "http://player.latino-webtv.com/channels/space.html",
+			"name": "Space",
+			"logo": "./assets/img/space.png",
+			"description":"No hay descripción",
+			"category":"Cine",
+			"available": true
+		},
+		{
+			"id":4,
+			"type": "iframe",
+			"src": "http://player.latino-webtv.com/channels/cinecanal.html",
+			"name": "Cinecanal",
+			"logo": "./assets/img/cinecanal.png",
+			"description":"No hay descripción",
+			"category":"Cine",
+			"available": true
+		},
+		{
+			"id":5,
+			"type": "iframe",
+			"src": "http://www.liketvw.com/embed/tnt",
+			"name": "TNT",
+			"logo": "./assets/img/tnt.png",
+			"description":"No hay descripción",
+			"category":"Cine",
+			"available": true
+		},
+		{
+			"id":6,
+			"type": "iframe",
+			"src": "http://televisionlibre.net/canal/fox-en-vivo/embed.html",
+			"name": "FOX Movies",
+			"logo": "./assets/img/fox_movies.png",
+			"description":"No hay descripción",
+			"category":"Cine",
+			"available": true
+		},
+		{
+			"id":7,
+			"type": "iframe",
+			"src": "http://www.fulltvhd.fi/peliculas/hbo.php",
+			"name": "HBO",
+			"logo": "./assets/img/hbo.png",
+			"description":"No hay descripción",
+			"category":"Cine",
+			"available": true
+		},
+		{
+			"id":8,
+			"type": "iframe",
+			"src": "http://www.sintelevisor.com/tv/universal.html",
+			"name": "Universal",
+			"logo": "./assets/img/universal.png",
+			"description":"No hay descripción",
+			"category":"Cine",
+			"available": true
+		},
+		{
+			"id":9,
+			"type": "hls",
+			"src": "http://streaming.wirenetserver.com.ar:1935/canal4/live_1/livestream.m3u8 ",
+			"name": "HBO Family",
+			"logo": "./assets/img/hbo.png",
+			"description":"No hay descripción",
+			"category":"Cine",
+			"available": true
+		},  {
+			"id":10,
+			"type": "iframe",
+			"src": "http://player.latino-webtv.com/channels/warner.html",
+			"name": "Warner",
+			"logo": "./assets/img/warner.png",
+			"description":"No hay descripción",
+			"category":"Cine",
+			"available": true
+		}
+	]},{
+		"Música":[
+			{
+				"id":1,
+				"type": "hls",
+				"src": "http://kissfm-cires21-video.secure.footprint.net/hittv/bitrate_3.m3u8",
+				"name": "Hit TV",
+				"logo": "./assets/img/hit_tv.png",
+				"description":"No hay descripción",
+				"category":"Música",
+				"available": true
+			},       
+			{
+				"id":2,
+				"type": "hls",
+				"src": "http://fms.105.net:1935/live/virgin2%20/chunklist_w1063887220.m3u8",
+				"name": "Virgin Radio",
+				"logo": "./assets/img/virgin.png",
+				"description":"No hay descripción",
+				"category":"Música",
+				"available": true
+			},       
+			{
+				"id":3,
+				"type": "hls",
+				"src": "http://online.radiodifusion.net:1935/livetv/latinoSD.stream/chunklist_w430979689.m3u8",
+				"name": "Top Latino Radio",
+				"logo": "./assets/img/top_latino.png",
+				"description":"No hay descripción",
+				"category":"Música",
+				"available": true
+			},       
+			{
+				"id":4,
+				"type": "hls",
+				"src": "http://stmv4.questreaming.com/questreaming/questreaming/playlist.m3u8",
+				"name": "Soy Rock",
+				"logo": "./assets/img/soy_rock.png",
+				"description":"No hay descripción",
+				"category":"Música",
+				"available": true
+			},
+			{
+				"id":5,
+				"type": "hls",
+				"src": "http://wowza.telpin.com.ar:1935/live-powerTV/power.stream/chunklist_w1680853093.m3u8",
+				"name": "Power HD",
+				"logo": "./assets/img/powerhd.png",
+				"description":"No hay descripción",
+				"category":"Música",
+				"available": true
+			},
+			{
+				"id":6,
+				"type": "hls",
+				"src": "http://edge.music-choice-play-chaina1.top.comcast.net/PlayMetadataInserter/play/chunklist.m3u8",
+				"name": "Music Choice",
+				"logo": "./assets/img/music_choice.png",
+				"description":"No hay descripción",
+				"category":"Música",
+				"available": true
+			},
+			{
+				"id":7,
+				"type": "hls",
+				"src": "http://tv.portalfoxmix.club:1935/portalfoxmix/portalfoxmix/chunklist_w1495139298.m3u8",
+				"name": "Fox Mix",
+				"logo": "./assets/img/no_image.png",
+				"description":"No hay descripción",
+				"category":"Música",
+				"available": true
+			},
+			{
+				"id":8,
+				"type": "hls",
+				"src": "http://ooyalahd2-f.akamaihd.net/i/globalradio02_delivery@156522/index_1500_av-p.m3u8?sd=10&rebase=on",
+				"name": "Heart TV",
+				"logo": "./assets/img/heart_tv.png",
+				"description":"No hay descripción",
+				"category":"Música",
+				"available": true
+			},
+			{
+				"id":9,
+				"type": "hls",
+				"src": "https://vcnindiewave.teleosmedia.com/stream/indiewave/indiewave/seglist_720p.m3u8",
+				"name": "Indie Wave",
+				"logo": "./assets/img/indie_wave.png",
+				"description":"No hay descripción",
+				"category":"Música",
+				"available": true
+			},
+			{
+				"id":10,
+				"type": "hls",
+				"src": "https://5b464b69d264e.streamlock.net/live/smil:MelodyChannel.smil/chunklist_w685725914_b1048000_slES.m3u8",
+				"name": "Melody Channel TV",
+				"logo": "./assets/img/melody_channel.png",
+				"description":"No hay descripción",
+				"category":"Música",
+				"available": true
+			},
+			{
+				"id":11,
+				"type": "hls",
+				"src": "http://68.235.35.243:1935/lamegamundial/lamegamundial2/chunklist_w1203533629.m3u8",
+				"name": "La Mega Mundial",
+				"logo": "./assets/img/lamega.png",
+				"description":"No hay descripción",
+				"category":"Música",
+				"available": true
+			}
+		]},{
+			"Infantil": [
+				{
+					"id":1,
+					"type": "hls",
+					"src": "http://n-3-21.dcs.redcdn.pl/hls/o2/redefine/nlive/CN_HD_1/11395/0/tv-ss/live.isml/playlist.m3u8?stream=0&bandwidth=1",
+					"name": "Cartoon Network",
+					"logo": "./assets/img/cartoon_network.png",
+					"description":"No hay descripción",
+					"category":"Infantil",
+					"available": true
+				},{
+					"id":2,
+					"type": "hls",
+					"src": "https://contar-live.secure.footprint.net/hls-live/ionmicroremux-Pakapaka/_definst_/live/stream2.m3u8",
+					"name": "PAKAPAKA",
+					"logo": "./assets/img/pakapaka.png",
+					"description":"No hay descripción",
+					"category":"Infantil",
+					"available": true
+				},  
+				{
+					"id":3,
+					"type": "iframe",
+					"src": "http://player.latino-webtv.com/channels/disneyxd.html",
+					"name": "Disney XD",
+					"logo": "./assets/img/disneyxd.png",
+					"description":"No hay descripción",
+					"category":"Infantil",
+					"available": true
+				},
+				{
+					"id":4,
+					"type": "hls",
+					"src": "http://n-3-1.dcs.redcdn.pl/hls/o2/redefine/nlive/disney_channel_hd_1/10903/0/tv-ss/live.isml/playlist.m3u8?stream=0&bandwidth=1",
+					"name": "Disney Channel",
+					"logo": "./assets/img/disney_channel.png",
+					"description":"No hay descripción",
+					"category":"Infantil",
+					"available": true
+				}
+			]},{
+				"Entretenimiento":[
+					{
+						"id":5,
+						"type": "iframe",
+						"src": "http://televisionlibre.net/canal/animal-planet-en-vivo/embed.html",
+						"name": "Animal Planet",
+						"logo": "./assets/img/animal_planet.png",
+						"description":"No hay descripción",
+						"category":"Entretenimiento" ,
+						"available": true
+					},
+					{
+						"id":6,
+						"type": "iframe",
+						"src": "http://player.latino-webtv.com/channels/discovery.html",
+						"name": "Discovery Channel",
+						"logo": "./assets/img/discovery.png",
+						"description":"No hay descripción",
+						"category":"Entretenimiento",
+						"available": true
+					},
+					{
+						"id":7,
+						"type": "iframe",
+						"src": "http://player.latino-webtv.com/channels/history.html",
+						"name": "History Channel",
+						"logo": "./assets/img/history.png",
+						"description":"No hay descripción",
+						"category":"Entretenimiento",
+						"available": true
+					}
+				]
+			}
+		]
 }
