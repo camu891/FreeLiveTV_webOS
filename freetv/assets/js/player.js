@@ -5,12 +5,11 @@
     window.close();
   }
   
-  var queryString = decodeURIComponent(window.location.search); //parsing
+  /*var queryString = decodeURIComponent(window.location.search); //parsing
   queryString = queryString.substring(1);
-  console.log(queryString);
+  console.log(queryString);*/
   
-  function load(){
-    var program = JSON.parse(queryString);
+  function initPlayer(program){
     getdate();
     addChannelInfo(program);
     initGoBack();
@@ -23,9 +22,18 @@
   
   function initGoBack(){
     $(".back").on("click",function(e) {
-      e.preventDefault();
-      window.history.back();
+      $("#main-content").show()
+      $("#main-player").hide()
+      destroyPlayer();
+     /* e.preventDefault();
+      window.history.back();*/
     }); 
+  }
+
+  function destroyPlayer() {
+    $(".channel-info").empty()
+    $("#container_player").empty()
+    hideLoader()
   }
   
   function addSourceToVideo(element, program, type) {
