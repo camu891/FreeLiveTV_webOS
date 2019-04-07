@@ -262,7 +262,6 @@ function addLastViewCard(allPrograms) {
 		destroyPlayer()
 		onSelectProgram(program, getIndexByObject(program))
 		updateLastView(program.id)
-		//updateNavigationControl(getIndexByObject(program))
 	}
 	
 	function mouseOut(elem) {
@@ -281,18 +280,18 @@ function addLastViewCard(allPrograms) {
 		}
 	}
 	
-	function addSourceToVideo(element, src, type) {
+	function addSourceToVideoPrev(element, src, type) {
 		var source = document.createElement('source');
 		source.src = src;
 		source.type = type;
 		element.appendChild(source);
+		console.log(src)
 	}
 	
 	function createIframePreview(container,src){
 		var iframe = document.createElement('iframe');
 		iframe.src = src;
 		iframe.setAttribute('class','ytplayer');
-		iframe.setAttribute('class','on-hover');
 		iframe.setAttribute('frameborder', '0');
 		iframe.setAttribute('allow' ,'autoplay; encrypted-media');
 		iframe.setAttribute('allowFullScreen', '');
@@ -303,11 +302,11 @@ function addLastViewCard(allPrograms) {
 	
 	function createNativeVideoPreview(container,src){
 		var video = document.createElement('video');
-		video.class = 'on-hover'
 		video.poster = "./assets/loading/loader-xs.gif";
 		video.autoplay = true;
+		video.setAttribute('class','hls');
 		container.append(video);
-		addSourceToVideo(video, src, 'application/x-mpegURL');
+		addSourceToVideoPrev(video, src, 'application/x-mpegURL');
 	}
 	
 	$(document).ready(function(){
