@@ -200,16 +200,6 @@ nav ul.ulpreview li {
 	box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.75);
 }
 
-/* hide preview for now*/
-ul.ulpreview {
-	display: none
-}
-
-.last-view {
-	margin-top: 35px
-}
-/* hide for now */
-
 nav ul li span.title {
 	vertical-align: middle;
 }
@@ -741,11 +731,11 @@ video.mp4 {
 }
 
 .preview .ytplayer {
-	position: relative;
+	position: relative !important;
 }
 
 .preview video {
-	width: 200px;
+	width: 200px !important; 
 }
 
 .switch {

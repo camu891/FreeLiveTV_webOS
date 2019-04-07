@@ -88,8 +88,8 @@ function ajax_load_programs(){
 			totalPragrams++;
 			$.each(items, function(key, programs) {
 				$.each(programs, function(i, program) {
-					allPrograms.push(program)
 					if(program.available){
+						allPrograms.push(program)
 						addProgramToCategory(key, program, i);
 					}
 				});
@@ -97,7 +97,7 @@ function ajax_load_programs(){
 		});
 		initNavTabs();
 		set_tabindex();
-		initLastView(allPrograms); //filter by category and id
+		initLastView();
 	}).fail(function() {
 		loader.hide();
 		error.show();
@@ -105,40 +105,41 @@ function ajax_load_programs(){
 	});
 }
 
-function initLastView(json){
+function initLastView(){
+	addLastViewCard(allPrograms);
 	//two last view
 	$(".card").click(function(){
-		var array = [];
-		var currentValues = JSON.parse(getSettings(settings.LAST_VIEW));
-		if(!getSettings(settings.LAST_VIEW)){
-			array[0] = $(this).attr("id");
-		}else{
-			if($(this).attr("id") !== currentValues[0] && $(this).attr("id") !== currentValues[1]){
-				array[0] = $(this).attr("id");
-				array[1] = currentValues[0];
-			}else{
-				array = currentValues;
-			}
-		}
-		var values = JSON.stringify(array);
-		saveSettings(settings.LAST_VIEW,values);
+		updateLastView($(this).attr("id"))
 	});
-	//call when back player is trigger
-	addLastView(json);
 }
 
-function addLastView(json) {
+function updateLastView(id){
+	var array = [];
+	var currentValues = JSON.parse(getSettings(settings.LAST_VIEW));
+	if(!getSettings(settings.LAST_VIEW)){
+		array[0] = id
+	}else{
+		if(id!== currentValues[0] && id !== currentValues[1]){
+			array[0] = id;
+			array[1] = currentValues[0];
+		}else{
+			array = currentValues;
+		}
+	}
+	var values = JSON.stringify(array);
+	saveSettings(settings.LAST_VIEW,values);
+	addLastViewCard(allPrograms);
+}
+
+function addLastViewCard(allPrograms) {
 	$(".last-view .lv-container").empty();
 	var lastViews = JSON.parse(getSettings(settings.LAST_VIEW));
 	var lastViewContainer = $(".last-view")
 	if(lastViews){
 		lastViewContainer.show();
-		$.each(json, function(i) {
-			var program=json[i];
-			console.log(program)
-			if(lastViews &&
-				(program.id == lastViews[0] || program.id == lastViews[1])){		
-					var data = get_program_data(program)
+		$.each(allPrograms, function(i, program) {
+			if(program.id == lastViews[0] || program.id == lastViews[1]){		
+					var data = get_program_data(program,i)
 					$(data).appendTo(".last-view .lv-container")
 				}
 			});
@@ -248,31 +249,36 @@ function addLastView(json) {
 			}
 			break;
 			case keyRemoteControl.CHANNEL.UP:
-			destroyPlayer()
-			onSelectProgram(navigationControl.next, getIndexByObject(navigationControl.next))
+			moveToNextPrevChannel(navigationControl.next)
 			break;
 			case keyRemoteControl.CHANNEL.DOWN:
-			destroyPlayer()
-			onSelectProgram(navigationControl.previous, getIndexByObject(navigationControl.previous))
+			moveToNextPrevChannel(navigationControl.previous)
 			break;
 			default:  break;
 		}
 	});
+
+	function moveToNextPrevChannel(program){
+		destroyPlayer()
+		onSelectProgram(program, getIndexByObject(program))
+		updateLastView(program.id)
+		//updateNavigationControl(getIndexByObject(program))
+	}
 	
 	function mouseOut(elem) {
-		//$(".preview").empty().hide();
+		$(".preview").empty().hide();
 	}
 	
 	function mouseOver(elem,typeVideo,src) {
-		/*if (getSettings(settings.PREVIEW) == "true") {
+		if (getSettings(settings.PREVIEW) == "true") {
 			var container = $(".preview");
 			container.show();
 			if(typeVideo==="hls"){
-				createNativeVideo(container,src);
+				createNativeVideoPreview(container,src);
 			}else if(typeVideo==="youtube" || typeVideo==="iframe"){
-				createIframe(container,src);
+				createIframePreview(container,src);
 			}
-		}*/
+		}
 	}
 	
 	function addSourceToVideo(element, src, type) {
@@ -282,10 +288,11 @@ function addLastView(json) {
 		element.appendChild(source);
 	}
 	
-	function createIframe(container,src){
+	function createIframePreview(container,src){
 		var iframe = document.createElement('iframe');
 		iframe.src = src;
 		iframe.setAttribute('class','ytplayer');
+		iframe.setAttribute('class','on-hover');
 		iframe.setAttribute('frameborder', '0');
 		iframe.setAttribute('allow' ,'autoplay; encrypted-media');
 		iframe.setAttribute('allowFullScreen', '');
@@ -294,8 +301,9 @@ function addLastView(json) {
 		container.append(iframe);
 	}
 	
-	function createNativeVideo(container,src){
+	function createNativeVideoPreview(container,src){
 		var video = document.createElement('video');
+		video.class = 'on-hover'
 		video.poster = "./assets/loading/loader-xs.gif";
 		video.autoplay = true;
 		container.append(video);
@@ -319,33 +327,27 @@ function addLastView(json) {
 	});
 	
 	function onSelectProgram(program, index) {
-		//show main-player
 		if (history.pushState) {
 			var newurl = window.location.protocol + "//" + window.location.host 
 			+ window.location.pathname + "?" + JSON.stringify(program);
 			window.history.pushState({path:newurl},'',newurl);
 		}
-		var queryString = decodeURIComponent(window.location.search); //parsing
+		var queryString = decodeURIComponent(window.location.search);
 		queryString = queryString.substring(1);
-		console.log(queryString);
-		var program = JSON.parse(queryString);
 		showPlayer(true)
-		initPlayer(program)
-		
-		getElementInArray(index)
+		initPlayer(JSON.parse(queryString))
+		updateNavigationControl(index)
 	}
 	
-	function getElementInArray(index){
+	function updateNavigationControl(index){
 		var previous=allPrograms[index==0?allPrograms.length-1:index-1];
 		var current=allPrograms[index];
 		var next=allPrograms[index==allPrograms.length-1?0:index+1];
-		
 		navigationControl = {
 			previous: previous,
 			current: current,
 			next: next
 		}
-		console.log("navigationControl", navigationControl)
 	}
 	
 	function showPlayer(playerVisible) {
