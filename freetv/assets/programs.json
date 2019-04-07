@@ -30,7 +30,7 @@
                 "logo":"./assets/img/telefe.png",
                 "description":"Telefe es el canal de TV líder en la producción y comercialización de contenidos y servicios audiovisuales de Argentina.",
                 "category":"Noticias",
-                "available":true
+                "available":false
              },
              {
                 "id":"news-teleocho",
@@ -40,7 +40,7 @@
                 "logo":"./assets/img/teleocho.png",
                 "description":"No hay descripción",
                 "category":"Noticias",
-                "available":true
+                "available":false
              },
              {
                 "id":"news-tv-publica",
@@ -549,7 +549,7 @@
        {
           "Infantil":[
              {
-                "id":"kids-cartonN",
+                "id":"kids-cartoon-network",
                 "type":"hls",
                 "src":"http://n-3-21.dcs.redcdn.pl/hls/o2/redefine/nlive/CN_HD_1/11395/0/tv-ss/live.isml/playlist.m3u8?stream=0&bandwidth=1",
                 "name":"Cartoon Network",
