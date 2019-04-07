@@ -3,7 +3,7 @@
        {
           "Noticias":[
              {
-                "id":1,
+                "id":"news-doce",
                 "type":"hls",
                 "src":"https://g1.proy-slo.transport.edge-access.net/b12/ngrp:el12_live01-100083_all/el12_live01-100083_720p.m3u8",
                 "name":"El doce",
@@ -13,7 +13,7 @@
                 "available":true
              },
              {
-                "id":2,
+                "id":"news-trece",
                 "type":"youtube",
                 "src":"https://www.youtube.com/embed/9h6Vz6ylIdE?rel=0&autoplay=1&showinfo=0&controls=0",
                 "name":"El Trece TV",
@@ -23,9 +23,9 @@
                 "available":false
              },
              {
-                "id":3,
-                "type":"iframe",
-                "src":"http://televisionlibre.net/canal/telefe-en-vivo/embed2.html",
+                "id":"news-telefe",
+                "type":"hls",
+                "src":"https://evento6hls-lh.akamaihd.net/i/evento6hls_1@48399/index_2_av-p.m3u8",
                 "name":"Telefe",
                 "logo":"./assets/img/telefe.png",
                 "description":"Telefe es el canal de TV líder en la producción y comercialización de contenidos y servicios audiovisuales de Argentina.",
@@ -33,7 +33,7 @@
                 "available":true
              },
              {
-                "id":4,
+                "id":"news-teleocho",
                 "type":"hls",
                 "src":"https://tlfcapitalhls-lh.akamaihd.net/i/canal8cordoba_1@685726/index_1_av-p.m3u8",
                 "name":"Teleocho",
@@ -43,7 +43,7 @@
                 "available":true
              },
              {
-                "id":5,
+                "id":"news-tv-publica",
                 "type":"hls",
                 "src":"https://chunks01.tvpublica.com.ar/video/BJQRNMF6b_1080/index.m3u8",
                 "src2":"https://g3.mc-slo.transport.edge-access.net/b17/ngrp:c7cam2-20034_all/c7cam2-20034_1080p.m3u8",
@@ -54,7 +54,7 @@
                 "available":true
              },
              {
-                "id":6,
+                "id":"news-canal-10",
                 "type":"hls",
                 "src":"https://wowzaprod169-i.akamaihd.net/hls/live/630337/59e4c1ec/59e4c1ec_1_1500000/chunklist.m3u8",
                 "name":"Canal 10",
@@ -64,7 +64,7 @@
                 "available":true
              },
              {
-                "id":7,
+                "id":"news-nueve",
                 "type":"hls",
                 "src":"http://dwgoed11hdvfh.cloudfront.net/c9/smil:live.smil/chunklist_b1328000.m3u8",
                 "name":"El nueve",
@@ -74,7 +74,7 @@
                 "available":true
              },
              {
-                "id":8,
+                "id":"news-tn",
                 "type":"youtube",
                 "src":"https://www.youtube.com/embed/-1xif50QMr4?rel=0&autoplay=1&showinfo=0&controls=0",
                 "name":"TN Noticias",
@@ -84,7 +84,7 @@
                 "available":true
              },
              {
-                "id":9,
+                "id":"news-cronica",
                 "type":"youtube",
                 "src":"https://www.youtube.com/embed/MNODeTv9VbE?rel=0&autoplay=1&showinfo=0&controls=0",
                 "name":"Cronica TV",
@@ -94,7 +94,7 @@
                 "available":true
              },
              {
-                "id":10,
+                "id":"news-canal-26",
                 "type":"hls",
                 "src":"http://live-edge01.telecentro.net.ar/live/smil:c26.smil/chunklist_w1015357033_b1264000_sleng.m3u8",
                 "name":"Canal 26",
@@ -104,7 +104,7 @@
                 "available":true
              },
              {
-                "id":11,
+                "id":"news-c5n",
                 "type":"youtube",
                 "src":"https://www.youtube.com/embed/vMF1HIHKzfg?rel=0&autoplay=1&showinfo=0&controls=0",
                 "name":"C5N",
@@ -114,7 +114,7 @@
                 "available":true
              },
              {
-                "id":12,
+                "id":"news-13-max",
                 "type":"hls",
                 "src":"http://coninfo.net:1935/13maxhd/live_720p/chunklist_w1693758974.m3u8",
                 "name":"13 Max Noticias",
@@ -124,7 +124,7 @@
                 "available":true
              },
              {
-                "id":13,
+                "id":"news-ln",
                 "type":"youtube",
                 "src":"https://www.youtube.com/embed/Ti7BL_xlSJ4?rel=0&autoplay=1&showinfo=0&controls=0",
                 "name":"LN+",
@@ -138,7 +138,7 @@
        {
           "Deportes":[
              {
-                "id":1,
+                "id":"sports-tyc",
                 "type":"hls",
                 "src":"https://livestreamapis.com/v3/accounts/27014129/events/8167338/master.m3u8?token=ee768f19dbf2e77540f2f8cd021c42ce&clientId=2576&timestamp=1554577320104",
                 "src1":"http://sv1.futbollibre.net/m3u8/tyc.m3u8?lnmma",
@@ -149,7 +149,7 @@
                 "available":true
              },
              {
-                "id":2,
+                "id":"sports-espn",
                 "type":"iframe",
                 "src":"http://www.liketvw.com/embed/espn",
                 "src1":"http://futbollibre.online/espn-1/embed2.html?autoplay=1",
@@ -160,7 +160,7 @@
                 "available":true
              },
              {
-                "id":3,
+                "id":"sports-espn-2",
                 "type":"hls",
                 "src":"https://sv8.apgstream.xyz/hls/espn2.m3u8",
                 "src1":"http://futbollibre.online/espn-2/embed.html",
@@ -171,7 +171,7 @@
                 "available":true
              },
              {
-                "id":4,
+                "id":"sports-espn-3",
                 "type":"iframe",
                 "src":"http://futbollibre.online/espn-3/embed2.html",
                 "src1":"https://tumarcador.xyz/ac3.php",
@@ -182,7 +182,7 @@
                 "available":true
              },
              {
-                "id":5,
+                "id":"sports-fox-premium",
                 "type":"hls",
                 "src":"http://sv1.futbollibre.net/superliga.m3u8?",
                 "src2":"http://futbollibre.online/fox-sports-premium/embed66.html",
@@ -193,7 +193,7 @@
                 "available":true
              },
              {
-                "id":6,
+                "id":"sports-fox-sports",
                 "type":"iframe",
                 "src":"http://futbollibre.online/fox-sports-1/embed.html",
                 "src1":"https://ok.ru/videoembed/1146590928536",
@@ -204,7 +204,7 @@
                 "available":true
              },
              {
-                "id":7,
+                "id":"sports-fox-sports-2",
                 "type":"iframe",
                 "src":"http://www.liketvw.com/embed/foxsports2",
                 "name":"Fox Sports 2",
@@ -214,7 +214,7 @@
                 "available":true
              },
              {
-                "id":8,
+                "id":"sports-fox-sports-3",
                 "type":"iframe",
                 "src":"http://futbollibre.online/fox-sports-3/embed3.html",
                 "name":"Fox Sports 3",
@@ -224,7 +224,7 @@
                 "available":true
              },
              {
-                "id":9,
+                "id":"sports-saf",
                 "type":"hls",
                 "src":"http://sv1.futbollibre.net/superliga2.m3u8",
                 "name":"SAF",
@@ -234,7 +234,7 @@
                 "available":true
              },
              {
-                "id":10,
+                "id":"sports-deportv",
                 "type":"hls",
                 "src":"https://contar-live.secure.footprint.net/hls-live/ionmicroremux-Deportv/_definst_/live.m3u8",
                 "name":"Deportv",
@@ -244,7 +244,7 @@
                 "available":true
              },
              {
-                "id":11,
+                "id":"sports-tnt-sport",
                 "type":"iframe",
                 "src":"http://futbollibre.online/tnt-sports/embed.html",
                 "name":"TNT SPORT",
@@ -254,7 +254,7 @@
                 "available":true
              },
              {
-                "id":12,
+                "id":"sports-directv-sport",
                 "type":"iframe",
                 "src":"http://www.liketvw.com/embed/directv",
                 "src1":"https://bs.boomstream.com/lv/pmfTccNN-high/chunklist.m3u8?token=1jDDaqaK0ugBvScHQ6uK",
@@ -266,7 +266,7 @@
                 "available":true
              },
              {
-                "id":13,
+                "id":"sports-bein",
                 "type":"hls",
                 "src":"https://fdsfdsfds.azureedge.net/live/t1/chunks.m3u8",
                 "src1":"https://tumarcador.xyz/ac1.php",
@@ -277,7 +277,7 @@
                 "available":true
              },
              {
-                "id":14,
+                "id":"sports-win",
                 "type":"hls",
                 "src":"http://latino-webtv.com:2082/livexd3/70_.m3u8",
                 "name":"Win Sports",
@@ -287,7 +287,7 @@
                 "available":true
              },
              {
-                "id":15,
+                "id":"sports-nba",
                 "type":"iframe",
                 "src":"https://telerium.tv/embed/25279.html",
                 "name":"NBA Allstar",
@@ -297,7 +297,7 @@
                 "available":true
              },
              {
-                "id":16,
+                "id":"sports-nbc",
                 "type":"hls",
                 "src":"http://1dfs.azureedge.net/hls/live.m3u8",
                 "name":"NBC Live",
@@ -307,7 +307,7 @@
                 "available":true
              },
              {
-                "id":17,
+                "id":"sports-premier-league",
                 "type":"hls",
                 "src":"http://2sdfg.azureedge.net/live.m3u8",
                 "name":"Premier League",
@@ -317,7 +317,7 @@
                 "available":true
              },
              {
-                "id":18,
+                "id":"sports-tln",
                 "type":"hls",
                 "src":"http://3sdfg.azureedge.net/live.m3u8",
                 "name":"TLN",
@@ -331,7 +331,7 @@
        {
           "Cine":[
              {
-                "id":1,
+                "id":"cine-cinemx",
                 "type":"iframe",
                 "src":"http://player.latino-webtv.com/channels/cinemax.html",
                 "name":"Cinemax",
@@ -341,7 +341,7 @@
                 "available":true
              },
              {
-                "id":2,
+                "id":"cine-fox",
                 "type":"iframe",
                 "src":"http://televisionlibre.net/canal/fox-en-vivo/embed.html",
                 "name":"FOX",
@@ -351,7 +351,7 @@
                 "available":true
              },
              {
-                "id":3,
+                "id":"cine-space",
                 "type":"iframe",
                 "src":"http://player.latino-webtv.com/channels/space.html",
                 "name":"Space",
@@ -361,7 +361,7 @@
                 "available":true
              },
              {
-                "id":4,
+                "id":"cine-cinecanal",
                 "type":"iframe",
                 "src":"http://player.latino-webtv.com/channels/cinecanal.html",
                 "name":"Cinecanal",
@@ -371,7 +371,7 @@
                 "available":true
              },
              {
-                "id":5,
+                "id":"cine-tnt",
                 "type":"iframe",
                 "src":"http://www.liketvw.com/embed/tnt",
                 "name":"TNT",
@@ -381,7 +381,7 @@
                 "available":true
              },
              {
-                "id":6,
+                "id":"cine-fox-movies",
                 "type":"iframe",
                 "src":"http://televisionlibre.net/canal/fox-en-vivo/embed.html",
                 "name":"FOX Movies",
@@ -391,7 +391,7 @@
                 "available":true
              },
              {
-                "id":7,
+                "id":"cine-hbo",
                 "type":"iframe",
                 "src":"http://www.fulltvhd.fi/peliculas/hbo.php",
                 "name":"HBO",
@@ -401,7 +401,7 @@
                 "available":true
              },
              {
-                "id":8,
+                "id":"cine-universal",
                 "type":"iframe",
                 "src":"http://www.sintelevisor.com/tv/universal.html",
                 "name":"Universal",
@@ -411,7 +411,7 @@
                 "available":true
              },
              {
-                "id":9,
+                "id":"cine-hbo-family",
                 "type":"hls",
                 "src":"http://streaming.wirenetserver.com.ar:1935/canal4/live_1/livestream.m3u8 ",
                 "name":"HBO Family",
@@ -421,7 +421,7 @@
                 "available":true
              },
              {
-                "id":10,
+                "id":"cine-warner",
                 "type":"iframe",
                 "src":"http://player.latino-webtv.com/channels/warner.html",
                 "name":"Warner",
@@ -435,7 +435,7 @@
        {
           "Música":[
              {
-                "id":1,
+                "id":"music-hittv",
                 "type":"hls",
                 "src":"http://kissfm-cires21-video.secure.footprint.net/hittv/bitrate_3.m3u8",
                 "name":"Hit TV",
@@ -445,7 +445,7 @@
                 "available":true
              },
              {
-                "id":2,
+                "id":"music-virgin",
                 "type":"hls",
                 "src":"http://fms.105.net:1935/live/virgin2%20/chunklist_w1063887220.m3u8",
                 "name":"Virgin Radio",
@@ -455,7 +455,7 @@
                 "available":true
              },
              {
-                "id":3,
+                "id":"music-top-latin",
                 "type":"hls",
                 "src":"http://online.radiodifusion.net:1935/livetv/latinoSD.stream/chunklist_w430979689.m3u8",
                 "name":"Top Latino Radio",
@@ -465,7 +465,7 @@
                 "available":true
              },
              {
-                "id":4,
+                "id":"music-soyrock",
                 "type":"hls",
                 "src":"http://stmv4.questreaming.com/questreaming/questreaming/playlist.m3u8",
                 "name":"Soy Rock",
@@ -475,7 +475,7 @@
                 "available":true
              },
              {
-                "id":5,
+                "id":"music-powerhd",
                 "type":"hls",
                 "src":"http://wowza.telpin.com.ar:1935/live-powerTV/power.stream/chunklist_w1680853093.m3u8",
                 "name":"Power HD",
@@ -485,7 +485,7 @@
                 "available":true
              },
              {
-                "id":6,
+                "id":"music-music-choice",
                 "type":"hls",
                 "src":"http://edge.music-choice-play-chaina1.top.comcast.net/PlayMetadataInserter/play/chunklist.m3u8",
                 "name":"Music Choice",
@@ -495,7 +495,7 @@
                 "available":true
              },
              {
-                "id":7,
+                "id":"music-fox-mix",
                 "type":"hls",
                 "src":"http://tv.portalfoxmix.club:1935/portalfoxmix/portalfoxmix/chunklist_w1495139298.m3u8",
                 "name":"Fox Mix",
@@ -505,7 +505,7 @@
                 "available":true
              },
              {
-                "id":8,
+                "id":"music-heart",
                 "type":"hls",
                 "src":"http://ooyalahd2-f.akamaihd.net/i/globalradio02_delivery@156522/index_1500_av-p.m3u8?sd=10&rebase=on",
                 "name":"Heart TV",
@@ -515,7 +515,7 @@
                 "available":true
              },
              {
-                "id":9,
+                "id":"music-indiewave",
                 "type":"hls",
                 "src":"https://vcnindiewave.teleosmedia.com/stream/indiewave/indiewave/seglist_720p.m3u8",
                 "name":"Indie Wave",
@@ -525,7 +525,7 @@
                 "available":true
              },
              {
-                "id":10,
+                "id":"music-melody",
                 "type":"hls",
                 "src":"https://5b464b69d264e.streamlock.net/live/smil:MelodyChannel.smil/chunklist_w685725914_b1048000_slES.m3u8",
                 "name":"Melody Channel TV",
@@ -535,7 +535,7 @@
                 "available":true
              },
              {
-                "id":11,
+                "id":"music-mega-mundial",
                 "type":"hls",
                 "src":"http://68.235.35.243:1935/lamegamundial/lamegamundial2/chunklist_w1203533629.m3u8",
                 "name":"La Mega Mundial",
@@ -549,7 +549,7 @@
        {
           "Infantil":[
              {
-                "id":1,
+                "id":"kids-cartonN",
                 "type":"hls",
                 "src":"http://n-3-21.dcs.redcdn.pl/hls/o2/redefine/nlive/CN_HD_1/11395/0/tv-ss/live.isml/playlist.m3u8?stream=0&bandwidth=1",
                 "name":"Cartoon Network",
@@ -559,7 +559,7 @@
                 "available":true
              },
              {
-                "id":2,
+                "id":"kids-pakapaka",
                 "type":"hls",
                 "src":"https://contar-live.secure.footprint.net/hls-live/ionmicroremux-Pakapaka/_definst_/live/stream2.m3u8",
                 "name":"PAKAPAKA",
@@ -569,7 +569,7 @@
                 "available":true
              },
              {
-                "id":3,
+                "id":"kids-disneyxd",
                 "type":"iframe",
                 "src":"http://player.latino-webtv.com/channels/disneyxd.html",
                 "name":"Disney XD",
@@ -579,7 +579,7 @@
                 "available":true
              },
              {
-                "id":4,
+                "id":"kids-disney-channel",
                 "type":"hls",
                 "src":"http://n-3-1.dcs.redcdn.pl/hls/o2/redefine/nlive/disney_channel_hd_1/10903/0/tv-ss/live.isml/playlist.m3u8?stream=0&bandwidth=1",
                 "name":"Disney Channel",
@@ -593,7 +593,7 @@
        {
           "Entretenimiento":[
              {
-                "id":5,
+                "id":"entretenimiento-animal-planet",
                 "type":"iframe",
                 "src":"http://televisionlibre.net/canal/animal-planet-en-vivo/embed.html",
                 "name":"Animal Planet",
@@ -603,7 +603,7 @@
                 "available":true
              },
              {
-                "id":6,
+                "id":"entretenimiento-discovery",
                 "type":"iframe",
                 "src":"http://player.latino-webtv.com/channels/discovery.html",
                 "name":"Discovery Channel",
@@ -613,7 +613,7 @@
                 "available":true
              },
              {
-                "id":7,
+                "id":"entretenimiento-history-channel",
                 "type":"iframe",
                 "src":"http://player.latino-webtv.com/channels/history.html",
                 "name":"History Channel",

@@ -5,10 +5,6 @@
     window.close();
   }
   
-  /*var queryString = decodeURIComponent(window.location.search); //parsing
-  queryString = queryString.substring(1);
-  console.log(queryString);*/
-  
   function initPlayer(program){
     getdate();
     addChannelInfo(program);
