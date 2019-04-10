@@ -44,9 +44,9 @@
              },
              {
                 "id":"news-tv-publica",
-                "type":"hls",
-                "src":"https://chunks01.tvpublica.com.ar/video/BJQRNMF6b_1080/index.m3u8",
-                "src2":"https://g3.mc-slo.transport.edge-access.net/b17/ngrp:c7cam2-20034_all/c7cam2-20034_1080p.m3u8",
+                "type":"youtube",
+                "src": "https://www.youtube.com/embed/gDjglU2RukM?rel=0&autoplay=1&showinfo=0&controls=0",
+                "src1":"https://chunks01.tvpublica.com.ar/video/BJQRNMF6b_1080/index.m3u8",
                 "name":"TV Pública",
                 "logo":"./assets/img/tvpublica.png",
                 "description":"La Televisión Pública Argentina es la cadena de mayor cobertura televisiva en el territorio argentino a través de repetidoras ubicadas en el interior del país.",
@@ -86,7 +86,7 @@
              {
                 "id":"news-cronica",
                 "type":"youtube",
-                "src":"https://www.youtube.com/embed/MNODeTv9VbE?rel=0&autoplay=1&showinfo=0&controls=0",
+                "src":"https://www.youtube.com/embed/iPej7UJDEoc?rel=0&autoplay=1&showinfo=0&controls=0",
                 "name":"Cronica TV",
                 "logo":"./assets/img/cronica.png",
                 "description":"No hay descripción",
@@ -106,7 +106,7 @@
              {
                 "id":"news-c5n",
                 "type":"youtube",
-                "src":"https://www.youtube.com/embed/vMF1HIHKzfg?rel=0&autoplay=1&showinfo=0&controls=0",
+                "src":"https://www.youtube.com/embed/dgSQZu0tQ2A?rel=0&autoplay=1&showinfo=0&controls=0",
                 "name":"C5N",
                 "logo":"./assets/img/c5n.png",
                 "description":"No hay descripción",

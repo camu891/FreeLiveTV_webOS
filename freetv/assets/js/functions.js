@@ -262,6 +262,7 @@ function addLastViewCard(allPrograms) {
 		destroyPlayer()
 		onSelectProgram(program, getIndexByObject(program))
 		updateLastView(program.id)
+		showHeaderOnInit()
 	}
 	
 	function mouseOut(elem) {

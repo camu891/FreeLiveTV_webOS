@@ -156,6 +156,12 @@
     }); 
     setInterval(hideHeader, 10000);
   }
+
+  function showHeaderOnInit() {
+    var header = $('.channel-header');
+    header.fadeIn();
+    setInterval(hideHeader, 10000);
+  }
   
   //remove ads and logs in iframe
   function clearPlayer(){
