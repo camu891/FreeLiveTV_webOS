@@ -25,7 +25,7 @@
              {
                 "id":"news-telefe",
                 "type":"iframe",
-                "src":"//ok.ru/videoembed/1212789366378",
+                "src":"https://ok.ru/video/1212789366378",
                 "name":"Telefe",
                 "logo":"./assets/img/telefe.png",
                 "description":"Telefe es el canal de TV líder en la producción y comercialización de contenidos y servicios audiovisuales de Argentina.",
