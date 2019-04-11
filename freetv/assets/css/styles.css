@@ -307,6 +307,10 @@ nav ul.nav-tabs li a, nav ul.nav-tabs li a:visited, nav ul.nav-tabs li a:active 
 	background: #202020f9;
 }
 
+#main-player > .content-loader {
+	background: #101010f9;
+}
+
 .content-error-request {
 	background: transparent;
 	top: 45%;

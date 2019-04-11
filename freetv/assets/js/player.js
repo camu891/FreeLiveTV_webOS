@@ -20,7 +20,7 @@
     $(".back").on("click",function(e) {
       back();
     }); 
-
+    
     window.addEventListener("popstate", function(inEvent) {
       back();
     });
@@ -31,7 +31,7 @@
     $("#main-player").hide()
     destroyPlayer();
   }
-
+  
   function destroyPlayer() {
     $(".channel-info").empty()
     $("#container_player").empty()
@@ -78,7 +78,9 @@
       $(window).resize(function(){
         $('iframe').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
       });
-      setTimeout(function(){ hideLoader(); }, 2000);
+      $('#iframe').load(function(){
+        hideLoader()
+      });
     });
   }
   
@@ -156,7 +158,7 @@
     }); 
     setInterval(hideHeader, 10000);
   }
-
+  
   function showHeaderOnInit() {
     var header = $('.channel-header');
     header.fadeIn();

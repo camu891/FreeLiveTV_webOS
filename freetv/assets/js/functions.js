@@ -83,14 +83,15 @@ function ajax_load_programs(){
 	}).done(function(json) {
 		loader.hide();
 		$("ul.nav-tabs").empty();
-		
+		var index = 0;
 		$.each(json.programs, function(pos,items) {
 			totalPragrams++;
 			$.each(items, function(key, programs) {
 				$.each(programs, function(i, program) {
 					if(program.available){
 						allPrograms.push(program)
-						addProgramToCategory(key, program, i);
+						addProgramToCategory(key, program, index);
+						index++;
 					}
 				});
 			});
@@ -286,7 +287,6 @@ function addLastViewCard(allPrograms) {
 		source.src = src;
 		source.type = type;
 		element.appendChild(source);
-		console.log(src)
 	}
 	
 	function createIframePreview(container,src){
@@ -361,8 +361,7 @@ function addLastViewCard(allPrograms) {
 	}
 	
 	function getIndexByObject(program){
-		var data = allPrograms
-		var index = data.map(function(e){return e.id;
+		var index = allPrograms.map(function(e){return e.id;
 		}).indexOf(program.id);
 		return index;
 	}
