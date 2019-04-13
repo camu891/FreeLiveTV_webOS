@@ -140,7 +140,7 @@
              {
                 "id":"sports-tyc",
                 "type":"hls",
-                "src":"https://livestreamapis.com/v3/accounts/27014129/events/8167338/master.m3u8?token=ee768f19dbf2e77540f2f8cd021c42ce&clientId=2576&timestamp=1554577320104",
+                "src":"https://livestreamapis.com/v3/accounts/27014129/events/8167338/master.m3u8?token=abeca2bfca537593f55b9d1ca91dd0cb&clientId=2576&timestamp=1555189379424",
                 "src1":"http://sv1.futbollibre.net/m3u8/tyc.m3u8?lnmma",
                 "name":"Tyc Sports",
                 "logo":"./assets/img/tyc_sport.png",
