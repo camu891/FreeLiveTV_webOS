@@ -35,12 +35,12 @@
              {
                 "id":"news-teleocho",
                 "type":"hls",
-                "src":"https://tlfcapitalhls-lh.akamaihd.net/i/canal8cordoba_1@685726/index_1_av-p.m3u8",
+                "src":"https://tlfcapitalhls-lh.akamaihd.net/i/canal8cordoba_1@685726/index_1_av-p.m3u8?sd=10&rebase=on&hdntl=exp=1556884882~acl=%2fi%2fcanal8cordoba_1%40685726%2f*~data=hdntl~hmac=af79049ab5c8a6f607efb902b283d68af91cfad7c11dfc93cb0f9a3669048eb3",
                 "name":"Teleocho",
                 "logo":"./assets/img/teleocho.png",
                 "description":"No hay descripción",
                 "category":"Noticias",
-                "available":false
+                "available":true
              },
              {
                 "id":"news-tv-publica",
