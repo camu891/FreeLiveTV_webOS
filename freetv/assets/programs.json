@@ -333,7 +333,7 @@
              {
                 "id":"cine-cinemx",
                 "type":"iframe",
-                "src":"http://player.latino-webtv.com/channels/cinemax.html",
+                "src":"",
                 "name":"Cinemax",
                 "logo":"./assets/img/cinemax.png",
                 "description":"No hay descripción",
