@@ -627,7 +627,7 @@
        { "Series": [
          {
             "id":"chernobyl_01x01",
-            "type":"hls",
+            "type":"mp4",
             "src":"https://acexdhatsd.playercdn.net/85/3/FzoY0oowSW-km-MWdMFcMQ/1560124272/190609/629G3V98VRXJV7FP0I1YM.mp4",
             "name":"Chernobyl 01x01",
             "logo":"https://static.vix.com/es/sites/default/files/styles/thumbnail/public/s/serie-chernobyl-hbo-2.jpeg",
@@ -637,7 +637,7 @@
          },
          {
             "id":"chernobyl_02x01",
-            "type":"hls",
+            "type":"mp4",
             "src":"https://stream76.uqload.com/3rfkqveffjw2q4drdicphkxyde23aadhxb4x5dorh34jd3a7e5esmee7n5ca/v.mp4",
             "name":"Chernobyl 02x01",
             "logo":"https://static.vix.com/es/sites/default/files/styles/thumbnail/public/s/serie-chernobyl-hbo-2.jpeg",
@@ -647,7 +647,7 @@
          },
          {
             "id":"chernobyl_03x01",
-            "type":"hls",
+            "type":"mp4",
             "src":"https://4h05ixqnpc.playercdn.net/85/3/2DJl0hRRYGC4vE3kZJ7WOA/1560124626/190609/626G3V94Q7QTHHOA2WM0E.mp4",
             "name":"Chernobyl 03x01",
             "logo":"https://static.vix.com/es/sites/default/files/styles/thumbnail/public/s/serie-chernobyl-hbo-2.jpeg",
@@ -657,7 +657,7 @@
          },
          {
             "id":"chernobyl_04x01",
-            "type":"hls",
+            "type":"mp4",
             "src":"https://eqsnp61iwl.playercdn.net/85/0/psDPWBT4Wv_Ue76YtMaRaw/1560124670/190608/423G3TV2N0HLAH5DEPI8U.mp4",
             "name":"Chernobyl 04x01",
             "logo":"https://static.vix.com/es/sites/default/files/styles/thumbnail/public/s/serie-chernobyl-hbo-2.jpeg",
@@ -667,7 +667,7 @@
          },
          {
             "id":"chernobyl_05x01",
-            "type":"hls",
+            "type":"mp4",
             "src":"https://stream31.uqload.com/3rfkfb6hfjw2q4drdiaphingbf7lllj4g5g42352jwpfdpbihkin2dhhdota/v.mp4",
             "name":"Chernobyl 05x01",
             "logo":"https://static.vix.com/es/sites/default/files/styles/thumbnail/public/s/serie-chernobyl-hbo-2.jpeg",
@@ -677,7 +677,7 @@
          },
          {
             "id":"chernobyl_06x01",
-            "type":"hls",
+            "type":"mp4",
             "src":"",
             "name":"Chernobyl 06x01",
             "logo":"https://static.vix.com/es/sites/default/files/styles/thumbnail/public/s/serie-chernobyl-hbo-2.jpeg",
