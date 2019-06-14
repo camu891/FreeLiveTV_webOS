@@ -139,8 +139,8 @@
           "Deportes":[
              {
                 "id":"sports-tyc",
-                "type":"hls",
-                "src":"https://livestreamapis.com/v3/accounts/27014129/events/8167338/master.m3u8?token=abeca2bfca537593f55b9d1ca91dd0cb&clientId=2576&timestamp=1555189379424",
+                "type":"iframe",
+                "src":"http://premiumtvchannels.com/latino/tycsports",
                 "src1":"http://sv1.futbollibre.net/m3u8/tyc.m3u8?lnmma",
                 "name":"Tyc Sports",
                 "logo":"./assets/img/tyc_sport.png",
@@ -151,7 +151,8 @@
              {
                 "id":"sports-espn",
                 "type":"iframe",
-                "src":"http://www.liketvw.com/embed/espn",
+                "src":"http://premiumtvchannels.com/latino/espn",
+                "src2":"http://www.liketvw.com/embed/espn",
                 "src1":"http://futbollibre.online/espn-1/embed2.html?autoplay=1",
                 "name":"ESPN",
                 "logo":"./assets/img/espn.png",
@@ -183,9 +184,9 @@
              },
              {
                 "id":"sports-fox-premium",
-                "type":"hls",
-                "src":"http://sv1.futbollibre.net/superliga.m3u8?",
-                "src2":"http://futbollibre.online/fox-sports-premium/embed66.html",
+                "type":"iframe",
+                "src":"http://premiumtvchannels.com/latino/foxsportspremium",
+                "src1":"http://sv1.futbollibre.net/superliga.m3u8?",
                 "name":"Fox Sports Premium",
                 "logo":"./assets/img/foxsport_premium.png",
                 "description":"FOX Sports Premium es un canal argentino que ofrece acceso instantáneo a los mejores partidos de futbol de la Superliga Argentina. Es un canal de televisión de paga argentino dedicado a la emisión del fútbol de dicho país, junto con TNT Sports tras la alianza de Turner y Fox por los derechos de televisión del fútbol argentino, el cual reemplaza el programa público Fútbol Para Todos.",
@@ -195,8 +196,8 @@
              {
                 "id":"sports-fox-sports",
                 "type":"iframe",
-                "src":"http://futbollibre.online/fox-sports-1/embed.html",
-                "src1":"https://ok.ru/videoembed/1146590928536",
+                "src":"http://premiumtvchannels.com/latino/foxsports",
+                "src1":"http://futbollibre.online/fox-sports-1/embed.html",
                 "name":"Fox Sports",
                 "logo":"./assets/img/foxsport.png",
                 "description":"Fox Sports es un canal de televisión por suscripción especializado en deportes que emite las 24 horas del día para Latinoamérica. Transmite en vivo la Copa Libertadores, Copa Sudamericana, UEFA Champions League, UEFA Europa League, Serie A de Italia, Bundesliga de Alemania, Copa Mundial de Clubes, NFL, MLB, entre otros.",
@@ -206,7 +207,7 @@
              {
                 "id":"sports-fox-sports-2",
                 "type":"iframe",
-                "src":"http://www.liketvw.com/embed/foxsports2",
+                "src":"http://premiumtvchannels.com/latino/foxsports2",
                 "name":"Fox Sports 2",
                 "logo":"./assets/img/foxsport2.png",
                 "description":"Fox Sports 2 es un canal de cable y satelite totalmente deportivo, es la segunda señal de Fox Sports, antes llamado Fox Sports + a partir del 5 de Noviembre del 2012 se le cambio de nombre para llamarse Fox Sports 2 esta cadena transmite eventos deportivos locales e internacionales más destacados como la Copa Libertadores, UEFA Champions League, Copa Sudamericana, UEFA Europa League, la WWE entre otros.",
@@ -216,7 +217,7 @@
              {
                 "id":"sports-fox-sports-3",
                 "type":"iframe",
-                "src":"http://futbollibre.online/fox-sports-3/embed3.html",
+                "src":"http://premiumtvchannels.com/latino/foxsports3",
                 "name":"Fox Sports 3",
                 "logo":"./assets/img/foxsport3.png",
                 "description":"Fox Sports 3 es un canal deportivo de televisión de pago operado por Fox International Channels y que inició transmisiones el 5 de noviembre de 2012 para América Latina (excepto Brasil). Fox Sports 3 reemplazó al canal Speed en su versión para Latinoamérica",
@@ -256,15 +257,33 @@
              {
                 "id":"sports-directv-sport",
                 "type":"iframe",
-                "src":"http://www.liketvw.com/embed/directv",
-                "src1":"https://bs.boomstream.com/lv/pmfTccNN-high/chunklist.m3u8?token=1jDDaqaK0ugBvScHQ6uK",
-                "src2":"https://tumarcador.xyz/ac1.php",
-                "name":"DIRECT SPORTS",
+                "src":"http://premiumtvchannels.com/latino/directv",
+                "name":"DIRECTV SPORTS",
                 "logo":"./assets/img/directv_sports.png",
                 "description":"DirecTV Sports en vivo es un canal de televisión por suscripción deportivo exclusivo de DirecTV.",
                 "category":"Deportes",
                 "available":true
              },
+             {
+               "id":"sports-directv-sport2",
+               "type":"iframe",
+               "src":"http://premiumtvchannels.com/latino/directv2",
+               "name":"DIRECTV SPORTS 2",
+               "logo":"http://cablegratis.tv/logos/directv-sports-2.png",
+               "description":"DirecTV Sports en vivo es un canal de televisión por suscripción deportivo exclusivo de DirecTV.",
+               "category":"Deportes",
+               "available":true
+            },
+            {
+               "id":"sports-directv-sport-plus",
+               "type":"iframe",
+               "src":"http://premiumtvchannels.com/latino/directvplus",
+               "name":"DIRECTV SPORTS PLUS",
+               "logo":"http://cablegratis.tv/logos/directv-sports-plus.png",
+               "description":"DirecTV Sports en vivo es un canal de televisión por suscripción deportivo exclusivo de DirecTV.",
+               "category":"Deportes",
+               "available":true
+            },
              {
                 "id":"sports-bein",
                 "type":"hls",
@@ -373,7 +392,8 @@
              {
                 "id":"cine-tnt",
                 "type":"iframe",
-                "src":"http://www.liketvw.com/embed/tnt",
+                "src":"http://premiumtvchannels.com/latino/tnt",
+                "src1":"http://www.liketvw.com/embed/tnt",
                 "name":"TNT",
                 "logo":"./assets/img/tnt.png",
                 "description":"No hay descripción",
@@ -393,13 +413,24 @@
              {
                 "id":"cine-hbo",
                 "type":"iframe",
-                "src":"http://www.fulltvhd.fi/peliculas/hbo.php",
+                "src": "http://premiumtvchannels.com/latino/hbo",
+                "src1":"http://www.fulltvhd.fi/peliculas/hbo.php",
                 "name":"HBO",
                 "logo":"./assets/img/hbo.png",
                 "description":"No hay descripción",
                 "category":"Cine",
                 "available":true
              },
+             {
+               "id":"cine-hbo2",
+               "type":"iframe",
+               "src": "http://premiumtvchannels.com/latino/hbo-2",
+               "name":"HBO 2",
+               "logo":"http://cablegratis.tv/logos/hbo-2.png",
+               "description":"No hay descripción",
+               "category":"Cine",
+               "available":true
+            },
              {
                 "id":"cine-universal",
                 "type":"iframe",
