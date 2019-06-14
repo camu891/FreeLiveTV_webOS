@@ -128,7 +128,7 @@
                 "type":"youtube",
                 "src":"https://www.youtube.com/embed/Ti7BL_xlSJ4?rel=0&autoplay=1&showinfo=0&controls=0",
                 "name":"LN+",
-                "logo":"http://marcelafittipaldi.com.ar/wp-content/uploads/2017/06/unnamed-3-2.jpg",
+                "logo":"./assets/img/ln_plus.png",
                 "description":"No hay descripción",
                 "category":"Noticias",
                 "available":true
@@ -269,7 +269,7 @@
                "type":"iframe",
                "src":"http://premiumtvchannels.com/latino/directv2",
                "name":"DIRECTV SPORTS 2",
-               "logo":"http://cablegratis.tv/logos/directv-sports-2.png",
+               "logo":"./assets/img/directv_sports2.png",
                "description":"DirecTV Sports en vivo es un canal de televisión por suscripción deportivo exclusivo de DirecTV.",
                "category":"Deportes",
                "available":true
@@ -279,7 +279,7 @@
                "type":"iframe",
                "src":"http://premiumtvchannels.com/latino/directvplus",
                "name":"DIRECTV SPORTS PLUS",
-               "logo":"http://cablegratis.tv/logos/directv-sports-plus.png",
+               "logo":"./assets/img/directv_sports_plus.png",
                "description":"DirecTV Sports en vivo es un canal de televisión por suscripción deportivo exclusivo de DirecTV.",
                "category":"Deportes",
                "available":true
@@ -426,7 +426,7 @@
                "type":"iframe",
                "src": "http://premiumtvchannels.com/latino/hbo-2",
                "name":"HBO 2",
-               "logo":"http://cablegratis.tv/logos/hbo-2.png",
+               "logo":"./assets/img/hbo2.png",
                "description":"No hay descripción",
                "category":"Cine",
                "available":true
