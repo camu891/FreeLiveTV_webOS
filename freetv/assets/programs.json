@@ -25,7 +25,7 @@
              {
                 "id":"news-telefe",
                 "type":"iframe",
-                "src":"https://ok.ru/video/1212789366378",
+                "src":"https://player.twitch.tv/?channel=hhg_411",
                 "name":"Telefe",
                 "logo":"./assets/img/telefe.png",
                 "description":"Telefe es el canal de TV líder en la producción y comercialización de contenidos y servicios audiovisuales de Argentina.",
@@ -45,7 +45,7 @@
              {
                 "id":"news-tv-publica",
                 "type":"youtube",
-                "src": "https://www.youtube.com/embed/gDjglU2RukM?rel=0&autoplay=1&showinfo=0&controls=0",
+                "src": "https://www.youtube.com/embed/zGfAoRuhpAA?rel=0&autoplay=1&showinfo=0&controls=0",
                 "src1":"https://chunks01.tvpublica.com.ar/video/BJQRNMF6b_1080/index.m3u8",
                 "name":"TV Pública",
                 "logo":"./assets/img/tvpublica.png",
