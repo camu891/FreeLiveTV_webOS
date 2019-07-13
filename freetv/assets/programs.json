@@ -25,7 +25,7 @@
              {
                 "id":"news-telefe",
                 "type":"iframe",
-                "src":"https://appmitelefehls-lh.akamaihd.net/i/appmitelefe_1@326430/index_3_av-p.m3u8?sd=10&rebase=on&hdntl=exp=1563138136~acl=%2fi%2fappmitelefe_1%40326430%2f*~data=hdntl~hmac=d893ae8b4cb1561abeb0ae5b9bf315c75eb59ff7ab363135af0e53575144594b",
+                "src":"https://player.twitch.tv/?channel=13_8k",
                 "name":"Telefe",
                 "logo":"./assets/img/telefe.png",
                 "description":"Telefe es el canal de TV líder en la producción y comercialización de contenidos y servicios audiovisuales de Argentina.",
