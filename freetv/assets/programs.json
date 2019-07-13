@@ -25,7 +25,7 @@
              {
                 "id":"news-telefe",
                 "type":"iframe",
-                "src":"https://player.twitch.tv/?channel=13_8k",
+                "src":"https://player.twitch.tv/?channel=tele_uhd",
                 "name":"Telefe",
                 "logo":"./assets/img/telefe.png",
                 "description":"Telefe es el canal de TV líder en la producción y comercialización de contenidos y servicios audiovisuales de Argentina.",
