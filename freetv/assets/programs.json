@@ -45,7 +45,7 @@
              {
                 "id":"news-tv-publica",
                 "type":"hls",
-                "src0": "https://www.youtube.com/embed/PLRxogByiLQ?rel=0&autoplay=1&showinfo=0&controls=0",
+                "src0": "https://www.youtube.com/embed/QBscZfiGHXM?rel=0&autoplay=1&showinfo=0&controls=0",
                 "src":"https://g2.vxral-hor.transport.edge-access.net/b16/ngrp:c7_vivo01_dai_source-20001_all/c7_vivo01_dai_source-20001_720p.m3u8",
                 "name":"TV Pública",
                 "logo":"./assets/img/tvpublica.png",
@@ -140,8 +140,8 @@
              {
                 "id":"sports-tyc",
                 "type":"iframe",
-                "src":"http://premiumtvchannels.com/latino/tycsports",
-                "src1":"http://sv1.futbollibre.net/m3u8/tyc.m3u8?lnmma",
+                "src":"http://televisionparatodos.tv/canales/tycplay.html",
+                "src1":"http://premiumtvchannels.com/latino/tycsports",
                 "name":"Tyc Sports",
                 "logo":"./assets/img/tyc_sport.png",
                 "description":"TyC Sports en vivo es un canal de televisión por suscripción deportivo argentino, el cual brinda la emisión de eventos deportivos destacados a nivel nacional e internacional.",
@@ -151,9 +151,8 @@
              {
                 "id":"sports-espn",
                 "type":"iframe",
-                "src":"http://premiumtvchannels.com/latino/espn",
-                "src2":"http://www.liketvw.com/embed/espn",
-                "src1":"http://futbollibre.online/espn-1/embed2.html?autoplay=1",
+                "src": "https://soloveo.com/espnhd.php",
+                "src1":"http://premiumtvchannels.com/latino/espn",
                 "name":"ESPN",
                 "logo":"./assets/img/espn.png",
                 "description":"ESPN Latinoamérica es el canal de televisión especializado en deportes que transmite por cable o satélite para este lado del Continente, pero con diferentes señales según los países o zona en los que uno se encuentre.",
@@ -257,7 +256,8 @@
              {
                 "id":"sports-directv-sport",
                 "type":"iframe",
-                "src":"http://premiumtvchannels.com/latino/directv",
+                "src": "https://soloveo.com/directvsports.php",
+                "src1":"http://premiumtvchannels.com/latino/directv",
                 "name":"DIRECTV SPORTS",
                 "logo":"./assets/img/directv_sports.png",
                 "description":"DirecTV Sports en vivo es un canal de televisión por suscripción deportivo exclusivo de DirecTV.",
