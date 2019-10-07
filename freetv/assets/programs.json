@@ -141,7 +141,7 @@
              {
                 "id":"sports-tyc",
                 "type":"iframe",
-                "src":"https://soloveo.com/tyc.php",
+                "src": "https://reproductor.futbollibre.net/tyc/",
                 "src1":"http://televisionparatodos.tv/canales/tycplay.html",
                 "src2":"http://premiumtvchannels.com/latino/tycsports",
                 "name":"Tyc Sports",
