@@ -4,8 +4,9 @@
           "Noticias":[
              {
                 "id":"news-doce",
-                "type":"hls",
-                "src":"https://g1.proy-slo.transport.edge-access.net/b12/ngrp:el12_live01-100083_all/el12_live01-100083_720p.m3u8",
+                "type":"iframe",
+                "src":"https://vmf.edge-apps.net/embed/live.php?streamname=el12_live01-100083&autoplay=true",
+                "src1":"https://g1.proy-slo.transport.edge-access.net/b12/ngrp:el12_live01-100083_all/el12_live01-100083_720p.m3u8",
                 "name":"El doce",
                 "logo":"./assets/img/12tv.png",
                 "description":"No hay descripción",
