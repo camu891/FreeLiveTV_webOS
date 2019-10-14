@@ -5,8 +5,7 @@
              {
                 "id":"news-doce",
                 "type":"iframe",
-                "src":"https://vmf.edge-apps.net/embed/live.php?streamname=el12_live01-100083&autoplay=true",
-                "src1":"https://g1.proy-slo.transport.edge-access.net/b12/ngrp:el12_live01-100083_all/el12_live01-100083_720p.m3u8",
+                "src":"https://g2.proy-hor.transport.edge-access.net/b08/ngrp:el12_live01-100083_all/el12_live01-100083_540p.m3u8",
                 "name":"El doce",
                 "logo":"./assets/img/12tv.png",
                 "description":"No hay descripción",
