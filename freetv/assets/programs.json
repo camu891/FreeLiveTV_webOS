@@ -140,9 +140,8 @@
              {
                 "id":"sports-tyc",
                 "type":"iframe",
-                "src": "https://reproductor.futbollibre.net/tyc/",
+                "src": "http://www.lateleenvivo.club/canales/tycsports2a.php",
                 "src1":"http://televisionparatodos.tv/canales/tycplay.html",
-                "src2":"http://premiumtvchannels.com/latino/tycsports",
                 "name":"Tyc Sports",
                 "logo":"./assets/img/tyc_sport.png",
                 "description":"TyC Sports en vivo es un canal de televisión por suscripción deportivo argentino, el cual brinda la emisión de eventos deportivos destacados a nivel nacional e internacional.",
