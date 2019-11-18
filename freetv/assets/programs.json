@@ -665,53 +665,16 @@
             "description":"No hay descripción",
             "category":"Series",
             "available":true
-         },
+         }
+       ]
+       },
+       { "Peliculas": [
          {
-            "id":"chernobyl_02x01",
-            "type":"mp4",
-            "src":"https://www1056.hlsmp4.com/token=eRnQBY5QpFmKWxyhBV8ZlQ/1560228074/0.0.0.0/49/e/ef/bb19897889f648e6e43ba36f53c2aefe-720p.mp4",
-            "name":"Chernobyl 02x01",
-            "logo":"https://static.vix.com/es/sites/default/files/styles/thumbnail/public/s/serie-chernobyl-hbo-2.jpeg",
-            "description":"No hay descripción",
-            "category":"Series",
-            "available":true
-         },
-         {
-            "id":"chernobyl_03x01",
-            "type":"mp4",
-            "src":"https://www1408.hlsmp4.com/token=_dM8---OACAMOmytf1cPYw/1560314410/0.0.0.0/46/7/82/1d81ca9c3f9a352c442282accc8f6827-720p.mp4",
-            "name":"Chernobyl 03x01",
-            "logo":"https://static.vix.com/es/sites/default/files/styles/thumbnail/public/s/serie-chernobyl-hbo-2.jpeg",
-            "description":"No hay descripción",
-            "category":"Series",
-            "available":true
-         },
-         {
-            "id":"chernobyl_04x01",
-            "type":"mp4",
-            "src":"https://www1264.hlsmp4.com/token=-33REDUV7DXp42cdAUxUOg/1560314518/0.0.0.0/43/c/0b/d70eb220c90e61e8b5ae9adda7f380bc-720p.mp4",
-            "name":"Chernobyl 04x01",
-            "logo":"https://static.vix.com/es/sites/default/files/styles/thumbnail/public/s/serie-chernobyl-hbo-2.jpeg",
-            "description":"No hay descripción",
-            "category":"Series",
-            "available":true
-         },
-         {
-            "id":"chernobyl_05x01",
-            "type":"mp4",
-            "src":"https://www1119.hlsmp4.com/token=n2DpxVTExi5HxW-y8SQ-_w/1560314559/0.0.0.0/50/1/69/b533672e57848aa5ec7bea033e26b691-720p.mp4",
-            "name":"Chernobyl 05x01",
-            "logo":"https://static.vix.com/es/sites/default/files/styles/thumbnail/public/s/serie-chernobyl-hbo-2.jpeg",
-            "description":"No hay descripción",
-            "category":"Series",
-            "available":true
-         },
-         {
-            "id":"chernobyl_06x01",
-            "type":"mp4",
-            "src":"",
-            "name":"Chernobyl 06x01",
-            "logo":"https://static.vix.com/es/sites/default/files/styles/thumbnail/public/s/serie-chernobyl-hbo-2.jpeg",
+            "id":"peli1",
+            "type":"iframe",
+            "src":"https://player.miradetodo.net/api/fastplay.php?id=aHR0cHM6Ly9mYXN0cGxheS50by84czk5ZWhvaTAydnIuaHRtbA0=&sub=IntroMDT.srt",
+            "name":"Joker",
+            "logo":"https://miradetodo.co/wp-content/uploads/2019/11/tt7286456.jpg",
             "description":"No hay descripción",
             "category":"Series",
             "available":true
