@@ -14,13 +14,13 @@
              },
              {
                 "id":"news-trece",
-                "type":"youtube",
-                "src":"https://www.youtube.com/embed/9h6Vz6ylIdE?rel=0&autoplay=1&showinfo=0&controls=0",
+                "type":"iframe",
+                "src":"http://www.srfixehd.info/arg/trece.php",
                 "name":"El Trece TV",
                 "logo":"./assets/img/eltrece.png",
                 "description":"Canal 13 es una cadena de televisión argentina que transmite desde la Ciudad de Buenos Aires.",
                 "category":"Noticias",
-                "available":false
+                "available":true
              },
              {
                 "id":"news-telefe",
