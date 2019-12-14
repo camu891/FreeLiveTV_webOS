@@ -7,8 +7,9 @@
 var programs = null;
 var totalPragrams = 0;
 var tabindex = 0;
-var allPrograms = []
-var navigationControl = {}
+var allPrograms = [];
+var navigationControl = {};
+var retries = 0;
 
 function getSettings(key){
 	return typeof(Storage) !== "undefined" ? localStorage.getItem(key) : null;
@@ -36,14 +37,14 @@ $(document).ready(function(){
 	
 	getdate();
 	
-	ajax_load_programs();
+	ajaxLoadPrograms();
 	
 	$('.icon-app').on("click",function(){
-		ajax_load_programs();
+		ajaxLoadPrograms();
 	});
 	
 	$('.reload').on("click",function(){
-		ajax_load_programs();
+		ajaxLoadPrograms();
 	});
 	
 	$('.search-icon').on("click",function(){
@@ -71,7 +72,8 @@ function hideSearchInput(){
 	$(".search-icon").css('visibility', 'visible');
 }
 
-function ajax_load_programs(){
+function ajaxLoadPrograms(){
+	retries++;
 	$('#container_programs').empty();
 	var loader = $(".content-loader");
 	var error = $(".content-error-request");
@@ -97,11 +99,17 @@ function ajax_load_programs(){
 			});
 		});
 		initNavTabs();
-		set_tabindex();
+		setTabindex();
 		initLastView();
 	}).fail(function() {
-		loader.hide();
-		error.show();
+		if (retries < 3) {
+			setTimeout(function() {
+				ajaxLoadPrograms();
+			}, 3000);
+		} else {
+			loader.hide();
+			error.show();
+		}
 		console.log("Fail request programs");
 	});
 }
@@ -140,7 +148,7 @@ function addLastViewCard(allPrograms) {
 		lastViewContainer.show();
 		$.each(allPrograms, function(i, program) {
 			if(program.id == lastViews[0] || program.id == lastViews[1]){		
-					var data = get_program_data(program,i)
+					var data = getProgramData(program,i)
 					$(data).appendTo(".last-view .lv-container")
 				}
 			});
@@ -156,7 +164,7 @@ function addLastViewCard(allPrograms) {
 			+category+"</span><div class='programs-container row' id='list'></div></div>");
 			addCategoryTab(category);
 		}
-		$(categoryRef).append(get_program_data(program, index))
+		$(categoryRef).append(getProgramData(program, index))
 	}
 	
 	function addCategoryTab(category){
@@ -180,14 +188,14 @@ function addLastViewCard(allPrograms) {
 		closeSidebar();
 	}
 	
-	function get_program_data(program, index){
+	function getProgramData(program, index){
 		return "<div id='"+program.id+"' onmouseover=\"mouseOver(this,'"+program.type+"','"+program.src+"');\" onmouseout='mouseOut(this);'"
 		+" class='card content-box'><a id='link' class='program-link' name='"
 		+program.name+"' onClick='onSelectProgram("+JSON.stringify(program)+","+index+")'><div class='inner'><img class='programs-logo' src='"
 		+program.logo+"'><span class='channel-title'>"+program.name+"</span></div></a></div>";
 	}
 	
-	function set_tabindex(){
+	function setTabindex(){
 		var list = document.querySelectorAll("#list");
 		var ti=1;
 		for (var j = 0; j < list.length; j++) {
@@ -237,7 +245,7 @@ function addLastViewCard(allPrograms) {
 			$('body').toggleClass('visible_menu');
 			break;
 			case keyRemoteControl.FAST_ACTIONS.GREEN:
-			ajax_load_programs();
+			ajaxLoadPrograms();
 			break;
 			case keyRemoteControl.FAST_ACTIONS.YELLOW:
 			$(".alert-dialog").fadeIn();

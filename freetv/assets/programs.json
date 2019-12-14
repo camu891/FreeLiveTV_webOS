@@ -4,8 +4,8 @@
           "Noticias":[
              {
                 "id":"news-doce",
-                "type":"iframe",
-                "src":"https://g2.proy-hor.transport.edge-access.net/b08/ngrp:el12_live01-100083_all/el12_live01-100083_540p.m3u8",
+                "type":"youtube",
+                "src":"https://www.youtube.com/embed/sgtbZgvWNvg?rel=0&autoplay=1&showinfo=0&controls=0",
                 "name":"El doce",
                 "logo":"./assets/img/12tv.png",
                 "description":"No hay descripción",
@@ -676,7 +676,7 @@
             "name":"Joker",
             "logo":"https://miradetodo.co/wp-content/uploads/2019/11/tt7286456.jpg",
             "description":"No hay descripción",
-            "category":"Series",
+            "category":"Peliculas",
             "available":true
          }
        ]
