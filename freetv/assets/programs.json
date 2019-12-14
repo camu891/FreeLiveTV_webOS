@@ -20,7 +20,7 @@
                 "logo":"./assets/img/eltrece.png",
                 "description":"Canal 13 es una cadena de televisión argentina que transmite desde la Ciudad de Buenos Aires.",
                 "category":"Noticias",
-                "available":true
+                "available":false
              },
              {
                 "id":"news-telefe",
@@ -76,7 +76,7 @@
              {
                 "id":"news-tn",
                 "type":"youtube",
-                "src":"https://www.youtube.com/embed/-1xif50QMr4?rel=0&autoplay=1&showinfo=0&controls=0",
+                "src":"https://www.youtube.com/embed/gVH6WvzwGeM?rel=0&autoplay=1&showinfo=0&controls=0",
                 "name":"TN Noticias",
                 "logo":"./assets/img/tn.png",
                 "description":"TN es la referencia obligada de la actualidad nacional e internacional. Todo el año durante todo el día, los periodistas de TN siguen paso a paso las noticias, mostrando las imágenes más impactantes desde el lugar donde está la información.",
@@ -106,7 +106,7 @@
              {
                 "id":"news-c5n",
                 "type":"youtube",
-                "src":"https://www.youtube.com/embed/dgSQZu0tQ2A?rel=0&autoplay=1&showinfo=0&controls=0",
+                "src":"https://www.youtube.com/embed/GsayX2qegBU?rel=0&autoplay=1&showinfo=0&controls=0",
                 "name":"C5N",
                 "logo":"./assets/img/c5n.png",
                 "description":"No hay descripción",
@@ -126,7 +126,7 @@
              {
                 "id":"news-ln",
                 "type":"youtube",
-                "src":"https://www.youtube.com/embed/Ti7BL_xlSJ4?rel=0&autoplay=1&showinfo=0&controls=0",
+                "src":"https://www.youtube.com/embed/ngTaNYxsCCk?rel=0&autoplay=1&showinfo=0&controls=0",
                 "name":"LN+",
                 "logo":"./assets/img/ln_plus.png",
                 "description":"No hay descripción",
@@ -141,7 +141,7 @@
                 "id":"sports-tyc",
                 "type":"iframe",
                 "src": "http://www.lateleenvivo.club/canales/tycsports2a.php",
-                "src1":"http://televisionparatodos.tv/canales/tycplay.html",
+                "src1":"https://sv3.futbollibre.net/tyc.html",
                 "name":"Tyc Sports",
                 "logo":"./assets/img/tyc_sport.png",
                 "description":"TyC Sports en vivo es un canal de televisión por suscripción deportivo argentino, el cual brinda la emisión de eventos deportivos destacados a nivel nacional e internacional.",
@@ -152,7 +152,6 @@
                 "id":"sports-espn",
                 "type":"iframe",
                 "src": "https://soloveo.com/espnhd.php",
-                "src1":"http://premiumtvchannels.com/latino/espn",
                 "name":"ESPN",
                 "logo":"./assets/img/espn.png",
                 "description":"ESPN Latinoamérica es el canal de televisión especializado en deportes que transmite por cable o satélite para este lado del Continente, pero con diferentes señales según los países o zona en los que uno se encuentre.",
@@ -163,7 +162,6 @@
                 "id":"sports-espn-2",
                 "type":"iframe",
                 "src":"http://premiumtvchannels.com/latino/espn2",
-                "src1":"http://futbollibre.online/espn-2/embed.html",
                 "name":"ESPN 2",
                 "logo":"./assets/img/espn2.png",
                 "description":"ESPN 2 En vivo es un canal de deportes que regularmente transmite partidos de fútbol correspondientes a la Bundesliga y de la Liga de Holanda. Además se transmiten los Juegos Extremos de Invierno.",
@@ -195,8 +193,7 @@
              {
                 "id":"sports-fox-sports",
                 "type":"iframe",
-                "src":"http://premiumtvchannels.com/latino/foxsports",
-                "src1":"http://futbollibre.online/fox-sports-1/embed.html",
+                "src":"https://soloveo.com/foxsportshd.php",
                 "name":"Fox Sports",
                 "logo":"./assets/img/foxsport.png",
                 "description":"Fox Sports es un canal de televisión por suscripción especializado en deportes que emite las 24 horas del día para Latinoamérica. Transmite en vivo la Copa Libertadores, Copa Sudamericana, UEFA Champions League, UEFA Europa League, Serie A de Italia, Bundesliga de Alemania, Copa Mundial de Clubes, NFL, MLB, entre otros.",
@@ -206,7 +203,7 @@
              {
                 "id":"sports-fox-sports-2",
                 "type":"iframe",
-                "src":"http://premiumtvchannels.com/latino/foxsports2",
+                "src":"https://soloveo.com/foxsports2.php",
                 "name":"Fox Sports 2",
                 "logo":"./assets/img/foxsport2.png",
                 "description":"Fox Sports 2 es un canal de cable y satelite totalmente deportivo, es la segunda señal de Fox Sports, antes llamado Fox Sports + a partir del 5 de Noviembre del 2012 se le cambio de nombre para llamarse Fox Sports 2 esta cadena transmite eventos deportivos locales e internacionales más destacados como la Copa Libertadores, UEFA Champions League, Copa Sudamericana, UEFA Europa League, la WWE entre otros.",
@@ -216,7 +213,7 @@
              {
                 "id":"sports-fox-sports-3",
                 "type":"iframe",
-                "src":"http://premiumtvchannels.com/latino/foxsports3",
+                "src":"https://soloveo.com/foxsports3.php",
                 "name":"Fox Sports 3",
                 "logo":"./assets/img/foxsport3.png",
                 "description":"Fox Sports 3 es un canal deportivo de televisión de pago operado por Fox International Channels y que inició transmisiones el 5 de noviembre de 2012 para América Latina (excepto Brasil). Fox Sports 3 reemplazó al canal Speed en su versión para Latinoamérica",
@@ -287,8 +284,7 @@
              {
                 "id":"sports-bein",
                 "type":"hls",
-                "src":"https://fdsfdsfds.azureedge.net/live/t1/chunks.m3u8",
-                "src1":"https://tumarcador.xyz/ac1.php",
+                "src":"https://livestreamapis.com/v3/accounts/28858503/events/8920334/master.m3u8?token=6a9af47ea03677c88482744c44a3f70a&clientId=2576&timestamp=1576350900729",
                 "name":"BEIN Sports",
                 "logo":"./assets/img/bein_sports.png",
                 "description":"No hay descripción",
