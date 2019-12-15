@@ -150,9 +150,8 @@
              },
              {
                 "id":"sports-espn",
-                "type":"hls",
-                "src":"blob:https://sportsbay.org/d78afc54-bc31-4723-bcf3-02aab5efc99d",
-                "src1": "https://soloveo.com/espnhd.php",
+                "type":"iframe",
+                "src":"https://futbollibre.online/en-vivo/espn-1/",
                 "name":"ESPN",
                 "logo":"./assets/img/espn.png",
                 "description":"ESPN Latinoamérica es el canal de televisión especializado en deportes que transmite por cable o satélite para este lado del Continente, pero con diferentes señales según los países o zona en los que uno se encuentre.",
@@ -162,7 +161,7 @@
              {
                 "id":"sports-espn-2",
                 "type":"iframe",
-                "src":"http://premiumtvchannels.com/latino/espn2",
+                "src":"https://futbollibre.online/en-vivo/espn-2/",
                 "name":"ESPN 2",
                 "logo":"./assets/img/espn2.png",
                 "description":"ESPN 2 En vivo es un canal de deportes que regularmente transmite partidos de fútbol correspondientes a la Bundesliga y de la Liga de Holanda. Además se transmiten los Juegos Extremos de Invierno.",
