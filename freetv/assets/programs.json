@@ -150,8 +150,9 @@
              },
              {
                 "id":"sports-espn",
-                "type":"iframe",
-                "src": "https://soloveo.com/espnhd.php",
+                "type":"hls",
+                "src":"blob:https://sportsbay.org/d78afc54-bc31-4723-bcf3-02aab5efc99d",
+                "src1": "https://soloveo.com/espnhd.php",
                 "name":"ESPN",
                 "logo":"./assets/img/espn.png",
                 "description":"ESPN Latinoamérica es el canal de televisión especializado en deportes que transmite por cable o satélite para este lado del Continente, pero con diferentes señales según los países o zona en los que uno se encuentre.",
@@ -193,7 +194,7 @@
              {
                 "id":"sports-fox-sports",
                 "type":"iframe",
-                "src":"https://soloveo.com/foxsportshd.php",
+                "src":"https://futbollibre.online/en-vivo/fox-sports-1/embeddtv.html?es",
                 "name":"Fox Sports",
                 "logo":"./assets/img/foxsport.png",
                 "description":"Fox Sports es un canal de televisión por suscripción especializado en deportes que emite las 24 horas del día para Latinoamérica. Transmite en vivo la Copa Libertadores, Copa Sudamericana, UEFA Champions League, UEFA Europa League, Serie A de Italia, Bundesliga de Alemania, Copa Mundial de Clubes, NFL, MLB, entre otros.",
@@ -228,7 +229,7 @@
                 "logo":"./assets/img/saf.png",
                 "description":"No hay descripción",
                 "category":"Deportes",
-                "available":true
+                "available":false
              },
              {
                 "id":"sports-deportv",
