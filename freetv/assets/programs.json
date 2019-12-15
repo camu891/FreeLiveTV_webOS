@@ -160,8 +160,8 @@
             },
              {
                 "id":"sports-espn",
-                "type":"iframe",
-                "src":"https://futbollibre.online/en-vivo/espn-1/",
+                "type":"hls",
+                "src":"https://e7.cdn4.us/ingest666/espn_sur.m3u8",
                 "name":"ESPN",
                 "logo":"./assets/img/espn.png",
                 "description":"ESPN Latinoamérica es el canal de televisión especializado en deportes que transmite por cable o satélite para este lado del Continente, pero con diferentes señales según los países o zona en los que uno se encuentre.",
@@ -170,8 +170,8 @@
              },
              {
                 "id":"sports-espn-2",
-                "type":"iframe",
-                "src":"https://futbollibre.online/en-vivo/espn-2/",
+                "type":"hls",
+                "src":"https://e7.cdn4.us/ingest666/espn2_sur.m3u8",
                 "name":"ESPN 2",
                 "logo":"./assets/img/espn2.png",
                 "description":"ESPN 2 En vivo es un canal de deportes que regularmente transmite partidos de fútbol correspondientes a la Bundesliga y de la Liga de Holanda. Además se transmiten los Juegos Extremos de Invierno.",
@@ -182,7 +182,6 @@
                 "id":"sports-espn-3",
                 "type":"iframe",
                 "src":"http://futbollibre.online/espn-3/embed2.html",
-                "src1":"https://tumarcador.xyz/ac3.php",
                 "name":"ESPN 3",
                 "logo":"./assets/img/espn3.png",
                 "description":"La programación de ESPN 3 está dedicada a los deportes de acción, es decir los deportes extremos tanto de verano como de invierno, así como los de aventura, surf y running.",
@@ -284,7 +283,7 @@
              {
                 "id":"sports-bein",
                 "type":"hls",
-                "src":"https://livestreamapis.com/v3/accounts/28858503/events/8920334/master.m3u8?token=6a9af47ea03677c88482744c44a3f70a&clientId=2576&timestamp=1576350900729",
+                "src":"https://livestreamapis.com/v3/accounts/28858503/events/8920334/master.m3u8?token=4bbc95e3d9103c3f3c50f4b9096e1158&clientId=2576&timestamp=1576441647595",
                 "name":"BEIN Sports",
                 "logo":"./assets/img/bein_sports.png",
                 "description":"No hay descripción",
