@@ -149,6 +149,16 @@
                 "available":true
              },
              {
+               "id":"sports-tnt-sport",
+               "type":"iframe",
+               "src":"http://futbollibre.online/tnt-sports/embed.html",
+               "name":"TNT SPORT",
+               "logo":"./assets/img/tntsports.png",
+               "description":"TNT Sports en vivo, es un canal de televisión por suscripción argentino, dedicado a la emisión del deporte de ese país, junto con Fox Sports Premium, que comenzó a emitirse el viernes 25 de agosto de 2017 desde las 18h, tras la alianza de Turner y Fox por los derechos de televisión de la Primera División Argentina (Superliga) de fútbol argentino, siendo reemplazo del programa gubernamental Fútbol Para Todos.",
+               "category":"Deportes",
+               "available":true
+            },
+             {
                 "id":"sports-espn",
                 "type":"iframe",
                 "src":"https://futbollibre.online/en-vivo/espn-1/",
@@ -237,16 +247,6 @@
                 "name":"Deportv",
                 "logo":"./assets/img/dxtv.png",
                 "description":"DeporTV en VIVO es un canal de televisión público argentino especializado en programación deportiva.",
-                "category":"Deportes",
-                "available":true
-             },
-             {
-                "id":"sports-tnt-sport",
-                "type":"iframe",
-                "src":"http://futbollibre.online/tnt-sports/embed.html",
-                "name":"TNT SPORT",
-                "logo":"./assets/img/tntsports.png",
-                "description":"TNT Sports en vivo, es un canal de televisión por suscripción argentino, dedicado a la emisión del deporte de ese país, junto con Fox Sports Premium, que comenzó a emitirse el viernes 25 de agosto de 2017 desde las 18h, tras la alianza de Turner y Fox por los derechos de televisión de la Primera División Argentina (Superliga) de fútbol argentino, siendo reemplazo del programa gubernamental Fútbol Para Todos.",
                 "category":"Deportes",
                 "available":true
              },
