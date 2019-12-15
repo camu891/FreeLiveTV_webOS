@@ -58,7 +58,7 @@ $(document).ready(function(){
 	$('#container_programs').click(function(){
 		hideSearchInput();
 	});
-	
+
 });
 
 function showSearchInput(elem){
@@ -94,6 +94,10 @@ function ajaxLoadPrograms(){
 						allPrograms.push(program)
 						addProgramToCategory(key, program, index);
 						index++;
+						// MOUSEOVER
+						$('#'+program.id).mouseenter(function() { 
+						 	mouseOver(null,program.type,program.src);
+						 });
 					}
 				});
 			});
@@ -189,7 +193,12 @@ function addLastViewCard(allPrograms) {
 	}
 	
 	function getProgramData(program, index){
-		return "<div id='"+program.id+"' onmouseover=\"mouseOver(this,'"+program.type+"','"+program.src+"');\" onmouseout='mouseOut(this);'"
+		// return "<div id='"+program.id+"' onmouseover=\"mouseOver(this,'"+program.type+"','"+program.src+"');\" onmouseout='mouseOut(this);'"
+		// +" class='card content-box'><a id='link' class='program-link' name='"
+		// +program.name+"' onClick='onSelectProgram("+JSON.stringify(program)+","+index+")'><div class='inner'><img class='programs-logo' src='"
+		// +program.logo+"'><span class='channel-title'>"+program.name+"</span></div></a></div>";
+
+		return "<div id='"+program.id+"' onmouseout='mouseOut(this);'"
 		+" class='card content-box'><a id='link' class='program-link' name='"
 		+program.name+"' onClick='onSelectProgram("+JSON.stringify(program)+","+index+")'><div class='inner'><img class='programs-logo' src='"
 		+program.logo+"'><span class='channel-title'>"+program.name+"</span></div></a></div>";
@@ -275,18 +284,30 @@ function addLastViewCard(allPrograms) {
 	}
 	
 	function mouseOut(elem) {
-		$(".preview").empty().hide();
+		$(".preview").each(function(i,elem){
+			$(elem).empty().hide()
+		})
 	}
 	
 	function mouseOver(elem,typeVideo,src) {
 		if (getSettings(settings.PREVIEW) == "true") {
 			var container = $(".preview");
-			container.show();
-			if(typeVideo==="hls"){
-				createNativeVideoPreview(container,src);
-			}else if(typeVideo==="youtube" || typeVideo==="iframe"){
-				createIframePreview(container,src);
+			container.each(function(i,elem) {
+				$(elem).empty().hide();
+			});
+		$.ajax({ cache: true,
+			url: src,
+			success: function () {
+					if(typeVideo==="hls"){
+						createNativeVideoPreview(container,src);
+					}else if(typeVideo==="youtube" || typeVideo==="iframe"){
+						createIframePreview(container,src);
+					}			
+			},
+			error: function (e) {
+			  console.log('error src')
 			}
+		  });
 		}
 	}
 	
@@ -300,6 +321,7 @@ function addLastViewCard(allPrograms) {
 	function createIframePreview(container,src){
 		var iframe = document.createElement('iframe');
 		iframe.src = src;
+		iframe.setAttribute('id','smallIframe');
 		iframe.setAttribute('class','ytplayer');
 		iframe.setAttribute('frameborder', '0');
 		iframe.setAttribute('allow' ,'autoplay; encrypted-media');
@@ -307,14 +329,20 @@ function addLastViewCard(allPrograms) {
 		iframe.width = "200px";
 		iframe.height = "113px";
 		container.append(iframe);
+		container.show();		
 	}
-	
+
 	function createNativeVideoPreview(container,src){
-		var video = document.createElement('video');
+		var video = document.getElementById("video") 
+		if (!video){
+			video = document.createElement('video');
+		}
 		video.poster = "./assets/loading/loader-xs.gif";
 		video.autoplay = true;
+		video.setAttribute('id','video');
 		video.setAttribute('class','hls');
 		container.append(video);
+		container.show();
 		addSourceToVideoPrev(video, src, 'application/x-mpegURL');
 	}
 	
@@ -373,4 +401,15 @@ function addLastViewCard(allPrograms) {
 		}).indexOf(program.id);
 		return index;
 	}
+
+	function showSnackbar() {
+		// Get the snackbar DIV
+		var x = document.getElementById("snackbar");
+	  
+		// Add the "show" class to DIV
+		x.className = "show";
+	  
+		// After 3 seconds, remove the show class from DIV
+		setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+	  }
 	

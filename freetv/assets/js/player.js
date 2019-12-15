@@ -70,18 +70,38 @@
     iframe.setAttribute('allow' ,'autoplay; encrypted-media');
     iframe.setAttribute('allowFullScreen', '');
     iframe.setAttribute('sandbox', 'allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation');
-    
+    iframe.setAttribute('error','onErrorIframe');
+
     container.appendChild(iframe);
-    
+
     $(document).ready(function(){
       $('iframe').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
       $(window).resize(function(){
         $('iframe').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
       });
-      $('#iframe').load(function(){
-        hideLoader()
-      });
-    });
+      document.getElementById('iframe').onload = function() {
+        var that = $(this)[0];
+        try{
+          $.ajax({ cache: true,
+            url: that.src,
+            success: function (data) {
+              hideLoader()
+            },
+            error: function (e) {
+              back();
+              showSnackbar();
+            }
+          });
+        }
+        catch(err){
+          console.log("error on load iframe")
+        }
+    }
+  });
+  }
+
+  function onErrorIframe(){
+    console.log("error iframe")
   }
   
   function showLoader(){
