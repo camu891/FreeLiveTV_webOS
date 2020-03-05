@@ -171,7 +171,7 @@
              {
                 "id":"sports-espn-2",
                 "type":"hls",
-                "src":"https://sv.tsnt.xyz/espn/espn2_sur.m3u8",
+                "src":"https://e7.cdn4.us/ingest666/espn2_sur.m3u8",
                 "name":"ESPN 2",
                 "logo":"./assets/img/espn2.png",
                 "description":"ESPN 2 En vivo es un canal de deportes que regularmente transmite partidos de fútbol correspondientes a la Bundesliga y de la Liga de Holanda. Además se transmiten los Juegos Extremos de Invierno.",
@@ -283,7 +283,7 @@
              {
                 "id":"sports-bein",
                 "type":"hls",
-                "src":"https://livestreamapis.com/v3/accounts/28858503/events/8920334/master.m3u8?token=4bbc95e3d9103c3f3c50f4b9096e1158&clientId=2576&timestamp=1576441647595",
+                "src":"https://livestreamapis.com/v3/accounts/28858503/events/8920334/master.m3u8?token=890143f11a9a3c68818cb8b0083303fd&clientId=2576&timestamp=1583452485098",
                 "name":"BEIN Sports",
                 "logo":"./assets/img/bein_sports.png",
                 "description":"No hay descripción",
