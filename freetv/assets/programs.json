@@ -15,17 +15,19 @@
              {
                 "id":"news-trece",
                 "type":"iframe",
-                "src":"http://www.srfixehd.info/arg/trece.php",
+                "src":"https://player.twitch.tv/?channel=14_tvrr33",
                 "name":"El Trece TV",
                 "logo":"./assets/img/eltrece.png",
                 "description":"Canal 13 es una cadena de televisión argentina que transmite desde la Ciudad de Buenos Aires.",
                 "category":"Noticias",
-                "available":false
+                "available":true
              },
              {
                 "id":"news-telefe",
-                "type":"hls",
-                "src":"https://evento6hls-lh.akamaihd.net/i/evento6hls_1@48399/index_1_av-b.m3u8",
+                "type": "iframe",
+                "src": "https://player.twitch.tv/?channel=10_tf70v",
+                "type1":"hls",
+                "src1":"https://evento6hls-lh.akamaihd.net/i/evento6hls_1@48399/index_1_av-b.m3u8",
                 "name":"Telefe",
                 "logo":"./assets/img/telefe.png",
                 "description":"Telefe es el canal de TV líder en la producción y comercialización de contenidos y servicios audiovisuales de Argentina.",
@@ -45,8 +47,7 @@
              {
                 "id":"news-tv-publica",
                 "type":"hls",
-                "src0": "https://www.youtube.com/embed/QBscZfiGHXM?rel=0&autoplay=1&showinfo=0&controls=0",
-                "src":"https://g2.vxral-hor.transport.edge-access.net/b16/ngrp:c7_vivo01_dai_source-20001_all/c7_vivo01_dai_source-20001_720p.m3u8",
+                "src": "https://www.youtube.com/embed/TbpEUIoqCg0?rel=0&autoplay=1&showinfo=0&controls=0",
                 "name":"TV Pública",
                 "logo":"./assets/img/tvpublica.png",
                 "description":"La Televisión Pública Argentina es la cadena de mayor cobertura televisiva en el territorio argentino a través de repetidoras ubicadas en el interior del país.",
@@ -76,7 +77,7 @@
              {
                 "id":"news-tn",
                 "type":"youtube",
-                "src":"https://www.youtube.com/embed/gVH6WvzwGeM?rel=0&autoplay=1&showinfo=0&controls=0",
+                "src":"https://www.youtube.com/embed/wHn1_QVoXGM?rel=0&autoplay=1&showinfo=0&controls=0",
                 "name":"TN Noticias",
                 "logo":"./assets/img/tn.png",
                 "description":"TN es la referencia obligada de la actualidad nacional e internacional. Todo el año durante todo el día, los periodistas de TN siguen paso a paso las noticias, mostrando las imágenes más impactantes desde el lugar donde está la información.",
@@ -86,7 +87,7 @@
              {
                 "id":"news-cronica",
                 "type":"youtube",
-                "src":"https://www.youtube.com/embed/iPej7UJDEoc?rel=0&autoplay=1&showinfo=0&controls=0",
+                "src":"https://www.youtube.com/embed/K9X2WcIk_Ws?rel=0&autoplay=1&showinfo=0&controls=0",
                 "name":"Cronica TV",
                 "logo":"./assets/img/cronica.png",
                 "description":"No hay descripción",
@@ -106,7 +107,7 @@
              {
                 "id":"news-c5n",
                 "type":"youtube",
-                "src":"https://www.youtube.com/embed/GsayX2qegBU?rel=0&autoplay=1&showinfo=0&controls=0",
+                "src":"https://www.youtube.com/embed/SITqezHXSHA?rel=0&autoplay=1&showinfo=0&controls=0",
                 "name":"C5N",
                 "logo":"./assets/img/c5n.png",
                 "description":"No hay descripción",
