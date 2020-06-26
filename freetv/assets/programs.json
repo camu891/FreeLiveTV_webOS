@@ -672,7 +672,20 @@
             "logo":"https://miradetodo.co/wp-content/uploads/2019/11/tt7286456.jpg",
             "description":"No hay descripción",
             "category":"Peliculas",
-            "available":true
+            "available":false
+         }
+       ]
+       },
+       { "Otros": [
+         {
+            "id":"other1",
+            "type":"iframe",
+            "src":"https://trends.google.com.ar/trends/hottrends/visualize?pn=p30",
+            "name":"Google Trends ARG",
+            "logo":"./assets/img/google_trends.png",
+            "description":"No hay descripción",
+            "category":"Otros",
+            "available":false
          }
        ]
        }
