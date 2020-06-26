@@ -685,7 +685,7 @@
             "logo":"./assets/img/google_trends.png",
             "description":"No hay descripción",
             "category":"Otros",
-            "available":false
+            "available":true
          }
        ]
        }
