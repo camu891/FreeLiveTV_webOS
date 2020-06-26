@@ -141,8 +141,8 @@
              {
                 "id":"sports-tyc",
                 "type":"iframe",
-                "src": "http://www.lateleenvivo.club/canales/tycsports2a.php",
-                "src1":"https://sv3.futbollibre.net/tyc.html",
+                "src1": "http://www.lateleenvivo.club/canales/tycsports2a.php",
+                "src":"https://soloveo.com/tyc.php",
                 "name":"Tyc Sports",
                 "logo":"./assets/img/tyc_sport.png",
                 "description":"TyC Sports en vivo es un canal de televisión por suscripción deportivo argentino, el cual brinda la emisión de eventos deportivos destacados a nivel nacional e internacional.",
@@ -659,7 +659,7 @@
             "logo":"https://static.vix.com/es/sites/default/files/styles/thumbnail/public/s/serie-chernobyl-hbo-2.jpeg",
             "description":"No hay descripción",
             "category":"Series",
-            "available":true
+            "available":false
          }
        ]
        },
@@ -681,9 +681,9 @@
             "id":"other1",
             "type":"iframe",
             "src":"https://trends.google.com.ar/trends/hottrends/visualize?pn=p30",
-            "name":"Google Trends ARG",
+            "name":"Google Trends",
             "logo":"./assets/img/google_trends.png",
-            "description":"No hay descripción",
+            "description":"Muestra las últimas búsquedas populares de Argentina.",
             "category":"Otros",
             "available":true
          }
