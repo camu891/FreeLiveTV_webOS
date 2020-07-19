@@ -161,8 +161,8 @@
             },
              {
                 "id":"sports-espn",
-                "type":"hls",
-                "src":"https://sv.tsnt.xyz/espn/espn1o_sur.m3u8",
+                "type":"iframe",
+                "src":"https://soloveo.com/espnhd.php",
                 "name":"ESPN",
                 "logo":"./assets/img/espn.png",
                 "description":"ESPN Latinoamérica es el canal de televisión especializado en deportes que transmite por cable o satélite para este lado del Continente, pero con diferentes señales según los países o zona en los que uno se encuentre.",
@@ -171,8 +171,9 @@
              },
              {
                 "id":"sports-espn-2",
-                "type":"hls",
-                "src":"https://sv.tsnt.xyz/espn/espn2o_sur.m3u8",
+                "type":"iframe",
+                "src": "https://soloveo.com/espn2hd.php",
+                "src1":"https://sv.tsnt.xyz/espn/espn2o_sur.m3u8",
                 "name":"ESPN 2",
                 "logo":"./assets/img/espn2.png",
                 "description":"ESPN 2 En vivo es un canal de deportes que regularmente transmite partidos de fútbol correspondientes a la Bundesliga y de la Liga de Holanda. Además se transmiten los Juegos Extremos de Invierno.",
@@ -182,7 +183,7 @@
              {
                 "id":"sports-espn-3",
                 "type":"iframe",
-                "src":"http://futbollibre.online/espn-3/embed2.html",
+                "src":"https://soloveo.com/espn3hd.php",
                 "name":"ESPN 3",
                 "logo":"./assets/img/espn3.png",
                 "description":"La programación de ESPN 3 está dedicada a los deportes de acción, es decir los deportes extremos tanto de verano como de invierno, así como los de aventura, surf y running.",
