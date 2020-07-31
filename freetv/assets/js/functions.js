@@ -119,6 +119,7 @@ function ajaxLoadPrograms(){
 }
 
 function initLastView(){
+	saveSettings(settings.LAST_VIEW, ''); //clear settings
 	addLastViewCard(allPrograms);
 	//two last view
 	$(".card").click(function(){
