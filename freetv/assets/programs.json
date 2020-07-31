@@ -172,7 +172,8 @@
              {
                 "id":"sports-espn-2",
                 "type":"hls",
-                "src":"https://sv.tsnt.xyz/espn/espn2o_sur.m3u8",
+                "src": "https://futbollibre.online/en-vivo/espn-2/embed_o.html?embed",
+                "src1":"https://sv.tsnt.xyz/espn/espn2o_sur.m3u8",
                 "name":"ESPN 2",
                 "logo":"./assets/img/espn2.png",
                 "description":"ESPN 2 En vivo es un canal de deportes que regularmente transmite partidos de fútbol correspondientes a la Bundesliga y de la Liga de Holanda. Además se transmiten los Juegos Extremos de Invierno.",
@@ -301,15 +302,25 @@
                 "available":false
              },
              {
-                "id":"sports-nba",
-                "type":"iframe",
-                "src":"https://telerium.tv/embed/25279.html",
-                "name":"NBA Allstar",
-                "logo":"https://vignette.wikia.nocookie.net/logopedia/images/7/7a/2018_NBA_All-Star_Game_logo.png/revision/latest?cb=20170906012228",
-                "description":"No hay descripción",
-                "category":"Deportes",
-                "available":true
-             },
+               "id":"sports-nba",
+               "type":"iframe",
+               "src":"https://player.twitch.tv/?channel=nba",
+               "name":"NBA",
+               "logo":"https://cdn.mitvstatic.com/channels/co_nba-tv-hd_m.png",
+               "description":"No hay descripción",
+               "category":"Deportes",
+               "available":true
+            },
+             {
+               "id":"sports-nba1",
+               "type":"iframe",
+               "src":"https://player.twitch.tv/?channel=thebasic11",
+               "name":"NBA live",
+               "logo":"https://vignette.wikia.nocookie.net/logopedia/images/7/7a/2018_NBA_All-Star_Game_logo.png/revision/latest?cb=20170906012228",
+               "description":"No hay descripción",
+               "category":"Deportes",
+               "available":true
+            },
              {
                 "id":"sports-nbc",
                 "type":"hls",
