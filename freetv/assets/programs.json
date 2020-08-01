@@ -304,7 +304,7 @@
              {
                "id":"sports-nba",
                "type":"iframe",
-               "src":"https://player.twitch.tv/?channel=nba",
+               "src":"http://nbastreams.xyz/schedules/",
                "name":"NBA",
                "logo":"https://cdn.mitvstatic.com/channels/co_nba-tv-hd_m.png",
                "description":"No hay descripción",
