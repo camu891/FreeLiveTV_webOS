@@ -694,6 +694,16 @@
             "description":"Muestra las últimas búsquedas populares de Argentina.",
             "category":"Otros",
             "available":true
+         },
+         {
+            "id":"other2",
+            "type":"iframe",
+            "src":"./investments/index.html",
+            "name":"Inversiones",
+            "logo":"./assets/img/google_trends.png",
+            "description":"Muestra las últimas búsquedas populares de Argentina.",
+            "category":"Otros",
+            "available":true
          }
        ]
        }
