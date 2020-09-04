@@ -713,7 +713,7 @@
             "logo":"./assets/img/google_trends.png",
             "description":"Muestra las últimas búsquedas populares de Argentina.",
             "category":"Otros",
-            "available":false
+            "available":true
          }
        ]
        }
