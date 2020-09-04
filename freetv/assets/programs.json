@@ -698,12 +698,22 @@
          {
             "id":"other2",
             "type":"iframe",
+            "src":"https://ctrade.lucaslabs.tech/cedear",
+            "name":"CTrade",
+            "logo":"./assets/img/trade.png",
+            "description":"Trading",
+            "category":"Otros",
+            "available":true
+         },
+         {
+            "id":"other3",
+            "type":"iframe",
             "src":"./investments/index.html",
             "name":"Inversiones",
             "logo":"./assets/img/google_trends.png",
             "description":"Muestra las últimas búsquedas populares de Argentina.",
             "category":"Otros",
-            "available":true
+            "available":false
          }
        ]
        }
