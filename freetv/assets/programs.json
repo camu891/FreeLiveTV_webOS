@@ -44,8 +44,8 @@
             },
             {
                "id":"news-tv-publica",
-               "type":"hls",
-               "src":"https://www.youtube.com/embed/TbpEUIoqCg0?rel=0&autoplay=1&showinfo=0&controls=0",
+               "type":"iframe",
+               "src":"http://embed.pirlotvhd.me/reproductor/canal3.php?width=650&height=400",
                "name":"TV Pública",
                "logo":"./assets/img/tvpublica.png",
                "description":"La Televisión Pública Argentina es la cadena de mayor cobertura televisiva en el territorio argentino a través de repetidoras ubicadas en el interior del país.",
