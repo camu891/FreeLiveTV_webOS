@@ -159,8 +159,8 @@
             },
             {
                "id":"sports-espn",
-               "type":"hls",
-               "src":"https://sv.tsnt.xyz/espn/espn1o_sur.m3u8?0i6ob",
+               "type":"iframe",
+               "src":"hhttps://futbolparatodos.net/canales/canal.html?get=Ly9lZGdlLWxpdmUxNC1oci5jdmF0dHYuY29tLmFyL2xpdmUvYzJsaXZlL0VTUE5fSEQvU0FfTGl2ZV9kYXNoX2VuY18yQS9FU1BOX0hELm1wZA==",
                "name":"ESPN",
                "logo":"./assets/img/espn.png",
                "description":"ESPN Latinoamérica es el canal de televisión especializado en deportes que transmite por cable o satélite para este lado del Continente, pero con diferentes señales según los países o zona en los que uno se encuentre.",
