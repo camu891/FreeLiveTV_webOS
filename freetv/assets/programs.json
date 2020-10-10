@@ -150,7 +150,8 @@
             {
                "id":"sports-tnt-sport",
                "type":"iframe",
-               "src":"http://futbollibre.online/tnt-sports/embed.html",
+               "src": "https://televisionlibre.net/embed/tntsports.html",
+               "src1":"http://futbollibre.online/tnt-sports/embed.html",
                "name":"TNT SPORT",
                "logo":"./assets/img/tntsports.png",
                "description":"TNT Sports en vivo, es un canal de televisión por suscripción argentino, dedicado a la emisión del deporte de ese país, junto con Fox Sports Premium, que comenzó a emitirse el viernes 25 de agosto de 2017 desde las 18h, tras la alianza de Turner y Fox por los derechos de televisión de la Primera División Argentina (Superliga) de fútbol argentino, siendo reemplazo del programa gubernamental Fútbol Para Todos.",
@@ -180,7 +181,7 @@
             {
                "id":"sports-espn-3",
                "type":"iframe",
-               "src":"http://futbollibre.online/espn-3/embed2.html",
+               "src":"https://futbolparatodos.net/canales/iframe.php?get=https://sportsbay.org/embed/54015/1/espn-3-sur-live.html",
                "name":"ESPN 3",
                "logo":"./assets/img/espn3.png",
                "description":"La programación de ESPN 3 está dedicada a los deportes de acción, es decir los deportes extremos tanto de verano como de invierno, así como los de aventura, surf y running.",
