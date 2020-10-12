@@ -312,7 +312,7 @@
             {
                "id":"sports-nba1",
                "type":"iframe",
-               "src":"http://embed.futboltv.ec/reproductor/nba.php?width=650&height=400",
+               "src":"http://embed.futboltv.ec/reproductor/canal48.php",
                "name":"NBA live",
                "logo":"https://vignette.wikia.nocookie.net/logopedia/images/7/7a/2018_NBA_All-Star_Game_logo.png/revision/latest?cb=20170906012228",
                "description":"No hay descripción",
