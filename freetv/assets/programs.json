@@ -191,8 +191,8 @@
             {
                "id":"sports-fox-premium",
                "type":"hls",
-               "src":"https://u73165.cdn884.net:8443/hls/7tm88j.m3u8?s=OXpBeRFDvAy_w6-18LMi3w&e=1598223419",
-               "src1":"http://sv1.futbollibre.net/superliga.m3u8?",
+               "src1":"https://u73165.cdn884.net:8443/hls/7tm88j.m3u8?s=OXpBeRFDvAy_w6-18LMi3w&e=1598223419",
+               "src":"https://meridix-live3.secure.footprint.net/live/broadcaster69/playlist.m3u8",
                "name":"Fox Sports Premium",
                "logo":"./assets/img/foxsport_premium.png",
                "description":"FOX Sports Premium es un canal argentino que ofrece acceso instantáneo a los mejores partidos de futbol de la Superliga Argentina. Es un canal de televisión de paga argentino dedicado a la emisión del fútbol de dicho país, junto con TNT Sports tras la alianza de Turner y Fox por los derechos de televisión del fútbol argentino, el cual reemplaza el programa público Fútbol Para Todos.",
