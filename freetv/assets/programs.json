@@ -15,7 +15,7 @@
             {
                "id":"news-trece",
                "type":"iframe",
-               "src":"https://player.twitch.tv/?channel=14_tvrr33",
+               "src":"",
                "name":"El Trece TV",
                "logo":"./assets/img/eltrece.png",
                "description":"Canal 13 es una cadena de televisión argentina que transmite desde la Ciudad de Buenos Aires.",
@@ -44,8 +44,9 @@
             },
             {
                "id":"news-tv-publica",
-               "type":"iframe",
-               "src":"http://embed.pirlotvhd.me/reproductor/canal3.php?width=650&height=400",
+               "type":"youtube",
+               "src": "https://www.youtube.com/embed/XjxmOUaH8tA?rel=0&autoplay=1&showinfo=0&controls=0",
+               "src1":"http://embed.pirlotvhd.me/reproductor/canal3.php?width=650&height=400",
                "name":"TV Pública",
                "logo":"./assets/img/tvpublica.png",
                "description":"La Televisión Pública Argentina es la cadena de mayor cobertura televisiva en el territorio argentino a través de repetidoras ubicadas en el interior del país.",
@@ -139,8 +140,8 @@
             {
                "id":"sports-tyc",
                "type":"iframe",
-               "src1":"http://www.lateleenvivo.club/canales/tycsports2a.php",
-               "src":"",
+               "src":"http://www.lateleenvivo.club/canales/tycsports2a.php",
+               "src1":"https://cdn.jwplayer.com/players/ubIUxrYq-k8DL16H5.html",
                "name":"Tyc Sports",
                "logo":"./assets/img/tyc_sport.png",
                "description":"TyC Sports en vivo es un canal de televisión por suscripción deportivo argentino, el cual brinda la emisión de eventos deportivos destacados a nivel nacional e internacional.",
@@ -161,7 +162,7 @@
             {
                "id":"sports-espn",
                "type":"iframe",
-               "src":"https://futbolparatodos.net/canales/canal.html?get=Ly9lZGdlLWxpdmUxNC1oci5jdmF0dHYuY29tLmFyL2xpdmUvYzJsaXZlL0VTUE5fSEQvU0FfTGl2ZV9kYXNoX2VuY18yQS9FU1BOX0hELm1wZA==",
+               "src":"https://futbollibre.online/en-vivo/espn-1/embed_o.html",
                "name":"ESPN",
                "logo":"./assets/img/espn.png",
                "description":"ESPN Latinoamérica es el canal de televisión especializado en deportes que transmite por cable o satélite para este lado del Continente, pero con diferentes señales según los países o zona en los que uno se encuentre.",
@@ -181,7 +182,7 @@
             {
                "id":"sports-espn-3",
                "type":"iframe",
-               "src":"https://futbolparatodos.net/canales/iframe.php?get=https://sportsbay.org/embed/54015/1/espn-3-sur-live.html",
+               "src":"https://futbolparatodos.net/canales/canal.html?get=Ly9lZGdlNC1oci5jdmF0dHYuY29tLmFyL2xpdmUvYzNlZHMvRVNQTjMvU0FfTGl2ZV9kYXNoX2VuY18yQS9FU1BOMy5tcGQ=",
                "name":"ESPN 3",
                "logo":"./assets/img/espn3.png",
                "description":"La programación de ESPN 3 está dedicada a los deportes de acción, es decir los deportes extremos tanto de verano como de invierno, así como los de aventura, surf y running.",
@@ -190,9 +191,9 @@
             },
             {
                "id":"sports-fox-premium",
-               "type":"hls",
-               "src1":"https://u73165.cdn884.net:8443/hls/7tm88j.m3u8?s=OXpBeRFDvAy_w6-18LMi3w&e=1598223419",
-               "src":"https://meridix-live3.secure.footprint.net/live/broadcaster69/playlist.m3u8",
+               "type":"iframe",
+               "src":"https://reproductor.futbollibre.net/fox/",
+               "src1":"https://meridix-live3.secure.footprint.net/live/broadcaster69/playlist.m3u8",
                "name":"Fox Sports Premium",
                "logo":"./assets/img/foxsport_premium.png",
                "description":"FOX Sports Premium es un canal argentino que ofrece acceso instantáneo a los mejores partidos de futbol de la Superliga Argentina. Es un canal de televisión de paga argentino dedicado a la emisión del fútbol de dicho país, junto con TNT Sports tras la alianza de Turner y Fox por los derechos de televisión del fútbol argentino, el cual reemplaza el programa público Fútbol Para Todos.",
