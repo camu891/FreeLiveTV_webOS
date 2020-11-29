@@ -151,8 +151,7 @@
             {
                "id":"sports-tnt-sport",
                "type":"iframe",
-               "src1": "https://televisionlibre.net/embed/tntsports.html",
-               "src":"https://futbollibre.online/embed/tnt/flow.html?",
+               "src": "https://televisionlibre.net/embed/tntsports.html",
                "name":"TNT SPORT",
                "logo":"./assets/img/tntsports.png",
                "description":"TNT Sports en vivo, es un canal de televisión por suscripción argentino, dedicado a la emisión del deporte de ese país, junto con Fox Sports Premium, que comenzó a emitirse el viernes 25 de agosto de 2017 desde las 18h, tras la alianza de Turner y Fox por los derechos de televisión de la Primera División Argentina (Superliga) de fútbol argentino, siendo reemplazo del programa gubernamental Fútbol Para Todos.",
