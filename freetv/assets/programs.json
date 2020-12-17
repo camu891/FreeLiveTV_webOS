@@ -283,7 +283,7 @@
             {
                "id":"sports-bein",
                "type":"hls",
-               "src":"https://livestreamapis.com/v3/accounts/28858503/events/8920334/master.m3u8?token=890143f11a9a3c68818cb8b0083303fd&clientId=2576&timestamp=1583452485098",
+               "src":"https://livestreamapis.com/v3/accounts/28858503/events/9205823/master.m3u8?token=c96be47d293006e6cc9a2cbade5c910c&clientId=2576&timestamp=1608170495672",
                "name":"BEIN Sports",
                "logo":"./assets/img/bein_sports.png",
                "description":"No hay descripción",
