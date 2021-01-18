@@ -397,8 +397,8 @@
             {
                "id":"cine-tnt",
                "type":"iframe",
-               "src":"http://premiumtvchannels.com/latino/tnt",
-               "src1":"http://www.liketvw.com/embed/tnt",
+               "src1":"http://premiumtvchannels.com/latino/tnt",
+               "src":"https://televisionlibre.net/embed/tntsports.html",
                "name":"TNT",
                "logo":"./assets/img/tnt.png",
                "description":"No hay descripción",
