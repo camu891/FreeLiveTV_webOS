@@ -171,8 +171,8 @@
             },
             {
                "id":"sports-espn-2",
-               "type":"iframe",
-               "src": "https://futbollibre.net/en-vivo/espn-2/embed_o.html",
+               "type":"hls",
+               "src": "https://sv.tsnt.xyz/espn/espn2o_sur_c.m3u8?161516627",
                "src1":"https://sv.tsnt.xyz/espn/espn2o_sur.m3u8",
                "name":"ESPN 2",
                "logo":"./assets/img/espn2.png",
