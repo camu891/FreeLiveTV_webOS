@@ -254,7 +254,7 @@
             {
                "id":"sports-directv-sport",
                "type":"iframe",
-               "src":"https://futbollibre.net/en-vivo/directv-sports/embed_dtv.html?",
+               "src":"https://dpelota.com/directvsports.php",
                "name":"DIRECTV SPORTS",
                "logo":"./assets/img/directv_sports.png",
                "description":"DirecTV Sports en vivo es un canal de televisión por suscripción deportivo exclusivo de DirecTV.",
