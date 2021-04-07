@@ -139,9 +139,8 @@
          "Deportes":[
             {
                "id":"sports-tyc",
-               "type":"hls",
-               "src1":"https://futbollibre.online/en-vivo/tyc-sports/embed.html",
-               "src":"https://livestreamapis.com/v3/accounts/27014129/events/8167338/master.m3u8?token=d789b78cac3a718d77c5af30388fd7d5&clientId=18998&timestamp=1617495131744&signature=605c4756797d80000dfb2d167eacd10e5ab8fd89d095ac9a6b5978b64844f3adbdeb27a149110102bbd29194f8ce1a04",
+               "type":"iframe",
+               "src":"https://futbollibre.online/en-vivo/tyc-sports/embed.html",
                "name":"Tyc Sports",
                "logo":"./assets/img/tyc_sport.png",
                "description":"TyC Sports en vivo es un canal de televisión por suscripción deportivo argentino, el cual brinda la emisión de eventos deportivos destacados a nivel nacional e internacional.",
