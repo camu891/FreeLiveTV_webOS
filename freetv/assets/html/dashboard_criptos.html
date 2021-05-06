@@ -1,0 +1,56 @@
+<html>
+<head>
+	 <meta charset="UTF-8">
+    <title>Dashboard Criptos</title>
+	<style>
+		body {
+			background: #131722;
+		}
+
+		.panel {
+			    width: 33%;
+    			height: 400px;
+    			display: inline-block;
+    			margin: 2px
+		}
+	</style>
+
+ 	 <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+
+</head>
+<body>
+
+	<div id="tradingview-container">
+	</div>
+
+
+	<script type="text/javascript">
+		var symbols = ["BINANCE:BTCUSDT", "BINANCE:NEOUSDT", "BINANCE:ADAUSDT", "BINANCE:OCEANUSDT", "BINANCE:MATICUSDT"];
+
+		symbols.forEach( function(element, index) {
+			var container = document.getElementById("tradingview-container");
+ 			 var panel = document.createElement("div");
+ 			 panel.className = "panel";
+ 			 panel.id = element;
+			 container.appendChild(panel);
+
+			new TradingView.widget(
+			  {
+			  "autosize": true,
+			  "symbol": element,
+			  "interval": "240",
+			  "timezone": "Etc/UTC",
+			  "theme": "dark",
+			  "style": "1",
+			  "locale": "es",
+			  "toolbar_bg": "#f1f3f6",
+			  "enable_publishing": false,
+			  "allow_symbol_change": false,
+			  "container_id": element
+			});
+		});
+
+	</script>
+
+</body>
+</html>

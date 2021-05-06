@@ -882,6 +882,20 @@
                "available":true
             }
          ]
+      },
+      {
+         "Finances":[
+            {
+               "id":"dashboard-cripto",
+               "type":"iframe",
+               "src":"./assets/html/dashboard_criptos.html",
+               "name":"Dashboard Cripto",
+               "logo":"./assets/img/btc.png",
+               "description":"Dashboard de criptomonedas",
+               "category":"Finanzas",
+               "available":false
+            }
+         ]
       }
    ]
 }
