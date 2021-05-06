@@ -893,7 +893,7 @@
                "logo":"./assets/img/btc.png",
                "description":"Dashboard de criptomonedas",
                "category":"Finanzas",
-               "available":false
+               "available":true
             }
          ]
       }
