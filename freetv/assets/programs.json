@@ -285,7 +285,7 @@
             {
                "id":"sports-bein",
                "type":"hls",
-               "src":"https://livestreamapis.com/v3/accounts/28858503/events/9205823/master.m3u8?token=c96be47d293006e6cc9a2cbade5c910c&clientId=2576&timestamp=1608170495672",
+               "src":"https://livestreamapis.com/v3/accounts/27856896/events/8563077/master.m3u8?token=1b41929a60448721969d7e5553cd240b&clientId=18998&timestamp=1620864679343&signature=605c4756797d80000dfb2d167eacd10e7670b21eb20d6865a301d05e741698fd413f56cb63b708deab8f77be0f049c7a",
                "name":"BEIN Sports",
                "logo":"./assets/img/bein_sports.png",
                "description":"No hay descripción",
