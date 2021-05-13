@@ -160,10 +160,10 @@
             },
             {
                "id":"sports-espn",
-               "type":"hls",
+               "type":"iframe",
                "src2": "https://futbollibre.net/embed/drmplayer.html",
                "src1":"https://futbollibre.net/en-vivo/espn-1/embed_o.html",
-               "src": "http://23.237.78.54/live-1000/244/playlist.m3u8",
+               "src": "https://futbollibre.net/embed/drmplayer.html?get=Ly9jaHJvbWVjYXN0LmN2YXR0di5jb20uYXIvbGl2ZS8vYzNlZHMvRVNQTjJIRC9TQV9MaXZlX2Rhc2hfZW5jXzJBL0VTUE4ySEQubXBk&embed2",
                "name":"ESPN",
                "logo":"./assets/img/espn.png",
                "description":"ESPN Latinoamérica es el canal de televisión especializado en deportes que transmite por cable o satélite para este lado del Continente, pero con diferentes señales según los países o zona en los que uno se encuentre.",
