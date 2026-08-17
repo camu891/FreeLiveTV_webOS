@@ -11,21 +11,34 @@ var config = {
 var USER_GUEST = {
     email: "guest@guest.com",
     password: "userguest"
-}
+};
 
 $(document).ready(function(){
     try {
+        if (typeof firebase === "undefined") {
+            enterWithoutFirebase();
+            return;
+        }
         initFirebase();
-    } catch(error) {
-        var mainContent = $("#main-content");
-        var mainLogin = $("#main-login");
-        mainLogin.hide();
-        mainContent.show();
+    } catch (error) {
+        enterWithoutFirebase();
     }
 });
 
+function enterWithoutFirebase() {
+    $("#main-login").hide();
+    $("#main-content").show();
+    $(".content-loader").hide();
+}
+
 function initFirebase(){
-    var userLocalStorage = JSON.parse(getSettings(settings.USER));
+    var userLocalStorage = null;
+    try {
+        var rawUser = getSettings(settings.USER);
+        userLocalStorage = rawUser ? JSON.parse(rawUser) : null;
+    } catch (e) {
+        userLocalStorage = null;
+    }
     firebase.initializeApp(config);
     firebase.auth().onAuthStateChanged(function(user) {
         var isLogged = false;
@@ -33,89 +46,68 @@ function initFirebase(){
             isLogged = true;
             user = userLocalStorage;
         } else if (user) {
-            var user = firebase.auth().currentUser;
-            var name, email, photoUrl, uid, emailVerified;
-            //save user in localstorage
-            saveSettings(settings.USER, JSON.stringify(user));
-            if (user != null) {
-                name = user.displayName;
-                email = user.email;
-                photoUrl = user.photoURL;
-                emailVerified = user.emailVerified;
-                uid = user.uid;  // The user's ID, unique to the Firebase project. Do NOT use
-                // this value to authenticate with your backend server, if
-                // you have one. Use User.getToken() instead.
+            var currentUser = firebase.auth().currentUser;
+            saveSettings(settings.USER, JSON.stringify(currentUser));
+            if (currentUser != null) {
                 isLogged = true;
-                if(email == USER_GUEST.email){
-                    showAds();
-                }
             }
-        } else {
-            // No user is signed in.
-            isLogged = false;
         }
         $(".content-loader").hide();
-        toggleLogin(isLogged,user)
+        toggleLogin(isLogged, user);
     });
-    
-}
-
-function showAds(){
-    
 }
 
 function toggleLogin(isLogged, user){
     var mainLogin = $("#main-login");
     var mainContent = $("#main-content");
-    if(isLogged || (user && user.email == USER_GUEST.email)){
+    if (isLogged || (user && user.email == USER_GUEST.email)){
         mainLogin.hide();
         mainContent.show();
-    }else {
+    } else {
         mainLogin.show();
         mainContent.hide();
     }
 }
 
 function login() {
-    var userEmail = document.getElementById('email').value;
-    var userPassword = document.getElementById('password').value;
-    signWithFirebase(userEmail,userPassword)
+    var userEmail = document.getElementById("email").value;
+    var userPassword = document.getElementById("password").value;
+    signWithFirebase(userEmail, userPassword);
 }
 
-function signWithFirebase(email,password){
+function signWithFirebase(email, password){
     $(".content-loader").show();
+    if (typeof firebase === "undefined") {
+        enterWithoutFirebase();
+        return;
+    }
     firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
-        // Handle Errors here.
-        var errorCode = error.code;
-        var errorMessage = error.message;
-        alert('Error: '+ errorMessage);
-        $(".content-loader").hide();
-    });
-}
-
-function createUser(email,password){
-    firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
-        // Handle Errors here.
-        var errorCode = error.code;
-        var errorMessage = error.message;
-        alert('Error: '+ errorMessage);
+        $("#message").text(error.message || "No se pudo iniciar sesión");
         $(".content-loader").hide();
     });
 }
 
 function guest(){
-    signWithFirebase(USER_GUEST.email,USER_GUEST.password)
+    if (typeof firebase === "undefined") {
+        enterWithoutFirebase();
+        return;
+    }
+    signWithFirebase(USER_GUEST.email, USER_GUEST.password);
 }
 
 function logout() {
+    if (typeof firebase === "undefined" || !firebase.auth) {
+        removeSettings(settings.USER);
+        enterWithoutFirebase();
+        $("#main-login").show();
+        $("#main-content").hide();
+        return;
+    }
     firebase.auth().signOut().then(function() {
-        // Sign-out successful.
         removeSettings(settings.USER);
         $("#main-login").show();
         $("#main-content").hide();
     }).catch(function(error) {
-        // An error happened.
-        alert("Error: "+ error)
+        $("#message").text("Error: " + error);
     });
 }
-

@@ -8,6 +8,6 @@
     "id": "com.matic.freetv",
     "title": "Live TV",
     "type": "web",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "splashBackground": "FreeLiveTv_Splash.png"
 }

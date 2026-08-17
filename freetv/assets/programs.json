@@ -3,133 +3,224 @@
       {
          "Noticias":[
             {
-               "id":"news-doce",
-               "type":"youtube",
-               "src":"https://www.youtube.com/embed/gBbMbqILzXU?rel=0&autoplay=1&showinfo=0&controls=0",
-               "name":"El doce",
-               "logo":"./assets/img/12tv.png",
-               "description":"No hay descripción",
-               "category":"Noticias",
-               "available":true
-            },
-            {
-               "id":"news-trece",
-               "type":"iframe",
-               "src":"https://televisionlibre.net/embed/eltrece_dtv.html",
-               "name":"El Trece TV",
-               "logo":"./assets/img/eltrece.png",
-               "description":"Canal 13 es una cadena de televisión argentina que transmite desde la Ciudad de Buenos Aires.",
-               "category":"Noticias",
-               "available":true
-            },
-            {
-               "id":"news-telefe",
-               "type":"iframe",
-               "src":"https://televisionlibre.net/embed2/telefe.html",
-               "name":"Telefe",
-               "logo":"./assets/img/telefe.png",
-               "description":"Telefe es el canal de TV líder en la producción y comercialización de contenidos y servicios audiovisuales de Argentina.",
-               "category":"Noticias",
-               "available":true
-            },
-            {
-               "id":"news-teleocho",
-               "type":"hls",
-               "src":"https://tlfcapitalhls-lh.akamaihd.net/i/canal8cordoba_1@685726/index_1_av-p.m3u8",
-               "name":"Teleocho",
-               "logo":"./assets/img/teleocho.png",
-               "description":"No hay descripción",
-               "category":"Noticias",
-               "available":false
-            },
-            {
-               "id":"news-tv-publica",
-               "type":"youtube",
-               "src": "https://www.youtube.com/embed/XjxmOUaH8tA?rel=0&autoplay=1&showinfo=0&controls=0",
-               "src1":"http://embed.pirlotvhd.me/reproductor/canal3.php?width=650&height=400",
-               "name":"TV Pública",
-               "logo":"./assets/img/tvpublica.png",
-               "description":"La Televisión Pública Argentina es la cadena de mayor cobertura televisiva en el territorio argentino a través de repetidoras ubicadas en el interior del país.",
-               "category":"Noticias",
-               "available":true
-            },
-            {
-               "id":"news-canal-10",
-               "type":"hls",
-               "src":"https://wowzaprod169-i.akamaihd.net/hls/live/630337/59e4c1ec/59e4c1ec_1_1500000/chunklist.m3u8",
-               "name":"Canal 10",
-               "logo":"./assets/img/canal10.png",
-               "description":"No hay descripción",
-               "category":"Noticias",
-               "available":true
-            },
-            {
-               "id":"news-nueve",
-               "type":"hls",
-               "src":"http://dwgoed11hdvfh.cloudfront.net/c9/smil:live.smil/chunklist_b1328000.m3u8",
-               "name":"El nueve",
-               "logo":"./assets/img/canal9.png",
-               "description":"No hay descripción",
-               "category":"Noticias",
-               "available":true
-            },
-            {
                "id":"news-tn",
                "type":"youtube",
-               "src":"https://www.youtube.com/embed/wHn1_QVoXGM?rel=0&autoplay=1&showinfo=0&controls=0",
+               "src":"https://www.youtube.com/embed/live_stream?channel=UCj6PcyLvpnIRT_2W_mwa9Aw&autoplay=1&rel=0&modestbranding=1",
+               "sources":[
+                  {"type":"youtube","src":"https://www.youtube.com/embed/live_stream?channel=UCj6PcyLvpnIRT_2W_mwa9Aw&autoplay=1&rel=0&modestbranding=1"}
+               ],
                "name":"TN Noticias",
                "logo":"./assets/img/tn.png",
-               "description":"TN es la referencia obligada de la actualidad nacional e internacional. Todo el año durante todo el día, los periodistas de TN siguen paso a paso las noticias, mostrando las imágenes más impactantes desde el lugar donde está la información.",
-               "category":"Noticias",
-               "available":true
-            },
-            {
-               "id":"news-cronica",
-               "type":"youtube",
-               "src":"https://www.youtube.com/embed/K9X2WcIk_Ws?rel=0&autoplay=1&showinfo=0&controls=0",
-               "name":"Cronica TV",
-               "logo":"./assets/img/cronica.png",
-               "description":"No hay descripción",
-               "category":"Noticias",
-               "available":true
-            },
-            {
-               "id":"news-canal-26",
-               "type":"hls",
-               "src":"http://live-edge01.telecentro.net.ar/live/smil:c26.smil/chunklist_w1015357033_b1264000_sleng.m3u8",
-               "name":"Canal 26",
-               "logo":"./assets/img/canal26.png",
-               "description":"Canal 26 Noticias es un canal de televisión abierta argentino, que basa su programación en noticieros y programas de actualidad.",
+               "description":"Todo Noticias en vivo las 24 horas, señal oficial de YouTube.",
                "category":"Noticias",
                "available":true
             },
             {
                "id":"news-c5n",
                "type":"youtube",
-               "src":"https://www.youtube.com/embed/SITqezHXSHA?rel=0&autoplay=1&showinfo=0&controls=0",
+               "src":"https://www.youtube.com/embed/live_stream?channel=UCFgk2Q2mVO1BklRQhSv6p0w&autoplay=1&rel=0&modestbranding=1",
+               "sources":[
+                  {"type":"youtube","src":"https://www.youtube.com/embed/live_stream?channel=UCFgk2Q2mVO1BklRQhSv6p0w&autoplay=1&rel=0&modestbranding=1"}
+               ],
                "name":"C5N",
                "logo":"./assets/img/c5n.png",
-               "description":"No hay descripción",
+               "description":"C5N en vivo desde su canal oficial de YouTube.",
                "category":"Noticias",
                "available":true
             },
             {
-               "id":"news-13-max",
-               "type":"hls",
-               "src":"http://coninfo.net:1935/13maxhd/live_720p/chunklist_w1693758974.m3u8",
-               "name":"13 Max Noticias",
-               "logo":"./assets/img/13maxtv.png",
-               "description":"No hay descripción",
+               "id":"news-cronica",
+               "type":"youtube",
+               "src":"https://www.youtube.com/embed/live_stream?channel=UCT7KFGv6s2a-rh2Jq8ZdM1g&autoplay=1&rel=0&modestbranding=1",
+               "sources":[
+                  {"type":"youtube","src":"https://www.youtube.com/embed/live_stream?channel=UCT7KFGv6s2a-rh2Jq8ZdM1g&autoplay=1&rel=0&modestbranding=1"}
+               ],
+               "name":"Crónica TV",
+               "logo":"./assets/img/cronica.png",
+               "description":"Crónica TV en vivo, transmisión oficial 24 horas.",
                "category":"Noticias",
                "available":true
             },
             {
                "id":"news-ln",
                "type":"youtube",
-               "src":"https://www.youtube.com/embed/ngTaNYxsCCk?rel=0&autoplay=1&showinfo=0&controls=0",
+               "src":"https://www.youtube.com/embed/live_stream?channel=UCba3hpU7EFBSk817y9qZkiA&autoplay=1&rel=0&modestbranding=1",
+               "sources":[
+                  {"type":"youtube","src":"https://www.youtube.com/embed/live_stream?channel=UCba3hpU7EFBSk817y9qZkiA&autoplay=1&rel=0&modestbranding=1"}
+               ],
                "name":"LN+",
                "logo":"./assets/img/ln_plus.png",
-               "description":"No hay descripción",
+               "description":"LN+ en vivo desde el canal oficial de La Nación.",
+               "category":"Noticias",
+               "available":true
+            },
+            {
+               "id":"news-a24",
+               "type":"youtube",
+               "src":"https://www.youtube.com/embed/live_stream?channel=UCR9120YBAqMfntqgRTKmkjQ&autoplay=1&rel=0&modestbranding=1",
+               "sources":[
+                  {"type":"youtube","src":"https://www.youtube.com/embed/live_stream?channel=UCR9120YBAqMfntqgRTKmkjQ&autoplay=1&rel=0&modestbranding=1"}
+               ],
+               "name":"A24",
+               "logo":"./assets/img/no_image.png",
+               "description":"A24 en vivo, señal oficial de noticias.",
+               "category":"Noticias",
+               "available":true
+            },
+            {
+               "id":"news-canal-26",
+               "type":"hls",
+               "src":"https://stream-gtlc.telecentro.net.ar/hls/canal26hls/main.m3u8",
+               "sources":[
+                  {"type":"hls","src":"https://stream-gtlc.telecentro.net.ar/hls/canal26hls/main.m3u8"},
+                  {"type":"youtube","src":"https://www.youtube.com/embed/live_stream?channel=UCrpMfcQNog595v5gAS-oUsQ&autoplay=1&rel=0&modestbranding=1"}
+               ],
+               "name":"Canal 26",
+               "logo":"./assets/img/canal26.png",
+               "description":"Canal 26 Noticias, streaming oficial de Telecentro y YouTube.",
+               "category":"Noticias",
+               "available":true
+            },
+            {
+               "id":"news-tv-publica",
+               "type":"youtube",
+               "src":"https://www.youtube.com/embed/live_stream?channel=UCs231K71Bnu5295_x0MB5Pg&autoplay=1&rel=0&modestbranding=1",
+               "sources":[
+                  {"type":"youtube","src":"https://www.youtube.com/embed/live_stream?channel=UCs231K71Bnu5295_x0MB5Pg&autoplay=1&rel=0&modestbranding=1"}
+               ],
+               "name":"TV Pública",
+               "logo":"./assets/img/tvpublica.png",
+               "description":"Televisión Pública Argentina en vivo, canal oficial.",
+               "category":"Noticias",
+               "available":true
+            },
+            {
+               "id":"news-telefe",
+               "type":"youtube",
+               "src":"https://www.youtube.com/embed/live_stream?channel=UCHc3el42hXKKhjs_1vzWk9A&autoplay=1&rel=0&modestbranding=1",
+               "sources":[
+                  {"type":"youtube","src":"https://www.youtube.com/embed/live_stream?channel=UCHc3el42hXKKhjs_1vzWk9A&autoplay=1&rel=0&modestbranding=1"}
+               ],
+               "name":"Telefe",
+               "logo":"./assets/img/telefe.png",
+               "description":"Telefe en vivo cuando hay transmisión oficial en YouTube.",
+               "category":"Noticias",
+               "available":true
+            },
+            {
+               "id":"news-telefe-noticias",
+               "type":"youtube",
+               "src":"https://www.youtube.com/embed/live_stream?channel=UChxGASjdNEYHhVKpl667Huw&autoplay=1&rel=0&modestbranding=1",
+               "sources":[
+                  {"type":"youtube","src":"https://www.youtube.com/embed/live_stream?channel=UChxGASjdNEYHhVKpl667Huw&autoplay=1&rel=0&modestbranding=1"}
+               ],
+               "name":"Telefe Noticias",
+               "logo":"./assets/img/telefe_noticias.png",
+               "description":"Telefe Noticias en vivo desde YouTube.",
+               "category":"Noticias",
+               "available":true
+            },
+            {
+               "id":"news-trece",
+               "type":"youtube",
+               "src":"https://www.youtube.com/embed/live_stream?channel=UC0DM_mHV2u6dj8ig51GkQwg&autoplay=1&rel=0&modestbranding=1",
+               "sources":[
+                  {"type":"youtube","src":"https://www.youtube.com/embed/live_stream?channel=UC0DM_mHV2u6dj8ig51GkQwg&autoplay=1&rel=0&modestbranding=1"}
+               ],
+               "name":"El Trece TV",
+               "logo":"./assets/img/eltrece.png",
+               "description":"eltrece en vivo cuando hay transmisión oficial en YouTube.",
+               "category":"Noticias",
+               "available":true
+            },
+            {
+               "id":"news-nueve",
+               "type":"youtube",
+               "src":"https://www.youtube.com/embed/live_stream?channel=UCUT4NmGqjrVpKf2JyiS_bbA&autoplay=1&rel=0&modestbranding=1",
+               "sources":[
+                  {"type":"youtube","src":"https://www.youtube.com/embed/live_stream?channel=UCUT4NmGqjrVpKf2JyiS_bbA&autoplay=1&rel=0&modestbranding=1"}
+               ],
+               "name":"El Nueve",
+               "logo":"./assets/img/canal9.png",
+               "description":"El Nueve en vivo desde su canal oficial de YouTube.",
+               "category":"Noticias",
+               "available":true
+            },
+            {
+               "id":"news-america",
+               "type":"youtube",
+               "src":"https://www.youtube.com/embed/live_stream?channel=UC6NVDkuzY2exMOVFw4i9oHw&autoplay=1&rel=0&modestbranding=1",
+               "sources":[
+                  {"type":"youtube","src":"https://www.youtube.com/embed/live_stream?channel=UC6NVDkuzY2exMOVFw4i9oHw&autoplay=1&rel=0&modestbranding=1"}
+               ],
+               "name":"América TV",
+               "logo":"./assets/img/no_image.png",
+               "description":"América TV en vivo, señal oficial de YouTube.",
+               "category":"Noticias",
+               "available":true
+            },
+            {
+               "id":"news-doce",
+               "type":"youtube",
+               "src":"https://www.youtube.com/embed/live_stream?channel=UCiaePeoCqpU8hBHiNrgkzrA&autoplay=1&rel=0&modestbranding=1",
+               "sources":[
+                  {"type":"youtube","src":"https://www.youtube.com/embed/live_stream?channel=UCiaePeoCqpU8hBHiNrgkzrA&autoplay=1&rel=0&modestbranding=1"}
+               ],
+               "name":"El Doce",
+               "logo":"./assets/img/12tv.png",
+               "description":"El Doce Córdoba en vivo, canal oficial.",
+               "category":"Noticias",
+               "available":true
+            },
+            {
+               "id":"news-teleocho",
+               "type":"youtube",
+               "src":"https://www.youtube.com/embed/live_stream?channel=UCBszR6JyGbQyiubEZ3qhvuA&autoplay=1&rel=0&modestbranding=1",
+               "sources":[
+                  {"type":"youtube","src":"https://www.youtube.com/embed/live_stream?channel=UCBszR6JyGbQyiubEZ3qhvuA&autoplay=1&rel=0&modestbranding=1"}
+               ],
+               "name":"Teleocho",
+               "logo":"./assets/img/teleocho.png",
+               "description":"Teleocho Córdoba en vivo desde YouTube.",
+               "category":"Noticias",
+               "available":true
+            },
+            {
+               "id":"news-canal-10",
+               "type":"youtube",
+               "src":"https://www.youtube.com/embed/live_stream?channel=UCUzonpa3XKurQVycdMY70XQ&autoplay=1&rel=0&modestbranding=1",
+               "sources":[
+                  {"type":"youtube","src":"https://www.youtube.com/embed/live_stream?channel=UCUzonpa3XKurQVycdMY70XQ&autoplay=1&rel=0&modestbranding=1"}
+               ],
+               "name":"Canal 10",
+               "logo":"./assets/img/canal10.png",
+               "description":"Canal 10 Córdoba en vivo, canal oficial de YouTube.",
+               "category":"Noticias",
+               "available":true
+            },
+            {
+               "id":"news-13-max",
+               "type":"hls",
+               "src":"https://617c5175c970b.streamlock.net:4444/13max2/live13maxtv2026/playlist.m3u8",
+               "sources":[
+                  {"type":"hls","src":"https://617c5175c970b.streamlock.net:4444/13max2/live13maxtv2026/playlist.m3u8"}
+               ],
+               "name":"13 Max Noticias",
+               "logo":"./assets/img/13maxtv.png",
+               "description":"13 Max Noticias (Corrientes) en vivo.",
+               "category":"Noticias",
+               "available":true
+            },
+            {
+               "id":"news-canal-e",
+               "type":"hls",
+               "src":"https://unlimited1-us.dps.live/perfiltv/perfiltv.smil/playlist.m3u8",
+               "sources":[
+                  {"type":"hls","src":"https://unlimited1-us.dps.live/perfiltv/perfiltv.smil/playlist.m3u8"}
+               ],
+               "name":"Canal E",
+               "logo":"./assets/img/no_image.png",
+               "description":"Canal E / Perfil TV en vivo.",
                "category":"Noticias",
                "available":true
             }
@@ -139,216 +230,41 @@
          "Deportes":[
             {
                "id":"sports-tyc",
-               "type":"iframe",
-               "src":"https://futbollibre.online/en-vivo/tyc-sports/embed.html",
-               "name":"Tyc Sports",
+               "type":"youtube",
+               "src":"https://www.youtube.com/embed/live_stream?channel=UC72ZaBKI-Bo5fjmWEYonhJw&autoplay=1&rel=0&modestbranding=1",
+               "sources":[
+                  {"type":"youtube","src":"https://www.youtube.com/embed/live_stream?channel=UC72ZaBKI-Bo5fjmWEYonhJw&autoplay=1&rel=0&modestbranding=1"},
+                  {"type":"hls","src":"https://amg26268-amg26268c14-freelivesports-emea-10267.playouts.now.amagi.tv/ts-us-e2-n2/playlist/amg26268-sportsstudio-tycsports-freelivesportsemea/playlist.m3u8"}
+               ],
+               "name":"TyC Sports",
                "logo":"./assets/img/tyc_sport.png",
-               "description":"TyC Sports en vivo es un canal de televisión por suscripción deportivo argentino, el cual brinda la emisión de eventos deportivos destacados a nivel nacional e internacional.",
+               "description":"TyC Sports en vivo: YouTube oficial y señal FAST pública.",
                "category":"Deportes",
                "available":true
-            },
-            {
-               "id":"sports-tnt-sport",
-               "type":"iframe",
-               "src": "https://televisionlibre.net/embed/tntsports.html",
-               "src1": "https://futbollibre.online/embed/tnt/fl.html",
-               "name":"TNT SPORT",
-               "logo":"./assets/img/tntsports.png",
-               "description":"TNT Sports en vivo, es un canal de televisión por suscripción argentino, dedicado a la emisión del deporte de ese país, junto con Fox Sports Premium, que comenzó a emitirse el viernes 25 de agosto de 2017 desde las 18h, tras la alianza de Turner y Fox por los derechos de televisión de la Primera División Argentina (Superliga) de fútbol argentino, siendo reemplazo del programa gubernamental Fútbol Para Todos.",
-               "category":"Deportes",
-               "available":true
-            },
-            {
-               "id":"sports-espn",
-               "type":"iframe",
-               "src2": "https://futbollibre.net/embed/drmplayer.html",
-               "src1":"https://futbollibre.net/en-vivo/espn-1/embed_o.html",
-               "src": "https://futbollibre.net/en-vivo/espn-1/embed_dtv.html",
-               "name":"ESPN",
-               "logo":"./assets/img/espn.png",
-               "description":"ESPN Latinoamérica es el canal de televisión especializado en deportes que transmite por cable o satélite para este lado del Continente, pero con diferentes señales según los países o zona en los que uno se encuentre.",
-               "category":"Deportes",
-               "available":true
-            },
-            {
-               "id":"sports-espn-2",
-               "type":"hls",
-               "src": "https://sv.tsnt.xyz/espn/espn2o_sur_c.m3u8?161516627",
-               "src1":"https://sv.tsnt.xyz/espn/espn2o_sur.m3u8",
-               "name":"ESPN 2",
-               "logo":"./assets/img/espn2.png",
-               "description":"ESPN 2 En vivo es un canal de deportes que regularmente transmite partidos de fútbol correspondientes a la Bundesliga y de la Liga de Holanda. Además se transmiten los Juegos Extremos de Invierno.",
-               "category":"Deportes",
-               "available":true
-            },
-            {
-               "id":"sports-espn-3",
-               "type":"iframe",
-               "src":"https://futbolparatodos.net/canales/canal.html?get=Ly9lZGdlNC1oci5jdmF0dHYuY29tLmFyL2xpdmUvYzNlZHMvRVNQTjMvU0FfTGl2ZV9kYXNoX2VuY18yQS9FU1BOMy5tcGQ=",
-               "name":"ESPN 3",
-               "logo":"./assets/img/espn3.png",
-               "description":"La programación de ESPN 3 está dedicada a los deportes de acción, es decir los deportes extremos tanto de verano como de invierno, así como los de aventura, surf y running.",
-               "category":"Deportes",
-               "available":true
-            },
-            {
-               "id":"sports-fox-premium",
-               "type":"hls",
-               "src1":"https://dpelota.com/foxsportspremium.php",
-               "src":"https://livestreamapis.com/v3/accounts/27014129/events/8167338/master.m3u8?token=f5f6bcf5007c7f7e8a3d029e4310a7df&clientId=18998&timestamp=1616966891222&signature=605c4756797d80000dfb2d167eacd10ecf252cc18aec2094d3aac32310c4d30a3d007812470dcbdc5418c1036bdfe9ca",
-               "name":"Fox Sports Premium",
-               "logo":"./assets/img/foxsport_premium.png",
-               "description":"FOX Sports Premium es un canal argentino que ofrece acceso instantáneo a los mejores partidos de futbol de la Superliga Argentina. Es un canal de televisión de paga argentino dedicado a la emisión del fútbol de dicho país, junto con TNT Sports tras la alianza de Turner y Fox por los derechos de televisión del fútbol argentino, el cual reemplaza el programa público Fútbol Para Todos.",
-               "category":"Deportes",
-               "available":true
-            },
-            {
-               "id":"sports-fox-sports",
-               "type":"iframe",
-               "src":"https://futbollibre.online/embed/drmplayer.html?get=Ly9jZG4uY3ZhdHR2LmNvbS5hci9saXZlL2MzZWRzL0ZveFNwb3J0cy9TQV9MaXZlX2Rhc2hfZW5jXzJBL0ZveFNwb3J0cy5tcGQ=",
-               "name":"Fox Sports",
-               "logo":"./assets/img/foxsport.png",
-               "description":"Fox Sports es un canal de televisión por suscripción especializado en deportes que emite las 24 horas del día para Latinoamérica. Transmite en vivo la Copa Libertadores, Copa Sudamericana, UEFA Champions League, UEFA Europa League, Serie A de Italia, Bundesliga de Alemania, Copa Mundial de Clubes, NFL, MLB, entre otros.",
-               "category":"Deportes",
-               "available":true
-            },
-            {
-               "id":"sports-fox-sports-2",
-               "type":"iframe",
-               "src":"https://soloveo.com/foxsports2.php",
-               "name":"Fox Sports 2",
-               "logo":"./assets/img/foxsport2.png",
-               "description":"Fox Sports 2 es un canal de cable y satelite totalmente deportivo, es la segunda señal de Fox Sports, antes llamado Fox Sports + a partir del 5 de Noviembre del 2012 se le cambio de nombre para llamarse Fox Sports 2 esta cadena transmite eventos deportivos locales e internacionales más destacados como la Copa Libertadores, UEFA Champions League, Copa Sudamericana, UEFA Europa League, la WWE entre otros.",
-               "category":"Deportes",
-               "available":true
-            },
-            {
-               "id":"sports-fox-sports-3",
-               "type":"iframe",
-               "src":"https://soloveo.com/foxsports3.php",
-               "name":"Fox Sports 3",
-               "logo":"./assets/img/foxsport3.png",
-               "description":"Fox Sports 3 es un canal deportivo de televisión de pago operado por Fox International Channels y que inició transmisiones el 5 de noviembre de 2012 para América Latina (excepto Brasil). Fox Sports 3 reemplazó al canal Speed en su versión para Latinoamérica",
-               "category":"Deportes",
-               "available":true
-            },
-            {
-               "id":"sports-saf",
-               "type":"hls",
-               "src":"http://sv1.futbollibre.net/superliga2.m3u8",
-               "name":"SAF",
-               "logo":"./assets/img/saf.png",
-               "description":"No hay descripción",
-               "category":"Deportes",
-               "available":false
             },
             {
                "id":"sports-deportv",
-               "type":"hls",
-               "src":"https://contar-live.secure.footprint.net/hls-live/ionmicroremux-Deportv/_definst_/live.m3u8",
-               "name":"Deportv",
+               "type":"youtube",
+               "src":"https://www.youtube.com/embed/live_stream?channel=UCSmh3DFxBwFurMttT60PQ1g&autoplay=1&rel=0&modestbranding=1",
+               "sources":[
+                  {"type":"youtube","src":"https://www.youtube.com/embed/live_stream?channel=UCSmh3DFxBwFurMttT60PQ1g&autoplay=1&rel=0&modestbranding=1"}
+               ],
+               "name":"DeporTV",
                "logo":"./assets/img/dxtv.png",
-               "description":"DeporTV en VIVO es un canal de televisión público argentino especializado en programación deportiva.",
+               "description":"DeporTV, canal público deportivo argentino en vivo.",
                "category":"Deportes",
                "available":true
             },
             {
-               "id":"sports-directv-sport",
-               "type":"iframe",
-               "src":"https://dpelota.com/directvsports.php",
-               "name":"DIRECTV SPORTS",
-               "logo":"./assets/img/directv_sports.png",
-               "description":"DirecTV Sports en vivo es un canal de televisión por suscripción deportivo exclusivo de DirecTV.",
-               "category":"Deportes",
-               "available":true
-            },
-            {
-               "id":"sports-directv-sport2",
-               "type":"iframe",
-               "src":"http://premiumtvchannels.com/latino/directv2",
-               "name":"DIRECTV SPORTS 2",
-               "logo":"./assets/img/directv_sports2.png",
-               "description":"DirecTV Sports en vivo es un canal de televisión por suscripción deportivo exclusivo de DirecTV.",
-               "category":"Deportes",
-               "available":true
-            },
-            {
-               "id":"sports-directv-sport-plus",
-               "type":"iframe",
-               "src":"http://premiumtvchannels.com/latino/directvplus",
-               "name":"DIRECTV SPORTS PLUS",
-               "logo":"./assets/img/directv_sports_plus.png",
-               "description":"DirecTV Sports en vivo es un canal de televisión por suscripción deportivo exclusivo de DirecTV.",
-               "category":"Deportes",
-               "available":true
-            },
-            {
-               "id":"sports-bein",
+               "id":"sports-garage",
                "type":"hls",
-               "src":"https://livestreamapis.com/v3/accounts/27856896/events/8563077/master.m3u8?token=1b41929a60448721969d7e5553cd240b&clientId=18998&timestamp=1620864679343&signature=605c4756797d80000dfb2d167eacd10e7670b21eb20d6865a301d05e741698fd413f56cb63b708deab8f77be0f049c7a",
-               "name":"BEIN Sports",
-               "logo":"./assets/img/bein_sports.png",
-               "description":"No hay descripción",
-               "category":"Deportes",
-               "available":true
-            },
-            {
-               "id":"sports-win",
-               "type":"hls",
-               "src":"http://latino-webtv.com:2082/livexd3/70_.m3u8",
-               "name":"Win Sports",
-               "logo":"./assets/img/winsports.png",
-               "description":"Win Sports, canal de suscripción deportivo colombiano.",
-               "category":"Deportes",
-               "available":false
-            },
-            {
-               "id":"sports-nba",
-               "type":"iframe",
-               "src":"https://futbolparatodos.net/canales/canal.html?get=Ly9lZGdlLWxpdmUxNC1oci5jdmF0dHYuY29tLmFyL2xpdmUvYzJsaXZlL0VTUE5fSEQvU0FfTGl2ZV9kYXNoX2VuY18yQS9FU1BOX0hELm1wZA==",
-               "name":"NBA",
-               "logo":"https://cdn.mitvstatic.com/channels/co_nba-tv-hd_m.png",
-               "description":"No hay descripción",
-               "category":"Deportes",
-               "available":true
-            },
-            {
-               "id":"sports-nba1",
-               "type":"iframe",
-               "src":"http://embed.futboltv.ec/reproductor/canal48.php",
-               "name":"NBA live",
-               "logo":"https://vignette.wikia.nocookie.net/logopedia/images/7/7a/2018_NBA_All-Star_Game_logo.png/revision/latest?cb=20170906012228",
-               "description":"No hay descripción",
-               "category":"Deportes",
-               "available":true
-            },
-            {
-               "id":"sports-nbc",
-               "type":"hls",
-               "src":"http://1dfs.azureedge.net/hls/live.m3u8",
-               "name":"NBC Live",
-               "logo":"https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/0011/2473/brand.gif?itok=fhvLTnUc",
-               "description":"No hay descripción",
-               "category":"Deportes",
-               "available":true
-            },
-            {
-               "id":"sports-premier-league",
-               "type":"hls",
-               "src":"http://2sdfg.azureedge.net/live.m3u8",
-               "name":"Premier League",
-               "logo":"https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/0022/4126/brand.gif?itok=WII6ZdEh",
-               "description":"No hay descripción",
-               "category":"Deportes",
-               "available":true
-            },
-            {
-               "id":"sports-tln",
-               "type":"hls",
-               "src":"http://3sdfg.azureedge.net/live.m3u8",
-               "name":"TLN",
-               "logo":"https://media.licdn.com/dms/image/C4D0BAQEK3I683cp2Hg/company-logo_200_200/0?e=2159024400&v=beta&t=F_DIk8qTsVNhXFwHILS2OmcNFpsW4yPxJaLhPzhUfIA",
-               "description":"No hay descripción",
+               "src":"https://stream1.sersat.com/hls/garagetv.m3u8",
+               "sources":[
+                  {"type":"hls","src":"https://stream1.sersat.com/hls/garagetv.m3u8"}
+               ],
+               "name":"Garage TV",
+               "logo":"./assets/img/no_image.png",
+               "description":"Garage TV, señal de automovilismo y motor.",
                "category":"Deportes",
                "available":true
             }
@@ -357,113 +273,28 @@
       {
          "Cine":[
             {
-               "id":"cine-cinemx",
-               "type":"iframe",
-               "src":"",
-               "name":"Cinemax",
-               "logo":"./assets/img/cinemax.png",
-               "description":"No hay descripción",
-               "category":"Cine",
-               "available":true
-            },
-            {
-               "id":"cine-fox",
-               "type":"iframe",
-               "src":"http://televisionlibre.net/canal/fox-en-vivo/embed.html",
-               "name":"FOX",
-               "logo":"./assets/img/fox.png",
-               "description":"No hay descripción",
-               "category":"Cine",
-               "available":true
-            },
-            {
-               "id":"cine-space",
-               "type":"iframe",
-               "src":"http://player.latino-webtv.com/channels/space.html",
-               "name":"Space",
-               "logo":"./assets/img/space.png",
-               "description":"No hay descripción",
-               "category":"Cine",
-               "available":true
-            },
-            {
-               "id":"cine-cinecanal",
-               "type":"iframe",
-               "src":"http://player.latino-webtv.com/channels/cinecanal.html",
-               "name":"Cinecanal",
-               "logo":"./assets/img/cinecanal.png",
-               "description":"No hay descripción",
-               "category":"Cine",
-               "available":true
-            },
-            {
-               "id":"cine-tnt",
-               "type":"iframe",
-               "src":"http://premiumtvchannels.com/latino/tnt",
-               "name":"TNT",
-               "logo":"./assets/img/tnt.png",
-               "description":"No hay descripción",
-               "category":"Cine",
-               "available":true
-            },
-            {
-               "id":"cine-fox-movies",
-               "type":"iframe",
-               "src":"http://televisionlibre.net/canal/fox-en-vivo/embed.html",
-               "name":"FOX Movies",
-               "logo":"./assets/img/fox_movies.png",
-               "description":"No hay descripción",
-               "category":"Cine",
-               "available":true
-            },
-            {
-               "id":"cine-hbo",
-               "type":"iframe",
-               "src":"http://premiumtvchannels.com/latino/hbo",
-               "src1":"http://www.fulltvhd.fi/peliculas/hbo.php",
-               "name":"HBO",
-               "logo":"./assets/img/hbo.png",
-               "description":"No hay descripción",
-               "category":"Cine",
-               "available":true
-            },
-            {
-               "id":"cine-hbo2",
-               "type":"iframe",
-               "src":"http://premiumtvchannels.com/latino/hbo-2",
-               "name":"HBO 2",
-               "logo":"./assets/img/hbo2.png",
-               "description":"No hay descripción",
-               "category":"Cine",
-               "available":true
-            },
-            {
-               "id":"cine-universal",
-               "type":"iframe",
-               "src":"http://www.sintelevisor.com/tv/universal.html",
-               "name":"Universal",
-               "logo":"./assets/img/universal.png",
-               "description":"No hay descripción",
-               "category":"Cine",
-               "available":true
-            },
-            {
-               "id":"cine-hbo-family",
+               "id":"cine-clasico",
                "type":"hls",
-               "src":"http://streaming.wirenetserver.com.ar:1935/canal4/live_1/livestream.m3u8 ",
-               "name":"HBO Family",
-               "logo":"./assets/img/hbo.png",
-               "description":"No hay descripción",
+               "src":"https://stmv6.voxtvhd.com.br/cineclasico/cineclasico/playlist.m3u8",
+               "sources":[
+                  {"type":"hls","src":"https://stmv6.voxtvhd.com.br/cineclasico/cineclasico/playlist.m3u8"}
+               ],
+               "name":"Cine Clásico",
+               "logo":"./assets/img/no_image.png",
+               "description":"Señal FAST de cine clásico de dominio público y catálogo propio.",
                "category":"Cine",
                "available":true
             },
             {
-               "id":"cine-warner",
-               "type":"iframe",
-               "src":"http://player.latino-webtv.com/channels/warner.html",
-               "name":"Warner",
-               "logo":"./assets/img/warner.png",
-               "description":"No hay descripción",
+               "id":"cine-retroclub",
+               "type":"hls",
+               "src":"https://video03.logicahost.com.br/retroclub02/retroclub02/playlist.m3u8",
+               "sources":[
+                  {"type":"hls","src":"https://video03.logicahost.com.br/retroclub02/retroclub02/playlist.m3u8"}
+               ],
+               "name":"Retroclub",
+               "logo":"./assets/img/no_image.png",
+               "description":"Retroclub, canal FAST de cine y series clásicas.",
                "category":"Cine",
                "available":true
             }
@@ -472,112 +303,82 @@
       {
          "Música":[
             {
-               "id":"music-hittv",
+               "id":"music-musictop",
                "type":"hls",
-               "src":"http://kissfm-cires21-video.secure.footprint.net/hittv/bitrate_3.m3u8",
-               "name":"Hit TV",
-               "logo":"./assets/img/hit_tv.png",
-               "description":"No hay descripción",
-               "category":"Música",
-               "available":true
-            },
-            {
-               "id":"music-virgin",
-               "type":"hls",
-               "src":"http://fms.105.net:1935/live/virgin2%20/chunklist_w1063887220.m3u8",
-               "name":"Virgin Radio",
-               "logo":"./assets/img/virgin.png",
-               "description":"No hay descripción",
-               "category":"Música",
-               "available":true
-            },
-            {
-               "id":"music-top-latin",
-               "type":"hls",
-               "src":"http://online.radiodifusion.net:1935/livetv/latinoSD.stream/chunklist_w430979689.m3u8",
-               "name":"Top Latino Radio",
-               "logo":"./assets/img/top_latino.png",
-               "description":"No hay descripción",
-               "category":"Música",
-               "available":true
-            },
-            {
-               "id":"music-soyrock",
-               "type":"hls",
-               "src":"http://stmv4.questreaming.com/questreaming/questreaming/playlist.m3u8",
-               "name":"Soy Rock",
-               "logo":"./assets/img/soy_rock.png",
-               "description":"No hay descripción",
+               "src":"https://stream-gtlc.telecentro.net.ar/hls/musictophls/main.m3u8",
+               "sources":[
+                  {"type":"hls","src":"https://stream-gtlc.telecentro.net.ar/hls/musictophls/main.m3u8"},
+                  {"type":"youtube","src":"https://www.youtube.com/embed/live_stream?channel=UCrOeEU5ktq0F5JheG6n46vw&autoplay=1&rel=0&modestbranding=1"}
+               ],
+               "name":"Music Top",
+               "logo":"./assets/img/music_choice.png",
+               "description":"Music Top, señal musical de Telecentro.",
                "category":"Música",
                "available":true
             },
             {
                "id":"music-powerhd",
                "type":"hls",
-               "src":"http://wowza.telpin.com.ar:1935/live-powerTV/power.stream/chunklist_w1680853093.m3u8",
+               "src":"https://live2.tensila.com/1-1-1.power-tv/hls/master.m3u8",
+               "sources":[
+                  {"type":"hls","src":"https://live2.tensila.com/1-1-1.power-tv/hls/master.m3u8"}
+               ],
                "name":"Power HD",
                "logo":"./assets/img/powerhd.png",
-               "description":"No hay descripción",
+               "description":"Power HD, videos musicales las 24 horas.",
                "category":"Música",
                "available":true
             },
             {
-               "id":"music-music-choice",
+               "id":"music-cumbia-mix",
                "type":"hls",
-               "src":"http://edge.music-choice-play-chaina1.top.comcast.net/PlayMetadataInserter/play/chunklist.m3u8",
-               "name":"Music Choice",
-               "logo":"./assets/img/music_choice.png",
-               "description":"No hay descripción",
-               "category":"Música",
-               "available":true
-            },
-            {
-               "id":"music-fox-mix",
-               "type":"hls",
-               "src":"http://tv.portalfoxmix.club:1935/portalfoxmix/portalfoxmix/chunklist_w1495139298.m3u8",
-               "name":"Fox Mix",
-               "logo":"./assets/img/no_image.png",
-               "description":"No hay descripción",
-               "category":"Música",
-               "available":true
-            },
-            {
-               "id":"music-heart",
-               "type":"hls",
-               "src":"http://ooyalahd2-f.akamaihd.net/i/globalradio02_delivery@156522/index_1500_av-p.m3u8?sd=10&rebase=on",
-               "name":"Heart TV",
-               "logo":"./assets/img/heart_tv.png",
-               "description":"No hay descripción",
-               "category":"Música",
-               "available":true
-            },
-            {
-               "id":"music-indiewave",
-               "type":"hls",
-               "src":"https://vcnindiewave.teleosmedia.com/stream/indiewave/indiewave/seglist_720p.m3u8",
-               "name":"Indie Wave",
-               "logo":"./assets/img/indie_wave.png",
-               "description":"No hay descripción",
-               "category":"Música",
-               "available":true
-            },
-            {
-               "id":"music-melody",
-               "type":"hls",
-               "src":"https://5b464b69d264e.streamlock.net/live/smil:MelodyChannel.smil/chunklist_w685725914_b1048000_slES.m3u8",
-               "name":"Melody Channel TV",
-               "logo":"./assets/img/melody_channel.png",
-               "description":"No hay descripción",
-               "category":"Música",
-               "available":true
-            },
-            {
-               "id":"music-mega-mundial",
-               "type":"hls",
-               "src":"http://68.235.35.243:1935/lamegamundial/lamegamundial2/chunklist_w1203533629.m3u8",
-               "name":"La Mega Mundial",
+               "src":"https://cloud.tvomix.com/CUMBIAMIX/index.m3u8",
+               "sources":[
+                  {"type":"hls","src":"https://cloud.tvomix.com/CUMBIAMIX/index.m3u8"}
+               ],
+               "name":"Cumbia Mix",
                "logo":"./assets/img/lamega.png",
-               "description":"No hay descripción",
+               "description":"Cumbia Mix, videos de cumbia las 24 horas.",
+               "category":"Música",
+               "available":true
+            },
+            {
+               "id":"music-urban-mix",
+               "type":"hls",
+               "src":"https://cloud.tvomix.com/URBANMIX/index.m3u8",
+               "sources":[
+                  {"type":"hls","src":"https://cloud.tvomix.com/URBANMIX/index.m3u8"}
+               ],
+               "name":"Urban Mix",
+               "logo":"./assets/img/no_image.png",
+               "description":"Urban Mix, música urbana las 24 horas.",
+               "category":"Música",
+               "available":true
+            },
+            {
+               "id":"music-kpop-mix",
+               "type":"hls",
+               "src":"https://cloud.tvomix.com/KPOPMIX/index.m3u8",
+               "sources":[
+                  {"type":"hls","src":"https://cloud.tvomix.com/KPOPMIX/index.m3u8"}
+               ],
+               "name":"K-Pop Mix",
+               "logo":"./assets/img/no_image.png",
+               "description":"K-Pop Mix, videos de K-Pop las 24 horas.",
+               "category":"Música",
+               "available":true
+            },
+            {
+               "id":"music-la100",
+               "type":"youtube",
+               "src":"https://www.youtube.com/embed/live_stream?channel=UC2zO2jZCDplwm8SVsXUcxCQ&autoplay=1&rel=0&modestbranding=1",
+               "sources":[
+                  {"type":"youtube","src":"https://www.youtube.com/embed/live_stream?channel=UC2zO2jZCDplwm8SVsXUcxCQ&autoplay=1&rel=0&modestbranding=1"},
+                  {"type":"hls","src":"https://mdstrm.com/live-stream-playlist/68b74fd1d6512526f1f7c75a.m3u8"}
+               ],
+               "name":"La 100",
+               "logo":"./assets/img/no_image.png",
+               "description":"La 100 en vivo, radio y videostream oficial.",
                "category":"Música",
                "available":true
             }
@@ -586,42 +387,41 @@
       {
          "Infantil":[
             {
-               "id":"kids-cartoon-network",
-               "type":"hls",
-               "src":"http://n-3-21.dcs.redcdn.pl/hls/o2/redefine/nlive/CN_HD_1/11395/0/tv-ss/live.isml/playlist.m3u8?stream=0&bandwidth=1",
-               "name":"Cartoon Network",
-               "logo":"./assets/img/cartoon_network.png",
-               "description":"No hay descripción",
-               "category":"Infantil",
-               "available":true
-            },
-            {
                "id":"kids-pakapaka",
-               "type":"hls",
-               "src":"https://contar-live.secure.footprint.net/hls-live/ionmicroremux-Pakapaka/_definst_/live/stream2.m3u8",
-               "name":"PAKAPAKA",
+               "type":"youtube",
+               "src":"https://www.youtube.com/embed/live_stream?channel=UCVVNYxncuD4EfHpKDlPIYcQ&autoplay=1&rel=0&modestbranding=1",
+               "sources":[
+                  {"type":"youtube","src":"https://www.youtube.com/embed/live_stream?channel=UCVVNYxncuD4EfHpKDlPIYcQ&autoplay=1&rel=0&modestbranding=1"}
+               ],
+               "name":"Pakapaka",
                "logo":"./assets/img/pakapaka.png",
-               "description":"No hay descripción",
+               "description":"Pakapaka, canal público infantil argentino.",
                "category":"Infantil",
                "available":true
             },
             {
-               "id":"kids-disneyxd",
-               "type":"iframe",
-               "src":"http://player.latino-webtv.com/channels/disneyxd.html",
-               "name":"Disney XD",
-               "logo":"./assets/img/disneyxd.png",
-               "description":"No hay descripción",
+               "id":"kids-encuentro",
+               "type":"youtube",
+               "src":"https://www.youtube.com/embed/live_stream?channel=UC1zLDoKL-eKmd_K7qkUZ-ow&autoplay=1&rel=0&modestbranding=1",
+               "sources":[
+                  {"type":"youtube","src":"https://www.youtube.com/embed/live_stream?channel=UC1zLDoKL-eKmd_K7qkUZ-ow&autoplay=1&rel=0&modestbranding=1"}
+               ],
+               "name":"Encuentro",
+               "logo":"./assets/img/no_image.png",
+               "description":"Encuentro, canal público educativo.",
                "category":"Infantil",
                "available":true
             },
             {
-               "id":"kids-disney-channel",
+               "id":"kids-xtrema-cartoons",
                "type":"hls",
-               "src":"http://n-3-1.dcs.redcdn.pl/hls/o2/redefine/nlive/disney_channel_hd_1/10903/0/tv-ss/live.isml/playlist.m3u8?stream=0&bandwidth=1",
-               "name":"Disney Channel",
-               "logo":"./assets/img/disney_channel.png",
-               "description":"No hay descripción",
+               "src":"https://stmv6.voxtvhd.com.br/xtremacartoons/xtremacartoons/playlist.m3u8",
+               "sources":[
+                  {"type":"hls","src":"https://stmv6.voxtvhd.com.br/xtremacartoons/xtremacartoons/playlist.m3u8"}
+               ],
+               "name":"Xtrema Cartoons",
+               "logo":"./assets/img/no_image.png",
+               "description":"Xtrema Cartoons, señal FAST de dibujos animados clásicos.",
                "category":"Infantil",
                "available":true
             }
@@ -630,222 +430,69 @@
       {
          "Entretenimiento":[
             {
-               "id":"entretenimiento-animal-planet",
-               "type":"iframe",
-               "src":"http://televisionlibre.net/canal/animal-planet-en-vivo/embed.html",
-               "name":"Animal Planet",
-               "logo":"./assets/img/animal_planet.png",
-               "description":"No hay descripción",
+               "id":"entretenimiento-argentinisima",
+               "type":"hls",
+               "src":"https://stream1.sersat.com/hls/argentinisima.m3u8",
+               "sources":[
+                  {"type":"hls","src":"https://stream1.sersat.com/hls/argentinisima.m3u8"}
+               ],
+               "name":"Argentinísima",
+               "logo":"./assets/img/no_image.png",
+               "description":"Argentinísima Satelital, folklore y cultura argentina.",
                "category":"Entretenimiento",
                "available":true
             },
             {
-               "id":"entretenimiento-discovery",
-               "type":"iframe",
-               "src":"http://player.latino-webtv.com/channels/discovery.html",
-               "name":"Discovery Channel",
-               "logo":"./assets/img/discovery.png",
-               "description":"No hay descripción",
+               "id":"entretenimiento-eco-tv",
+               "type":"hls",
+               "src":"https://stream.arcast.com.ar/ecotv/ngrp:ecotv_all/playlist.m3u8",
+               "sources":[
+                  {"type":"hls","src":"https://stream.arcast.com.ar/ecotv/ngrp:ecotv_all/playlist.m3u8"}
+               ],
+               "name":"Eco TV",
+               "logo":"./assets/img/no_image.png",
+               "description":"Eco TV, señal informativa y de actualidad.",
                "category":"Entretenimiento",
                "available":true
             },
             {
-               "id":"entretenimiento-history-channel",
-               "type":"iframe",
-               "src":"http://player.latino-webtv.com/channels/history.html",
-               "name":"History Channel",
-               "logo":"./assets/img/history.png",
-               "description":"No hay descripción",
+               "id":"entretenimiento-telemax",
+               "type":"hls",
+               "src":"https://stream-gtlc.telecentro.net.ar/hls/telemaxhls/main.m3u8",
+               "sources":[
+                  {"type":"hls","src":"https://stream-gtlc.telecentro.net.ar/hls/telemaxhls/main.m3u8"}
+               ],
+               "name":"Telemax",
+               "logo":"./assets/img/no_image.png",
+               "description":"Telemax, señal de Telecentro.",
                "category":"Entretenimiento",
                "available":true
-            }
-         ]
-      },
-      {
-         "Series":[
-            {
-               "id":"chernobyl_01x01",
-               "type":"mp4",
-               "src":"https://acexdhatsd.playercdn.net/85/3/FzoY0oowSW-km-MWdMFcMQ/1560124272/190609/629G3V98VRXJV7FP0I1YM.mp4",
-               "name":"Chernobyl 01x01",
-               "logo":"https://static.vix.com/es/sites/default/files/styles/thumbnail/public/s/serie-chernobyl-hbo-2.jpeg",
-               "description":"No hay descripción",
-               "category":"Series",
-               "available":false
             },
             {
-               "id":"b_01x01",
-               "type":"iframe",
-               "src":"https://damedamehoy.xyz/embed.php?v=b1E4ZXk5RWxiRHBkTWVTZjNmUmg4amlqcnY3U05MS2pGVHdpRXBQT1hlVT0=",
-               "name":"The Boys 01x01",
-               "logo":"https://www.filmmusicsite.com/images/covers/normal/76228.jpg",
-               "description":"No hay descripción",
-               "category":"Series",
+               "id":"entretenimiento-tv-universidad",
+               "type":"hls",
+               "src":"https://stratus.stream.cespi.unlp.edu.ar/hls/tvunlp.m3u8",
+               "sources":[
+                  {"type":"hls","src":"https://stratus.stream.cespi.unlp.edu.ar/hls/tvunlp.m3u8"}
+               ],
+               "name":"TV Universidad",
+               "logo":"./assets/img/no_image.png",
+               "description":"TV Universidad (UNLP), canal universitario público.",
+               "category":"Entretenimiento",
                "available":true
             },
             {
-               "id":"b_02x01",
-               "type":"iframe",
-               "src":"https://damedamehoy.xyz/embed.php?v=ZXB3S1NzTzY1MVV6VlFXODVxMmFiM2NPemN2Q2ZXTGpwcThjZzRwZXZQUT0=",
-               "name":"The Boys 02x01",
-               "logo":"https://www.filmmusicsite.com/images/covers/normal/76228.jpg",
-               "description":"No hay descripción",
-               "category":"Series",
+               "id":"entretenimiento-rtn",
+               "type":"hls",
+               "src":"https://media.neuquen.gov.ar/rtn/television/playlist.m3u8",
+               "sources":[
+                  {"type":"hls","src":"https://media.neuquen.gov.ar/rtn/television/playlist.m3u8"}
+               ],
+               "name":"RTN Neuquén",
+               "logo":"./assets/img/no_image.png",
+               "description":"Radio y Televisión de Neuquén, canal público provincial.",
+               "category":"Entretenimiento",
                "available":true
-            },
-            {
-               "id":"b_03x01",
-               "type":"iframe",
-               "src":"https://damedamehoy.xyz/embed.php?v=TGFzalVwaDliakg5dTRzV243RGNsUzJ3WVRyUDlIb2F2eTFUUjVXSkdwcz0=",
-               "name":"The Boys 03x01",
-               "logo":"https://www.filmmusicsite.com/images/covers/normal/76228.jpg",
-               "description":"No hay descripción",
-               "category":"Series",
-               "available":true
-            },
-            {
-               "id":"b_04x01",
-               "type":"iframe",
-               "src":"https://damedamehoy.xyz/embed.php?v=QnZHS0ZibmNrbmVMMHhTaHgrU0YrWmRCL0t2amVtOEhWYm9ObjFvQnM5ST0=",
-               "name":"The Boys 04x01",
-               "logo":"https://www.filmmusicsite.com/images/covers/normal/76228.jpg",
-               "description":"No hay descripción",
-               "category":"Series",
-               "available":true
-            },
-            {
-               "id":"b_05x01",
-               "type":"iframe",
-               "src":"https://damedamehoy.xyz/embed.php?v=YTlFWU1KaDFkNFVXckdZRnFad0g5M3ZSMTNHNVF6eW01bms2blBjTmdTQT0=",
-               "name":"The Boys 05x01",
-               "logo":"https://www.filmmusicsite.com/images/covers/normal/76228.jpg",
-               "description":"No hay descripción",
-               "category":"Series",
-               "available":true
-            },
-            {
-               "id":"b_06x01",
-               "type":"iframe",
-               "src":"https://damedamehoy.xyz/embed.php?v=K2ltTTJWSDNnZjEwcmp2RHhmWFFMVXFybmZtVkZyU3kxa1FmL0hnVVk1VT0=",
-               "name":"The Boys 06x01",
-               "logo":"https://www.filmmusicsite.com/images/covers/normal/76228.jpg",
-               "description":"No hay descripción",
-               "category":"Series",
-               "available":true
-            },
-            {
-               "id":"b_07x01",
-               "type":"iframe",
-               "src":"https://damedamehoy.xyz/embed.php?v=Q3FmWGNlYllpTm5vNWNlZWd3bWpmdCsvOS9qVzAyenVFTExyWTBMVTZ5WT0=",
-               "name":"The Boys 07x01",
-               "logo":"https://www.filmmusicsite.com/images/covers/normal/76228.jpg",
-               "description":"No hay descripción",
-               "category":"Series",
-               "available":true
-            },
-            {
-               "id":"b_08x01",
-               "type":"iframe",
-               "src":"https://damedamehoy.xyz/embed.php?v=anpMZVNsc2hkZzJPTUhxOTRTaGtkMjVPRzlndmVudGFOR1VWTWY2aGl6Zz0=",
-               "name":"The Boys 08x01",
-               "logo":"https://www.filmmusicsite.com/images/covers/normal/76228.jpg",
-               "description":"No hay descripción",
-               "category":"Series",
-               "available":true
-            },
-            {
-               "id":"b_01x02",
-               "type":"iframe",
-               "src":"https://damedamehoy.xyz/embed.php?v=aVZmR2VOUnN5cmZjQVhvUWVQZm1Ua3FXcXNNK0hwMk5ZTXIxWUJ0dnpJMD0=",
-               "name":"The Boys 01x02",
-               "logo":"https://www.filmmusicsite.com/images/covers/normal/76228.jpg",
-               "description":"No hay descripción",
-               "category":"Series",
-               "available":true
-            },
-            {
-               "id":"b_02x02",
-               "type":"iframe",
-               "src":"https://damedamehoy.xyz/embed.php?v=c0hBaDVPMjZNbGZFQUZ6bFlZbmZlVVk5b01ieXROU0JCUkZCUE1zOGYxTT0=",
-               "name":"The Boys 02x02",
-               "logo":"https://www.filmmusicsite.com/images/covers/normal/76228.jpg",
-               "description":"No hay descripción",
-               "category":"Series",
-               "available":true
-            },
-            {
-               "id":"b_03x02",
-               "type":"iframe",
-               "src":"https://damedamehoy.xyz/embed.php?v=WXNrOEkxZVZxZUw2b29FTTZ6d2E3Ym1QSE5ubHBiMGR2MHo5dXRmaWlvMD0=",
-               "name":"The Boys 02x02",
-               "logo":"https://www.filmmusicsite.com/images/covers/normal/76228.jpg",
-               "description":"No hay descripción",
-               "category":"Series",
-               "available":true
-            },
-            {
-               "id":"b_04x02",
-               "type":"iframe",
-               "src":"https://damedamehoy.xyz/embed.php?v=RUY2b2JaQUQ1WHNOOUlYck14c0hGOVRPbFZRcWZEQ3dNV1pRREF2ZFZ6Zz0=",
-               "name":"The Boys 04x02",
-               "logo":"https://www.filmmusicsite.com/images/covers/normal/76228.jpg",
-               "description":"No hay descripción",
-               "category":"Series",
-               "available":true
-            },
-            {
-               "id":"b_05x02",
-               "type":"iframe",
-               "src":"https://damedamehoy.xyz/embed.php?v=QnlDb3g4clMvR2NtbUFSSTVKNmVtQXp0ZE82Q1A4bjdoSk1XWDhXSUR4Yz0=",
-               "name":"The Boys 05x02",
-               "logo":"https://www.filmmusicsite.com/images/covers/normal/76228.jpg",
-               "description":"No hay descripción",
-               "category":"Series",
-               "available":true
-            },
-            {
-               "id":"b_06x02",
-               "type":"iframe",
-               "src":"https://damedamehoy.xyz/embed.php?v=bGJqN1lUd0tkQzlZUnRnS0VaTis5eGJBNis1TUNUeEl0S01mdzVzdE5HYz0=",
-               "name":"The Boys 06x02",
-               "logo":"https://www.filmmusicsite.com/images/covers/normal/76228.jpg",
-               "description":"No hay descripción",
-               "category":"Series",
-               "available":true
-            },
-            {
-               "id":"b_07x02",
-               "type":"iframe",
-               "src":"https://damedamehoy.xyz/embed.php?v=ZHMzaTRVRDdxTDZBcDFKeXVHZVNITk5lRzZrdFRyZC9odjRUdzloR1JyYz0=",
-               "name":"The Boys 07x02",
-               "logo":"https://www.filmmusicsite.com/images/covers/normal/76228.jpg",
-               "description":"No hay descripción",
-               "category":"Series",
-               "available":true
-            },
-            {
-               "id":"b_08x02",
-               "type":"iframe",
-               "src":"https://damedamehoy.xyz/embed.php?v=V1I3aDhTck92bEVtYWNwN0thbGoyOUp5YUhDYnk4QUNmb0pqWDZ2Y1Aycz0=",
-               "name":"The Boys 08x02",
-               "logo":"https://www.filmmusicsite.com/images/covers/normal/76228.jpg",
-               "description":"No hay descripción",
-               "category":"Series",
-               "available":true
-            }
-         ]
-      },
-      {
-         "Peliculas":[
-            {
-               "id":"peli1",
-               "type":"iframe",
-               "src":"https://player.miradetodo.net/api/fastplay.php?id=aHR0cHM6Ly9mYXN0cGxheS50by84czk5ZWhvaTAydnIuaHRtbA0=&sub=IntroMDT.srt",
-               "name":"Joker",
-               "logo":"https://miradetodo.co/wp-content/uploads/2019/11/tt7286456.jpg",
-               "description":"No hay descripción",
-               "category":"Peliculas",
-               "available":false
             }
          ]
       },
@@ -855,9 +502,12 @@
                "id":"other1",
                "type":"iframe",
                "src":"https://trends.google.com.ar/trends/hottrends/visualize?pn=p30",
+               "sources":[
+                  {"type":"iframe","src":"https://trends.google.com.ar/trends/hottrends/visualize?pn=p30"}
+               ],
                "name":"Google Trends",
                "logo":"./assets/img/google_trends.png",
-               "description":"Muestra las últimas búsquedas populares de Argentina.",
+               "description":"Búsquedas populares de Argentina en tiempo real.",
                "category":"Otros",
                "available":true
             },
@@ -865,33 +515,29 @@
                "id":"other2",
                "type":"iframe",
                "src":"https://ctrade.lucaslabs.tech/cedear",
+               "sources":[
+                  {"type":"iframe","src":"https://ctrade.lucaslabs.tech/cedear"}
+               ],
                "name":"CTrade",
-               "logo":"./assets/img/trade.png",
-               "description":"Trading",
-               "category":"Otros",
-               "available":true
-            },
-            {
-               "id":"other3",
-               "type":"iframe",
-               "src":"./investments/index.html",
-               "name":"Inversiones",
-               "logo":"./assets/img/google_trends.png",
-               "description":"Muestra las últimas búsquedas populares de Argentina.",
+               "logo":"./assets/img/btc.png",
+               "description":"Panel de trading de CEDEARs.",
                "category":"Otros",
                "available":true
             }
          ]
       },
       {
-         "Finances":[
+         "Finanzas":[
             {
                "id":"dashboard-cripto",
                "type":"iframe",
                "src":"./assets/html/dashboard_criptos.html",
+               "sources":[
+                  {"type":"iframe","src":"./assets/html/dashboard_criptos.html"}
+               ],
                "name":"Dashboard Cripto",
                "logo":"./assets/img/btc.png",
-               "description":"Dashboard de criptomonedas",
+               "description":"Dashboard de criptomonedas en TradingView.",
                "category":"Finanzas",
                "available":true
             }

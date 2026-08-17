@@ -1,54 +1,47 @@
-	<!DOCTYPE html>
-	<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Free Live TV</title>
-		<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-		<script src="webOSTVjs-1.0.0/webOSTV.js" charset="utf-8"></script>
-		<script src="webOSTVjs-1.0.0/webOSTV-dev.js" charset="utf-8"></script>
-		<script src="assets/js/appConfig.js"></script>
-		<script src="assets/js/remoteControl.js"></script>
-		<script src="assets/js/jquery-3.3.1.min.js"></script>
-		<script src="assets/js/webOS.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
-		<script src="assets/js/clock.js"></script>
-		<script src="assets/js/functions.js"></script>
-		<script src="assets/js/login.js"></script>
-		<script src="assets/js/search.js"></script>
-		<script src="assets/js/sidebar.js"></script>
-		<script src="assets/js/player.js"></script>
-		
-		<!--Ads Sense-->
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<script>
-			(adsbygoogle = window.adsbygoogle || []).push({
-				google_ad_client: "ca-pub-6052689860759379",
-				enable_page_level_ads: true
-			});
-		</script>		
-		
-	</head>
-	<body onload="load()">
-		
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#141414">
+	<title>Free Live TV</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<script src="webOSTVjs-1.0.0/webOSTV.js" charset="utf-8"></script>
+	<script src="webOSTVjs-1.0.0/webOSTV-dev.js" charset="utf-8"></script>
+	<script src="assets/js/appConfig.js"></script>
+	<script src="assets/js/remoteControl.js"></script>
+	<script src="assets/js/jquery-3.3.1.min.js"></script>
+	<script src="assets/js/hls.min.js"></script>
+	<script src="assets/js/webOS.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
+	<script src="assets/js/clock.js"></script>
+	<script src="assets/js/functions.js"></script>
+	<script src="assets/js/login.js"></script>
+	<script src="assets/js/search.js"></script>
+	<script src="assets/js/sidebar.js"></script>
+	<script src="assets/js/player.js"></script>
+</head>
+<body onload="initApp()">
+
 		<!-- login -->
 		<div id="main-login">
 			<div class="logo-login">
-				<img src="./largeIcon.png">
+				<img src="./largeIcon.png" alt="Free Live TV">
 			</div>
 			<div class="content-login">
 				<div class="input-group">
 					<div class="input-group-icon">@</div>
-					<div class="input-group-area"><input id="email" type="email" placeholder="Email Address"></div>
+					<div class="input-group-area"><input id="email" type="email" placeholder="Email"></div>
 				</div>
 				
 				<div class="input-group">
 					<div class="input-group-icon">***</div>
-					<div class="input-group-area"><input id="password" type="password" placeholder="Password"></div>
+					<div class="input-group-area"><input id="password" type="password" placeholder="Contraseña"></div>
 				</div>
 				
 				<div>
-					<button class="btn-login" id="login" onclick="login()">Login</button>
-					<button class="btn-login" id="guest" onclick="guest()">Guest</button>
+					<button class="btn-login" id="login" onclick="login()">Ingresar</button>
+					<button class="btn-login" id="guest" onclick="guest()">Invitado</button>
 				</div>
 			</div>
 			<div class="content-loader">
@@ -68,7 +61,7 @@
 					<li>
 						<span class="title">Preview </span>
 						<label class="switch">
-							<input type="checkbox" id="setting-preview" checked>
+							<input type="checkbox" id="setting-preview">
 							<span class="slider round"></span>
 						</label>
 					</li>
@@ -80,25 +73,25 @@
 				</div>
 				
 				<div class="logout">
-					<img src="./assets/icon/sign-out.png">
-					<span class="logout-title">Logout</span>
+					<img src="./assets/icon/sign-out.png" alt="">
+					<span class="logout-title">Salir</span>
 				</div>
 				
 			</nav>
 			
 			<header class="header">
 				<div class="navigation">
-					<a href="#" id="menu_on">
+					<a href="#" id="menu_on" aria-label="Menú">
 						<span></span>
 						<span></span>
 						<span></span>
 					</a>
 				</div>
-				<img class="icon-app" src="icon.png">
+				<img class="icon-app" src="icon.png" alt="Free Live TV">
 				<div class="datetime"><span class="date"></span><span class="clock"></span></div>
-				<div class="search-icon"><img src="./assets/icon/search.png"><div></div></div>
+				<div class="search-icon"><img src="./assets/icon/search.png" alt="Buscar"></div>
 				<div class="search-container">
-					<input type="search" id="search" name="search" placeholder="Buscar..">
+					<input type="search" id="search" name="search" placeholder="Buscar canal..." autocomplete="off">
 				</div>
 			</header>
 			<div id="subheader" class="subheader">
@@ -121,7 +114,7 @@
 			<div id="log"> </div>
 			<div class="preview"></div>	
 			<footer>
-				<span class="about">Matias Camusso | v1.0.0</span>
+				<span class="about">Matias Camusso | v1.1.0</span>
 				<div class="btn-control">
 					<ul>
 						<li><span class="btn btn-control-red"></span><span>Menu</span></li>
@@ -163,14 +156,23 @@
 				<div class="datetime"><span class="date"></span><span class="clock"></span></div>
 	
 				<div class="container">
-					<div class="back"><img src="./assets/icon/back.png"/></div>
+					<div class="back"><img src="./assets/icon/back.png" alt="Volver"/></div>
 					<div class="channel-info"></div>
 				</div>
 	
 			</div>
 	
-			<div class="container" id="container_player">
-				<!--<div class="above"></div>-->
+			<div class="container" id="container_player"></div>
+
+			<div id="player-error">
+				<div class="player-error-card">
+					<h2>No se pudo reproducir</h2>
+					<p>Este canal no está disponible ahora. Puede no estar en vivo o el stream cambió.</p>
+					<div class="player-error-actions">
+						<button type="button" id="player-error-retry">Reintentar</button>
+						<button type="button" id="player-error-back">Volver</button>
+					</div>
+				</div>
 			</div>
 		</div>
 	

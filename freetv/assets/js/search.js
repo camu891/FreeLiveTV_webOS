@@ -1,43 +1,37 @@
-
-function load(){
+function initSearch() {
   var input = document.getElementById("search");
+  if (!input) {
+    return;
+  }
   input.addEventListener("input", searching);
 
   function searching(e) {
     var filter = e.target.value.toUpperCase();
-
-    var list = document.querySelectorAll("#list");
-    var tabIndex=1;
-    for (var j = 0; j < list.length; j++) {
-      var divs = list[j].getElementsByClassName("card");
-      for (var i = 0; i < divs.length; i++) {
-        var a = divs[i].getElementsByTagName("span")[0];
-        if (a) {
-          if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            divs[i].style.display = "";
-            divs[i].classList.remove("hide");
-            divs[i].tabIndex = tabIndex;
-            tabIndex++;
-          } else {
-            divs[i].style.display = "none";
-            divs[i].classList.add("hide");
-            divs[i].tabIndex = -1;
-          }
-        }
+    var cards = document.querySelectorAll("#container_programs .card");
+    var tabIndex = 1;
+    for (var i = 0; i < cards.length; i++) {
+      var title = cards[i].getElementsByTagName("span")[0];
+      if (!title) {
+        continue;
       }
-
+      if (title.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        cards[i].style.display = "";
+        cards[i].classList.remove("hide");
+        cards[i].tabIndex = tabIndex;
+        tabIndex++;
+      } else {
+        cards[i].style.display = "none";
+        cards[i].classList.add("hide");
+        cards[i].tabIndex = -1;
+      }
     }
-
   }
 
-//remove enter action on input search
-$('input:not(textarea)').keydown(function(event){
-    var kc = event.witch || event.keyCode;
-    if(kc == 13){
-    event.preventDefault();
-        return false;
+  $("input:not(textarea)").keydown(function (event) {
+    var kc = event.which || event.keyCode;
+    if (kc === 13) {
+      event.preventDefault();
+      return false;
     }
-});
-
-
+  });
 }

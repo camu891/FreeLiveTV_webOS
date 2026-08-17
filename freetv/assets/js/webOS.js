@@ -4,16 +4,20 @@
 
 
   //sample code for calling LS2 API
-  var lunaReq = webOS.service.request("luna://com.palm.systemservice",
-  {
-    method:"clock/getTime",
-    parameters:{},
-    onSuccess: function (args) {
-     console.log("UTC:", args.utc);
-   },
-   onFailure: function (args) {
-   }
- });
+  try {
+    if (window.webOS && webOS.service && webOS.service.request) {
+      webOS.service.request("luna://com.palm.systemservice",
+      {
+        method:"clock/getTime",
+        parameters:{},
+        onSuccess: function (args) {
+         console.log("UTC:", args.utc);
+       },
+       onFailure: function (args) {
+       }
+     });
+    }
+  } catch (e) {}
 
   function keyboardVisibilityChange(event) {
    var visibility = event.detail.visibility;
@@ -41,7 +45,7 @@
     }
     document.addEventListener('cursorStateChange', cursorVisibilityChange, false);
 
-    function load() {
+    function initWebOS() {
      document.addEventListener("cursorStateChange", onCursor, false);
      document.addEventListener("visibilitychange", function () { Log(document.visibilityState);}, false);
      window.addEventListener("blur", function() { Log("Focus off");}, false);
