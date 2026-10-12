@@ -54,6 +54,14 @@ function hideLoginLoader() {
 }
 
 $(document).ready(function () {
+    $("#login-form").on("submit", function (e) {
+        e.preventDefault();
+        login();
+    });
+    $("#guest").on("click", function (e) {
+        e.preventDefault();
+        guest();
+    });
     showLogin();
     if (typeof firebase === "undefined") {
         showLogin("No se pudo cargar el servicio de login. Revisá tu conexión e intentá de nuevo.");
