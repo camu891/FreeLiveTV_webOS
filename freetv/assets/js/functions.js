@@ -62,16 +62,23 @@ function getProgramsUrls() {
   return [withVersion(remote), withVersion(local)];
 }
 
+function requireAuth() {
+  return typeof isAuthenticated === "function" && isAuthenticated();
+}
+
 $(document).ready(function () {
   $(".logout").on("click", logout);
-  ajaxLoadPrograms();
 
   $(".icon-app").on("click", function () {
-    ajaxLoadPrograms();
+    if (requireAuth()) {
+      ajaxLoadPrograms();
+    }
   });
 
   $(".reload").on("click", function () {
-    ajaxLoadPrograms();
+    if (requireAuth()) {
+      ajaxLoadPrograms();
+    }
   });
 
   $(".search-icon").on("click", function () {
@@ -99,6 +106,9 @@ function hideSearchInput() {
 }
 
 function ajaxLoadPrograms() {
+  if (!requireAuth()) {
+    return;
+  }
   $("#container_programs").empty();
   allPrograms = [];
   totalPrograms = 0;
@@ -150,6 +160,7 @@ function renderPrograms(json) {
   initNavTabs();
   setTabindex();
   initLastView();
+  openChannelFromUrl();
 }
 
 function initLastView() {
@@ -241,6 +252,10 @@ function getProgramData(program, index) {
 
 $(document).on("click", "a.program-link", function (e) {
   e.preventDefault();
+  if (!requireAuth()) {
+    showLogin();
+    return;
+  }
   var id = $(this).attr("data-program-id");
   var program = getProgramById(id);
   if (program) {
@@ -265,8 +280,11 @@ function setTabindex() {
 }
 
 document.addEventListener("keydown", function (inEvent) {
+  if (!requireAuth()) {
+    return;
+  }
   var key = inEvent.keyCode;
-  var playerVisible = $("#main-player").is(":visible");
+  var playerVisible = document.body.classList.contains("player-open");
 
   if (playerVisible && (key === 8 || key === 27 || key === 461 || key === keyRemoteControl.BACK)) {
     inEvent.preventDefault();
@@ -309,7 +327,9 @@ document.addEventListener("keydown", function (inEvent) {
       $("body").toggleClass("visible_menu");
       break;
     case keyRemoteControl.FAST_ACTIONS.GREEN:
-      ajaxLoadPrograms();
+      if (requireAuth()) {
+        ajaxLoadPrograms();
+      }
       break;
     case keyRemoteControl.FAST_ACTIONS.YELLOW:
       $(".alert-dialog").fadeIn();
@@ -364,6 +384,10 @@ $(document).ready(function () {
 });
 
 function onSelectProgram(program, index) {
+  if (!requireAuth()) {
+    showLogin();
+    return;
+  }
   if (history.pushState) {
     var newurl = window.location.protocol + "//" + window.location.host +
       window.location.pathname + "?channel=" + encodeURIComponent(program.id);
@@ -387,13 +411,11 @@ function updateNavigationControl(index) {
 }
 
 function showPlayer(playerVisible) {
-  if (playerVisible) {
-    $("#main-content").hide();
-    $("#main-player").show();
-  } else {
-    $("#main-content").show();
-    $("#main-player").hide();
+  if (!requireAuth()) {
+    showLogin();
+    return;
   }
+  setAuthView(playerVisible ? "player" : "app");
 }
 
 function getIndexByObject(program) {
@@ -425,24 +447,16 @@ function getQueryParam(name) {
   return match ? decodeURIComponent(match[1]) : null;
 }
 
-$(document).ready(function () {
+function openChannelFromUrl() {
+  if (!requireAuth()) {
+    return;
+  }
   var channelId = getQueryParam("channel");
   if (!channelId) {
     return;
   }
-  var tries = 0;
-  var waitForPrograms = setInterval(function () {
-    tries++;
-    if (!allPrograms.length) {
-      if (tries > 50) {
-        clearInterval(waitForPrograms);
-      }
-      return;
-    }
-    clearInterval(waitForPrograms);
-    var program = getProgramById(channelId);
-    if (program) {
-      onSelectProgram(program, getIndexByObject(program));
-    }
-  }, 200);
-});
+  var program = getProgramById(channelId);
+  if (program) {
+    onSelectProgram(program, getIndexByObject(program));
+  }
+}

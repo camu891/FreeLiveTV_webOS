@@ -49,7 +49,7 @@ function initGoBack() {
     back();
   });
   window.addEventListener("popstate", function () {
-    if ($("#main-player").is(":visible")) {
+    if (document.body.classList.contains("player-open")) {
       back();
     }
   });

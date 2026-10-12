@@ -891,10 +891,40 @@ video.hls::-webkit-media-controls-current-time-display {}
 
 /* Login */
 
-#main-login,
+#main-login {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100vh;
+	position: relative;
+	z-index: 30;
+	background: #202020;
+}
+
 #main-content,
 #main-player {
 	display: none;
+}
+
+body.is-authenticated #main-login {
+	display: none !important;
+}
+
+body:not(.is-authenticated) #main-content,
+body:not(.is-authenticated) #main-player {
+	display: none !important;
+}
+
+body.is-authenticated:not(.player-open) #main-content {
+	display: block;
+}
+
+body.is-authenticated.player-open #main-content {
+	display: none !important;
+}
+
+body.is-authenticated.player-open #main-player {
+	display: block;
 }
 
 .logo-login img {

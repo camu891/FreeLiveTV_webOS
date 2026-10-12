@@ -1,5 +1,3 @@
-
-// Initialize Firebase
 var config = {
     apiKey: "AIzaSyDMXt111zjEObH7mxzk6L-on8DnFTB2eBI",
     authDomain: "free-live-tv-905b4.firebaseapp.com",
@@ -12,102 +10,141 @@ var USER_GUEST = {
     email: "guest@guest.com",
     password: "userguest"
 };
+var firebaseReady = false;
 
-$(document).ready(function(){
+function isAuthenticated() {
     try {
-        if (typeof firebase === "undefined") {
-            enterWithoutFirebase();
-            return;
-        }
+        return !!(window.firebase && firebase.auth && firebase.auth().currentUser);
+    } catch (e) {
+        return false;
+    }
+}
+
+function setAuthView(view) {
+    document.body.classList.toggle("is-authenticated", view !== "login");
+    document.body.classList.toggle("player-open", view === "player");
+}
+
+function showApp() {
+    setAuthView("app");
+    $("#main-login .content-loader").hide();
+    $("#message").text("");
+    if (typeof ajaxLoadPrograms === "function" && !allPrograms.length) {
+        ajaxLoadPrograms();
+    }
+}
+
+function showLogin(message) {
+    if (typeof destroyPlayer === "function") {
+        destroyPlayer();
+    }
+    setAuthView("login");
+    $("#main-login .content-loader").hide();
+    if (message) {
+        $("#message").text(message);
+    }
+}
+
+function showLoginLoader() {
+    $("#main-login .content-loader").show();
+}
+
+function hideLoginLoader() {
+    $("#main-login .content-loader").hide();
+}
+
+$(document).ready(function () {
+    showLogin();
+    if (typeof firebase === "undefined") {
+        showLogin("No se pudo cargar el servicio de login. Revisá tu conexión e intentá de nuevo.");
+        return;
+    }
+    try {
         initFirebase();
     } catch (error) {
-        enterWithoutFirebase();
+        showLogin("No se pudo iniciar el servicio de login.");
     }
 });
 
-function enterWithoutFirebase() {
-    $("#main-login").hide();
-    $("#main-content").show();
-    $(".content-loader").hide();
-}
-
-function initFirebase(){
-    var userLocalStorage = null;
-    try {
-        var rawUser = getSettings(settings.USER);
-        userLocalStorage = rawUser ? JSON.parse(rawUser) : null;
-    } catch (e) {
-        userLocalStorage = null;
-    }
+function initFirebase() {
     firebase.initializeApp(config);
-    firebase.auth().onAuthStateChanged(function(user) {
-        var isLogged = false;
-        if (userLocalStorage){
-            isLogged = true;
-            user = userLocalStorage;
-        } else if (user) {
-            var currentUser = firebase.auth().currentUser;
-            saveSettings(settings.USER, JSON.stringify(currentUser));
-            if (currentUser != null) {
-                isLogged = true;
+    firebaseReady = true;
+    firebase.auth().onAuthStateChanged(function (user) {
+        hideLoginLoader();
+        if (user) {
+            saveSettings(settings.USER, JSON.stringify({
+                email: user.email || "",
+                uid: user.uid
+            }));
+            if (!document.body.classList.contains("is-authenticated")) {
+                showApp();
+            } else {
+                hideLoginLoader();
             }
+        } else {
+            removeSettings(settings.USER);
+            if (typeof allPrograms !== "undefined") {
+                allPrograms = [];
+            }
+            $("#container_programs").empty();
+            $("ul.nav-tabs").empty();
+            showLogin();
         }
-        $(".content-loader").hide();
-        toggleLogin(isLogged, user);
     });
-}
-
-function toggleLogin(isLogged, user){
-    var mainLogin = $("#main-login");
-    var mainContent = $("#main-content");
-    if (isLogged || (user && user.email == USER_GUEST.email)){
-        mainLogin.hide();
-        mainContent.show();
-    } else {
-        mainLogin.show();
-        mainContent.hide();
-    }
 }
 
 function login() {
-    var userEmail = document.getElementById("email").value;
-    var userPassword = document.getElementById("password").value;
+    var userEmail = (document.getElementById("email").value || "").trim();
+    var userPassword = document.getElementById("password").value || "";
+    if (!userEmail || !userPassword) {
+        showLogin("Completá email y contraseña.");
+        return false;
+    }
     signWithFirebase(userEmail, userPassword);
+    return false;
 }
 
-function signWithFirebase(email, password){
-    $(".content-loader").show();
-    if (typeof firebase === "undefined") {
-        enterWithoutFirebase();
+function signWithFirebase(email, password) {
+    if (typeof firebase === "undefined" || !firebaseReady) {
+        showLogin("El servicio de login no está disponible.");
         return;
     }
-    firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
-        $("#message").text(error.message || "No se pudo iniciar sesión");
-        $(".content-loader").hide();
+    showLoginLoader();
+    firebase.auth().signInWithEmailAndPassword(email, password).catch(function (error) {
+        hideLoginLoader();
+        var message = "No se pudo iniciar sesión.";
+        if (error && error.code === "auth/user-not-found") {
+            message = "El usuario no existe.";
+        } else if (error && error.code === "auth/wrong-password") {
+            message = "Contraseña incorrecta.";
+        } else if (error && error.code === "auth/invalid-email") {
+            message = "El email no es válido.";
+        } else if (error && error.message) {
+            message = error.message;
+        }
+        $("#message").text(message);
     });
 }
 
-function guest(){
-    if (typeof firebase === "undefined") {
-        enterWithoutFirebase();
-        return;
-    }
+function guest() {
     signWithFirebase(USER_GUEST.email, USER_GUEST.password);
 }
 
 function logout() {
+    if (typeof destroyPlayer === "function") {
+        destroyPlayer();
+    }
+    allPrograms = [];
+    $("#container_programs").empty();
+    $("ul.nav-tabs").empty();
+    removeSettings(settings.USER);
     if (typeof firebase === "undefined" || !firebase.auth) {
-        removeSettings(settings.USER);
-        enterWithoutFirebase();
-        $("#main-login").show();
-        $("#main-content").hide();
+        showLogin();
         return;
     }
-    firebase.auth().signOut().then(function() {
-        removeSettings(settings.USER);
-        $("#main-login").show();
-        $("#main-content").hide();
-    }).catch(function(error) {
-        $("#message").text("Error: " + error);
+    firebase.auth().signOut().then(function () {
+        showLogin();
+    }).catch(function () {
+        showLogin("No se pudo cerrar la sesión.");
     });
 }
