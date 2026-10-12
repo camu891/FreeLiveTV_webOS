@@ -122,14 +122,15 @@
             },
             {
                "id":"news-trece",
-               "type":"youtube",
-               "src":"https://www.youtube.com/embed/live_stream?channel=UC0DM_mHV2u6dj8ig51GkQwg&autoplay=1&rel=0&modestbranding=1",
+               "type":"iframe",
+               "src":"https://api.vodgc.net/player/v2/embed/playerId/PRZ9KU1515679151/contentId/1427089",
                "sources":[
+                  {"type":"iframe","src":"https://api.vodgc.net/player/v2/embed/playerId/PRZ9KU1515679151/contentId/1427089"},
                   {"type":"youtube","src":"https://www.youtube.com/embed/live_stream?channel=UC0DM_mHV2u6dj8ig51GkQwg&autoplay=1&rel=0&modestbranding=1"}
                ],
                "name":"El Trece TV",
                "logo":"./assets/img/eltrece.png",
-               "description":"eltrece en vivo cuando hay transmisión oficial en YouTube.",
+               "description":"eltrece en vivo con el reproductor público de eltrecetv.com.ar.",
                "category":"Noticias",
                "available":true
             },
