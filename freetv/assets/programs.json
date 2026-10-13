@@ -122,10 +122,11 @@
             },
             {
                "id":"news-trece",
-               "type":"iframe",
-               "src":"https://api.vodgc.net/player/v2/embed/playerId/PRZ9KU1515679151/contentId/1427089",
+               "type":"hls",
+               "src":"https://live-01-02-eltrece.vodgc.net/eltrecetv_noti/index.m3u8",
                "sources":[
-                  {"type":"iframe","src":"https://api.vodgc.net/player/v2/embed/playerId/PRZ9KU1515679151/contentId/1427089"},
+                  {"type":"hls","src":"https://live-01-02-eltrece.vodgc.net/eltrecetv_noti/index.m3u8"},
+                  {"type":"iframe","src":"https://api.vodgc.net/player/v2/embed/playerId/PRZ9KU1515679151/contentId/1427089?autoplay=true"},
                   {"type":"youtube","src":"https://www.youtube.com/embed/live_stream?channel=UC0DM_mHV2u6dj8ig51GkQwg&autoplay=1&rel=0&modestbranding=1"}
                ],
                "name":"El Trece TV",
