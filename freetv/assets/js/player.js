@@ -210,6 +210,12 @@ function createNativeVideo(source, container) {
 }
 
 function attachHls(video, src) {
+  var onTv = !!(window.PalmSystem || (window.webOS && webOS.platform && webOS.platform.tv));
+  if (onTv && (video.canPlayType("application/vnd.apple.mpegurl") || video.canPlayType("application/x-mpegURL"))) {
+    video.src = src;
+    attemptPlay(video);
+    return;
+  }
   if (window.Hls && Hls.isSupported()) {
     currentHls = new Hls({
       enableWorker: true,
