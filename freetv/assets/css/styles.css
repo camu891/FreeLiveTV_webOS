@@ -441,6 +441,7 @@ a.program-link span.channel-title {
 	text-align: center;
 	border-radius: 4px;
 	background: white;
+	object-fit: contain;
 }
 
 @keyframes fadeIn {
@@ -1007,8 +1008,20 @@ body.is-authenticated.player-open #main-player {
 	color: red;
 }
 
-input:focus, .btn-login:focus {
-	outline: none !important;
+#main-login input:focus,
+#main-login .btn-login:focus {
+	outline: 4px solid #ffffff;
+	outline-offset: 4px;
+	box-shadow: 0 0 0 4px #ffffff;
+}
+
+#login:focus {
+	background: #ff4d4d;
+}
+
+#guest:focus {
+	background: #ffffff;
+	color: #b00000;
 }
 
 .logout {

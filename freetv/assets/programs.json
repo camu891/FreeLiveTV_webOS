@@ -160,7 +160,7 @@
                   {"type":"youtube","src":"https://www.youtube.com/embed/live_stream?channel=UC6NVDkuzY2exMOVFw4i9oHw&autoplay=1&rel=0&modestbranding=1"}
                ],
                "name":"América TV",
-               "logo":"./assets/img/no_image.png",
+               "logo":"./assets/img/america.svg",
                "description":"América TV en vivo, señal oficial de americatv.com.ar.",
                "category":"Noticias",
                "available":true

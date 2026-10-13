@@ -34,6 +34,65 @@ function showApp() {
     }
 }
 
+var LOGIN_FIELDS = ["email", "password", "login", "guest"];
+
+function focusLoginControl(index) {
+    var el = document.getElementById(LOGIN_FIELDS[index]);
+    if (el && typeof el.focus === "function") {
+        el.focus();
+    }
+}
+
+function currentLoginIndex() {
+    var active = document.activeElement;
+    if (!active) {
+        return -1;
+    }
+    for (var i = 0; i < LOGIN_FIELDS.length; i++) {
+        if (active.id === LOGIN_FIELDS[i]) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+function focusLoginStart() {
+    if (currentLoginIndex() < 0) {
+        focusLoginControl(2);
+    }
+}
+
+function onLoginRemoteKey(event) {
+    if (typeof isAuthenticated === "function" && isAuthenticated()) {
+        return;
+    }
+    var key = event.keyCode || event.which;
+    var name = event.key || "";
+    var nav = window.keyRemoteControl && keyRemoteControl.NAVIGATION;
+    var up = key === 38 || name === "ArrowUp" || (nav && key === nav.TOP);
+    var down = key === 40 || name === "ArrowDown" || (nav && key === nav.DOWN);
+    var left = key === 37 || name === "ArrowLeft" || (nav && key === nav.LEFT);
+    var right = key === 39 || name === "ArrowRight" || (nav && key === nav.RIGTH);
+    if (!up && !down && !left && !right) {
+        return;
+    }
+    var index = currentLoginIndex();
+    var onInput = index === 0 || index === 1;
+    if (onInput && (left || right)) {
+        return;
+    }
+    event.preventDefault();
+    if (index < 0) {
+        focusLoginControl(2);
+        return;
+    }
+    if ((up || left) && index > 0) {
+        focusLoginControl(index - 1);
+    } else if ((down || right) && index < LOGIN_FIELDS.length - 1) {
+        focusLoginControl(index + 1);
+    }
+}
+
 function showLogin(message) {
     if (typeof destroyPlayer === "function") {
         destroyPlayer();
@@ -43,6 +102,7 @@ function showLogin(message) {
     if (message) {
         $("#message").text(message);
     }
+    setTimeout(focusLoginStart, 0);
 }
 
 function showLoginLoader() {
@@ -62,6 +122,7 @@ $(document).ready(function () {
         e.preventDefault();
         guest();
     });
+    document.addEventListener("keydown", onLoginRemoteKey, true);
     showLogin();
     if (typeof firebase === "undefined") {
         showLogin("No se pudo cargar el servicio de login. Revisá tu conexión e intentá de nuevo.");

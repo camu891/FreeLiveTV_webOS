@@ -27,7 +27,7 @@ function initSearch() {
     }
   }
 
-  $("input:not(textarea)").keydown(function (event) {
+  $("#search").keydown(function (event) {
     var kc = event.which || event.keyCode;
     if (kc === 13) {
       event.preventDefault();
