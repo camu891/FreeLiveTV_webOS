@@ -135,6 +135,9 @@ function playSource(sources, index) {
   }
   if (source.type === "hls" || source.type === "mp4") {
     createNativeVideo(source, container);
+  } else if (source.type === "youtube" && isWebOSTv()) {
+    // The TV's Chrome 38 webview cannot run the current YouTube embed player.
+    tryNextSource();
   } else if (source.type === "youtube") {
     createIframe(source, container, true);
   } else {
@@ -209,9 +212,12 @@ function createNativeVideo(source, container) {
   });
 }
 
+function isWebOSTv() {
+  return !!(window.PalmSystem || (window.webOS && webOS.platform && webOS.platform.tv));
+}
+
 function attachHls(video, src) {
-  var onTv = !!(window.PalmSystem || (window.webOS && webOS.platform && webOS.platform.tv));
-  if (onTv && (video.canPlayType("application/vnd.apple.mpegurl") || video.canPlayType("application/x-mpegURL"))) {
+  if (isWebOSTv() && (video.canPlayType("application/vnd.apple.mpegurl") || video.canPlayType("application/x-mpegURL"))) {
     video.src = src;
     attemptPlay(video);
     return;

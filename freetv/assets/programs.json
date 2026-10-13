@@ -4,14 +4,15 @@
          "Noticias":[
             {
                "id":"news-tn",
-               "type":"youtube",
-               "src":"https://www.youtube.com/embed/live_stream?channel=UCj6PcyLvpnIRT_2W_mwa9Aw&autoplay=1&rel=0&modestbranding=1",
+               "type":"hls",
+               "src":"https://live-01-01-tn.vodgc.net/TN_DAI_Beta/index.m3u8",
                "sources":[
+                  {"type":"hls","src":"https://live-01-01-tn.vodgc.net/TN_DAI_Beta/index.m3u8"},
                   {"type":"youtube","src":"https://www.youtube.com/embed/live_stream?channel=UCj6PcyLvpnIRT_2W_mwa9Aw&autoplay=1&rel=0&modestbranding=1"}
                ],
                "name":"TN Noticias",
                "logo":"./assets/img/tn.png",
-               "description":"Todo Noticias en vivo las 24 horas, señal oficial de YouTube.",
+               "description":"Todo Noticias en vivo las 24 horas, señal oficial de tn.com.ar.",
                "category":"Noticias",
                "available":true
             },
@@ -56,9 +57,10 @@
             },
             {
                "id":"news-a24",
-               "type":"youtube",
-               "src":"https://www.youtube.com/embed/live_stream?channel=UCR9120YBAqMfntqgRTKmkjQ&autoplay=1&rel=0&modestbranding=1",
+               "type":"hls",
+               "src":"https://g1.mc-slo.transport.edge-access.net/a12/ngrp:a24-100056_all/Playlist.m3u8?sense=true",
                "sources":[
+                  {"type":"hls","src":"https://g1.mc-slo.transport.edge-access.net/a12/ngrp:a24-100056_all/Playlist.m3u8?sense=true"},
                   {"type":"youtube","src":"https://www.youtube.com/embed/live_stream?channel=UCR9120YBAqMfntqgRTKmkjQ&autoplay=1&rel=0&modestbranding=1"}
                ],
                "name":"A24",
@@ -83,9 +85,10 @@
             },
             {
                "id":"news-tv-publica",
-               "type":"youtube",
-               "src":"https://www.youtube.com/embed/live_stream?channel=UCs231K71Bnu5295_x0MB5Pg&autoplay=1&rel=0&modestbranding=1",
+               "type":"hls",
+               "src":"https://g1.mc-hor.transport.edge-access.net/b16/ngrp:c7_vivo01_dai_source-20001_all/playlist.m3u8",
                "sources":[
+                  {"type":"hls","src":"https://g1.mc-hor.transport.edge-access.net/b16/ngrp:c7_vivo01_dai_source-20001_all/playlist.m3u8"},
                   {"type":"youtube","src":"https://www.youtube.com/embed/live_stream?channel=UCs231K71Bnu5295_x0MB5Pg&autoplay=1&rel=0&modestbranding=1"}
                ],
                "name":"TV Pública",
@@ -233,11 +236,11 @@
          "Deportes":[
             {
                "id":"sports-tyc",
-               "type":"youtube",
-               "src":"https://www.youtube.com/embed/live_stream?channel=UC72ZaBKI-Bo5fjmWEYonhJw&autoplay=1&rel=0&modestbranding=1",
+               "type":"hls",
+               "src":"https://amg26268-amg26268c14-freelivesports-emea-10267.playouts.now.amagi.tv/ts-us-e2-n2/playlist/amg26268-sportsstudio-tycsports-freelivesportsemea/playlist.m3u8",
                "sources":[
-                  {"type":"youtube","src":"https://www.youtube.com/embed/live_stream?channel=UC72ZaBKI-Bo5fjmWEYonhJw&autoplay=1&rel=0&modestbranding=1"},
-                  {"type":"hls","src":"https://amg26268-amg26268c14-freelivesports-emea-10267.playouts.now.amagi.tv/ts-us-e2-n2/playlist/amg26268-sportsstudio-tycsports-freelivesportsemea/playlist.m3u8"}
+                  {"type":"hls","src":"https://amg26268-amg26268c14-freelivesports-emea-10267.playouts.now.amagi.tv/ts-us-e2-n2/playlist/amg26268-sportsstudio-tycsports-freelivesportsemea/playlist.m3u8"},
+                  {"type":"youtube","src":"https://www.youtube.com/embed/live_stream?channel=UC72ZaBKI-Bo5fjmWEYonhJw&autoplay=1&rel=0&modestbranding=1"}
                ],
                "name":"TyC Sports",
                "logo":"./assets/img/tyc_sport.png",
@@ -373,11 +376,11 @@
             },
             {
                "id":"music-la100",
-               "type":"youtube",
-               "src":"https://www.youtube.com/embed/live_stream?channel=UC2zO2jZCDplwm8SVsXUcxCQ&autoplay=1&rel=0&modestbranding=1",
+               "type":"hls",
+               "src":"https://mdstrm.com/live-stream-playlist/68b74fd1d6512526f1f7c75a.m3u8",
                "sources":[
-                  {"type":"youtube","src":"https://www.youtube.com/embed/live_stream?channel=UC2zO2jZCDplwm8SVsXUcxCQ&autoplay=1&rel=0&modestbranding=1"},
-                  {"type":"hls","src":"https://mdstrm.com/live-stream-playlist/68b74fd1d6512526f1f7c75a.m3u8"}
+                  {"type":"hls","src":"https://mdstrm.com/live-stream-playlist/68b74fd1d6512526f1f7c75a.m3u8"},
+                  {"type":"youtube","src":"https://www.youtube.com/embed/live_stream?channel=UC2zO2jZCDplwm8SVsXUcxCQ&autoplay=1&rel=0&modestbranding=1"}
                ],
                "name":"La 100",
                "logo":"./assets/img/no_image.png",
