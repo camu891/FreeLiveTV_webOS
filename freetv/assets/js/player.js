@@ -160,9 +160,6 @@ function createIframe(source, container, isYoutube) {
   iframe.setAttribute("allow", "autoplay; encrypted-media; fullscreen; picture-in-picture");
   iframe.setAttribute("allowFullScreen", "");
   iframe.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
-  if (!isYoutube) {
-    iframe.setAttribute("sandbox", "allow-forms allow-same-origin allow-scripts allow-popups allow-presentation");
-  }
   container.appendChild(iframe);
   sizePlayerMedia();
 
